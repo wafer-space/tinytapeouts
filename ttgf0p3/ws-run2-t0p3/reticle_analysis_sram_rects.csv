@@ -1,0 +1,2 @@
+slot_id,cell_name,macro,x0_mm,y0_mm,x1_mm,y1_mm
+256,256_tt_um_essen,gf180mcu_ocd_ip_sram__sram256x8m8wm1,0.005,0.005,0.306,0.230
