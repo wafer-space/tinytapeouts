@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="run.css?v=5a9bb072ca">
+  <link rel="stylesheet" type="text/css" href="run.css?v=587cf594be">
 </head>
 <body>
   <div class="content-wrapper">
@@ -262,44 +262,55 @@
 <tr><td>1 × 1 tiles</td><td class="text-end">26</td></tr><tr><td>1 × 2 tiles</td><td class="text-end">13</td></tr><tr><td>2 × 2 tiles</td><td class="text-end">4</td></tr><tr><td>3 × 2 tiles</td><td class="text-end">2</td></tr><tr><td>3 × 4 tiles</td><td class="text-end">4</td></tr><tr><td>4 × 2 tiles</td><td class="text-end">2</td></tr><tr><td>4 × 4 tiles</td><td class="text-end">1</td></tr>          </tbody>
         </table>
         <h2 class="section-title mb-20">Shuttle status</h2>
+        <p class="small text-muted mb-15">Two schedules meet here: <span class="run-owner run-owner-tt">Tiny Tapeout</span>
+          collects the projects and builds the die, then <span class="run-owner run-owner-ws">wafer.space</span>
+          manufactures it on wafer.space Run 1 (G801) and ships the parts.</p>
         <ul class="run-timeline">
-          <li class="done run-timeline-critical">
-            <span class="run-timeline-date">24 November 2025</span>
+          <li class="done run-timeline-critical run-timeline-tt">
+            <span class="run-timeline-date"><span class="run-owner run-owner-tt">Tiny Tapeout</span>
+24 November 2025</span>
             <strong><a href="https://github.com/TinyTapeout/tinytapeout-gf-0p2/blob/ff701baa3a127bf2d00e5a800602b3125057622a/config.yaml">Tiny Tapeout GF 0.2 submissions close</a></strong>
             <span class="small text-muted">Last day to submit a project to this Tiny Tapeout shuttle</span>
           </li>
-          <li class="done run-timeline-critical">
-            <span class="run-timeline-date">28 November 2025 @ 11:59 PM AoE</span>
+          <li class="done run-timeline-critical run-timeline-ws">
+            <span class="run-timeline-date"><span class="run-owner run-owner-ws">wafer.space</span>
+28 November 2025 @ 11:59 PM AoE</span>
             <strong>Purchase Deadline</strong>
             <span class="small text-muted">Final deadline to purchase manufacturing slots</span>
           </li>
-          <li class="done run-timeline-critical">
-            <span class="run-timeline-date">3 December 2025 @ 11:59 PM AoE</span>
+          <li class="done run-timeline-critical run-timeline-ws">
+            <span class="run-timeline-date"><span class="run-owner run-owner-ws">wafer.space</span>
+3 December 2025 @ 11:59 PM AoE</span>
             <strong>Design Submission</strong>
             <span class="small text-muted">Final deadline to submit GDS files for fabrication</span>
           </li>
-          <li class="done run-timeline-milestone">
-            <span class="run-timeline-date">11 December 2025</span>
+          <li class="done run-timeline-milestone run-timeline-tt">
+            <span class="run-timeline-date"><span class="run-owner run-owner-tt">Tiny Tapeout</span>
+11 December 2025</span>
             <strong><a href="https://github.com/TinyTapeout/tinytapeout-gf-0p2/releases/tag/tapeout-ws2512-powergate">Tiny Tapeout GF 0.2 tapeout release</a></strong>
-            <span class="small text-muted">Tiny Tapeout publishes the chip&#39;s layout as tapeout-ws2512-powergate</span>
+            <span class="small text-muted">Tiny Tapeout publishes the die&#39;s layout (tapeout-ws2512-powergate) and sends it to wafer.space</span>
           </li>
-          <li class="done run-timeline-milestone">
-            <span class="run-timeline-date">8 January 2026</span>
+          <li class="done run-timeline-milestone run-timeline-ws">
+            <span class="run-timeline-date"><span class="run-owner run-owner-ws">wafer.space</span>
+8 January 2026</span>
             <strong>Tape-out to GlobalFoundries</strong>
             <span class="small text-muted">GDS files delivered to GlobalFoundries for fabrication</span>
           </li>
-          <li class="done run-timeline-milestone">
-            <span class="run-timeline-date">31 March 2026</span>
+          <li class="done run-timeline-milestone run-timeline-ws">
+            <span class="run-timeline-date"><span class="run-owner run-owner-ws">wafer.space</span>
+31 March 2026</span>
             <strong>Fabrication Complete</strong>
             <span class="small text-muted">Wafers returned from GlobalFoundries fabrication</span>
           </li>
-          <li class="done run-timeline-delivery">
-            <span class="run-timeline-date">28 April 2026</span>
+          <li class="done run-timeline-delivery run-timeline-ws">
+            <span class="run-timeline-date"><span class="run-owner run-owner-ws">wafer.space</span>
+28 April 2026</span>
             <strong>Bare Dies Shipped</strong>
             <span class="small text-muted">Bare dies shipped to customers</span>
           </li>
-          <li class="done run-timeline-delivery">
-            <span class="run-timeline-date">12 May 2026</span>
+          <li class="done run-timeline-delivery run-timeline-ws">
+            <span class="run-timeline-date"><span class="run-owner run-owner-ws">wafer.space</span>
+12 May 2026</span>
             <strong>Packaged Parts Shipped</strong>
             <span class="small text-muted">Chip-on-board packaged parts shipped</span>
           </li>
@@ -2427,7 +2438,7 @@
           <a href="https://github.com/wafer-space/tinytapeouts/blob/density-report/ttgf0p2/ws-run1-ttpg/reticle_density_report.md">density report</a>.
           The measurements behind it:</p>
         <ul class="run-files">
-<li><a href="data/reticle_analysis.csv">reticle_analysis.csv</a></li><li><a href="data/reticle_analysis_cells.csv">reticle_analysis_cells.csv</a></li><li><a href="data/reticle_analysis_features.csv">reticle_analysis_features.csv</a></li><li><a href="data/reticle_analysis_grid.csv">reticle_analysis_grid.csv</a></li><li><a href="data/reticle_analysis_library.csv">reticle_analysis_library.csv</a></li><li><a href="data/reticle_analysis_macros.csv">reticle_analysis_macros.csv</a></li><li><a href="data/reticle_analysis_map.csv">reticle_analysis_map.csv</a></li><li><a href="data/reticle_analysis_meta.json">reticle_analysis_meta.json</a></li><li><a href="data/reticle_analysis_slot_areas.csv">reticle_analysis_slot_areas.csv</a></li><li><a href="data/reticle_analysis_slot_macros.csv">reticle_analysis_slot_macros.csv</a></li><li><a href="data/reticle_analysis_sram_rects.csv">reticle_analysis_sram_rects.csv</a></li><li><a href="data/reticle_analysis_windows.csv">reticle_analysis_windows.csv</a></li><li><a href="data/reticle_density_report.md">reticle_density_report.md</a></li>        </ul>
+<li><a href="data/reticle_analysis.csv">reticle_analysis.csv</a></li><li><a href="data/reticle_analysis_cells.csv">reticle_analysis_cells.csv</a></li><li><a href="data/reticle_analysis_content.csv">reticle_analysis_content.csv</a></li><li><a href="data/reticle_analysis_features.csv">reticle_analysis_features.csv</a></li><li><a href="data/reticle_analysis_grid.csv">reticle_analysis_grid.csv</a></li><li><a href="data/reticle_analysis_library.csv">reticle_analysis_library.csv</a></li><li><a href="data/reticle_analysis_macros.csv">reticle_analysis_macros.csv</a></li><li><a href="data/reticle_analysis_map.csv">reticle_analysis_map.csv</a></li><li><a href="data/reticle_analysis_meta.json">reticle_analysis_meta.json</a></li><li><a href="data/reticle_analysis_metal.csv">reticle_analysis_metal.csv</a></li><li><a href="data/reticle_analysis_provenance.csv">reticle_analysis_provenance.csv</a></li><li><a href="data/reticle_analysis_slot_areas.csv">reticle_analysis_slot_areas.csv</a></li><li><a href="data/reticle_analysis_slot_macros.csv">reticle_analysis_slot_macros.csv</a></li><li><a href="data/reticle_analysis_sram_rects.csv">reticle_analysis_sram_rects.csv</a></li><li><a href="data/reticle_analysis_usage.csv">reticle_analysis_usage.csv</a></li><li><a href="data/reticle_analysis_windows.csv">reticle_analysis_windows.csv</a></li><li><a href="data/reticle_density_report.md">reticle_density_report.md</a></li>        </ul>
         <p class="small text-muted mb-0">Generated by
           <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from
           <span class="run-mono">layout/TTPG.oas</span> (md5 <span class="run-mono">b6494ef5f5770752906c875739b2f09f</span>).</p>
@@ -2477,6 +2488,6 @@
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="run.js?v=5a9bb072ca"></script>
+  <script src="run.js?v=587cf594be"></script>
 </body>
 </html>
