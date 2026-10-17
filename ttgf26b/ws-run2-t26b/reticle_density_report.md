@@ -283,6 +283,10 @@ Which transistor voltages and optional devices of the GF180MCU process the 90 de
 | Unsalicided poly resistors | 0 of 90 | — |
 | Salicided poly resistors | 0 of 90 | — |
 | Diffusion resistors | 0 of 90 | — |
+| N-well resistors | 0 of 90 | — |
+| Metal resistors | 0 of 90 | — |
+| Diodes (DIODE_MK) | 0 of 90 | — |
+| Well diodes | 0 of 90 | — |
 | Deep N-well | 0 of 90 | — |
 | Bipolar transistors | 0 of 90 | — |
 | Schottky diodes | 0 of 90 | — |
