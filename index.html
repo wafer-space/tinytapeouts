@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tiny Tapeout on wafer.space — wafer.space</title>
+  <meta name="description" content="Tiny Tapeout puts many small designs on one die. These are the Tiny Tapeout dies made on wafer.space runs, each measured project by project from the layout as manufactured.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tiny Tapeout on wafer.space — wafer.space">
+  <meta property="og:description" content="Tiny Tapeout puts many small designs on one die. These are the Tiny Tapeout dies made on wafer.space runs, each measured project by project from the layout as manufactured.">
+
+  <script>
+    // The main website's dark-mode-init: the same 'theme' preference, applied
+    // before first paint. Its scripts.js then runs the toggle.
+    (function () {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode-init');
+      }
+    })();
+  </script>
+  <style>
+    [data-theme="dark"] body, .dark-mode-init body { background-color: #1a1a1a !important; color: #e0e0e0; }
+    [data-theme="dark"], .dark-mode-init { background-color: #1a1a1a !important; }
+  </style>
+  <link rel="shortcut icon" href="https://wafer.space/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/plugins.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/type/type.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="run.css?v=5a9bb072ca">
+</head>
+<body>
+  <div class="content-wrapper">
+    <nav class="navbar wide absolute dark-wrapper inverse-text navbar-hover-opacity navbar-expand-lg nav-uppercase">
+      <div class="container-fluid flex-row justify-content-center">
+        <div class="navbar-brand" data-default-logo="white">
+          <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo-light.webp"
+            srcset="https://wafer.space/assets/images/logo-light.webp 1x, https://wafer.space/assets/images/logo-light@2x.webp 2x"
+            class="logo-light" alt="wafer.space - Budget silicon manufacturing" /></a>
+          <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo.webp"
+            srcset="https://wafer.space/assets/images/logo.webp 1x, https://wafer.space/assets/images/logo@2x.webp 2x"
+            class="logo-dark d-none" alt="wafer.space - Budget silicon manufacturing" /></a>
+        </div>
+        <div class="navbar-other ms-auto order-lg-3">
+          <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+            <li class="nav-item">
+              <div class="navbar-hamburger d-lg-none d-xl-none ms-auto">
+                <button class="hamburger animate plain" data-bs-toggle="offcanvas-nav"><span></span></button>
+              </div>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <button id="darkModeToggle" class="btn btn-sm btn-circle btn-outline-primary theme-toggle me-2" aria-label="Switch theme mode" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click to toggle, right-click for auto"><i class="icofont-moon"></i></button>
+            </li>
+            <li class="nav-item d-none d-lg-block"><a href="https://wafer.space/free.html" class="btn btn-default">Free Silicon?</a></li>
+          </ul>
+        </div>
+        <div class="navbar-collapse offcanvas-nav">
+          <div class="offcanvas-header d-lg-none d-xl-none">
+            <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo-light.webp" alt="wafer.space" /></a>
+            <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+          </div>
+          <ul class="navbar-nav mx-auto" data-sm-skip-collapsible-behavior="true">
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/price.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/technology.html">Technology</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/design-help.html">Design Help</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text"
+     data-image-src="https://wafer.space/assets/images/header/mpw-one-partial-dice-top-1.jpg">
+  <div class="container inner text-center">
+    <div class="space90"></div>
+    <h1 class="page-title">Tiny Tapeout<span class="page-title-sub">chips on wafer.space runs</span></h1>
+    <p class="lead">5 dies · 321 projects</p>
+  </div>
+</div>
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+<p class="lead text-center mb-40">Tiny Tapeout puts many small designs on one die. These are the Tiny Tapeout dies made on wafer.space runs, each measured project by project from the layout as manufactured.</p>    <div class="row">
+      <div class="col-sm-6 col-lg-4 mb-30">
+        <a class="run-card box bg-white shadow" href="ttgf0p2/ws-run1-ttp2/index.html">
+          <figure class="run-card-image">
+<img src="ttgf0p2/ws-run1-ttp2/renders/reticle.webp" alt="Render of die TTP2" loading="lazy">            <span class="run-code">TTP2</span>
+          </figure>
+          <div class="run-card-body">
+            <h5 class="post-title mb-5">Tiny Tapeout GF 0.2</h5>
+            <p class="mb-0 text-muted small">Die TTP2 on wafer.space Run 1</p>
+            <p class="mb-0 text-muted small">52 projects · 197,197 logic cells</p>
+<p class="mb-0 small mt-5"><span class="text-muted">Status:</span> Packaged Parts Shipped
+              <span class="text-muted">(12 May 2026)</span></p>          </div>
+        </a>
+        <p class="small text-muted mt-10 mb-0">
+<a href="https://wafer.space/ws-run1/projects/TTP2.html">wafer.space Run 1 (G801)</a> · <a href="https://tinytapeout.com/chips/ttgf0p2/">ttgf0p2 on tinytapeout.com</a>          · <a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf0p2/ws-run1-ttp2">files</a></p>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-30">
+        <a class="run-card box bg-white shadow" href="ttgf0p2/ws-run1-ttpg/index.html">
+          <figure class="run-card-image">
+<img src="ttgf0p2/ws-run1-ttpg/renders/reticle.webp" alt="Render of die TTPG" loading="lazy">            <span class="run-code">TTPG</span>
+          </figure>
+          <div class="run-card-body">
+            <h5 class="post-title mb-5">Tiny Tapeout GF 0.2</h5>
+            <p class="mb-0 text-muted small">Die TTPG on wafer.space Run 1</p>
+            <p class="mb-0 text-muted small">52 projects · 197,196 logic cells</p>
+<p class="mb-0 small mt-5"><span class="text-muted">Status:</span> Packaged Parts Shipped
+              <span class="text-muted">(12 May 2026)</span></p>          </div>
+        </a>
+        <p class="small text-muted mt-10 mb-0">
+<a href="https://wafer.space/ws-run1/projects/TTPG.html">wafer.space Run 1 (G801)</a> · <a href="https://tinytapeout.com/chips/ttgf0p2/">ttgf0p2 on tinytapeout.com</a>          · <a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf0p2/ws-run1-ttpg">files</a></p>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-30">
+        <a class="run-card box bg-white shadow" href="ttgf0p3/ws-run2-t0p3/index.html">
+          <figure class="run-card-image">
+<img src="ttgf0p3/ws-run2-t0p3/renders/reticle.webp" alt="Render of die T0P3" loading="lazy">            <span class="run-code">T0P3</span>
+          </figure>
+          <div class="run-card-body">
+            <h5 class="post-title mb-5">Tiny Tapeout GF 0.3</h5>
+            <p class="mb-0 text-muted small">Die T0P3 on wafer.space Run 2</p>
+            <p class="mb-0 text-muted small">32 projects · 113,169 logic cells</p>
+<p class="mb-0 small mt-5"><span class="text-muted">Status:</span> Parts Shipped
+              <span class="text-muted">(Early Q4 2026)</span></p>          </div>
+        </a>
+        <p class="small text-muted mt-10 mb-0">
+<a href="https://wafer.space/ws-run2/projects/T0P3.html">wafer.space Run 2 (G802)</a> · <a href="https://tinytapeout.com/chips/ttgf0p3/">ttgf0p3 on tinytapeout.com</a>          · <a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf0p3/ws-run2-t0p3">files</a></p>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-30">
+        <a class="run-card box bg-white shadow" href="ttgf26a/ws-run2-t26a/index.html">
+          <figure class="run-card-image">
+<img src="ttgf26a/ws-run2-t26a/renders/reticle.webp" alt="Render of die T26A" loading="lazy">            <span class="run-code">T26A</span>
+          </figure>
+          <div class="run-card-body">
+            <h5 class="post-title mb-5">Tiny Tapeout GF 26a</h5>
+            <p class="mb-0 text-muted small">Die T26A on wafer.space Run 2</p>
+            <p class="mb-0 text-muted small">95 projects · 137,835 logic cells</p>
+<p class="mb-0 small mt-5"><span class="text-muted">Status:</span> Parts Shipped
+              <span class="text-muted">(Early Q4 2026)</span></p>          </div>
+        </a>
+        <p class="small text-muted mt-10 mb-0">
+<a href="https://wafer.space/ws-run2/projects/T26A.html">wafer.space Run 2 (G802)</a> · <a href="https://tinytapeout.com/chips/ttgf26a/">ttgf26a on tinytapeout.com</a>          · <a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf26a/ws-run2-t26a">files</a></p>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-30">
+        <a class="run-card box bg-white shadow" href="ttgf26b/ws-run2-t26b/index.html">
+          <figure class="run-card-image">
+<img src="ttgf26b/ws-run2-t26b/renders/reticle.webp" alt="Render of die T26B" loading="lazy">            <span class="run-code">T26B</span>
+          </figure>
+          <div class="run-card-body">
+            <h5 class="post-title mb-5">Tiny Tapeout GF 26b</h5>
+            <p class="mb-0 text-muted small">Die T26B on wafer.space Run 2</p>
+            <p class="mb-0 text-muted small">90 projects · 149,377 logic cells</p>
+<p class="mb-0 small mt-5"><span class="text-muted">Status:</span> Parts Shipped
+              <span class="text-muted">(Early Q4 2026)</span></p>          </div>
+        </a>
+        <p class="small text-muted mt-10 mb-0">
+<a href="https://wafer.space/ws-run2/projects/T26B.html">wafer.space Run 2 (G802)</a> · <a href="https://tinytapeout.com/chips/ttgf26b/">ttgf26b on tinytapeout.com</a>          · <a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf26b/ws-run2-t26b">files</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer class="dark-wrapper inverse-text">
+      <div class="container inner">
+        <div class="row">
+          <div class="col-md-12 col-lg-4 text-center text-lg-start">
+            <div class="widget">
+              <a href="https://wafer.space"><img src="https://wafer.space/assets/images/logo-light.webp" alt="wafer.space - Budget silicon manufacturing" /></a>
+              <div class="space20"></div>
+              <p>Budget silicon manufacturing.</p>
+            </div>
+          </div>
+          <div class="space30 d-lg-none d-xl-none"></div>
+          <div class="col-6 col-lg-4">
+            <div class="widget">
+              <h5 class="widget-title">Tiny Tapeout · chips on wafer.space runs</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="index.html">Run overview</a></li>
+                <li><a href="https://github.com/wafer-space/tinytapeouts">Layout and manifest on GitHub</a></li>
+                <li><a href="https://github.com/wafer-space/tinytapeouts/tree/density-report">Density report</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="widget">
+              <h5 class="widget-title">About this page</h5>
+              <p class="small mb-0">Generated on 2026-10-17 by
+                <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from the public reticle
+                layout. Every figure is measured from the layout; the data files are linked from the overview.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://wafer.space/assets/js/jquery.min.js"></script>
+  <script src="https://wafer.space/assets/js/popper.min.js"></script>
+  <script src="https://wafer.space/assets/js/bootstrap.min.js"></script>
+  <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="https://wafer.space/assets/js/plugins.js"></script>
+  <script src="https://wafer.space/assets/js/scripts.js"></script>
+  <script src="run.js?v=5a9bb072ca"></script>
+</body>
+</html>
