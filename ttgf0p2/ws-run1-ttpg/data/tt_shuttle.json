@@ -1,0 +1,12 @@
+{
+ "commit": "ff701baa3a127bf2d00e5a800602b3125057622a",
+ "end_date": "2025-11-24",
+ "id": "ttgf0p2",
+ "name": "Tiny Tapeout GF 0.2",
+ "release": {
+  "date": "2025-12-11",
+  "tag": "tapeout-ws2512-powergate",
+  "url": "https://github.com/TinyTapeout/tinytapeout-gf-0p2/releases/tag/tapeout-ws2512-powergate"
+ },
+ "repo": "https://github.com/TinyTapeout/tinytapeout-gf-0p2"
+}

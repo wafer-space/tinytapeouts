@@ -1,0 +1,12 @@
+{
+ "commit": "35e70261e686a9f7a51b6fccbdee815c3cefaaab",
+ "end_date": "2026-06-22",
+ "id": "ttgf26a",
+ "name": "Tiny Tapeout GF 26a",
+ "release": {
+  "date": "2026-07-04",
+  "tag": "tapeout-ws2607",
+  "url": "https://github.com/TinyTapeout/tinytapeout-gf-26a/releases/tag/tapeout-ws2607"
+ },
+ "repo": "https://github.com/TinyTapeout/tinytapeout-gf-26a"
+}
