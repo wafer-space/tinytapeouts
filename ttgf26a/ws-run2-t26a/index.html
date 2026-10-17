@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="run.css?v=5a9bb072ca">
+  <link rel="stylesheet" type="text/css" href="run.css?v=587cf594be">
 </head>
 <body>
   <div class="content-wrapper">
@@ -348,39 +348,49 @@
 <tr><td>1 × 1 tiles</td><td class="text-end">72</td></tr><tr><td>1 × 2 tiles</td><td class="text-end">17</td></tr><tr><td>2 × 2 tiles</td><td class="text-end">2</td></tr><tr><td>3 × 2 tiles</td><td class="text-end">1</td></tr><tr><td>4 × 2 tiles</td><td class="text-end">1</td></tr><tr><td>4 × 4 tiles</td><td class="text-end">2</td></tr>          </tbody>
         </table>
         <h2 class="section-title mb-20">Shuttle status</h2>
+        <p class="small text-muted mb-15">Two schedules meet here: <span class="run-owner run-owner-tt">Tiny Tapeout</span>
+          collects the projects and builds the die, then <span class="run-owner run-owner-ws">wafer.space</span>
+          manufactures it on wafer.space Run 2 (G802) and ships the parts.</p>
         <ul class="run-timeline">
-          <li class="done run-timeline-milestone">
-            <span class="run-timeline-date">1 March 2026</span>
+          <li class="done run-timeline-milestone run-timeline-ws">
+            <span class="run-timeline-date"><span class="run-owner run-owner-ws">wafer.space</span>
+1 March 2026</span>
             <strong>Campaign Opens</strong>
             <span class="small text-muted">Run 2 slots available for purchase on Crowd Supply</span>
           </li>
-          <li class="done run-timeline-critical">
-            <span class="run-timeline-date">30 April 2026 @ 11:59 PM AoE</span>
+          <li class="done run-timeline-critical run-timeline-ws">
+            <span class="run-timeline-date"><span class="run-owner run-owner-ws">wafer.space</span>
+30 April 2026 @ 11:59 PM AoE</span>
             <strong>Early Bird Deadline</strong>
             <span class="small text-muted">Last day to purchase at early bird pricing</span>
           </li>
-          <li class="done run-timeline-critical">
-            <span class="run-timeline-date">22 June 2026</span>
+          <li class="done run-timeline-critical run-timeline-tt">
+            <span class="run-timeline-date"><span class="run-owner run-owner-tt">Tiny Tapeout</span>
+22 June 2026</span>
             <strong><a href="https://github.com/TinyTapeout/tinytapeout-gf-26a/blob/35e70261e686a9f7a51b6fccbdee815c3cefaaab/config.yaml">Tiny Tapeout GF 26a submissions close</a></strong>
             <span class="small text-muted">Last day to submit a project to this Tiny Tapeout shuttle</span>
           </li>
-          <li class="done run-timeline-critical">
-            <span class="run-timeline-date">30 June 2026 @ 11:59 PM AoE</span>
+          <li class="done run-timeline-critical run-timeline-ws">
+            <span class="run-timeline-date"><span class="run-owner run-owner-ws">wafer.space</span>
+30 June 2026 @ 11:59 PM AoE</span>
             <strong>Purchase Deadline</strong>
             <span class="small text-muted">Final deadline to purchase slots</span>
           </li>
-          <li class="done run-timeline-milestone">
-            <span class="run-timeline-date">4 July 2026</span>
+          <li class="done run-timeline-milestone run-timeline-tt">
+            <span class="run-timeline-date"><span class="run-owner run-owner-tt">Tiny Tapeout</span>
+4 July 2026</span>
             <strong><a href="https://github.com/TinyTapeout/tinytapeout-gf-26a/releases/tag/tapeout-ws2607">Tiny Tapeout GF 26a tapeout release</a></strong>
-            <span class="small text-muted">Tiny Tapeout publishes the chip&#39;s layout as tapeout-ws2607</span>
+            <span class="small text-muted">Tiny Tapeout publishes the die&#39;s layout (tapeout-ws2607) and sends it to wafer.space</span>
           </li>
-          <li class="done run-timeline-critical">
-            <span class="run-timeline-date">14 July 2026 @ 11:59 PM AoE</span>
+          <li class="done run-timeline-critical run-timeline-ws">
+            <span class="run-timeline-date"><span class="run-owner run-owner-ws">wafer.space</span>
+14 July 2026 @ 11:59 PM AoE</span>
             <strong>Submission Deadline</strong>
             <span class="small text-muted">Final deadline to submit clean GDS</span>
           </li>
-          <li class="done run-timeline-delivery">
-            <span class="run-timeline-date">Early Q4 2026</span>
+          <li class="done run-timeline-delivery run-timeline-ws">
+            <span class="run-timeline-date"><span class="run-owner run-owner-ws">wafer.space</span>
+Early Q4 2026</span>
             <strong>Parts Shipped</strong>
             <span class="small text-muted">Bare dies and packaged parts shipped to customers</span>
           </li>
@@ -1574,7 +1584,7 @@
               <td><a class="run-mono" href="projects/609.html">609</a></td></tr>
           </tbody>
         </table>
-<p class="small text-muted mb-0">Not drawn by any design: Native transistors, 10 V LDMOS, MIM capacitors, MOS capacitors, Unsalicided poly resistors, Salicided poly resistors, Diffusion resistors, Deep N-well, Bipolar transistors, Schottky diodes, Zener diodes, eFuses, One-time programmable memory, Inductors.</p>        <p class="small text-muted">Only devices outside standard cells, SRAM macros and I/O pads count, since every
+<p class="small text-muted mb-0">Not drawn by any design: Native transistors, 10 V LDMOS, MIM capacitors, MOS capacitors, Unsalicided poly resistors, Salicided poly resistors, Diffusion resistors, N-well resistors, Metal resistors, Diodes (DIODE_MK), Well diodes, Deep N-well, Bipolar transistors, Schottky diodes, Zener diodes, eFuses, One-time programmable memory, Inductors.</p>        <p class="small text-muted">Only devices outside standard cells, SRAM macros and I/O pads count, since every
           die has those. A single test structure counts the same as a large block.</p>
       </div>
     </div>
@@ -3845,7 +3855,7 @@
           <a href="https://github.com/wafer-space/tinytapeouts/blob/density-report/ttgf26a/ws-run2-t26a/reticle_density_report.md">density report</a>.
           The measurements behind it:</p>
         <ul class="run-files">
-<li><a href="data/reticle_analysis.csv">reticle_analysis.csv</a></li><li><a href="data/reticle_analysis_cells.csv">reticle_analysis_cells.csv</a></li><li><a href="data/reticle_analysis_features.csv">reticle_analysis_features.csv</a></li><li><a href="data/reticle_analysis_grid.csv">reticle_analysis_grid.csv</a></li><li><a href="data/reticle_analysis_library.csv">reticle_analysis_library.csv</a></li><li><a href="data/reticle_analysis_macros.csv">reticle_analysis_macros.csv</a></li><li><a href="data/reticle_analysis_map.csv">reticle_analysis_map.csv</a></li><li><a href="data/reticle_analysis_meta.json">reticle_analysis_meta.json</a></li><li><a href="data/reticle_analysis_slot_areas.csv">reticle_analysis_slot_areas.csv</a></li><li><a href="data/reticle_analysis_slot_macros.csv">reticle_analysis_slot_macros.csv</a></li><li><a href="data/reticle_analysis_sram_rects.csv">reticle_analysis_sram_rects.csv</a></li><li><a href="data/reticle_analysis_windows.csv">reticle_analysis_windows.csv</a></li><li><a href="data/reticle_density_report.md">reticle_density_report.md</a></li>        </ul>
+<li><a href="data/reticle_analysis.csv">reticle_analysis.csv</a></li><li><a href="data/reticle_analysis_cells.csv">reticle_analysis_cells.csv</a></li><li><a href="data/reticle_analysis_content.csv">reticle_analysis_content.csv</a></li><li><a href="data/reticle_analysis_features.csv">reticle_analysis_features.csv</a></li><li><a href="data/reticle_analysis_grid.csv">reticle_analysis_grid.csv</a></li><li><a href="data/reticle_analysis_library.csv">reticle_analysis_library.csv</a></li><li><a href="data/reticle_analysis_macros.csv">reticle_analysis_macros.csv</a></li><li><a href="data/reticle_analysis_map.csv">reticle_analysis_map.csv</a></li><li><a href="data/reticle_analysis_meta.json">reticle_analysis_meta.json</a></li><li><a href="data/reticle_analysis_metal.csv">reticle_analysis_metal.csv</a></li><li><a href="data/reticle_analysis_provenance.csv">reticle_analysis_provenance.csv</a></li><li><a href="data/reticle_analysis_slot_areas.csv">reticle_analysis_slot_areas.csv</a></li><li><a href="data/reticle_analysis_slot_macros.csv">reticle_analysis_slot_macros.csv</a></li><li><a href="data/reticle_analysis_sram_rects.csv">reticle_analysis_sram_rects.csv</a></li><li><a href="data/reticle_analysis_usage.csv">reticle_analysis_usage.csv</a></li><li><a href="data/reticle_analysis_windows.csv">reticle_analysis_windows.csv</a></li><li><a href="data/reticle_density_report.md">reticle_density_report.md</a></li>        </ul>
         <p class="small text-muted mb-0">Generated by
           <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from
           <span class="run-mono">layout/T26A.oas</span> (md5 <span class="run-mono">8fdfc77220918a548aa0b9707aa0e5ff</span>).</p>
@@ -3895,6 +3905,6 @@
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="run.js?v=5a9bb072ca"></script>
+  <script src="run.js?v=587cf594be"></script>
 </body>
 </html>
