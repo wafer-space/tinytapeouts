@@ -1,0 +1,11 @@
+# Provenance of tinytapeouts/ttgf0p2/ws-run1-ttp2
+
+[Tiny Tapeout GF 0.2](https://tinytapeout.com/chips/ttgf0p2) is a [Tiny Tapeout](https://tinytapeout.com/) chip: 52 projects, each in one or more tiles, behind a multiplexer that selects one project at a time, with the multiplexer, controller and pads around them. It was made as slot TTP2 of the wafer.space GF180MCU Run 1 shuttle (G801, [ws-run1](https://github.com/wafer-space/ws-run1)), the standard build.
+
+# How This Repository Was Generated
+
+- `layout/` is the die exactly as it is on the G801 reticle: the `TTP2_tt_gf_wrapper_<column>_<row>` cell cut from the reticle in [ws-run1](https://github.com/wafer-space/ws-run1) with its seal ring and fill, moved to the origin. Cell names keep the reticle's `$N` suffixes.
+- It matches the precheck output of the Tiny Tapeout release [`tapeout-ws2512`](https://github.com/TinyTapeout/tinytapeout-gf-0p2/releases/tag/tapeout-ws2512) (`tt_gf_wrapper.oas.tt_gf_wrapper.precheck.*.output.*`) on every layer and in every project placement. The one difference is that on the reticle the dummy COMP layer (22/4) is merged into COMP (22/0); the shape counts match exactly.
+- `data/shuttle_index.json` is the release's `shuttle_index.json` unchanged. It lists each project's multiplexer address, tile position and size, source repository and commit. In `data/manifest.csv` and the README the repository URLs are normalised to `https://` (no `git@` form, `.git` suffix or trailing slash).
+- `data/manifest.csv` has one row per project: `CODE` is the multiplexer address, zero-padded to three digits, `TOP` the project's `tt_um_*` macro, `SLOT_SIZE` its size in tiles. Title, author, description, language and clock come from `projects/<macro>/info.yaml` in [tinytapeout-gf-0p2](https://github.com/TinyTapeout/tinytapeout-gf-0p2/tree/7416232bbc6b59ebd6b3665de3b2da161c1819d3) at `7416232bbc`, the commit the release was built from.
+- `images/TTP2.svg` draws each project's outermost placement in the layout; `images/TTP2.png` is rendered from the layout with `scripts/lay2img.py` and `reticle.lyp` from [reticle-stitcher](https://github.com/wafer-space/reticle-stitcher) (`--width 4096 --oversampling 4`), the same way as the ws-run images.
