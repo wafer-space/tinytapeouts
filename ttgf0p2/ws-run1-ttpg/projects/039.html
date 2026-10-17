@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>039 TinyQV Risc-V SoC — Tiny Tapeout GF 0.2 · Die TTPG on wafer.space Run 1</title>
+  <meta name="description" content="A Risc-V SoC for Tiny Tapeout">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="039 TinyQV Risc-V SoC — Tiny Tapeout GF 0.2 · Die TTPG on wafer.space Run 1">
+  <meta property="og:description" content="A Risc-V SoC for Tiny Tapeout">
+<meta property="og:image" content="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/renders/reticle.webp">
+  <script>
+    // The main website's dark-mode-init: the same 'theme' preference, applied
+    // before first paint. Its scripts.js then runs the toggle.
+    (function () {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode-init');
+      }
+    })();
+  </script>
+  <style>
+    [data-theme="dark"] body, .dark-mode-init body { background-color: #1a1a1a !important; color: #e0e0e0; }
+    [data-theme="dark"], .dark-mode-init { background-color: #1a1a1a !important; }
+  </style>
+  <link rel="shortcut icon" href="https://wafer.space/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/plugins.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/type/type.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=5a9bb072ca">
+</head>
+<body>
+  <div class="content-wrapper">
+    <nav class="navbar wide absolute dark-wrapper inverse-text navbar-hover-opacity navbar-expand-lg nav-uppercase">
+      <div class="container-fluid flex-row justify-content-center">
+        <div class="navbar-brand" data-default-logo="white">
+          <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo-light.webp"
+            srcset="https://wafer.space/assets/images/logo-light.webp 1x, https://wafer.space/assets/images/logo-light@2x.webp 2x"
+            class="logo-light" alt="wafer.space - Budget silicon manufacturing" /></a>
+          <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo.webp"
+            srcset="https://wafer.space/assets/images/logo.webp 1x, https://wafer.space/assets/images/logo@2x.webp 2x"
+            class="logo-dark d-none" alt="wafer.space - Budget silicon manufacturing" /></a>
+        </div>
+        <div class="navbar-other ms-auto order-lg-3">
+          <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+            <li class="nav-item">
+              <div class="navbar-hamburger d-lg-none d-xl-none ms-auto">
+                <button class="hamburger animate plain" data-bs-toggle="offcanvas-nav"><span></span></button>
+              </div>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <button id="darkModeToggle" class="btn btn-sm btn-circle btn-outline-primary theme-toggle me-2" aria-label="Switch theme mode" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click to toggle, right-click for auto"><i class="icofont-moon"></i></button>
+            </li>
+            <li class="nav-item d-none d-lg-block"><a href="https://wafer.space/free.html" class="btn btn-default">Free Silicon?</a></li>
+          </ul>
+        </div>
+        <div class="navbar-collapse offcanvas-nav">
+          <div class="offcanvas-header d-lg-none d-xl-none">
+            <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo-light.webp" alt="wafer.space" /></a>
+            <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+          </div>
+          <ul class="navbar-nav mx-auto" data-sm-skip-collapsible-behavior="true">
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/price.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/technology.html">Technology</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/design-help.html">Design Help</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text"
+     data-image-src="https://wafer.space/assets/images/header/mpw-one-partial-dice-top-1.jpg">
+  <div class="container inner text-center">
+    <div class="space90"></div>
+    <p class="mb-10"><a class="run-crumb" href="../index.html">Tiny Tapeout GF 0.2 · Die TTPG on wafer.space Run 1</a></p>
+    <h1 class="page-title">TinyQV Risc-V SoC</h1>
+    <p class="lead"><span class="run-code-inline">039</span> · RISC-V and CPUs · 3 × 4 tiles</p>
+<p class="mb-0">by Michael Bell</p>  </div>
+</div>
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="row gutter-50">
+      <div class="col-lg-7 mb-30">
+        <div class="run-viewer shadow">
+          <a id="render-link" href="../renders/039_full.webp">
+            <img id="render-image" src="../renders/039_full.webp"
+                 width="1600" height="1096" alt="Layout render of TinyQV Risc-V SoC">
+          </a>
+        </div>
+        <div class="run-viewer-tabs" role="group" aria-label="Layers to show">
+          <button type="button" class="btn btn-sm btn-default"
+                  data-render="../renders/039_full.webp">All layers</button>
+          <button type="button" class="btn btn-sm btn-outline-primary"
+                  data-render="../renders/039_devices.webp">Transistors</button>
+          <button type="button" class="btn btn-sm btn-outline-primary"
+                  data-render="../renders/039_routing.webp">Signal routing</button>
+          <button type="button" class="btn btn-sm btn-outline-primary"
+                  data-render="../renders/039_power.webp">Power and pads</button>
+        </div>
+        <p class="small text-muted mt-10 mb-0">Rendered from the layout at 0.67 µm
+          per pixel. Layers:
+<span class="run-swatch"><i style="background: #282c46"></i>Nwell</span><span class="run-swatch"><i style="background: #3cbe5a"></i>Diffusion</span><span class="run-swatch"><i style="background: #eb4646"></i>Polysilicon</span><span class="run-swatch"><i style="background: #3c78ff"></i>Metal 1</span><span class="run-swatch"><i style="background: #c850e6"></i>Metal 2</span><span class="run-swatch"><i style="background: #32d2dc"></i>Metal 3</span><span class="run-swatch"><i style="background: #f0c83c"></i>Metal 4</span><span class="run-swatch"><i style="background: #f58c32"></i>Metal 5</span><span class="run-swatch"><i style="background: #e6e6eb"></i>Top metal</span><span class="run-swatch"><i style="background: #ffffff"></i>Pad openings</span>        </p>
+      </div>
+
+      <div class="col-lg-5">
+<p class="lead">A Risc-V SoC for Tiny Tapeout</p>        <p>
+          <a class="btn btn-default btn-sm mb-10" href="https://github.com/MichaelBell/ttgf0p2-tinyQV/tree/05c3ee5be9221ce617564e19ce953a90410641c7">Source repository</a>
+<a class="btn btn-outline-primary btn-sm mb-10" href="https://tinytapeout.com/chips/ttgf0p2/tt_um_MichaelBell_tinyQV">On tinytapeout.com</a>        </p>
+        <table class="table table-sm run-table">
+          <tbody>
+            <tr><th>Size</th><td>1076 × 737 µm
+              (0.793 mm²)</td></tr>
+            <tr><th>Macro</th><td><a href="https://tinytapeout.com/chips/ttgf0p2/tt_um_MichaelBell_tinyQV"><span class="run-mono">tt_um_MichaelBell_tinyQV</span></a></td></tr>
+            <tr><th>Files</th><td><a href="https://github.com/TinyTapeout/tinytapeout-gf-0p2/blob/ff701baa3a127bf2d00e5a800602b3125057622a/projects/tt_um_MichaelBell_tinyQV/docs/info.md">documentation</a> · <a href="https://github.com/TinyTapeout/tinytapeout-gf-0p2/blob/ff701baa3a127bf2d00e5a800602b3125057622a/projects/tt_um_MichaelBell_tinyQV/LICENSE">licence</a> ·               <a href="https://github.com/TinyTapeout/tinytapeout-gf-0p2/tree/ff701baa3a127bf2d00e5a800602b3125057622a/projects/tt_um_MichaelBell_tinyQV">layout and netlist</a>
+              <span class="small text-muted">in <a href="https://github.com/TinyTapeout/tinytapeout-gf-0p2/tree/ff701baa3a127bf2d00e5a800602b3125057622a">Tiny Tapeout GF 0.2</a></span></td></tr>
+            <tr><th>Tiles</th><td>3 × 4 <span class="text-muted">at column 0, row 11 of the tile grid</span></td></tr>
+            <tr><th>Mux address</th><td>39</td></tr>
+<tr><th>Language</th><td>Verilog</td></tr><tr><th>Clock</th><td>24,000,000 Hz</td></tr><tr><th>Built with</th><td><a href="https://librelane.readthedocs.io/">LibreLane</a> <a href="https://github.com/librelane/librelane/tree/3.0.0.dev45">3.0.0.dev45</a>, open_pdks <a href="https://github.com/fossi-foundation/open-pdks/tree/8fa792c6f7db44c0873c619d62190496b89c0083"><span class="run-mono">8fa792c6f7db</span></a></td></tr>            <tr><th>Transistors</th><td>254,546</td></tr>
+            <tr><th>Logic cells</th><td>20,084
+<span class="text-muted">+ 25,932 filler and tap cells</span></td></tr>
+            <tr><th>Libraries</th><td>
+              <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a> <span class="text-muted">(20k)</span>
+</td></tr>
+            <tr><th>SRAM</th><td>0 macros</td></tr>
+          </tbody>
+        </table>
+
+
+        <h4 class="mb-10">Process features</h4>
+        <table class="table table-sm run-table">
+          <tbody>
+            <tr><th>5 V</th><td>7t-5V standard cells</td></tr>
+          </tbody>
+        </table>
+        <p class="small text-muted">Devices the designer drew, outside standard cells, SRAM macros and pads.</p>
+
+        <h4 class="mb-10">Logic density</h4>
+        <table class="table table-sm run-table">
+          <tbody>
+            <tr><th>Core average<br><span class="small text-muted fw-normal">logic cells per mm²</span></th><td>25k
+              <span class="text-muted">(33% of buffer maximum)</span></td></tr>
+            <tr><th>Densest 0.1 mm square<br><span class="small text-muted fw-normal">logic cells per mm²</span></th><td>37k
+              <span class="text-muted">(49% of buffer maximum)</span></td></tr>
+            <tr><th>Core covered by logic</th><td>74%</td></tr>
+            <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>319k average,
+              314k in the densest 0.1 mm square</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <div class="row gutter-50">
+      <div class="col-lg-7 mb-30">
+        <h3 class="mb-10">Where the area went</h3>
+        <div class="run-bar run-bar-large mb-10">
+          <div style="width: 74.18%; background: #5ca7db"
+               title="Logic cells: 0.59 mm²">
+<span>74%</span>          </div>
+          <div style="width: 23.40%; background: #b9c7d6"
+               title="Filler and tap cells: 0.19 mm²">
+<span>23%</span>          </div>
+          <div style="width: 2.42%; background: #e6ebf0"
+               title="Other: 0.02 mm²">
+          </div>
+        </div>
+        <ul class="run-legend">
+          <li><i style="background: #5ca7db"></i><strong>Logic cells</strong>
+            0.59 mm² <span class="text-muted">(74%)</span></li>
+          <li><i style="background: #9b6bd6"></i><strong>SRAM</strong>
+            0.00 mm² <span class="text-muted">(0%)</span></li>
+          <li><i style="background: #b9c7d6"></i><strong>Filler and tap cells</strong>
+            0.19 mm² <span class="text-muted">(23%)</span></li>
+          <li><i style="background: #e6ebf0"></i><strong>Other</strong>
+            0.02 mm² <span class="text-muted">(2%)</span></li>
+        </ul>
+
+        <h3 class="mt-30 mb-10">Most used cells</h3>
+        <table class="table table-sm run-table bg-white">
+          <thead><tr><th>Cell</th><th>Library</th><th class="text-end">Instances</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nand2/gf180mcu_fd_sc_mcu7t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
+              <td class="text-end">2,326</td><td class="text-muted">2-input NAND gate</td></tr>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/oai21/gf180mcu_fd_sc_mcu7t5v0__oai21_1.html"><span class="run-mono">oai21_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
+              <td class="text-end">1,905</td><td class="text-muted">OR-AND-Invert compound gate</td></tr>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/dffq/gf180mcu_fd_sc_mcu7t5v0__dffq_4.html"><span class="run-mono">dffq_4</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
+              <td class="text-end">1,638</td><td class="text-muted">D flip-flop (1 bit storage) (4x drive)</td></tr>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/aoi21/gf180mcu_fd_sc_mcu7t5v0__aoi21_1.html"><span class="run-mono">aoi21_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
+              <td class="text-end">1,458</td><td class="text-muted">AND-OR-Invert compound gate</td></tr>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/dffq/gf180mcu_fd_sc_mcu7t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
+              <td class="text-end">1,343</td><td class="text-muted">D flip-flop (1 bit storage)</td></tr>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nor2/gf180mcu_fd_sc_mcu7t5v0__nor2_1.html"><span class="run-mono">nor2_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
+              <td class="text-end">1,205</td><td class="text-muted">2-input NOR gate</td></tr>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/inv/gf180mcu_fd_sc_mcu7t5v0__inv_1.html"><span class="run-mono">inv_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
+              <td class="text-end">978</td><td class="text-muted">Inverter</td></tr>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/buf/gf180mcu_fd_sc_mcu7t5v0__buf_4.html"><span class="run-mono">buf_4</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
+              <td class="text-end">964</td><td class="text-muted">Buffer (4x drive)</td></tr>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/mux2/gf180mcu_fd_sc_mcu7t5v0__mux2_2.html"><span class="run-mono">mux2_2</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
+              <td class="text-end">652</td><td class="text-muted">2-input multiplexer (2x drive)</td></tr>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/aoi22/gf180mcu_fd_sc_mcu7t5v0__aoi22_1.html"><span class="run-mono">aoi22_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
+              <td class="text-end">647</td><td class="text-muted">AND-OR-Invert (2x2 inputs)</td></tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <div class="col-lg-5 mb-30">
+        <h3 class="mb-10">Logic density map</h3>
+        <svg class="run-heatmap" viewBox="0 0 10.8 7.4" role="img"
+             aria-label="Logic cells per square millimetre across the project">
+          <rect x="0.000" y="6.400" width="1.000" height="1.000" style="fill-opacity: 0.332"><title>104 logic cells, 2,596 transistors</title></rect>
+          <rect x="1.000" y="6.400" width="1.000" height="1.000" style="fill-opacity: 0.686"><title>239 logic cells, 3,188 transistors</title></rect>
+          <rect x="2.000" y="6.400" width="1.000" height="1.000" style="fill-opacity: 0.762"><title>268 logic cells, 3,107 transistors</title></rect>
+          <rect x="3.000" y="6.400" width="1.000" height="1.000" style="fill-opacity: 0.746"><title>262 logic cells, 3,112 transistors</title></rect>
+          <rect x="4.000" y="6.400" width="1.000" height="1.000" style="fill-opacity: 0.770"><title>271 logic cells, 3,071 transistors</title></rect>
+          <rect x="5.000" y="6.400" width="1.000" height="1.000" style="fill-opacity: 0.754"><title>265 logic cells, 3,157 transistors</title></rect>
+          <rect x="6.000" y="6.400" width="1.000" height="1.000" style="fill-opacity: 0.623"><title>215 logic cells, 2,911 transistors</title></rect>
+          <rect x="7.000" y="6.400" width="1.000" height="1.000" style="fill-opacity: 0.702"><title>245 logic cells, 3,039 transistors</title></rect>
+          <rect x="8.000" y="6.400" width="1.000" height="1.000" style="fill-opacity: 0.756"><title>266 logic cells, 3,118 transistors</title></rect>
+          <rect x="9.000" y="6.400" width="1.000" height="1.000" style="fill-opacity: 0.712"><title>249 logic cells, 3,082 transistors</title></rect>
+          <rect x="10.000" y="6.400" width="0.760" height="1.000" style="fill-opacity: 0.377"><title>92 logic cells, 1,866 transistors</title></rect>
+          <rect x="0.000" y="5.400" width="1.000" height="1.000" style="fill-opacity: 0.516"><title>174 logic cells, 3,195 transistors</title></rect>
+          <rect x="1.000" y="5.400" width="1.000" height="1.000" style="fill-opacity: 0.586"><title>201 logic cells, 3,429 transistors</title></rect>
+          <rect x="2.000" y="5.400" width="1.000" height="1.000" style="fill-opacity: 0.592"><title>203 logic cells, 3,406 transistors</title></rect>
+          <rect x="3.000" y="5.400" width="1.000" height="1.000" style="fill-opacity: 0.793"><title>280 logic cells, 3,260 transistors</title></rect>
+          <rect x="4.000" y="5.400" width="1.000" height="1.000" style="fill-opacity: 0.741"><title>260 logic cells, 3,277 transistors</title></rect>
+          <rect x="5.000" y="5.400" width="1.000" height="1.000" style="fill-opacity: 0.785"><title>277 logic cells, 3,296 transistors</title></rect>
+          <rect x="6.000" y="5.400" width="1.000" height="1.000" style="fill-opacity: 0.772"><title>272 logic cells, 3,344 transistors</title></rect>
+          <rect x="7.000" y="5.400" width="1.000" height="1.000" style="fill-opacity: 0.840"><title>298 logic cells, 3,372 transistors</title></rect>
+          <rect x="8.000" y="5.400" width="1.000" height="1.000" style="fill-opacity: 0.785"><title>277 logic cells, 3,346 transistors</title></rect>
+          <rect x="9.000" y="5.400" width="1.000" height="1.000" style="fill-opacity: 0.791"><title>279 logic cells, 3,260 transistors</title></rect>
+          <rect x="10.000" y="5.400" width="0.760" height="1.000" style="fill-opacity: 0.387"><title>95 logic cells, 1,951 transistors</title></rect>
+          <rect x="0.000" y="4.400" width="1.000" height="1.000" style="fill-opacity: 0.547"><title>186 logic cells, 3,269 transistors</title></rect>
+          <rect x="1.000" y="4.400" width="1.000" height="1.000" style="fill-opacity: 0.605"><title>208 logic cells, 3,413 transistors</title></rect>
+          <rect x="2.000" y="4.400" width="1.000" height="1.000" style="fill-opacity: 0.521"><title>176 logic cells, 3,444 transistors</title></rect>
+          <rect x="3.000" y="4.400" width="1.000" height="1.000" style="fill-opacity: 0.623"><title>215 logic cells, 3,342 transistors</title></rect>
+          <rect x="4.000" y="4.400" width="1.000" height="1.000" style="fill-opacity: 0.780"><title>275 logic cells, 3,320 transistors</title></rect>
+          <rect x="5.000" y="4.400" width="1.000" height="1.000" style="fill-opacity: 0.712"><title>249 logic cells, 3,360 transistors</title></rect>
+          <rect x="6.000" y="4.400" width="1.000" height="1.000" style="fill-opacity: 0.882"><title>314 logic cells, 3,297 transistors</title></rect>
+          <rect x="7.000" y="4.400" width="1.000" height="1.000" style="fill-opacity: 0.809"><title>286 logic cells, 3,247 transistors</title></rect>
+          <rect x="8.000" y="4.400" width="1.000" height="1.000" style="fill-opacity: 0.720"><title>252 logic cells, 3,385 transistors</title></rect>
+          <rect x="9.000" y="4.400" width="1.000" height="1.000" style="fill-opacity: 0.756"><title>266 logic cells, 3,391 transistors</title></rect>
+          <rect x="10.000" y="4.400" width="0.760" height="1.000" style="fill-opacity: 0.542"><title>140 logic cells, 2,236 transistors</title></rect>
+          <rect x="0.000" y="3.400" width="1.000" height="1.000" style="fill-opacity: 0.599"><title>206 logic cells, 2,957 transistors</title></rect>
+          <rect x="1.000" y="3.400" width="1.000" height="1.000" style="fill-opacity: 0.767"><title>270 logic cells, 3,236 transistors</title></rect>
+          <rect x="2.000" y="3.400" width="1.000" height="1.000" style="fill-opacity: 0.749"><title>263 logic cells, 3,259 transistors</title></rect>
+          <rect x="3.000" y="3.400" width="1.000" height="1.000" style="fill-opacity: 0.649"><title>225 logic cells, 3,392 transistors</title></rect>
+          <rect x="4.000" y="3.400" width="1.000" height="1.000" style="fill-opacity: 0.764"><title>269 logic cells, 3,336 transistors</title></rect>
+          <rect x="5.000" y="3.400" width="1.000" height="1.000" style="fill-opacity: 0.856"><title>304 logic cells, 3,303 transistors</title></rect>
+          <rect x="6.000" y="3.400" width="1.000" height="1.000" style="fill-opacity: 0.911"><title>325 logic cells, 3,276 transistors</title></rect>
+          <rect x="7.000" y="3.400" width="1.000" height="1.000" style="fill-opacity: 0.906"><title>323 logic cells, 3,210 transistors</title></rect>
+          <rect x="8.000" y="3.400" width="1.000" height="1.000" style="fill-opacity: 0.877"><title>312 logic cells, 3,283 transistors</title></rect>
+          <rect x="9.000" y="3.400" width="1.000" height="1.000" style="fill-opacity: 1.000"><title>359 logic cells, 3,171 transistors</title></rect>
+          <rect x="10.000" y="3.400" width="0.760" height="1.000" style="fill-opacity: 0.963"><title>262 logic cells, 2,226 transistors</title></rect>
+          <rect x="0.000" y="2.400" width="1.000" height="1.000" style="fill-opacity: 0.783"><title>276 logic cells, 3,152 transistors</title></rect>
+          <rect x="1.000" y="2.400" width="1.000" height="1.000" style="fill-opacity: 0.793"><title>280 logic cells, 3,342 transistors</title></rect>
+          <rect x="2.000" y="2.400" width="1.000" height="1.000" style="fill-opacity: 0.911"><title>325 logic cells, 3,218 transistors</title></rect>
+          <rect x="3.000" y="2.400" width="1.000" height="1.000" style="fill-opacity: 0.856"><title>304 logic cells, 3,300 transistors</title></rect>
+          <rect x="4.000" y="2.400" width="1.000" height="1.000" style="fill-opacity: 0.814"><title>288 logic cells, 3,412 transistors</title></rect>
+          <rect x="5.000" y="2.400" width="1.000" height="1.000" style="fill-opacity: 0.764"><title>269 logic cells, 3,332 transistors</title></rect>
+          <rect x="6.000" y="2.400" width="1.000" height="1.000" style="fill-opacity: 0.767"><title>270 logic cells, 3,324 transistors</title></rect>
+          <rect x="7.000" y="2.400" width="1.000" height="1.000" style="fill-opacity: 0.699"><title>244 logic cells, 3,447 transistors</title></rect>
+          <rect x="8.000" y="2.400" width="1.000" height="1.000" style="fill-opacity: 0.817"><title>289 logic cells, 3,347 transistors</title></rect>
+          <rect x="9.000" y="2.400" width="1.000" height="1.000" style="fill-opacity: 0.861"><title>306 logic cells, 3,190 transistors</title></rect>
+          <rect x="10.000" y="2.400" width="0.760" height="1.000" style="fill-opacity: 0.697"><title>185 logic cells, 2,389 transistors</title></rect>
+          <rect x="0.000" y="1.400" width="1.000" height="1.000" style="fill-opacity: 0.678"><title>236 logic cells, 3,190 transistors</title></rect>
+          <rect x="1.000" y="1.400" width="1.000" height="1.000" style="fill-opacity: 0.762"><title>268 logic cells, 3,330 transistors</title></rect>
+          <rect x="2.000" y="1.400" width="1.000" height="1.000" style="fill-opacity: 0.806"><title>285 logic cells, 3,328 transistors</title></rect>
+          <rect x="3.000" y="1.400" width="1.000" height="1.000" style="fill-opacity: 0.767"><title>270 logic cells, 3,341 transistors</title></rect>
+          <rect x="4.000" y="1.400" width="1.000" height="1.000" style="fill-opacity: 0.707"><title>247 logic cells, 3,445 transistors</title></rect>
+          <rect x="5.000" y="1.400" width="1.000" height="1.000" style="fill-opacity: 0.822"><title>291 logic cells, 3,310 transistors</title></rect>
+          <rect x="6.000" y="1.400" width="1.000" height="1.000" style="fill-opacity: 0.770"><title>271 logic cells, 3,439 transistors</title></rect>
+          <rect x="7.000" y="1.400" width="1.000" height="1.000" style="fill-opacity: 0.770"><title>271 logic cells, 3,456 transistors</title></rect>
+          <rect x="8.000" y="1.400" width="1.000" height="1.000" style="fill-opacity: 0.743"><title>261 logic cells, 3,373 transistors</title></rect>
+          <rect x="9.000" y="1.400" width="1.000" height="1.000" style="fill-opacity: 0.704"><title>246 logic cells, 3,372 transistors</title></rect>
+          <rect x="10.000" y="1.400" width="0.760" height="1.000" style="fill-opacity: 0.756"><title>202 logic cells, 2,295 transistors</title></rect>
+          <rect x="0.000" y="0.400" width="1.000" height="1.000" style="fill-opacity: 0.767"><title>270 logic cells, 3,152 transistors</title></rect>
+          <rect x="1.000" y="0.400" width="1.000" height="1.000" style="fill-opacity: 0.667"><title>232 logic cells, 3,442 transistors</title></rect>
+          <rect x="2.000" y="0.400" width="1.000" height="1.000" style="fill-opacity: 0.688"><title>240 logic cells, 3,343 transistors</title></rect>
+          <rect x="3.000" y="0.400" width="1.000" height="1.000" style="fill-opacity: 0.741"><title>260 logic cells, 3,351 transistors</title></rect>
+          <rect x="4.000" y="0.400" width="1.000" height="1.000" style="fill-opacity: 0.631"><title>218 logic cells, 3,367 transistors</title></rect>
+          <rect x="5.000" y="0.400" width="1.000" height="1.000" style="fill-opacity: 0.573"><title>196 logic cells, 2,865 transistors</title></rect>
+          <rect x="6.000" y="0.400" width="1.000" height="1.000" style="fill-opacity: 0.749"><title>263 logic cells, 2,997 transistors</title></rect>
+          <rect x="7.000" y="0.400" width="1.000" height="1.000" style="fill-opacity: 0.699"><title>244 logic cells, 3,194 transistors</title></rect>
+          <rect x="8.000" y="0.400" width="1.000" height="1.000" style="fill-opacity: 0.620"><title>214 logic cells, 3,084 transistors</title></rect>
+          <rect x="9.000" y="0.400" width="1.000" height="1.000" style="fill-opacity: 0.746"><title>262 logic cells, 3,310 transistors</title></rect>
+          <rect x="10.000" y="0.400" width="0.760" height="1.000" style="fill-opacity: 0.659"><title>174 logic cells, 2,409 transistors</title></rect>
+          <rect x="0.000" y="0.030" width="1.000" height="0.370" style="fill-opacity: 0.860"><title>113 logic cells, 1,015 transistors</title></rect>
+          <rect x="1.000" y="0.030" width="1.000" height="0.370" style="fill-opacity: 0.860"><title>113 logic cells, 1,028 transistors</title></rect>
+          <rect x="2.000" y="0.030" width="1.000" height="0.370" style="fill-opacity: 0.654"><title>84 logic cells, 1,173 transistors</title></rect>
+          <rect x="3.000" y="0.030" width="1.000" height="0.370" style="fill-opacity: 0.754"><title>98 logic cells, 1,107 transistors</title></rect>
+          <rect x="4.000" y="0.030" width="1.000" height="0.370" style="fill-opacity: 0.598"><title>76 logic cells, 1,088 transistors</title></rect>
+          <rect x="5.000" y="0.030" width="1.000" height="0.370" style="fill-opacity: 0.456"><title>56 logic cells, 843 transistors</title></rect>
+          <rect x="6.000" y="0.030" width="1.000" height="0.370" style="fill-opacity: 0.442"><title>54 logic cells, 883 transistors</title></rect>
+          <rect x="7.000" y="0.030" width="1.000" height="0.370" style="fill-opacity: 0.746"><title>97 logic cells, 1,117 transistors</title></rect>
+          <rect x="8.000" y="0.030" width="1.000" height="0.370" style="fill-opacity: 0.633"><title>81 logic cells, 1,096 transistors</title></rect>
+          <rect x="9.000" y="0.030" width="1.000" height="0.370" style="fill-opacity: 0.463"><title>57 logic cells, 952 transistors</title></rect>
+          <rect x="10.000" y="0.030" width="0.760" height="0.370" style="fill-opacity: 0.256"><title>21 logic cells, 662 transistors</title></rect>
+          <rect class="window" x="9.600" y="3.400" width="1" height="1"><title>Densest SRAM-free 0.1 mm square: 369 logic cells</title></rect>
+          <text x="0.500" y="6.900" class="">104</text>
+          <text x="1.500" y="6.900" class="light">239</text>
+          <text x="2.500" y="6.900" class="light">268</text>
+          <text x="3.500" y="6.900" class="light">262</text>
+          <text x="4.500" y="6.900" class="light">271</text>
+          <text x="5.500" y="6.900" class="light">265</text>
+          <text x="6.500" y="6.900" class="light">215</text>
+          <text x="7.500" y="6.900" class="light">245</text>
+          <text x="8.500" y="6.900" class="light">266</text>
+          <text x="9.500" y="6.900" class="light">249</text>
+          <text x="10.380" y="6.900" class="">92</text>
+          <text x="0.500" y="5.900" class="">174</text>
+          <text x="1.500" y="5.900" class="light">201</text>
+          <text x="2.500" y="5.900" class="light">203</text>
+          <text x="3.500" y="5.900" class="light">280</text>
+          <text x="4.500" y="5.900" class="light">260</text>
+          <text x="5.500" y="5.900" class="light">277</text>
+          <text x="6.500" y="5.900" class="light">272</text>
+          <text x="7.500" y="5.900" class="light">298</text>
+          <text x="8.500" y="5.900" class="light">277</text>
+          <text x="9.500" y="5.900" class="light">279</text>
+          <text x="10.380" y="5.900" class="">95</text>
+          <text x="0.500" y="4.900" class="">186</text>
+          <text x="1.500" y="4.900" class="light">208</text>
+          <text x="2.500" y="4.900" class="">176</text>
+          <text x="3.500" y="4.900" class="light">215</text>
+          <text x="4.500" y="4.900" class="light">275</text>
+          <text x="5.500" y="4.900" class="light">249</text>
+          <text x="6.500" y="4.900" class="light">314</text>
+          <text x="7.500" y="4.900" class="light">286</text>
+          <text x="8.500" y="4.900" class="light">252</text>
+          <text x="9.500" y="4.900" class="light">266</text>
+          <text x="10.380" y="4.900" class="">140</text>
+          <text x="0.500" y="3.900" class="light">206</text>
+          <text x="1.500" y="3.900" class="light">270</text>
+          <text x="2.500" y="3.900" class="light">263</text>
+          <text x="3.500" y="3.900" class="light">225</text>
+          <text x="4.500" y="3.900" class="light">269</text>
+          <text x="5.500" y="3.900" class="light">304</text>
+          <text x="6.500" y="3.900" class="light">325</text>
+          <text x="7.500" y="3.900" class="light">323</text>
+          <text x="8.500" y="3.900" class="light">312</text>
+          <text x="9.500" y="3.900" class="light">359</text>
+          <text x="10.380" y="3.900" class="light">262</text>
+          <text x="0.500" y="2.900" class="light">276</text>
+          <text x="1.500" y="2.900" class="light">280</text>
+          <text x="2.500" y="2.900" class="light">325</text>
+          <text x="3.500" y="2.900" class="light">304</text>
+          <text x="4.500" y="2.900" class="light">288</text>
+          <text x="5.500" y="2.900" class="light">269</text>
+          <text x="6.500" y="2.900" class="light">270</text>
+          <text x="7.500" y="2.900" class="light">244</text>
+          <text x="8.500" y="2.900" class="light">289</text>
+          <text x="9.500" y="2.900" class="light">306</text>
+          <text x="10.380" y="2.900" class="light">185</text>
+          <text x="0.500" y="1.900" class="light">236</text>
+          <text x="1.500" y="1.900" class="light">268</text>
+          <text x="2.500" y="1.900" class="light">285</text>
+          <text x="3.500" y="1.900" class="light">270</text>
+          <text x="4.500" y="1.900" class="light">247</text>
+          <text x="5.500" y="1.900" class="light">291</text>
+          <text x="6.500" y="1.900" class="light">271</text>
+          <text x="7.500" y="1.900" class="light">271</text>
+          <text x="8.500" y="1.900" class="light">261</text>
+          <text x="9.500" y="1.900" class="light">246</text>
+          <text x="10.380" y="1.900" class="light">202</text>
+          <text x="0.500" y="0.900" class="light">270</text>
+          <text x="1.500" y="0.900" class="light">232</text>
+          <text x="2.500" y="0.900" class="light">240</text>
+          <text x="3.500" y="0.900" class="light">260</text>
+          <text x="4.500" y="0.900" class="light">218</text>
+          <text x="5.500" y="0.900" class="">196</text>
+          <text x="6.500" y="0.900" class="light">263</text>
+          <text x="7.500" y="0.900" class="light">244</text>
+          <text x="8.500" y="0.900" class="light">214</text>
+          <text x="9.500" y="0.900" class="light">262</text>
+          <text x="10.380" y="0.900" class="light">174</text>
+        </svg>
+        <p class="small text-muted mb-0">Logic cells in each 0.1 mm square of the project. Hatched outlines are SRAM
+          macros; the bold outline is the densest 0.1 mm square that avoids them, found by sliding a
+          0.1 mm square over the project in 20 µm steps. Edge squares are smaller than 0.1 mm square.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="wrapper dark-wrapper inverse-text">
+  <div class="container inner run-pager">
+    <a href="038.html">← 038 <span>Wildcat RISC-V</span></a>
+    <a href="../index.html#projects">All projects</a>
+    <a href="101.html"><span>SCµM-BLE-RX</span> 101 →</a>
+  </div>
+</div>
+
+    <footer class="dark-wrapper inverse-text">
+      <div class="container inner">
+        <div class="row">
+          <div class="col-md-12 col-lg-4 text-center text-lg-start">
+            <div class="widget">
+              <a href="https://wafer.space"><img src="https://wafer.space/assets/images/logo-light.webp" alt="wafer.space - Budget silicon manufacturing" /></a>
+              <div class="space20"></div>
+              <p>Budget silicon manufacturing.</p>
+            </div>
+          </div>
+          <div class="space30 d-lg-none d-xl-none"></div>
+          <div class="col-6 col-lg-4">
+            <div class="widget">
+              <h5 class="widget-title">Tiny Tapeout GF 0.2 · Die TTPG on wafer.space Run 1</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="../index.html">Run overview</a></li>
+                <li><a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf0p2/ws-run1-ttpg">Layout and manifest on GitHub</a></li>
+                <li><a href="https://github.com/wafer-space/tinytapeouts/blob/density-report/ttgf0p2/ws-run1-ttpg/reticle_density_report.md">Density report</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="widget">
+              <h5 class="widget-title">About this page</h5>
+              <p class="small mb-0">Generated on 2026-10-17 by
+                <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from the public reticle
+                layout. Every figure is measured from the layout; the data files are linked from the overview.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://wafer.space/assets/js/jquery.min.js"></script>
+  <script src="https://wafer.space/assets/js/popper.min.js"></script>
+  <script src="https://wafer.space/assets/js/bootstrap.min.js"></script>
+  <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="https://wafer.space/assets/js/plugins.js"></script>
+  <script src="https://wafer.space/assets/js/scripts.js"></script>
+  <script src="../run.js?v=5a9bb072ca"></script>
+</body>
+</html>
