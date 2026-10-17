@@ -1,0 +1,3 @@
+slot_id,cell_name,macro,x0_mm,y0_mm,x1_mm,y1_mm
+103,103_tt_um_kluterirv_rv32e_core,gf180mcu_fd_ip_sram__sram128x8m8wm1,0.995,0.028,1.427,0.297
+103,103_tt_um_kluterirv_rv32e_core,gf180mcu_fd_ip_sram__sram128x8m8wm1,0.005,0.028,0.437,0.297
