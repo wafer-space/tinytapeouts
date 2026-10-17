@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tiny Tapeout GF 0.3 · Die T0P3 on wafer.space Run 2 — wafer.space</title>
+  <meta name="description" content="Designs, density statistics and layout renders from Tiny Tapeout GF 0.3 on wafer.space Run 2.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tiny Tapeout GF 0.3 · Die T0P3 on wafer.space Run 2 — wafer.space">
+  <meta property="og:description" content="Designs, density statistics and layout renders from Tiny Tapeout GF 0.3 on wafer.space Run 2.">
+<meta property="og:image" content="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/renders/reticle.webp">
+  <script>
+    // The main website's dark-mode-init: the same 'theme' preference, applied
+    // before first paint. Its scripts.js then runs the toggle.
+    (function () {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode-init');
+      }
+    })();
+  </script>
+  <style>
+    [data-theme="dark"] body, .dark-mode-init body { background-color: #1a1a1a !important; color: #e0e0e0; }
+    [data-theme="dark"], .dark-mode-init { background-color: #1a1a1a !important; }
+  </style>
+  <link rel="shortcut icon" href="https://wafer.space/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/plugins.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/type/type.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="run.css?v=5a9bb072ca">
+</head>
+<body>
+  <div class="content-wrapper">
+    <nav class="navbar wide absolute dark-wrapper inverse-text navbar-hover-opacity navbar-expand-lg nav-uppercase">
+      <div class="container-fluid flex-row justify-content-center">
+        <div class="navbar-brand" data-default-logo="white">
+          <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo-light.webp"
+            srcset="https://wafer.space/assets/images/logo-light.webp 1x, https://wafer.space/assets/images/logo-light@2x.webp 2x"
+            class="logo-light" alt="wafer.space - Budget silicon manufacturing" /></a>
+          <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo.webp"
+            srcset="https://wafer.space/assets/images/logo.webp 1x, https://wafer.space/assets/images/logo@2x.webp 2x"
+            class="logo-dark d-none" alt="wafer.space - Budget silicon manufacturing" /></a>
+        </div>
+        <div class="navbar-other ms-auto order-lg-3">
+          <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+            <li class="nav-item">
+              <div class="navbar-hamburger d-lg-none d-xl-none ms-auto">
+                <button class="hamburger animate plain" data-bs-toggle="offcanvas-nav"><span></span></button>
+              </div>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <button id="darkModeToggle" class="btn btn-sm btn-circle btn-outline-primary theme-toggle me-2" aria-label="Switch theme mode" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click to toggle, right-click for auto"><i class="icofont-moon"></i></button>
+            </li>
+            <li class="nav-item d-none d-lg-block"><a href="https://wafer.space/free.html" class="btn btn-default">Free Silicon?</a></li>
+          </ul>
+        </div>
+        <div class="navbar-collapse offcanvas-nav">
+          <div class="offcanvas-header d-lg-none d-xl-none">
+            <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo-light.webp" alt="wafer.space" /></a>
+            <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+          </div>
+          <ul class="navbar-nav mx-auto" data-sm-skip-collapsible-behavior="true">
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/price.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/technology.html">Technology</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/design-help.html">Design Help</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text"
+     data-image-src="https://wafer.space/assets/images/header/mpw-one-partial-dice-top-1.jpg">
+  <div class="container inner text-center">
+    <div class="space90"></div>
+    <h1 class="page-title">Tiny Tapeout GF 0.3<span class="page-title-sub">Die T0P3 on wafer.space Run 2</span></h1>
+    <p class="lead">32 projects · <a class="run-crumb" href="https://wafer.space/ws-run2/projects/T0P3.html">wafer.space Run 2 (G802)</a>      · <a class="run-crumb" href="https://tinytapeout.com/chips/ttgf0p3/">ttgf0p3 on tinytapeout.com</a></p>
+  </div>
+</div>
+
+<!-- Headline numbers -->
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-40 text-center">What was built</h2>
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-4 col-lg-2 mb-20">
+  <div class="box bg-white shadow p-20 text-center h-100">
+    <h3 class="mb-5 color-dark run-stat">32</h3>
+    <p class="mb-0 font-weight-600 color-dark small">Projects</p>
+<p class="mb-0 small text-muted">in the die</p>  </div>
+</div>
+
+      <div class="col-6 col-md-4 col-lg-2 mb-20">
+  <div class="box bg-white shadow p-20 text-center h-100">
+    <h3 class="mb-5 color-dark run-stat">32</h3>
+    <p class="mb-0 font-weight-600 color-dark small">Open source</p>
+<p class="mb-0 small text-muted">with a public repository</p>  </div>
+</div>
+
+      <div class="col-6 col-md-4 col-lg-2 mb-20">
+  <div class="box bg-white shadow p-20 text-center h-100">
+    <h3 class="mb-5 color-dark run-stat">1.6M</h3>
+    <p class="mb-0 font-weight-600 color-dark small">Transistors</p>
+<p class="mb-0 small text-muted">across the unique designs</p>  </div>
+</div>
+
+      <div class="col-6 col-md-4 col-lg-2 mb-20">
+  <div class="box bg-white shadow p-20 text-center h-100">
+    <h3 class="mb-5 color-dark run-stat">113k</h3>
+    <p class="mb-0 font-weight-600 color-dark small">Logic cells</p>
+<p class="mb-0 small text-muted">gates and flip-flops</p>  </div>
+</div>
+
+      <div class="col-6 col-md-4 col-lg-2 mb-20">
+  <div class="box bg-white shadow p-20 text-center h-100">
+    <h3 class="mb-5 color-dark run-stat">0 KiB</h3>
+    <p class="mb-0 font-weight-600 color-dark small">SRAM</p>
+<p class="mb-0 small text-muted">in foundry and custom macros</p>  </div>
+</div>
+
+    </div>
+    <p class="text-center text-muted small mb-0">Counted inside the projects only: the die's pads, Tiny Tapeout's
+      multiplexer, controller and power switches, and the fill are left out.</p>
+  </div>
+</div>
+
+<!-- Reticle and status -->
+<div id="reticle" class="wrapper gray-wrapper">
+  <div class="container inner">
+    <div class="row gutter-50">
+      <div class="col-lg-8 mb-30">
+        <h2 class="section-title mb-20">The die</h2>
+        <div class="run-reticle-frame">
+          <div class="run-reticle shadow">
+            <img src="renders/reticle.webp" alt="Render of the T0P3 die"
+                 width="1573" height="2049">
+            <a class="run-reticle-slot" href="projects/519.html" title="519 — Simon Says memory game"
+               style="left: 11.849%; top: 87.066%; width: 8.816%; height: 3.138%;"><span>519</span></a>
+            <a class="run-reticle-slot" href="projects/518.html" title="518 — KianV uLinux SoC"
+               style="left: 11.849%; top: 70.994%; width: 36.631%; height: 14.388%;"><span>518</span></a>
+            <a class="run-reticle-slot" href="projects/262.html" title="262 — Quadrature VCO"
+               style="left: 11.849%; top: 62.958%; width: 8.816%; height: 6.352%;"><span>262</span></a>
+            <a class="run-reticle-slot" href="projects/038.html" title="038 — Hardware Entropy Explorer: UART/SPI TRNG and PUF"
+               style="left: 11.849%; top: 46.886%; width: 8.816%; height: 6.352%;"><span>038</span></a>
+            <a class="run-reticle-slot" href="projects/039.html" title="039 — MoM capacitor"
+               style="left: 11.849%; top: 38.850%; width: 8.816%; height: 6.352%;"><span>039</span></a>
+            <a class="run-reticle-slot" href="projects/294.html" title="294 — Oscillating Bones"
+               style="left: 11.849%; top: 30.815%; width: 8.816%; height: 6.352%;"><span>294</span></a>
+            <a class="run-reticle-slot" href="projects/007.html" title="007 — TT GF180mcuD Analog Factory Test"
+               style="left: 12.305%; top: 54.922%; width: 8.360%; height: 6.352%;"><span>007</span></a>
+            <a class="run-reticle-slot" href="projects/005.html" title="005 — 74HCT00 Quad 2-Input NAND (3.3 V)"
+               style="left: 21.121%; top: 54.922%; width: 8.816%; height: 6.352%;"><span>005</span></a>
+            <a class="run-reticle-slot" href="projects/037.html" title="037 — algofoogle analog stuff"
+               style="left: 21.121%; top: 38.850%; width: 8.816%; height: 6.352%;"><span>037</span></a>
+            <a class="run-reticle-slot" href="projects/260.html" title="260 — GF BGR"
+               style="left: 21.577%; top: 62.958%; width: 8.360%; height: 6.352%;"><span>260</span></a>
+            <a class="run-reticle-slot" href="projects/292.html" title="292 — 3.3V Folded Cascode OTA"
+               style="left: 21.577%; top: 30.815%; width: 8.360%; height: 6.352%;"><span>292</span></a>
+            <a class="run-reticle-slot" href="projects/258.html" title="258 — Abad2048"
+               style="left: 30.393%; top: 62.958%; width: 8.816%; height: 6.352%;"><span>258</span></a>
+            <a class="run-reticle-slot" href="projects/003.html" title="003 — VGA Nyan Cat"
+               style="left: 30.393%; top: 54.922%; width: 8.816%; height: 6.352%;"><span>003</span></a>
+            <a class="run-reticle-slot" href="projects/035.html" title="035 — GF R2R DAC"
+               style="left: 30.393%; top: 38.850%; width: 8.816%; height: 6.352%;"><span>035</span></a>
+            <a class="run-reticle-slot" href="projects/290.html" title="290 — Analog 4 bit Current DAC"
+               style="left: 30.393%; top: 30.815%; width: 8.816%; height: 6.352%;"><span>290</span></a>
+            <a class="run-reticle-slot" href="projects/256.html" title="256 — 256x8 SRAM"
+               style="left: 39.664%; top: 62.958%; width: 8.816%; height: 6.352%;"><span>256</span></a>
+            <a class="run-reticle-slot" href="projects/001.html" title="001 — Tiny Tapeout Factory Test"
+               style="left: 39.664%; top: 54.922%; width: 8.816%; height: 3.138%;"><span>001</span></a>
+            <a class="run-reticle-slot" href="projects/000.html" title="000 — Chip ROM"
+               style="left: 39.664%; top: 50.101%; width: 8.816%; height: 3.138%;"><span>000</span></a>
+            <a class="run-reticle-slot" href="projects/033.html" title="033 — Simple Signal Generator"
+               style="left: 39.664%; top: 38.850%; width: 8.816%; height: 6.352%;"><span>033</span></a>
+            <a class="run-reticle-slot" href="projects/288.html" title="288 — Philippine flag waving"
+               style="left: 39.664%; top: 30.815%; width: 8.816%; height: 6.352%;"><span>288</span></a>
+            <a class="run-reticle-slot" href="projects/448.html" title="448 — Wafer.space Logo VGA Screensaver"
+               style="left: 51.499%; top: 70.994%; width: 8.816%; height: 6.352%;"><span>448</span></a>
+            <a class="run-reticle-slot" href="projects/450.html" title="450 — USB CDC (Serial) Device"
+               style="left: 60.771%; top: 70.994%; width: 8.816%; height: 6.352%;"><span>450</span></a>
+            <a class="run-reticle-slot" href="projects/099.html" title="099 — Until heat death do us part"
+               style="left: 51.499%; top: 38.850%; width: 18.087%; height: 6.352%;"><span>099</span></a>
+            <a class="run-reticle-slot" href="projects/452.html" title="452 — PolyWave"
+               style="left: 70.043%; top: 70.994%; width: 8.360%; height: 6.352%;"><span>452</span></a>
+            <a class="run-reticle-slot" href="projects/101.html" title="101 — TT GF180mcuD Testbuffer"
+               style="left: 70.043%; top: 38.850%; width: 8.360%; height: 6.352%;"><span>101</span></a>
+            <a class="run-reticle-slot" href="projects/356.html" title="356 — 2048 sliding tile puzzle game (VGA)"
+               style="left: 51.499%; top: 30.815%; width: 27.359%; height: 6.352%;"><span>356</span></a>
+            <a class="run-reticle-slot" href="projects/103.html" title="103 — tnt&#39;s recreation of a 555 on GF180mcu"
+               style="left: 79.314%; top: 38.850%; width: 8.360%; height: 6.352%;"><span>103</span></a>
+            <a class="run-reticle-slot" href="projects/454.html" title="454 — MCML VCO"
+               style="left: 79.314%; top: 70.994%; width: 8.816%; height: 6.352%;"><span>454</span></a>
+            <a class="run-reticle-slot" href="projects/199.html" title="199 — TinyQV Risc-V SoC"
+               style="left: 51.499%; top: 62.958%; width: 36.631%; height: 6.352%;"><span>199</span></a>
+            <a class="run-reticle-slot" href="projects/102.html" title="102 — Tiny FABulous FPGA"
+               style="left: 51.499%; top: 46.886%; width: 36.631%; height: 14.388%;"><span>102</span></a>
+            <a class="run-reticle-slot" href="projects/358.html" title="358 — Hardware Entropy Explorer: UART/SPI TRNG and PUF (Analog)"
+               style="left: 79.314%; top: 30.815%; width: 8.816%; height: 6.352%;"><span>358</span></a>
+            <a class="run-reticle-slot" href="projects/359.html" title="359 — Tiny FABulous FPGA (3.3V version)"
+               style="left: 51.499%; top: 14.743%; width: 36.631%; height: 14.388%;"><span>359</span></a>
+          </div>
+        </div>
+        <p class="small text-muted mt-10 mb-0">Every design rendered from the layout at the same scale and placed where
+          it sits on the 4 × 5.1 mm
+          die.          Select a project for its details.</p>
+      </div>
+      <div class="col-lg-4">
+        <h2 class="section-title mb-20">Project sizes</h2>
+        <table class="table table-sm run-table bg-white mb-30">
+          <tbody>
+<tr><td>1 × 1 tiles</td><td class="text-end">3</td></tr><tr><td>1 × 2 tiles</td><td class="text-end">23</td></tr><tr><td>2 × 2 tiles</td><td class="text-end">1</td></tr><tr><td>3 × 2 tiles</td><td class="text-end">1</td></tr><tr><td>4 × 2 tiles</td><td class="text-end">1</td></tr><tr><td>4 × 4 tiles</td><td class="text-end">3</td></tr>          </tbody>
+        </table>
+        <h2 class="section-title mb-20">Shuttle status</h2>
+        <ul class="run-timeline">
+          <li class="done run-timeline-milestone">
+            <span class="run-timeline-date">1 March 2026</span>
+            <strong>Campaign Opens</strong>
+            <span class="small text-muted">Run 2 slots available for purchase on Crowd Supply</span>
+          </li>
+          <li class="done run-timeline-critical">
+            <span class="run-timeline-date">30 April 2026 @ 11:59 PM AoE</span>
+            <strong>Early Bird Deadline</strong>
+            <span class="small text-muted">Last day to purchase at early bird pricing</span>
+          </li>
+          <li class="done run-timeline-critical">
+            <span class="run-timeline-date">19 June 2026</span>
+            <strong><a href="https://github.com/TinyTapeout/tinytapeout-gf-0p3/blob/305047697e4931a74c12202dfc83e1946b9685d9/config.yaml">Tiny Tapeout GF 0p3 submissions close</a></strong>
+            <span class="small text-muted">Last day to submit a project to this Tiny Tapeout shuttle</span>
+          </li>
+          <li class="done run-timeline-critical">
+            <span class="run-timeline-date">30 June 2026 @ 11:59 PM AoE</span>
+            <strong>Purchase Deadline</strong>
+            <span class="small text-muted">Final deadline to purchase slots</span>
+          </li>
+          <li class="done run-timeline-milestone">
+            <span class="run-timeline-date">4 July 2026</span>
+            <strong><a href="https://github.com/TinyTapeout/tinytapeout-gf-0p3/releases/tag/tapeout-ws2607">Tiny Tapeout GF 0p3 tapeout release</a></strong>
+            <span class="small text-muted">Tiny Tapeout publishes the chip&#39;s layout as tapeout-ws2607</span>
+          </li>
+          <li class="done run-timeline-critical">
+            <span class="run-timeline-date">14 July 2026 @ 11:59 PM AoE</span>
+            <strong>Submission Deadline</strong>
+            <span class="small text-muted">Final deadline to submit clean GDS</span>
+          </li>
+          <li class="done run-timeline-delivery">
+            <span class="run-timeline-date">Early Q4 2026</span>
+            <strong>Parts Shipped</strong>
+            <span class="small text-muted">Bare dies and packaged parts shipped to customers</span>
+          </li>
+        </ul>
+        <p class="small text-muted mb-0">From the <a href="https://wafer.space/">wafer.space</a> run schedule          and the <a href="https://github.com/TinyTapeout/tinytapeout-gf-0p3/tree/305047697e4931a74c12202dfc83e1946b9685d9">Tiny Tapeout GF 0p3</a> repository.</p>
+        <div class="space20"></div>
+        <a class="btn btn-default btn-sm" href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf0p3/ws-run2-t0p3">Layout on GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- How the silicon was used -->
+<div id="usage" class="wrapper light-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-10 text-center">How people used their silicon</h2>
+    <p class="lead text-center mb-40">Where the area of 32 projects
+      (7 mm² of silicon) actually went</p>
+
+    <div class="run-bar run-bar-large mb-10">
+      <div style="width: 45.74%; background: #5ca7db"
+           title="Logic cells: 3.2 mm² (46%)">
+<span>46%</span>      </div>
+      <div style="width: 0.96%; background: #9b6bd6"
+           title="SRAM: 0.1 mm² (1%)">
+      </div>
+      <div style="width: 26.28%; background: #b9c7d6"
+           title="Filler and tap cells: 1.9 mm² (26%)">
+<span>26%</span>      </div>
+      <div style="width: 27.01%; background: #e6ebf0"
+           title="Other: 1.9 mm² (27%)">
+<span>27%</span>      </div>
+    </div>
+    <ul class="run-legend mb-40">
+      <li><i style="background: #5ca7db"></i><strong>Logic cells</strong> 46%
+        <span class="text-muted">— gates and flip-flops doing the design&#39;s actual work</span></li>
+      <li><i style="background: #9b6bd6"></i><strong>SRAM</strong> 1%
+        <span class="text-muted">— memory macros</span></li>
+      <li><i style="background: #b9c7d6"></i><strong>Filler and tap cells</strong> 26%
+        <span class="text-muted">— inserted by the tools to keep rows continuous and wells tied</span></li>
+      <li><i style="background: #e6ebf0"></i><strong>Other</strong> 27%
+        <span class="text-muted">— routing channels, analog and custom layout, power grid and empty space</span></li>
+    </ul>
+
+    <div class="row gutter-50">
+      <div class="col-lg-6 mb-30">
+        <h3 class="mb-20">What people built</h3>
+        <a class="run-category" href="#cat-1">
+          <span class="run-category-name">Analog and mixed-signal</span>
+          <span class="run-category-bar"><i style="width: 100.0%; background: #5ca7db"></i></span>
+          <span class="run-category-count">12</span>
+        </a>
+        <a class="run-category" href="#cat-2">
+          <span class="run-category-name">Other digital</span>
+          <span class="run-category-bar"><i style="width: 66.7%; background: #9b6bd6"></i></span>
+          <span class="run-category-count">8</span>
+        </a>
+        <a class="run-category" href="#cat-3">
+          <span class="run-category-name">FPGA</span>
+          <span class="run-category-bar"><i style="width: 25.0%; background: #45c4a0"></i></span>
+          <span class="run-category-count">3</span>
+        </a>
+        <a class="run-category" href="#cat-4">
+          <span class="run-category-name">Security</span>
+          <span class="run-category-bar"><i style="width: 16.7%; background: #f0b84c"></i></span>
+          <span class="run-category-count">2</span>
+        </a>
+        <a class="run-category" href="#cat-5">
+          <span class="run-category-name">Retro computing</span>
+          <span class="run-category-bar"><i style="width: 16.7%; background: #e2626b"></i></span>
+          <span class="run-category-count">2</span>
+        </a>
+        <a class="run-category" href="#cat-6">
+          <span class="run-category-name">RISC-V and CPUs</span>
+          <span class="run-category-bar"><i style="width: 16.7%; background: #6f7bd9"></i></span>
+          <span class="run-category-count">2</span>
+        </a>
+        <a class="run-category" href="#cat-7">
+          <span class="run-category-name">Multi-project die</span>
+          <span class="run-category-bar"><i style="width: 8.3%; background: #3fb6c9"></i></span>
+          <span class="run-category-count">1</span>
+        </a>
+        <a class="run-category" href="#cat-8">
+          <span class="run-category-name">Art and logos</span>
+          <span class="run-category-bar"><i style="width: 8.3%; background: #d98a4f"></i></span>
+          <span class="run-category-count">1</span>
+        </a>
+        <a class="run-category" href="#cat-9">
+          <span class="run-category-name">Accelerators</span>
+          <span class="run-category-bar"><i style="width: 8.3%; background: #8fb84e"></i></span>
+          <span class="run-category-count">1</span>
+        </a>
+      </div>
+      <div class="col-lg-6 mb-30">
+        <h3 class="mb-20">Standard cell libraries</h3>
+        <table class="table table-sm run-table mb-0">
+          <thead><tr><th>Standard cell library</th><th class="text-end">Logic cells</th><th class="text-end">Share</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a> <span class="text-muted small">gf180mcu_fd_sc_mcu7t5v0</span></td>
+              <td class="text-end">88k</td>
+              <td class="text-end">78%</td></tr>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a> <span class="text-muted small">gf180mcu_as_sc_mcu7t3v3</span></td>
+              <td class="text-end">25k</td>
+              <td class="text-end">22%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h3 class="mb-10">Area budget of every design</h3>
+    <p class="text-muted small mb-20">Each bar is one project, split the same way as above. Sorted by how much of the project is logic.</p>
+    <div class="run-rows">
+      <a class="run-row" href="projects/450.html">
+        <span class="run-row-label"><strong>450</strong> <span class="text-muted">USB CDC (Serial) Device</span></span>
+        <span class="run-bar">
+          <i style="width: 79.16%; background: #5ca7db"
+             title="Logic cells: 0.09 mm² (79%)"></i>
+          <i style="width: 14.29%; background: #b9c7d6"
+             title="Filler and tap cells: 0.02 mm² (14%)"></i>
+          <i style="width: 6.55%; background: #e6ebf0"
+             title="Other: 0.01 mm² (7%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/038.html">
+        <span class="run-row-label"><strong>038</strong> <span class="text-muted">Hardware Entropy Explorer: UART/SPI TRNG and PUF</span></span>
+        <span class="run-bar">
+          <i style="width: 78.57%; background: #5ca7db"
+             title="Logic cells: 0.09 mm² (79%)"></i>
+          <i style="width: 14.88%; background: #b9c7d6"
+             title="Filler and tap cells: 0.02 mm² (15%)"></i>
+          <i style="width: 6.55%; background: #e6ebf0"
+             title="Other: 0.01 mm² (7%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/358.html">
+        <span class="run-row-label"><strong>358</strong> <span class="text-muted">Hardware Entropy Explorer: UART/SPI TRNG and PUF (Analog)</span></span>
+        <span class="run-bar">
+          <i style="width: 74.98%; background: #5ca7db"
+             title="Logic cells: 0.09 mm² (75%)"></i>
+          <i style="width: 18.46%; background: #b9c7d6"
+             title="Filler and tap cells: 0.02 mm² (18%)"></i>
+          <i style="width: 6.55%; background: #e6ebf0"
+             title="Other: 0.01 mm² (7%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/199.html">
+        <span class="run-row-label"><strong>199</strong> <span class="text-muted">TinyQV Risc-V SoC</span></span>
+        <span class="run-bar">
+          <i style="width: 70.00%; background: #5ca7db"
+             title="Logic cells: 0.33 mm² (70%)"></i>
+          <i style="width: 24.83%; background: #b9c7d6"
+             title="Filler and tap cells: 0.12 mm² (25%)"></i>
+          <i style="width: 5.17%; background: #e6ebf0"
+             title="Other: 0.02 mm² (5%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/519.html">
+        <span class="run-row-label"><strong>519</strong> <span class="text-muted">Simon Says memory game</span></span>
+        <span class="run-bar">
+          <i style="width: 64.24%; background: #5ca7db"
+             title="Logic cells: 0.04 mm² (64%)"></i>
+          <i style="width: 28.56%; background: #b9c7d6"
+             title="Filler and tap cells: 0.02 mm² (29%)"></i>
+          <i style="width: 7.20%; background: #e6ebf0"
+             title="Other: 0.00 mm² (7%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/003.html">
+        <span class="run-row-label"><strong>003</strong> <span class="text-muted">VGA Nyan Cat</span></span>
+        <span class="run-bar">
+          <i style="width: 62.78%; background: #5ca7db"
+             title="Logic cells: 0.07 mm² (63%)"></i>
+          <i style="width: 30.67%; background: #b9c7d6"
+             title="Filler and tap cells: 0.04 mm² (31%)"></i>
+          <i style="width: 6.55%; background: #e6ebf0"
+             title="Other: 0.01 mm² (7%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/359.html">
+        <span class="run-row-label"><strong>359</strong> <span class="text-muted">Tiny FABulous FPGA (3.3V version)</span></span>
+        <span class="run-bar">
+          <i style="width: 60.44%; background: #5ca7db"
+             title="Logic cells: 0.64 mm² (60%)"></i>
+          <i style="width: 27.59%; background: #b9c7d6"
+             title="Filler and tap cells: 0.29 mm² (28%)"></i>
+          <i style="width: 11.97%; background: #e6ebf0"
+             title="Other: 0.13 mm² (12%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/102.html">
+        <span class="run-row-label"><strong>102</strong> <span class="text-muted">Tiny FABulous FPGA</span></span>
+        <span class="run-bar">
+          <i style="width: 57.93%; background: #5ca7db"
+             title="Logic cells: 0.62 mm² (58%)"></i>
+          <i style="width: 26.59%; background: #b9c7d6"
+             title="Filler and tap cells: 0.28 mm² (27%)"></i>
+          <i style="width: 15.48%; background: #e6ebf0"
+             title="Other: 0.16 mm² (15%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/258.html">
+        <span class="run-row-label"><strong>258</strong> <span class="text-muted">Abad2048</span></span>
+        <span class="run-bar">
+          <i style="width: 57.92%; background: #5ca7db"
+             title="Logic cells: 0.07 mm² (58%)"></i>
+          <i style="width: 35.53%; background: #b9c7d6"
+             title="Filler and tap cells: 0.04 mm² (36%)"></i>
+          <i style="width: 6.55%; background: #e6ebf0"
+             title="Other: 0.01 mm² (7%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/518.html">
+        <span class="run-row-label"><strong>518</strong> <span class="text-muted">KianV uLinux SoC</span></span>
+        <span class="run-bar">
+          <i style="width: 57.87%; background: #5ca7db"
+             title="Logic cells: 0.62 mm² (58%)"></i>
+          <i style="width: 40.22%; background: #b9c7d6"
+             title="Filler and tap cells: 0.43 mm² (40%)"></i>
+          <i style="width: 1.91%; background: #e6ebf0"
+             title="Other: 0.02 mm² (2%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/448.html">
+        <span class="run-row-label"><strong>448</strong> <span class="text-muted">Wafer.space Logo VGA Screensaver</span></span>
+        <span class="run-bar">
+          <i style="width: 53.21%; background: #5ca7db"
+             title="Logic cells: 0.06 mm² (53%)"></i>
+          <i style="width: 41.78%; background: #b9c7d6"
+             title="Filler and tap cells: 0.05 mm² (42%)"></i>
+          <i style="width: 5.01%; background: #e6ebf0"
+             title="Other: 0.01 mm² (5%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/356.html">
+        <span class="run-row-label"><strong>356</strong> <span class="text-muted">2048 sliding tile puzzle game (VGA)</span></span>
+        <span class="run-bar">
+          <i style="width: 53.15%; background: #5ca7db"
+             title="Logic cells: 0.19 mm² (53%)"></i>
+          <i style="width: 42.09%; background: #b9c7d6"
+             title="Filler and tap cells: 0.15 mm² (42%)"></i>
+          <i style="width: 4.76%; background: #e6ebf0"
+             title="Other: 0.02 mm² (5%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/099.html">
+        <span class="run-row-label"><strong>099</strong> <span class="text-muted">Until heat death do us part</span></span>
+        <span class="run-bar">
+          <i style="width: 51.25%; background: #5ca7db"
+             title="Logic cells: 0.12 mm² (51%)"></i>
+          <i style="width: 44.22%; background: #b9c7d6"
+             title="Filler and tap cells: 0.10 mm² (44%)"></i>
+          <i style="width: 4.53%; background: #e6ebf0"
+             title="Other: 0.01 mm² (5%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/033.html">
+        <span class="run-row-label"><strong>033</strong> <span class="text-muted">Simple Signal Generator</span></span>
+        <span class="run-bar">
+          <i style="width: 47.37%; background: #5ca7db"
+             title="Logic cells: 0.05 mm² (47%)"></i>
+          <i style="width: 46.08%; background: #b9c7d6"
+             title="Filler and tap cells: 0.05 mm² (46%)"></i>
+          <i style="width: 6.55%; background: #e6ebf0"
+             title="Other: 0.01 mm² (7%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/452.html">
+        <span class="run-row-label"><strong>452</strong> <span class="text-muted">PolyWave</span></span>
+        <span class="run-bar">
+          <i style="width: 47.21%; background: #5ca7db"
+             title="Logic cells: 0.05 mm² (47%)"></i>
+          <i style="width: 4.28%; background: #b9c7d6"
+             title="Filler and tap cells: 0.00 mm² (4%)"></i>
+          <i style="width: 48.52%; background: #e6ebf0"
+             title="Other: 0.05 mm² (49%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/288.html">
+        <span class="run-row-label"><strong>288</strong> <span class="text-muted">Philippine flag waving</span></span>
+        <span class="run-bar">
+          <i style="width: 42.79%; background: #5ca7db"
+             title="Logic cells: 0.05 mm² (43%)"></i>
+          <i style="width: 50.66%; background: #b9c7d6"
+             title="Filler and tap cells: 0.06 mm² (51%)"></i>
+          <i style="width: 6.55%; background: #e6ebf0"
+             title="Other: 0.01 mm² (7%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/037.html">
+        <span class="run-row-label"><strong>037</strong> <span class="text-muted">algofoogle analog stuff</span></span>
+        <span class="run-bar">
+          <i style="width: 18.17%; background: #5ca7db"
+             title="Logic cells: 0.02 mm² (18%)"></i>
+          <i style="width: 22.58%; background: #b9c7d6"
+             title="Filler and tap cells: 0.03 mm² (23%)"></i>
+          <i style="width: 59.25%; background: #e6ebf0"
+             title="Other: 0.07 mm² (59%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/000.html">
+        <span class="run-row-label"><strong>000</strong> <span class="text-muted">Chip ROM</span></span>
+        <span class="run-bar">
+          <i style="width: 8.74%; background: #5ca7db"
+             title="Logic cells: 0.00 mm² (9%)"></i>
+          <i style="width: 84.06%; background: #b9c7d6"
+             title="Filler and tap cells: 0.05 mm² (84%)"></i>
+          <i style="width: 7.20%; background: #e6ebf0"
+             title="Other: 0.00 mm² (7%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/035.html">
+        <span class="run-row-label"><strong>035</strong> <span class="text-muted">GF R2R DAC</span></span>
+        <span class="run-bar">
+          <i style="width: 6.98%; background: #5ca7db"
+             title="Logic cells: 0.01 mm² (7%)"></i>
+          <i style="width: 10.47%; background: #b9c7d6"
+             title="Filler and tap cells: 0.01 mm² (10%)"></i>
+          <i style="width: 82.55%; background: #e6ebf0"
+             title="Other: 0.10 mm² (83%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/001.html">
+        <span class="run-row-label"><strong>001</strong> <span class="text-muted">Tiny Tapeout Factory Test</span></span>
+        <span class="run-bar">
+          <i style="width: 6.11%; background: #5ca7db"
+             title="Logic cells: 0.00 mm² (6%)"></i>
+          <i style="width: 86.69%; background: #b9c7d6"
+             title="Filler and tap cells: 0.05 mm² (87%)"></i>
+          <i style="width: 7.20%; background: #e6ebf0"
+             title="Other: 0.00 mm² (7%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/256.html">
+        <span class="run-row-label"><strong>256</strong> <span class="text-muted">256x8 SRAM</span></span>
+        <span class="run-bar">
+          <i style="width: 3.91%; background: #5ca7db"
+             title="Logic cells: 0.00 mm² (4%)"></i>
+          <i style="width: 58.68%; background: #9b6bd6"
+             title="SRAM: 0.07 mm² (59%)"></i>
+          <i style="width: 24.73%; background: #b9c7d6"
+             title="Filler and tap cells: 0.03 mm² (25%)"></i>
+          <i style="width: 12.69%; background: #e6ebf0"
+             title="Other: 0.01 mm² (13%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/294.html">
+        <span class="run-row-label"><strong>294</strong> <span class="text-muted">Oscillating Bones</span></span>
+        <span class="run-bar">
+          <i style="width: 0.61%; background: #5ca7db"
+             title="Logic cells: 0.00 mm² (1%)"></i>
+          <i style="width: 99.32%; background: #e6ebf0"
+             title="Other: 0.11 mm² (99%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/005.html">
+        <span class="run-row-label"><strong>005</strong> <span class="text-muted">74HCT00 Quad 2-Input NAND (3.3 V)</span></span>
+        <span class="run-bar">
+          <i style="width: 100.00%; background: #e6ebf0"
+             title="Other: 0.12 mm² (100%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/007.html">
+        <span class="run-row-label"><strong>007</strong> <span class="text-muted">TT GF180mcuD Analog Factory Test</span></span>
+        <span class="run-bar">
+          <i style="width: 100.00%; background: #e6ebf0"
+             title="Other: 0.11 mm² (100%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/039.html">
+        <span class="run-row-label"><strong>039</strong> <span class="text-muted">MoM capacitor</span></span>
+        <span class="run-bar">
+          <i style="width: 100.00%; background: #e6ebf0"
+             title="Other: 0.12 mm² (100%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/101.html">
+        <span class="run-row-label"><strong>101</strong> <span class="text-muted">TT GF180mcuD Testbuffer</span></span>
+        <span class="run-bar">
+          <i style="width: 100.00%; background: #e6ebf0"
+             title="Other: 0.11 mm² (100%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/103.html">
+        <span class="run-row-label"><strong>103</strong> <span class="text-muted">tnt&#39;s recreation of a 555 on GF180mcu</span></span>
+        <span class="run-bar">
+          <i style="width: 100.00%; background: #e6ebf0"
+             title="Other: 0.11 mm² (100%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/260.html">
+        <span class="run-row-label"><strong>260</strong> <span class="text-muted">GF BGR</span></span>
+        <span class="run-bar">
+          <i style="width: 100.00%; background: #e6ebf0"
+             title="Other: 0.11 mm² (100%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/262.html">
+        <span class="run-row-label"><strong>262</strong> <span class="text-muted">Quadrature VCO</span></span>
+        <span class="run-bar">
+          <i style="width: 100.00%; background: #e6ebf0"
+             title="Other: 0.12 mm² (100%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/290.html">
+        <span class="run-row-label"><strong>290</strong> <span class="text-muted">Analog 4 bit Current DAC</span></span>
+        <span class="run-bar">
+          <i style="width: 100.00%; background: #e6ebf0"
+             title="Other: 0.12 mm² (100%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/292.html">
+        <span class="run-row-label"><strong>292</strong> <span class="text-muted">3.3V Folded Cascode OTA</span></span>
+        <span class="run-bar">
+          <i style="width: 100.00%; background: #e6ebf0"
+             title="Other: 0.11 mm² (100%)"></i>
+        </span>
+      </a>
+      <a class="run-row" href="projects/454.html">
+        <span class="run-row-label"><strong>454</strong> <span class="text-muted">MCML VCO</span></span>
+        <span class="run-bar">
+          <i style="width: 100.00%; background: #e6ebf0"
+             title="Other: 0.12 mm² (100%)"></i>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Process features -->
+<div id="features" class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-10 text-center">Which parts of the process were used</h2>
+    <p class="lead text-center mb-40">Transistor voltages and optional devices across the 32 designs</p>
+    <div class="row gutter-50">
+      <div class="col-lg-5 mb-30">
+        <h3 class="mb-20">Transistor voltages</h3>
+        <div class="run-category">
+          <span class="run-category-name">3.3 V</span>
+          <span class="run-category-bar"><i style="width: 34.4%; background: #5ca7db"></i></span>
+          <span class="run-category-count">11</span>
+        </div>
+        <div class="run-category">
+          <span class="run-category-name">5 V</span>
+          <span class="run-category-bar"><i style="width: 71.9%; background: #5ca7db"></i></span>
+          <span class="run-category-count">23</span>
+        </div>
+        <div class="run-category">
+          <span class="run-category-name">6 V</span>
+          <span class="run-category-bar"><i style="width: 3.1%; background: #5ca7db"></i></span>
+          <span class="run-category-count">1</span>
+        </div>
+        <p class="small text-muted mt-10">A design counts for a voltage when its standard cells, SRAM or its own
+          transistors use it. 5 V and 6 V transistors share the thick gate oxide; the V5_XTOR marker tells them apart.</p>
+      </div>
+      <div class="col-lg-7 mb-30">
+        <h3 class="mb-20">Optional devices drawn by designers</h3>
+        <table class="table table-sm run-table bg-white">
+          <thead><tr><th>Device</th><th class="text-end">Designs</th><th>Which</th></tr></thead>
+          <tbody>
+            <tr><td>High-resistance poly resistors</td><td class="text-end">8</td>
+              <td><a class="run-mono" href="projects/035.html">035</a> <a class="run-mono" href="projects/037.html">037</a> <a class="run-mono" href="projects/101.html">101</a> <a class="run-mono" href="projects/103.html">103</a> <a class="run-mono" href="projects/199.html">199</a> <a class="run-mono" href="projects/260.html">260</a> <a class="run-mono" href="projects/452.html">452</a> <a class="run-mono" href="projects/454.html">454</a></td></tr>
+            <tr><td>MOS capacitors</td><td class="text-end">1</td>
+              <td><a class="run-mono" href="projects/103.html">103</a></td></tr>
+            <tr><td>Unsalicided poly resistors</td><td class="text-end">1</td>
+              <td><a class="run-mono" href="projects/103.html">103</a></td></tr>
+            <tr><td>Deep N-well</td><td class="text-end">1</td>
+              <td><a class="run-mono" href="projects/260.html">260</a></td></tr>
+            <tr><td>Bipolar transistors</td><td class="text-end">1</td>
+              <td><a class="run-mono" href="projects/260.html">260</a></td></tr>
+          </tbody>
+        </table>
+<p class="small text-muted mb-0">Not drawn by any design: Native transistors, 10 V LDMOS, MIM capacitors, Salicided poly resistors, Diffusion resistors, Schottky diodes, Zener diodes, eFuses, One-time programmable memory, Inductors.</p>        <p class="small text-muted">Only devices outside standard cells, SRAM macros and I/O pads count, since every
+          die has those. A single test structure counts the same as a large block.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Density guidance -->
+<div id="density" class="wrapper dark-wrapper inverse-text">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <h2 class="title-color color-white">What fits on 1&nbsp;mm² of GF180MCU silicon?</h2>
+        <h3 class="display-3">Theoretical maximum against what designers achieved</h3>
+        <p class="lead">The maximum packs one cell type edge to edge with no room for wiring. Real designs need
+          the wiring.</p>
+        <div class="space20"></div>
+      </div>
+    </div>
+    <div class="row text-center gutter-30 justify-content-center">
+      <div class="col-md-6 col-lg-3 mb-30">
+        <div class="box bg-white shadow p-30 h-100">
+          <h3 class="mb-5 color-dark">~113,885</h3>
+          <p class="mb-0 font-weight-600 color-dark">Inverters per mm²</p>
+          <p class="mb-10 small text-muted">theoretical maximum</p>
+          <p class="mb-0 small text-muted"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>: 114k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/inv/gf180mcu_fd_sc_mcu7t5v0__inv_1.html"><span class="run-mono">inv_1</span></a></p>
+          <p class="mb-0 small text-muted"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>: 114k <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">inv_2</span></a></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-30">
+        <div class="box bg-white shadow p-30 h-100">
+          <h3 class="mb-5 color-dark">~91,108</h3>
+          <p class="mb-0 font-weight-600 color-dark">NAND gates per mm²</p>
+          <p class="mb-10 small text-muted">theoretical maximum</p>
+          <p class="mb-0 small text-muted"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>: 91k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nand2/gf180mcu_fd_sc_mcu7t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></p>
+          <p class="mb-0 small text-muted"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>: 65k <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">nand2_2</span></a></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-30">
+        <div class="box bg-white shadow p-30 h-100">
+          <h3 class="mb-5 color-dark">~75,923</h3>
+          <p class="mb-0 font-weight-600 color-dark">Buffers per mm²</p>
+          <p class="mb-10 small text-muted">theoretical maximum</p>
+          <p class="mb-0 small text-muted"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>: 76k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/buf/gf180mcu_fd_sc_mcu7t5v0__buf_1.html"><span class="run-mono">buf_1</span></a></p>
+          <p class="mb-0 small text-muted"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>: 76k <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">buff_2</span></a></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-30">
+        <div class="box bg-white shadow p-30 h-100">
+          <h3 class="mb-5 color-dark">~16,872</h3>
+          <p class="mb-0 font-weight-600 color-dark">Flip-flops per mm²</p>
+          <p class="mb-10 small text-muted">theoretical maximum</p>
+          <p class="mb-0 small text-muted"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>: 16k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/dffq/gf180mcu_fd_sc_mcu7t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></p>
+          <p class="mb-0 small text-muted"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>: 17k <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">dfxtp_2</span></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="space30"></div>
+    <div class="row justify-content-center text-center gutter-30">
+      <div class="col-md-4 mb-20">
+        <div class="box bg-white shadow p-30 h-100">
+          <h3 class="mb-5 color-dark">28k</h3>
+          <p class="mb-0 font-weight-600 color-dark">Best whole-die average</p>
+          <p class="mb-0 small text-muted">logic cells/mm² of core — 37% of the buffer maximum</p>
+          <p class="mb-0 small"><a href="projects/038.html">Hardware Entropy Explorer: UART/SPI TRNG and PUF</a></p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-20">
+        <div class="box bg-white shadow p-30 h-100">
+          <h3 class="mb-5 color-dark">44k</h3>
+          <p class="mb-0 font-weight-600 color-dark">Best single mm²</p>
+          <p class="mb-0 small text-muted">logic cells — 58% of the buffer maximum</p>
+          <p class="mb-0 small"><a href="projects/452.html">PolyWave</a></p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-20">
+        <div class="box bg-white shadow p-30 h-100">
+          <h3 class="mb-5 color-dark">20k</h3>
+          <p class="mb-0 font-weight-600 color-dark">Typical design</p>
+          <p class="mb-0 small text-muted">median logic cells/mm² of core across 16 digital designs</p>
+          <p class="mb-0 small text-muted">58% of the core covered by logic cells</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="guidance" class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-10 text-center">Sizing your own design</h2>
+    <p class="lead text-center mb-40">What each tile size held on this run, and what it would hold at this run's densities</p>
+    <div class="table-responsive">
+      <table class="table table-sm run-table run-guidance bg-white shadow">
+        <thead><tr>
+          <th rowspan="2">Tiles</th><th rowspan="2">Size</th>
+          <th rowspan="2" class="text-end">Core area</th><th rowspan="2" class="text-end">Projects</th>
+          <th rowspan="2" class="text-end">Most logic<br>cells</th><th rowspan="2" class="text-end">Median</th>
+          <th rowspan="2" class="text-end">At typical<br>density <span class="small text-muted fw-normal">(per mm²)</span><br><span class="small text-muted">20k</span></th>
+          <th rowspan="2" class="text-end">At best<br>density <span class="small text-muted fw-normal">(per mm²)</span><br><span class="small text-muted">28k</span></th>
+          <th colspan="3" class="text-center">Max</th>
+        </tr><tr>
+          <th class="text-end">NAND gates<br><span class="small text-muted fw-normal">theoretical<br><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nand2/gf180mcu_fd_sc_mcu7t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></span></th>
+          <th class="text-end">Flip-flops<br><span class="small text-muted fw-normal">theoretical<br><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/dffq/gf180mcu_fd_sc_mcu7t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></span></th>
+          <th class="text-end">At densest<br>achieved <span class="small text-muted fw-normal">(per mm²)</span><br><span class="small text-muted fw-normal">44k</span></th>
+        </tr></thead>
+        <tbody>
+          <tr><td class="text-nowrap"><strong>1 × 1</strong></td><td class="text-nowrap">0.35 × 0.16 mm</td>
+            <td class="text-end">0.06 mm²</td><td class="text-end">3</td>
+            <td class="text-end">1.3k</td><td class="text-end">1.3k</td>
+            <td class="text-end">1.1k</td>
+            <td class="text-end">1.6k</td>
+            <td class="text-end">5.1k</td><td class="text-end">880</td>
+            <td class="text-end">2.5k</td></tr>
+          <tr><td class="text-nowrap"><strong>1 × 2</strong></td><td class="text-nowrap">0.35 × 0.33 mm</td>
+            <td class="text-end">0.12 mm²</td><td class="text-end">23</td>
+            <td class="text-end">3.3k</td><td class="text-end">2.5k</td>
+            <td class="text-end">2.3k</td>
+            <td class="text-end">3.3k</td>
+            <td class="text-end">10.5k</td><td class="text-end">1.8k</td>
+            <td class="text-end">5.1k</td></tr>
+          <tr><td class="text-nowrap"><strong>2 × 2</strong></td><td class="text-nowrap">0.71 × 0.33 mm</td>
+            <td class="text-end">0.23 mm²</td><td class="text-end">1</td>
+            <td class="text-end">4.0k</td><td class="text-end">4.0k</td>
+            <td class="text-end">4.7k</td>
+            <td class="text-end">6.7k</td>
+            <td class="text-end">21.3k</td><td class="text-end">3.7k</td>
+            <td class="text-end">10.3k</td></tr>
+          <tr><td class="text-nowrap"><strong>3 × 2</strong></td><td class="text-nowrap">1.08 × 0.33 mm</td>
+            <td class="text-end">0.36 mm²</td><td class="text-end">1</td>
+            <td class="text-end">6.7k</td><td class="text-end">6.7k</td>
+            <td class="text-end">7.2k</td>
+            <td class="text-end">10.1k</td>
+            <td class="text-end">32.5k</td><td class="text-end">5.6k</td>
+            <td class="text-end">15.6k</td></tr>
+          <tr><td class="text-nowrap"><strong>4 × 2</strong></td><td class="text-nowrap">1.44 × 0.33 mm</td>
+            <td class="text-end">0.48 mm²</td><td class="text-end">1</td>
+            <td class="text-end">12.5k</td><td class="text-end">12.5k</td>
+            <td class="text-end">9.6k</td>
+            <td class="text-end">13.5k</td>
+            <td class="text-end">43.3k</td><td class="text-end">7.5k</td>
+            <td class="text-end">20.9k</td></tr>
+          <tr><td class="text-nowrap"><strong>4 × 4</strong></td><td class="text-nowrap">1.44 × 0.74 mm</td>
+            <td class="text-end">1.07 mm²</td><td class="text-end">3</td>
+            <td class="text-end">25.2k</td><td class="text-end">20.3k</td>
+            <td class="text-end">21.6k</td>
+            <td class="text-end">30.3k</td>
+            <td class="text-end">97.1k</td><td class="text-end">16.7k</td>
+            <td class="text-end">46.8k</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small text-muted mb-40">Core area is the die minus a 350 µm pad ring on each side. "At typical density"
+      and "at best density" multiply the core area by this run's median and best whole-die densities; SRAM and analog
+      blocks take their area out of that. The theoretical maxima fill the core with nothing but that one cell of
+      <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>, the
+      library most used on this run, edge to edge with no routing; "at densest achieved" multiplies the core area by the
+      densest 0.1 mm square any design on this run reached.</p>
+
+    <h3 class="mb-10">Logic density of every digital design</h3>
+    <p class="text-muted small mb-20">Solid bar: average over the core. Outlined bar: the densest single mm² outside SRAM (a dash where memory covers most of the die). The scale
+      ends at the buffer theoretical maximum (76k cells/mm²).</p>
+    <div class="run-rows">
+      <a class="run-row" href="projects/038.html">
+        <span class="run-row-label"><strong>038</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 52.03%"></i>
+          <i class="core" style="width: 37.42%"></i>
+        </span>
+        <span class="run-row-value">28k <span class="text-muted">/ 40k</span></span>
+      </a>
+      <a class="run-row" href="projects/450.html">
+        <span class="run-row-label"><strong>450</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 44.12%"></i>
+          <i class="core" style="width: 35.98%"></i>
+        </span>
+        <span class="run-row-value">27k <span class="text-muted">/ 34k</span></span>
+      </a>
+      <a class="run-row" href="projects/358.html">
+        <span class="run-row-label"><strong>358</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 54.27%"></i>
+          <i class="core" style="width: 34.76%"></i>
+        </span>
+        <span class="run-row-value">26k <span class="text-muted">/ 41k</span></span>
+      </a>
+      <a class="run-row" href="projects/199.html">
+        <span class="run-row-label"><strong>199</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 45.57%"></i>
+          <i class="core" style="width: 34.68%"></i>
+        </span>
+        <span class="run-row-value">26k <span class="text-muted">/ 35k</span></span>
+      </a>
+      <a class="run-row" href="projects/359.html">
+        <span class="run-row-label"><strong>359</strong> <span class="text-muted">AS 7t-3.3V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 49.13%"></i>
+          <i class="core" style="width: 31.13%"></i>
+        </span>
+        <span class="run-row-value">24k <span class="text-muted">/ 37k</span></span>
+      </a>
+      <a class="run-row" href="projects/519.html">
+        <span class="run-row-label"><strong>519</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 49.00%"></i>
+          <i class="core" style="width: 30.60%"></i>
+        </span>
+        <span class="run-row-value">23k <span class="text-muted">/ 37k</span></span>
+      </a>
+      <a class="run-row" href="projects/003.html">
+        <span class="run-row-label"><strong>003</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 45.70%"></i>
+          <i class="core" style="width: 30.36%"></i>
+        </span>
+        <span class="run-row-value">23k <span class="text-muted">/ 35k</span></span>
+      </a>
+      <a class="run-row" href="projects/258.html">
+        <span class="run-row-label"><strong>258</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 39.91%"></i>
+          <i class="core" style="width: 27.96%"></i>
+        </span>
+        <span class="run-row-value">21k <span class="text-muted">/ 30k</span></span>
+      </a>
+      <a class="run-row" href="projects/448.html">
+        <span class="run-row-label"><strong>448</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 35.96%"></i>
+          <i class="core" style="width: 25.41%"></i>
+        </span>
+        <span class="run-row-value">19k <span class="text-muted">/ 27k</span></span>
+      </a>
+      <a class="run-row" href="projects/518.html">
+        <span class="run-row-label"><strong>518</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 36.88%"></i>
+          <i class="core" style="width: 25.05%"></i>
+        </span>
+        <span class="run-row-value">19k <span class="text-muted">/ 28k</span></span>
+      </a>
+      <a class="run-row" href="projects/356.html">
+        <span class="run-row-label"><strong>356</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 39.51%"></i>
+          <i class="core" style="width: 24.89%"></i>
+        </span>
+        <span class="run-row-value">19k <span class="text-muted">/ 30k</span></span>
+      </a>
+      <a class="run-row" href="projects/452.html">
+        <span class="run-row-label"><strong>452</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 57.82%"></i>
+          <i class="core" style="width: 24.01%"></i>
+        </span>
+        <span class="run-row-value">18k <span class="text-muted">/ 44k</span></span>
+      </a>
+      <a class="run-row" href="projects/102.html">
+        <span class="run-row-label"><strong>102</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 42.15%"></i>
+          <i class="core" style="width: 23.77%"></i>
+        </span>
+        <span class="run-row-value">18k <span class="text-muted">/ 32k</span></span>
+      </a>
+      <a class="run-row" href="projects/288.html">
+        <span class="run-row-label"><strong>288</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 41.36%"></i>
+          <i class="core" style="width: 23.13%"></i>
+        </span>
+        <span class="run-row-value">18k <span class="text-muted">/ 31k</span></span>
+      </a>
+      <a class="run-row" href="projects/099.html">
+        <span class="run-row-label"><strong>099</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 36.48%"></i>
+          <i class="core" style="width: 22.27%"></i>
+        </span>
+        <span class="run-row-value">17k <span class="text-muted">/ 28k</span></span>
+      </a>
+      <a class="run-row" href="projects/033.html">
+        <span class="run-row-label"><strong>033</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-density">
+          <i class="peak" style="width: 35.43%"></i>
+          <i class="core" style="width: 19.43%"></i>
+        </span>
+        <span class="run-row-value">15k <span class="text-muted">/ 27k</span></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Projects -->
+<div id="projects" class="wrapper light-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-10 text-center">The projects</h2>
+    <p class="lead text-center mb-40">Grouped by what they are. Each links to renders, measurements and any photographs
+      or bonding results.</p>
+    <h3 id="cat-1" class="run-category-title">
+      <i style="background: #5ca7db"></i>Analog and mixed-signal
+      <span class="text-muted">12</span>
+    </h3>
+    <div class="row">
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/005.html">
+    <figure class="run-card-image">
+      <img src="renders/005_thumb.webp" alt="Layout render of 74HCT00 Quad 2-Input NAND (3.3 V)" loading="lazy">
+      <span class="run-code">005</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #5ca7db">Analog and mixed-signal</span>
+      <h5 class="post-title mb-5">74HCT00 Quad 2-Input NAND (3.3 V)</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 112 transistors      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/007.html">
+    <figure class="run-card-image">
+      <img src="renders/007_thumb.webp" alt="Layout render of TT GF180mcuD Analog Factory Test" loading="lazy">
+      <span class="run-code">007</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #5ca7db">Analog and mixed-signal</span>
+      <h5 class="post-title mb-5">TT GF180mcuD Analog Factory Test</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 240 transistors      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V · 5 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/035.html">
+    <figure class="run-card-image">
+      <img src="renders/035_thumb.webp" alt="Layout render of GF R2R DAC" loading="lazy">
+      <span class="run-code">035</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #5ca7db">Analog and mixed-signal</span>
+      <h5 class="post-title mb-5">GF R2R DAC</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 284 logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+<span class="run-chip">High-resistance poly resistors</span></p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/037.html">
+    <figure class="run-card-image">
+      <img src="renders/037_thumb.webp" alt="Layout render of algofoogle analog stuff" loading="lazy">
+      <span class="run-code">037</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #5ca7db">Analog and mixed-signal</span>
+      <h5 class="post-title mb-5">algofoogle analog stuff</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 695 logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V · 5 V
+<span class="run-chip">High-resistance poly resistors</span></p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/039.html">
+    <figure class="run-card-image">
+      <img src="renders/039_thumb.webp" alt="Layout render of MoM capacitor" loading="lazy">
+      <span class="run-code">039</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #5ca7db">Analog and mixed-signal</span>
+      <h5 class="post-title mb-5">MoM capacitor</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/101.html">
+    <figure class="run-card-image">
+      <img src="renders/101_thumb.webp" alt="Layout render of TT GF180mcuD Testbuffer" loading="lazy">
+      <span class="run-code">101</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #5ca7db">Analog and mixed-signal</span>
+      <h5 class="post-title mb-5">TT GF180mcuD Testbuffer</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 80 transistors      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">6 V
+<span class="run-chip">High-resistance poly resistors</span></p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/103.html">
+    <figure class="run-card-image">
+      <img src="renders/103_thumb.webp" alt="Layout render of tnt&#39;s recreation of a 555 on GF180mcu" loading="lazy">
+      <span class="run-code">103</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #5ca7db">Analog and mixed-signal</span>
+      <h5 class="post-title mb-5">tnt&#39;s recreation of a 555 on GF180mcu</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 228 transistors      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+<span class="run-chip">MOS capacitors</span><span class="run-chip">High-resistance poly resistors</span><span class="run-chip">Unsalicided poly resistors</span></p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/260.html">
+    <figure class="run-card-image">
+      <img src="renders/260_thumb.webp" alt="Layout render of GF BGR" loading="lazy">
+      <span class="run-code">260</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #5ca7db">Analog and mixed-signal</span>
+      <h5 class="post-title mb-5">GF BGR</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 15 transistors      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+<span class="run-chip">High-resistance poly resistors</span><span class="run-chip">Deep N-well</span><span class="run-chip">Bipolar transistors</span></p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/262.html">
+    <figure class="run-card-image">
+      <img src="renders/262_thumb.webp" alt="Layout render of Quadrature VCO" loading="lazy">
+      <span class="run-code">262</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #5ca7db">Analog and mixed-signal</span>
+      <h5 class="post-title mb-5">Quadrature VCO</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 78 transistors      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/290.html">
+    <figure class="run-card-image">
+      <img src="renders/290_thumb.webp" alt="Layout render of Analog 4 bit Current DAC" loading="lazy">
+      <span class="run-code">290</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #5ca7db">Analog and mixed-signal</span>
+      <h5 class="post-title mb-5">Analog 4 bit Current DAC</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 96 transistors      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/292.html">
+    <figure class="run-card-image">
+      <img src="renders/292_thumb.webp" alt="Layout render of 3.3V Folded Cascode OTA" loading="lazy">
+      <span class="run-code">292</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #5ca7db">Analog and mixed-signal</span>
+      <h5 class="post-title mb-5">3.3V Folded Cascode OTA</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 54 transistors      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/454.html">
+    <figure class="run-card-image">
+      <img src="renders/454_thumb.webp" alt="Layout render of MCML VCO" loading="lazy">
+      <span class="run-code">454</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #5ca7db">Analog and mixed-signal</span>
+      <h5 class="post-title mb-5">MCML VCO</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 52 transistors      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+<span class="run-chip">High-resistance poly resistors</span></p>    </div>
+  </a>
+</div>
+    </div>
+    <h3 id="cat-2" class="run-category-title">
+      <i style="background: #9b6bd6"></i>Other digital
+      <span class="text-muted">8</span>
+    </h3>
+    <div class="row">
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/000.html">
+    <figure class="run-card-image">
+      <img src="renders/000_thumb.webp" alt="Layout render of Chip ROM" loading="lazy">
+      <span class="run-code">000</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #9b6bd6">Other digital</span>
+      <h5 class="post-title mb-5">Chip ROM</h5>
+      <p class="mb-0 text-muted small">
+        1 × 1 tiles
+ · 234 logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/033.html">
+    <figure class="run-card-image">
+      <img src="renders/033_thumb.webp" alt="Layout render of Simple Signal Generator" loading="lazy">
+      <span class="run-code">033</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #9b6bd6">Other digital</span>
+      <h5 class="post-title mb-5">Simple Signal Generator</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 2k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/256.html">
+    <figure class="run-card-image">
+      <img src="renders/256_thumb.webp" alt="Layout render of 256x8 SRAM" loading="lazy">
+      <span class="run-code">256</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #9b6bd6">Other digital</span>
+      <h5 class="post-title mb-5">256x8 SRAM</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 96 logic cells · 1 SRAM      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V · 5 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/288.html">
+    <figure class="run-card-image">
+      <img src="renders/288_thumb.webp" alt="Layout render of Philippine flag waving" loading="lazy">
+      <span class="run-code">288</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #9b6bd6">Other digital</span>
+      <h5 class="post-title mb-5">Philippine flag waving</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 2k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/294.html">
+    <figure class="run-card-image">
+      <img src="renders/294_thumb.webp" alt="Layout render of Oscillating Bones" loading="lazy">
+      <span class="run-code">294</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #9b6bd6">Other digital</span>
+      <h5 class="post-title mb-5">Oscillating Bones</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 16 logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V · 5 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/450.html">
+    <figure class="run-card-image">
+      <img src="renders/450_thumb.webp" alt="Layout render of USB CDC (Serial) Device" loading="lazy">
+      <span class="run-code">450</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #9b6bd6">Other digital</span>
+      <h5 class="post-title mb-5">USB CDC (Serial) Device</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 3k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/452.html">
+    <figure class="run-card-image">
+      <img src="renders/452_thumb.webp" alt="Layout render of PolyWave" loading="lazy">
+      <span class="run-code">452</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #9b6bd6">Other digital</span>
+      <h5 class="post-title mb-5">PolyWave</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 2k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+<span class="run-chip">High-resistance poly resistors</span></p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/519.html">
+    <figure class="run-card-image">
+      <img src="renders/519_thumb.webp" alt="Layout render of Simon Says memory game" loading="lazy">
+      <span class="run-code">519</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #9b6bd6">Other digital</span>
+      <h5 class="post-title mb-5">Simon Says memory game</h5>
+      <p class="mb-0 text-muted small">
+        1 × 1 tiles
+ · 1k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+    </div>
+    <h3 id="cat-3" class="run-category-title">
+      <i style="background: #45c4a0"></i>FPGA
+      <span class="text-muted">3</span>
+    </h3>
+    <div class="row">
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/102.html">
+    <figure class="run-card-image">
+      <img src="renders/102_thumb.webp" alt="Layout render of Tiny FABulous FPGA" loading="lazy">
+      <span class="run-code">102</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #45c4a0">FPGA</span>
+      <h5 class="post-title mb-5">Tiny FABulous FPGA</h5>
+      <p class="mb-0 text-muted small">
+        4 × 4 tiles
+ · 19k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/258.html">
+    <figure class="run-card-image">
+      <img src="renders/258_thumb.webp" alt="Layout render of Abad2048" loading="lazy">
+      <span class="run-code">258</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #45c4a0">FPGA</span>
+      <h5 class="post-title mb-5">Abad2048</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 2k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/359.html">
+    <figure class="run-card-image">
+      <img src="renders/359_thumb.webp" alt="Layout render of Tiny FABulous FPGA (3.3V version)" loading="lazy">
+      <span class="run-code">359</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #45c4a0">FPGA</span>
+      <h5 class="post-title mb-5">Tiny FABulous FPGA (3.3V version)</h5>
+      <p class="mb-0 text-muted small">
+        4 × 4 tiles
+ · 25k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+</p>    </div>
+  </a>
+</div>
+    </div>
+    <h3 id="cat-4" class="run-category-title">
+      <i style="background: #f0b84c"></i>Security
+      <span class="text-muted">2</span>
+    </h3>
+    <div class="row">
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/038.html">
+    <figure class="run-card-image">
+      <img src="renders/038_thumb.webp" alt="Layout render of Hardware Entropy Explorer: UART/SPI TRNG and PUF" loading="lazy">
+      <span class="run-code">038</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #f0b84c">Security</span>
+      <h5 class="post-title mb-5">Hardware Entropy Explorer: UART/SPI TRNG and PUF</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 3k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/358.html">
+    <figure class="run-card-image">
+      <img src="renders/358_thumb.webp" alt="Layout render of Hardware Entropy Explorer: UART/SPI TRNG and PUF (Analog)" loading="lazy">
+      <span class="run-code">358</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #f0b84c">Security</span>
+      <h5 class="post-title mb-5">Hardware Entropy Explorer: UART/SPI TRNG and PUF (Analog)</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 3k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+    </div>
+    <h3 id="cat-5" class="run-category-title">
+      <i style="background: #e2626b"></i>Retro computing
+      <span class="text-muted">2</span>
+    </h3>
+    <div class="row">
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/003.html">
+    <figure class="run-card-image">
+      <img src="renders/003_thumb.webp" alt="Layout render of VGA Nyan Cat" loading="lazy">
+      <span class="run-code">003</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #e2626b">Retro computing</span>
+      <h5 class="post-title mb-5">VGA Nyan Cat</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 3k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/356.html">
+    <figure class="run-card-image">
+      <img src="renders/356_thumb.webp" alt="Layout render of 2048 sliding tile puzzle game (VGA)" loading="lazy">
+      <span class="run-code">356</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #e2626b">Retro computing</span>
+      <h5 class="post-title mb-5">2048 sliding tile puzzle game (VGA)</h5>
+      <p class="mb-0 text-muted small">
+        3 × 2 tiles
+ · 7k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+    </div>
+    <h3 id="cat-6" class="run-category-title">
+      <i style="background: #6f7bd9"></i>RISC-V and CPUs
+      <span class="text-muted">2</span>
+    </h3>
+    <div class="row">
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/199.html">
+    <figure class="run-card-image">
+      <img src="renders/199_thumb.webp" alt="Layout render of TinyQV Risc-V SoC" loading="lazy">
+      <span class="run-code">199</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #6f7bd9">RISC-V and CPUs</span>
+      <h5 class="post-title mb-5">TinyQV Risc-V SoC</h5>
+      <p class="mb-0 text-muted small">
+        4 × 2 tiles
+ · 13k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+<span class="run-chip">High-resistance poly resistors</span></p>    </div>
+  </a>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/518.html">
+    <figure class="run-card-image">
+      <img src="renders/518_thumb.webp" alt="Layout render of KianV uLinux SoC" loading="lazy">
+      <span class="run-code">518</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #6f7bd9">RISC-V and CPUs</span>
+      <h5 class="post-title mb-5">KianV uLinux SoC</h5>
+      <p class="mb-0 text-muted small">
+        4 × 4 tiles
+ · 20k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+    </div>
+    <h3 id="cat-7" class="run-category-title">
+      <i style="background: #3fb6c9"></i>Multi-project die
+      <span class="text-muted">1</span>
+    </h3>
+    <div class="row">
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/001.html">
+    <figure class="run-card-image">
+      <img src="renders/001_thumb.webp" alt="Layout render of Tiny Tapeout Factory Test" loading="lazy">
+      <span class="run-code">001</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #3fb6c9">Multi-project die</span>
+      <h5 class="post-title mb-5">Tiny Tapeout Factory Test</h5>
+      <p class="mb-0 text-muted small">
+        1 × 1 tiles
+ · 108 logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+    </div>
+    <h3 id="cat-8" class="run-category-title">
+      <i style="background: #d98a4f"></i>Art and logos
+      <span class="text-muted">1</span>
+    </h3>
+    <div class="row">
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/448.html">
+    <figure class="run-card-image">
+      <img src="renders/448_thumb.webp" alt="Layout render of Wafer.space Logo VGA Screensaver" loading="lazy">
+      <span class="run-code">448</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #d98a4f">Art and logos</span>
+      <h5 class="post-title mb-5">Wafer.space Logo VGA Screensaver</h5>
+      <p class="mb-0 text-muted small">
+        1 × 2 tiles
+ · 2k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+    </div>
+    <h3 id="cat-9" class="run-category-title">
+      <i style="background: #8fb84e"></i>Accelerators
+      <span class="text-muted">1</span>
+    </h3>
+    <div class="row">
+<div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
+  <a class="run-card box bg-white shadow h-100" href="projects/099.html">
+    <figure class="run-card-image">
+      <img src="renders/099_thumb.webp" alt="Layout render of Until heat death do us part" loading="lazy">
+      <span class="run-code">099</span>
+    </figure>
+    <div class="run-card-body">
+      <span class="badge rounded-pill run-badge" style="background: #8fb84e">Accelerators</span>
+      <h5 class="post-title mb-5">Until heat death do us part</h5>
+      <p class="mb-0 text-muted small">
+        2 × 2 tiles
+ · 4k logic cells      </p>
+      <p class="mb-0 small run-card-icons">
+      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
+  </a>
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="data" class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-10 text-center">Data and method</h2>
+    <p class="lead text-center mb-30">Everything on this page is measured from the public reticle layout</p>
+    <div class="row">
+      <div class="col-lg-6 mb-30">
+        <ul class="run-method">
+          <li><strong>Logic cells</strong> are standard cell instances, excluding fillers, taps, antenna diodes and tie cells.</li>
+          <li><strong>Transistors</strong> are places where gate polysilicon crosses diffusion, not counting dummy fill.</li>
+          <li><strong>Core area:</strong> Core area is the die minus a 350 µm pad ring on each side.</li>
+          <li><strong>Theoretical maximum</strong> tiles one cell at its placement boundary with no routing.</li>
+<li><strong>Densest mm²</strong> is the best 0.1 mm square anywhere in each die, sliding in
+            20 µm steps and avoiding SRAM, given per mm².</li>        </ul>
+      </div>
+      <div class="col-lg-6 mb-30">
+        <p>The full written analysis is the
+          <a href="https://github.com/wafer-space/tinytapeouts/blob/density-report/ttgf0p3/ws-run2-t0p3/reticle_density_report.md">density report</a>.
+          The measurements behind it:</p>
+        <ul class="run-files">
+<li><a href="data/reticle_analysis.csv">reticle_analysis.csv</a></li><li><a href="data/reticle_analysis_cells.csv">reticle_analysis_cells.csv</a></li><li><a href="data/reticle_analysis_features.csv">reticle_analysis_features.csv</a></li><li><a href="data/reticle_analysis_grid.csv">reticle_analysis_grid.csv</a></li><li><a href="data/reticle_analysis_library.csv">reticle_analysis_library.csv</a></li><li><a href="data/reticle_analysis_macros.csv">reticle_analysis_macros.csv</a></li><li><a href="data/reticle_analysis_map.csv">reticle_analysis_map.csv</a></li><li><a href="data/reticle_analysis_meta.json">reticle_analysis_meta.json</a></li><li><a href="data/reticle_analysis_slot_areas.csv">reticle_analysis_slot_areas.csv</a></li><li><a href="data/reticle_analysis_slot_macros.csv">reticle_analysis_slot_macros.csv</a></li><li><a href="data/reticle_analysis_sram_rects.csv">reticle_analysis_sram_rects.csv</a></li><li><a href="data/reticle_analysis_windows.csv">reticle_analysis_windows.csv</a></li><li><a href="data/reticle_density_report.md">reticle_density_report.md</a></li>        </ul>
+        <p class="small text-muted mb-0">Generated by
+          <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from
+          <span class="run-mono">layout/T0P3.oas</span> (md5 <span class="run-mono">bfd37b3547ee338c21a9689a031bbb0c</span>).</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer class="dark-wrapper inverse-text">
+      <div class="container inner">
+        <div class="row">
+          <div class="col-md-12 col-lg-4 text-center text-lg-start">
+            <div class="widget">
+              <a href="https://wafer.space"><img src="https://wafer.space/assets/images/logo-light.webp" alt="wafer.space - Budget silicon manufacturing" /></a>
+              <div class="space20"></div>
+              <p>Budget silicon manufacturing.</p>
+            </div>
+          </div>
+          <div class="space30 d-lg-none d-xl-none"></div>
+          <div class="col-6 col-lg-4">
+            <div class="widget">
+              <h5 class="widget-title">Tiny Tapeout GF 0.3 · Die T0P3 on wafer.space Run 2</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="index.html">Run overview</a></li>
+                <li><a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf0p3/ws-run2-t0p3">Layout and manifest on GitHub</a></li>
+                <li><a href="https://github.com/wafer-space/tinytapeouts/blob/density-report/ttgf0p3/ws-run2-t0p3/reticle_density_report.md">Density report</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="widget">
+              <h5 class="widget-title">About this page</h5>
+              <p class="small mb-0">Generated on 2026-10-17 by
+                <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from the public reticle
+                layout. Every figure is measured from the layout; the data files are linked from the overview.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://wafer.space/assets/js/jquery.min.js"></script>
+  <script src="https://wafer.space/assets/js/popper.min.js"></script>
+  <script src="https://wafer.space/assets/js/bootstrap.min.js"></script>
+  <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="https://wafer.space/assets/js/plugins.js"></script>
+  <script src="https://wafer.space/assets/js/scripts.js"></script>
+  <script src="run.js?v=5a9bb072ca"></script>
+</body>
+</html>
