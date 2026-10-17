@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiny Tapeout GF 0.2 on wafer.space Run 1 designs</title>
+  <meta name="robots" content="noindex">
+  <style>
+    :root { --bg: transparent; --card: #ffffff; --ink: #343f52; --muted: #6c757d; --line: #e6ebf0; --accent: #3f78e0; }
+    @media (prefers-color-scheme: dark) {
+      :root { --card: #262626; --ink: #e0e0e0; --muted: #a0a0a0; --line: #3a3a3a; --accent: #7aa7ff; }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--ink);
+      font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .strip { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 8px 16px 14px;
+      height: 300px; align-items: stretch; }
+    .card { flex: 0 0 auto; width: 300px; scroll-snap-align: start; background: var(--card); border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(30, 34, 40, 0.12); text-decoration: none; color: inherit; display: flex;
+      flex-direction: column; overflow: hidden; }
+    .card:hover, .card:focus { outline: 2px solid var(--accent); }
+    .images { display: flex; height: 200px; background: #0a0c14; }
+    .images figure { margin: 0; flex: 1 1 0; position: relative; display: flex; align-items: center;
+      justify-content: center; overflow: hidden; }
+    .images figure + figure { border-left: 1px solid #222; }
+    .images img { max-width: 100%; max-height: 100%; object-fit: contain; }
+    .images figcaption { position: absolute; bottom: 4px; left: 6px; font-size: 10px; color: #fff;
+      background: rgba(0, 0, 0, 0.55); padding: 0 4px; border-radius: 3px; }
+    .body { padding: 10px 12px; }
+    .code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--muted); }
+    .name { font-weight: 700; font-size: 14px; line-height: 1.25; margin: 2px 0 4px; display: -webkit-box;
+      -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .meta { font-size: 12px; color: var(--muted); }
+    .credit { display: block; font-weight: 400; font-size: 11px; color: var(--muted); margin-top: 10px; }
+    .credit a { color: inherit; }
+    .more { flex: 0 0 auto; width: 200px; flex-direction: column; scroll-snap-align: start; display: flex; align-items: center;
+      justify-content: center; text-align: center; font-weight: 700; color: var(--accent); text-decoration: none;
+      border: 2px dashed var(--line); border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <div class="strip">
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/000.html" target="_top">
+      <div class="images">
+<figure><img src="renders/000_thumb.webp" alt="Layout render of Chip ROM" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">000 · Other digital</div>
+        <div class="name">Chip ROM</div>
+        <div class="meta">1 × 1 slot · 237 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/001.html" target="_top">
+      <div class="images">
+<figure><img src="renders/001_thumb.webp" alt="Layout render of Tiny Tapeout Factory Test" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">001 · Multi-project die</div>
+        <div class="name">Tiny Tapeout Factory Test</div>
+        <div class="meta">1 × 1 slot · 90 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/032.html" target="_top">
+      <div class="images">
+<figure><img src="renders/032_thumb.webp" alt="Layout render of Zedulo TestChip1" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">032 · Other digital</div>
+        <div class="name">Zedulo TestChip1</div>
+        <div class="meta">1 × 1 slot · 1k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/033.html" target="_top">
+      <div class="images">
+<figure><img src="renders/033_thumb.webp" alt="Layout render of Wafer.space Logo VGA Screensaver" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">033 · Art and logos</div>
+        <div class="name">Wafer.space Logo VGA Screensaver</div>
+        <div class="meta">1 × 2 slot · 2k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/038.html" target="_top">
+      <div class="images">
+<figure><img src="renders/038_thumb.webp" alt="Layout render of Wildcat RISC-V" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">038 · RISC-V and CPUs</div>
+        <div class="name">Wildcat RISC-V</div>
+        <div class="meta">3 × 2 slot · 6k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/039.html" target="_top">
+      <div class="images">
+<figure><img src="renders/039_thumb.webp" alt="Layout render of TinyQV Risc-V SoC" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">039 · RISC-V and CPUs</div>
+        <div class="name">TinyQV Risc-V SoC</div>
+        <div class="meta">3 × 4 slot · 20k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/101.html" target="_top">
+      <div class="images">
+<figure><img src="renders/101_thumb.webp" alt="Layout render of SCµM-BLE-RX" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">101 · Other digital</div>
+        <div class="name">SCµM-BLE-RX</div>
+        <div class="meta">3 × 4 slot · 23k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/102.html" target="_top">
+      <div class="images">
+<figure><img src="renders/102_thumb.webp" alt="Layout render of Silly-Faust" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">102 · Other digital</div>
+        <div class="name">Silly-Faust</div>
+        <div class="meta">4 × 2 slot · 10k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/103.html" target="_top">
+      <div class="images">
+<figure><img src="renders/103_thumb.webp" alt="Layout render of Simon&#39;s Caterpillar" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">103 · Other digital</div>
+        <div class="name">Simon&#39;s Caterpillar</div>
+        <div class="meta">1 × 2 slot · 2k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/128.html" target="_top">
+      <div class="images">
+<figure><img src="renders/128_thumb.webp" alt="Layout render of VGA clock" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">128 · Retro computing</div>
+        <div class="name">VGA clock</div>
+        <div class="meta">1 × 1 slot · 860 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/129.html" target="_top">
+      <div class="images">
+<figure><img src="renders/129_thumb.webp" alt="Layout render of 2x2 MAC Systolic array with DFT" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">129 · Other digital</div>
+        <div class="name">2x2 MAC Systolic array with DFT</div>
+        <div class="meta">1 × 2 slot · 3k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/130.html" target="_top">
+      <div class="images">
+<figure><img src="renders/130_thumb.webp" alt="Layout render of USB CDC (Serial) Device" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">130 · Other digital</div>
+        <div class="name">USB CDC (Serial) Device</div>
+        <div class="meta">1 × 2 slot · 3k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/134.html" target="_top">
+      <div class="images">
+<figure><img src="renders/134_thumb.webp" alt="Layout render of VGA Drop (audio/visual demo)" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">134 · Retro computing</div>
+        <div class="name">VGA Drop (audio/visual demo)</div>
+        <div class="meta">2 × 2 slot · 4k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/135.html" target="_top">
+      <div class="images">
+<figure><img src="renders/135_thumb.webp" alt="Layout render of raybox-zero TTGF0p2 edition" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">135 · Retro computing</div>
+        <div class="name">raybox-zero TTGF0p2 edition</div>
+        <div class="meta">3 × 4 slot · 16k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/194.html" target="_top">
+      <div class="images">
+<figure><img src="renders/194_thumb.webp" alt="Layout render of 2048 sliding tile puzzle game (VGA)" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">194 · Retro computing</div>
+        <div class="name">2048 sliding tile puzzle game (VGA)</div>
+        <div class="meta">2 × 2 slot · 5k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/196.html" target="_top">
+      <div class="images">
+<figure><img src="renders/196_thumb.webp" alt="Layout render of Quickscope" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">196 · Other digital</div>
+        <div class="name">Quickscope</div>
+        <div class="meta">1 × 2 slot · 2k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/197.html" target="_top">
+      <div class="images">
+<figure><img src="renders/197_thumb.webp" alt="Layout render of LISA 8-Bit Microcontroller" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">197 · RISC-V and CPUs</div>
+        <div class="name">LISA 8-Bit Microcontroller</div>
+        <div class="meta">3 × 4 slot · 17k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/198.html" target="_top">
+      <div class="images">
+<figure><img src="renders/198_thumb.webp" alt="Layout render of easy PAL" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">198 · Other digital</div>
+        <div class="name">easy PAL</div>
+        <div class="meta">1 × 2 slot · 2k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/199.html" target="_top">
+      <div class="images">
+<figure><img src="renders/199_thumb.webp" alt="Layout render of VGA Nyan Cat" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">199 · Retro computing</div>
+        <div class="name">VGA Nyan Cat</div>
+        <div class="meta">1 × 2 slot · 3k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/288.html" target="_top">
+      <div class="images">
+<figure><img src="renders/288_thumb.webp" alt="Layout render of Notre Dame - Lockpick Game TT Example" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">288 · Multi-project die</div>
+        <div class="name">Notre Dame - Lockpick Game TT Example</div>
+        <div class="meta">1 × 2 slot · 3k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/295.html" target="_top">
+      <div class="images">
+<figure><img src="renders/295_thumb.webp" alt="Layout render of KianV uLinux SoC" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">295 · RISC-V and CPUs</div>
+        <div class="name">KianV uLinux SoC</div>
+        <div class="meta">4 × 4 slot · 20k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/358.html" target="_top">
+      <div class="images">
+<figure><img src="renders/358_thumb.webp" alt="Layout render of Notre Dame - CSE 30342 - DIC - Advanced FSM Final Project Example" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">358 · Other digital</div>
+        <div class="name">Notre Dame - CSE 30342 - DIC - Advanced FSM Final Project Example</div>
+        <div class="meta">1 × 2 slot · 2k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/359.html" target="_top">
+      <div class="images">
+<figure><img src="renders/359_thumb.webp" alt="Layout render of Simple RISC-V" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">359 · RISC-V and CPUs</div>
+        <div class="name">Simple RISC-V</div>
+        <div class="meta">4 × 2 slot · 11k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/384.html" target="_top">
+      <div class="images">
+<figure><img src="renders/384_thumb.webp" alt="Layout render of LEDs Racer" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">384 · Other digital</div>
+        <div class="name">LEDs Racer</div>
+        <div class="meta">1 × 2 slot · 1k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/385.html" target="_top">
+      <div class="images">
+<figure><img src="renders/385_thumb.webp" alt="Layout render of Frequency Counter SSD1306 OLED" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">385 · Other digital</div>
+        <div class="name">Frequency Counter SSD1306 OLED</div>
+        <div class="meta">1 × 2 slot · 1k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/391.html" target="_top">
+      <div class="images">
+<figure><img src="renders/391_thumb.webp" alt="Layout render of megabytebeat" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">391 · Other digital</div>
+        <div class="name">megabytebeat</div>
+        <div class="meta">3 × 2 slot · 9k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/451.html" target="_top">
+      <div class="images">
+<figure><img src="renders/451_thumb.webp" alt="Layout render of Asicle v2" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">451 · Other digital</div>
+        <div class="name">Asicle v2</div>
+        <div class="meta">2 × 2 slot · 4k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/454.html" target="_top">
+      <div class="images">
+<figure><img src="renders/454_thumb.webp" alt="Layout render of CAN Controller for Rocket" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">454 · Other digital</div>
+        <div class="name">CAN Controller for Rocket</div>
+        <div class="meta">1 × 2 slot · 1k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/455.html" target="_top">
+      <div class="images">
+<figure><img src="renders/455_thumb.webp" alt="Layout render of Zilog Z80" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">455 · Retro computing</div>
+        <div class="name">Zilog Z80</div>
+        <div class="meta">2 × 2 slot · 5k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/481.html" target="_top">
+      <div class="images">
+<figure><img src="renders/481_thumb.webp" alt="Layout render of ROTFPGA v2" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">481 · Other digital</div>
+        <div class="name">ROTFPGA v2</div>
+        <div class="meta">1 × 2 slot · 2k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/483.html" target="_top">
+      <div class="images">
+<figure><img src="renders/483_thumb.webp" alt="Layout render of 7-Segment Digital Desk Clock" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">483 · Other digital</div>
+        <div class="name">7-Segment Digital Desk Clock</div>
+        <div class="meta">1 × 1 slot · 746 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/485.html" target="_top">
+      <div class="images">
+<figure><img src="renders/485_thumb.webp" alt="Layout render of MarcoPolo" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">485 · Other digital</div>
+        <div class="name">MarcoPolo</div>
+        <div class="meta">1 × 1 slot · 726 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/487.html" target="_top">
+      <div class="images">
+<figure><img src="renders/487_thumb.webp" alt="Layout render of Linear Timecode (LTC) generator" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">487 · Other digital</div>
+        <div class="name">Linear Timecode (LTC) generator</div>
+        <div class="meta">1 × 1 slot · 777 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/513.html" target="_top">
+      <div class="images">
+<figure><img src="renders/513_thumb.webp" alt="Layout render of Classic 8-bit era Programmable Sound Generator SN76489" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">513 · Other digital</div>
+        <div class="name">Classic 8-bit era Programmable Sound Generator SN76489</div>
+        <div class="meta">1 × 1 slot · 1k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/515.html" target="_top">
+      <div class="images">
+<figure><img src="renders/515_thumb.webp" alt="Layout render of VGA Tiny Logo" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">515 · Art and logos</div>
+        <div class="name">VGA Tiny Logo</div>
+        <div class="meta">1 × 1 slot · 1k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/517.html" target="_top">
+      <div class="images">
+<figure><img src="renders/517_thumb.webp" alt="Layout render of Ring Oscillator (5 inverter)" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">517 · Other digital</div>
+        <div class="name">Ring Oscillator (5 inverter)</div>
+        <div class="meta">1 × 1 slot · 61 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/519.html" target="_top">
+      <div class="images">
+<figure><img src="renders/519_thumb.webp" alt="Layout render of Simon Says memory game" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">519 · Other digital</div>
+        <div class="name">Simon Says memory game</div>
+        <div class="meta">1 × 1 slot · 2k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/545.html" target="_top">
+      <div class="images">
+<figure><img src="renders/545_thumb.webp" alt="Layout render of Flame demo" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">545 · Other digital</div>
+        <div class="name">Flame demo</div>
+        <div class="meta">1 × 1 slot · 1k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/547.html" target="_top">
+      <div class="images">
+<figure><img src="renders/547_thumb.webp" alt="Layout render of WokwiPWM" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">547 · Other digital</div>
+        <div class="name">WokwiPWM</div>
+        <div class="meta">1 × 1 slot · 1k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/549.html" target="_top">
+      <div class="images">
+<figure><img src="renders/549_thumb.webp" alt="Layout render of Dog Battle Game" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">549 · Retro computing</div>
+        <div class="name">Dog Battle Game</div>
+        <div class="meta">1 × 1 slot · 1k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/551.html" target="_top">
+      <div class="images">
+<figure><img src="renders/551_thumb.webp" alt="Layout render of PVTMonitorSuite" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">551 · Other digital</div>
+        <div class="name">PVTMonitorSuite</div>
+        <div class="meta">1 × 1 slot · 1k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/577.html" target="_top">
+      <div class="images">
+<figure><img src="renders/577_thumb.webp" alt="Layout render of PILIPINAS_IC" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">577 · Other digital</div>
+        <div class="name">PILIPINAS_IC</div>
+        <div class="meta">1 × 1 slot · 82 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/579.html" target="_top">
+      <div class="images">
+<figure><img src="renders/579_thumb.webp" alt="Layout render of PRISM 8 with TinySnake" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">579 · Other digital</div>
+        <div class="name">PRISM 8 with TinySnake</div>
+        <div class="meta">1 × 1 slot · 1k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/581.html" target="_top">
+      <div class="images">
+<figure><img src="renders/581_thumb.webp" alt="Layout render of Register bank accessible through SPI and I2C" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">581 · Other digital</div>
+        <div class="name">Register bank accessible through SPI and I2C</div>
+        <div class="meta">1 × 1 slot · 897 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/583.html" target="_top">
+      <div class="images">
+<figure><img src="renders/583_thumb.webp" alt="Layout render of Cell mux" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">583 · Other digital</div>
+        <div class="name">Cell mux</div>
+        <div class="meta">1 × 1 slot · 677 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/609.html" target="_top">
+      <div class="images">
+<figure><img src="renders/609_thumb.webp" alt="Layout render of Super-Simple-SPI-CPU" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">609 · RISC-V and CPUs</div>
+        <div class="name">Super-Simple-SPI-CPU</div>
+        <div class="meta">1 × 1 slot · 761 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/610.html" target="_top">
+      <div class="images">
+<figure><img src="renders/610_thumb.webp" alt="Layout render of Example of Bad Synchronizer" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">610 · Other digital</div>
+        <div class="name">Example of Bad Synchronizer</div>
+        <div class="meta">1 × 1 slot · 62 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/611.html" target="_top">
+      <div class="images">
+<figure><img src="renders/611_thumb.webp" alt="Layout render of Video mode tester" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">611 · Retro computing</div>
+        <div class="name">Video mode tester</div>
+        <div class="meta">1 × 1 slot · 1k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/612.html" target="_top">
+      <div class="images">
+<figure><img src="renders/612_thumb.webp" alt="Layout render of One Bit PUF" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">612 · Security</div>
+        <div class="name">One Bit PUF</div>
+        <div class="meta">1 × 1 slot · 977 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/613.html" target="_top">
+      <div class="images">
+<figure><img src="renders/613_thumb.webp" alt="Layout render of DDR throughput and flop aperature test" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">613 · Other digital</div>
+        <div class="name">DDR throughput and flop aperature test</div>
+        <div class="meta">1 × 1 slot · 90 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/614.html" target="_top">
+      <div class="images">
+<figure><img src="renders/614_thumb.webp" alt="Layout render of Ring osc on VGA" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">614 · Retro computing</div>
+        <div class="name">Ring osc on VGA</div>
+        <div class="meta">1 × 1 slot · 473 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/615.html" target="_top">
+      <div class="images">
+<figure><img src="renders/615_thumb.webp" alt="Layout render of GF180MCU loopback tile with input skew measurement" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">615 · Other digital</div>
+        <div class="name">GF180MCU loopback tile with input skew measurement</div>
+        <div class="meta">1 × 1 slot · 81 logic cells · 5 V</div>
+      </div>
+    </a>
+    <div class="more"><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/" target="_top" style="color: inherit; text-decoration: none">All 52 designs<br>on Tiny Tapeout GF 0.2 · Die TTP2 on wafer.space Run 1 →</a>
+</div>
+  </div>
+</body>
+</html>
