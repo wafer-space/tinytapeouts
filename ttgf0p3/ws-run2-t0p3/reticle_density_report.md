@@ -236,6 +236,10 @@ Which transistor voltages and optional devices of the GF180MCU process the 32 de
 | MIM capacitors | 0 of 32 | — |
 | Salicided poly resistors | 0 of 32 | — |
 | Diffusion resistors | 0 of 32 | — |
+| N-well resistors | 0 of 32 | — |
+| Metal resistors | 0 of 32 | — |
+| Diodes (DIODE_MK) | 0 of 32 | — |
+| Well diodes | 0 of 32 | — |
 | Schottky diodes | 0 of 32 | — |
 | Zener diodes | 0 of 32 | — |
 | eFuses | 0 of 32 | — |
