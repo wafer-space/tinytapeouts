@@ -1,0 +1,82 @@
+== TTP2 reticle: 40 layers, 52 tt_um
+  vs tapeout-ws2512-output: common layers equal=39/40, differing=1, only-reticle=[], only-release=['22/4'], tt_um placements identical=False, names identical=True
+      22/0: reticle 1768344 vs release 1719508 (+48836)
+  vs tapeout-ws2512-wrapper: common layers equal=33/40, differing=7, only-reticle=[], only-release=['22/4', '30/4', '34/4', '36/4', '42/4', '46/4', '81/4'], tt_um placements identical=False, names identical=True
+      36/0: reticle 1973171 vs release 1455736 (+517435)
+      34/0: reticle 4666176 vs release 4350171 (+316005)
+      81/0: reticle 371162 vs release 75380 (+295782)
+      42/0: reticle 919357 vs release 644257 (+275100)
+      46/0: reticle 428470 vs release 224643 (+203827)
+      22/0: reticle 1768344 vs release 1719508 (+48836)
+      30/0: reticle 1970286 vs release 1926285 (+44001)
+  vs tapeout-ws2512-powergate-output: common layers equal=6/37, differing=31, only-reticle=['100/8', '119/5', '58/0'], only-release=['22/4'], tt_um placements identical=False, names identical=True
+      33/0: reticle 14650027 vs release 14947061 (-297034)
+      40/0: reticle 10845842 vs release 11128802 (-282960)
+      41/0: reticle 9558674 vs release 9830841 (-272167)
+      34/0: reticle 4666176 vs release 4417264 (+248912)
+      35/0: reticle 2138372 vs release 2322588 (-184216)
+      46/0: reticle 428470 vs release 545565 (-117095)
+      36/0: reticle 1973171 vs release 1856255 (+116916)
+      22/0: reticle 1768344 vs release 1693150 (+75194)
+  vs g801-draft-2-wrapper: common layers equal=17/40, differing=23, only-reticle=[], only-release=['22/4', '30/4', '34/4', '36/4', '42/4', '46/4', '81/4'], tt_um placements identical=False, names identical=True
+      36/0: reticle 1973171 vs release 1455521 (+517650)
+      34/0: reticle 4666176 vs release 4349853 (+316323)
+      81/0: reticle 371162 vs release 84197 (+286965)
+      42/0: reticle 919357 vs release 643948 (+275409)
+      46/0: reticle 428470 vs release 224094 (+204376)
+      22/0: reticle 1768344 vs release 1719545 (+48799)
+      30/0: reticle 1970286 vs release 1926294 (+43992)
+      33/0: reticle 14650027 vs release 14650148 (-121)
+== TTPG reticle: 37 layers, 52 tt_um
+  vs tapeout-ws2512-powergate-output: common layers equal=36/37, differing=1, only-reticle=[], only-release=['22/4'], tt_um placements identical=True, names identical=True
+      22/0: reticle 1737946 vs release 1693150 (+44796)
+  vs tapeout-ws2512-powergate-wrapper: common layers equal=30/37, differing=7, only-reticle=[], only-release=['22/4', '30/4', '34/4', '36/4', '42/4', '46/4', '81/4'], tt_um placements identical=True, names identical=True
+      36/0: reticle 1856255 vs release 1359845 (+496410)
+      34/0: reticle 4417264 vs release 4122824 (+294440)
+      42/0: reticle 966871 vs release 717366 (+249505)
+      81/0: reticle 429954 vs release 237767 (+192187)
+      46/0: reticle 545565 vs release 380664 (+164901)
+      22/0: reticle 1737946 vs release 1693150 (+44796)
+      30/0: reticle 1971990 vs release 1931150 (+40840)
+  vs tapeout-ws2512-output: common layers equal=6/37, differing=31, only-reticle=[], only-release=['100/8', '119/5', '22/4', '58/0'], tt_um placements identical=True, names identical=True
+      33/0: reticle 14947061 vs release 14650027 (+297034)
+      40/0: reticle 11128802 vs release 10845842 (+282960)
+      41/0: reticle 9830841 vs release 9558674 (+272167)
+      34/0: reticle 4417264 vs release 4666176 (-248912)
+      35/0: reticle 2322588 vs release 2138372 (+184216)
+      46/0: reticle 545565 vs release 428470 (+117095)
+      36/0: reticle 1856255 vs release 1973171 (-116916)
+      81/0: reticle 429954 vs release 371162 (+58792)
+== T0P3 reticle: 43 layers, 33 tt_um
+  vs tapeout-ws2607-output: common layers equal=42/43, differing=1, only-reticle=[], only-release=['22/4'], tt_um placements identical=True, names identical=True
+      22/0: reticle 1193297 vs release 1074418 (+118879)
+  vs tapeout-ws2607-wrapper: common layers equal=36/43, differing=7, only-reticle=[], only-release=['22/4', '30/4', '34/4', '36/4', '42/4', '46/4', '81/4'], tt_um placements identical=True, names identical=True
+      36/0: reticle 1955103 vs release 1122330 (+832773)
+      34/0: reticle 4489748 vs release 3782854 (+706894)
+      42/0: reticle 1591324 vs release 1020385 (+570939)
+      46/0: reticle 1162545 vs release 894698 (+267847)
+      81/0: reticle 430371 vs release 237567 (+192804)
+      22/0: reticle 1193297 vs release 1074418 (+118879)
+      30/0: reticle 1689130 vs release 1580736 (+108394)
+== T26A reticle: 40 layers, 96 tt_um
+  vs tapeout-ws2607-output: common layers equal=39/40, differing=1, only-reticle=[], only-release=['22/4'], tt_um placements identical=False, names identical=True
+      22/0: reticle 1886758 vs release 1837294 (+49464)
+  vs tapeout-ws2607-wrapper: common layers equal=33/40, differing=7, only-reticle=[], only-release=['22/4', '30/4', '34/4', '36/4', '42/4', '46/4', '81/4'], tt_um placements identical=False, names identical=True
+      36/0: reticle 1357118 vs release 681938 (+675180)
+      42/0: reticle 996886 vs release 589537 (+407349)
+      34/0: reticle 4087764 vs release 3756116 (+331648)
+      46/0: reticle 604106 vs release 384292 (+219814)
+      81/0: reticle 452651 vs release 237833 (+214818)
+      22/0: reticle 1886758 vs release 1837294 (+49464)
+      30/0: reticle 2023349 vs release 1978121 (+45228)
+== T26B reticle: 38 layers, 90 tt_um
+  vs tapeout-ws2607-output: common layers equal=37/38, differing=1, only-reticle=[], only-release=['22/4'], tt_um placements identical=False, names identical=True
+      22/0: reticle 1914154 vs release 1863863 (+50291)
+  vs tapeout-ws2607-wrapper: common layers equal=31/38, differing=7, only-reticle=[], only-release=['22/4', '30/4', '34/4', '36/4', '42/4', '46/4', '81/4'], tt_um placements identical=False, names identical=True
+      36/0: reticle 1361894 vs release 702597 (+659297)
+      42/0: reticle 991961 vs release 595241 (+396720)
+      34/0: reticle 4263997 vs release 3928586 (+335411)
+      46/0: reticle 603822 vs release 384157 (+219665)
+      81/0: reticle 448202 vs release 237830 (+210372)
+      22/0: reticle 1914154 vs release 1863863 (+50291)
+      30/0: reticle 2050785 vs release 2004619 (+46166)

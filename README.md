@@ -12,6 +12,8 @@
 
 The layer properties file for viewing the layouts in KLayout is `lyp/gf180mcu.lyp`.
 
+Each directory is generated from public inputs by the scripts in [scripts/](scripts/); see [scripts/README.md](scripts/README.md).
+
 # License
 
 The projects shown here are public. For information on licences, please refer to the individual repositories.

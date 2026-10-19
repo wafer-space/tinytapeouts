@@ -1,0 +1,10 @@
+TTP2 22/4 in release: 48836  22/0 diff: 48836
+   placements equal after stripping $N: True
+T26A 22/4 in release: 49464  22/0 diff: 49464
+   placements equal after stripping $N: True
+T26B 22/4 in release: 50291  22/0 diff: 50291
+   placements equal after stripping $N: True
+T0P3 22/4 in release: 118879  22/0 diff: 118879
+   placements equal after stripping $N: True
+TTPG 22/4 in release: 44796  22/0 diff: 44796
+   placements equal after stripping $N: True
