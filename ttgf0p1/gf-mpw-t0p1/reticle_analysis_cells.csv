@@ -310,9 +310,9 @@ CEL7,CEL7_tt_cell_macro_7,as_sc_mcu7t3v3,aoi21_2,False,3
 CEL7,CEL7_tt_cell_macro_7,as_sc_mcu7t3v3,aoi22_2,False,1
 CEL7,CEL7_tt_cell_macro_7,as_sc_mcu7t3v3,aoi31_2,False,1
 CEL7,CEL7_tt_cell_macro_7,as_sc_mcu7t3v3,clkbuff_12,False,3
-CEL7,CEL7_tt_cell_macro_7,as_sc_mcu7t3v3,decap_16,False,498
-CEL7,CEL7_tt_cell_macro_7,as_sc_mcu7t3v3,decap_4,False,269
-CEL7,CEL7_tt_cell_macro_7,as_sc_mcu7t3v3,decap_8,False,203
+CEL7,CEL7_tt_cell_macro_7,as_sc_mcu7t3v3,decap_16,True,498
+CEL7,CEL7_tt_cell_macro_7,as_sc_mcu7t3v3,decap_4,True,269
+CEL7,CEL7_tt_cell_macro_7,as_sc_mcu7t3v3,decap_8,True,203
 CEL7,CEL7_tt_cell_macro_7,as_sc_mcu7t3v3,dfxtp_2,False,12
 CEL7,CEL7_tt_cell_macro_7,as_sc_mcu7t3v3,fill_1,True,282
 CEL7,CEL7_tt_cell_macro_7,as_sc_mcu7t3v3,fill_2,True,254
@@ -357,9 +357,9 @@ CEL6,CEL6_tt_cell_macro_6,as_sc_mcu7t3v3,aoi21_2,False,3
 CEL6,CEL6_tt_cell_macro_6,as_sc_mcu7t3v3,aoi22_2,False,1
 CEL6,CEL6_tt_cell_macro_6,as_sc_mcu7t3v3,aoi31_2,False,1
 CEL6,CEL6_tt_cell_macro_6,as_sc_mcu7t3v3,clkbuff_12,False,3
-CEL6,CEL6_tt_cell_macro_6,as_sc_mcu7t3v3,decap_16,False,498
-CEL6,CEL6_tt_cell_macro_6,as_sc_mcu7t3v3,decap_4,False,269
-CEL6,CEL6_tt_cell_macro_6,as_sc_mcu7t3v3,decap_8,False,203
+CEL6,CEL6_tt_cell_macro_6,as_sc_mcu7t3v3,decap_16,True,498
+CEL6,CEL6_tt_cell_macro_6,as_sc_mcu7t3v3,decap_4,True,269
+CEL6,CEL6_tt_cell_macro_6,as_sc_mcu7t3v3,decap_8,True,203
 CEL6,CEL6_tt_cell_macro_6,as_sc_mcu7t3v3,dfxtp_2,False,12
 CEL6,CEL6_tt_cell_macro_6,as_sc_mcu7t3v3,fill_1,True,282
 CEL6,CEL6_tt_cell_macro_6,as_sc_mcu7t3v3,fill_2,True,254
