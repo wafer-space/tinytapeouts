@@ -34,6 +34,25 @@ memory limit. To check the scripts against what is committed, build into another
 | `gen_tt_index.py` | The repository's `README.md`, one row per die |
 | `ttcmp.py` | Fingerprints a layout (shape count per layer, every `tt_um_*` placement) to compare a die with its release |
 
+## A die made elsewhere: Tiny Tapeout GF 0.1
+
+Tiny Tapeout GF 0.1 was made on a GlobalFoundries private MPW run, not a wafer.space run, so there is no reticle to cut
+it from: its layout is the release asset named by `asset` in `dies.py`. Its projects were also synthesised and placed
+together as one block, so they have no tiles; their sizes come from that block's netlist, published with the release
+named by `blocks_tag`.
+
+```bash
+scripts/build_release_die.sh T0P1
+```
+
+| Script | What it does |
+|---|---|
+| `build_release_die.sh` | Runs the steps below for one such die |
+| `release_die.py` | Writes the release layout as OASIS, and the bounding box of each block (the shared project block, the cell tests, the pad test buffer) |
+| `xor_check.py` | Checks that the OASIS is the same geometry as the release layout, layer by layer |
+| `netlist_projects.py` | Which project each standard cell of the shared block belongs to, from the names of its nets |
+| `gen_release_repo.py` | `data/` (blocks, projects, index, release date), `images/<CODE>.svg`, `README.md` and `PROVENANCE.md` |
+
 The web pages at <https://wafer.space/tinytapeouts/> are built by ws-run-reports from these
 directories (`runs/tinytapeouts-*.toml` there).
 
