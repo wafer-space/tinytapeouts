@@ -18,7 +18,7 @@ PROJECT_RE = re.compile(r"mux_inst\.p(\d\d)_I\.")
 INST_RE = re.compile(r"^\s*(gf180mcu_\w+)\s+(\\\S+ |\S+)\s*\((.*?)\);", re.M | re.S)
 NET_RE = re.compile(r"\.\w+\(\s*(\\\S+ |[^()\s,]+)\s*\)")
 POWER = {"VDD", "VSS", "1'b0", "1'b1"}
-FILL = ("fill", "endcap", "filltie", "fillcap", "tap", "antenna", "diode", "tiel", "tieh")  # as in ws-run-reports analyze.py
+FILL = ("fill", "endcap", "filltie", "fillcap", "decap", "tap", "antenna", "diode", "tiel", "tieh")  # as in ws-run-reports analyze.py
 
 pnl, out = sys.argv[1:3]
 cells = []  # (type, nets)
