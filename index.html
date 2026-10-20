@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="run.css?v=70a2ddb2a6">
+  <link rel="stylesheet" type="text/css" href="run.css?v=9fd13fffae">
 </head>
 <body>
   <div class="content-wrapper">
@@ -84,7 +84,7 @@
      data-image-src="https://wafer.space/assets/images/header/mpw-one-partial-dice-top-1.jpg">
   <div class="container inner text-center">
     <h1 class="page-title">Tiny Tapeout<span class="page-title-sub">GF180MCU chips, measured project by project</span></h1>
-    <p class="lead">5 chips · 293 projects</p>
+    <p class="lead">5 chips (one of them in two editions) · 293 projects</p>
     <p class="mb-0 run-hero-actions">
 <a class="btn btn-s" href="https://app.tinytapeout.com/shuttles/ttgf26c">Submit your design by 7 December 2026</a>      <a class="btn btn-s btn-white" href="https://store.tinytapeout.com/products/Development-Kits-c198115270">Buy a chip and board</a>
       <a class="btn btn-s btn-white" href="#tinytapeout">What is Tiny Tapeout?</a></p>
@@ -106,7 +106,7 @@
   <div class="col-md-4 mb-30">
     <span class="icon icon-blob icon-blob-purple color-purple mb-20"><i class="jam jam-pencil"></i><span class="step bg-purple">2</span></span>
     <h5>Put your design on the next one</h5>
-    <p>Tiny Tapeout GF 26c and Tiny Tapeout GF 26d take projects until
+    <p>Tiny Tapeout GF 26c and 26d take projects until
       <strong>7 December 2026</strong>, to be made on wafer.space Run 3.</p>
     <a class="btn btn-s" href="https://app.tinytapeout.com/shuttles/ttgf26c">Submit a project</a>
   </div>
@@ -158,24 +158,24 @@
     <h3 class="mt-20 mb-15 text-center">Planned</h3>
     <div class="table-responsive run-planned">
     <table class="table run-table bg-white">
-      <thead><tr><th>Chip</th><th>Projects close</th><th>Shipping</th><th>Made on</th></tr></thead>
+      <thead><tr><th>Chip</th><th>Projects close</th><th>Shipping</th><th class="d-none d-md-table-cell">Made on</th></tr></thead>
       <tbody>
-      <tr><td>Tiny Tapeout GF 27a</td>
+      <tr><td class="run-nowrap">Tiny Tapeout GF 27a</td>
         <td>April 2027 <span class="text-muted">(estimated)</span></td>
         <td>October 2027</td>
-        <td><span class="text-muted">not yet announced</span></td></tr>
-      <tr><td>Tiny Tapeout GF 27b</td>
+        <td class="d-none d-md-table-cell"><span class="text-muted">not yet announced</span></td></tr>
+      <tr><td class="run-nowrap">Tiny Tapeout GF 27b</td>
         <td>July 2027 <span class="text-muted">(estimated)</span></td>
         <td>January 2028</td>
-        <td><span class="text-muted">not yet announced</span></td></tr>
-      <tr><td>Tiny Tapeout GF 27c</td>
+        <td class="d-none d-md-table-cell"><span class="text-muted">not yet announced</span></td></tr>
+      <tr><td class="run-nowrap">Tiny Tapeout GF 27c</td>
         <td>October 2027 <span class="text-muted">(estimated)</span></td>
         <td>April 2028</td>
-        <td><span class="text-muted">not yet announced</span></td></tr>
-      <tr><td>Tiny Tapeout GF 28a</td>
+        <td class="d-none d-md-table-cell"><span class="text-muted">not yet announced</span></td></tr>
+      <tr><td class="run-nowrap">Tiny Tapeout GF 28a</td>
         <td>January 2028 <span class="text-muted">(estimated)</span></td>
         <td>June 2028</td>
-        <td><span class="text-muted">not yet announced</span></td></tr>
+        <td class="d-none d-md-table-cell"><span class="text-muted">not yet announced</span></td></tr>
       </tbody>
     </table>
     </div>
@@ -198,7 +198,7 @@
           <div class="run-card-body">
             <h5 class="post-title mb-5"><a href="ttgf0p1/gf-mpw-t0p1/index.html">Tiny Tapeout GF 0.1</a></h5>
             <p class="mb-5 text-muted small">Made on a GlobalFoundries private MPW run</p>
-            <p class="mb-5 text-muted small">24 projects · 73,557 logic cells</p>
+            <p class="mb-5 text-muted small">24 projects · 71,617 logic cells</p>
 <p class="mb-0 small"><span class="text-muted">Latest:</span> Tiny Tapeout GF 0.1 tapeout release
               <span class="text-muted">(24 November 2025)</span></p>          </div>
           <div class="run-card-actions">
@@ -476,7 +476,7 @@
             <div class="widget">
               <h5 class="widget-title">Tiny Tapeout · GF180MCU chips, measured project by project</h5>
               <ul class="list-unstyled mb-0">
-                <li><a href="index.html">Run overview</a></li>
+                <li><a href="index.html">All Tiny Tapeout chips</a></li>
                 <li><a href="https://github.com/wafer-space/tinytapeouts">Layout and manifest on GitHub</a></li>
                 <li><a href="https://github.com/wafer-space/tinytapeouts/tree/density-report">Density report</a></li>
               </ul>
@@ -486,8 +486,9 @@
             <div class="widget">
               <h5 class="widget-title">About this page</h5>
               <p class="small mb-0">Generated on 2026-10-20 by
-                <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from the public reticle
-                layout. Every figure is measured from the layout; the data files are linked from the overview.</p>
+                <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a>. Sizes, cells and
+                transistors are measured from the public layout; dates come from the published schedules. The data
+                files are linked from the overview.</p>
             </div>
           </div>
         </div>
@@ -502,6 +503,6 @@
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="run.js?v=70a2ddb2a6"></script>
+  <script src="run.js?v=9fd13fffae"></script>
 </body>
 </html>
