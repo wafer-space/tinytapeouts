@@ -1,0 +1,26 @@
+CODE,PROJECT,TOP,MACRO_ADDRESS,AUTHOR,PROJECT_DETAILS,REPOSITORY,COMMIT,ORIGINAL_TILES,LOGIC_CELLS,FLIP_FLOPS
+000,Chip ROM,tt_um_chip_rom,0,Uri Shaked,ROM with information about the chip,https://github.com/TinyTapeout/tt-chip-rom,7b1d3638536711cabd8fd4d131e10a37cdd208df,1x1,,
+001,TinyTapeout Factory Test,tt_um_factory_test,1,Tiny Tapeout,Factory test module,https://github.com/TinyTapeout/tt07-factory-test,affdc8cd37ceed313439a08f3a83859c50203076,1x1,70,9
+002,Pad Test,tt_um_pad_test,2,htfab,,,,1x1,218,27
+003,Simon Says memory game,tt_um_urish_simon,3,Uri Shaked,Repeat the sequence of colors and sounds to win the game,https://github.com/urish/tt07-simon-game,857fc56465b720bea0c22239a976aa3b2e47de02,1x1,1242,194
+004,VGA clock,tt_um_vga_clock,4,Matt Venn,Shows the time on a VGA screen,https://github.com/mattvenn/tt07-vga-clock,7a30cdd04f9efdb74a65fac3441d585483587cce,1x1,847,146
+005,7-Seg 'Tiny Tapeout' Display,tt_um_wokwi_397140982440144897,5,J. Rosenthal & htfab,This circuit will output a string of characters (’tiny tapeout’) to the 7-segment display.,https://github.com/htfab/tt07-7seg,861070a8c390a723eeac738001d8fb23c353907d,1x1,55,4
+006,"Neptune guitar tuner (proportional window, version b, debug output on bidir pins, larger set of frequencies)",tt_um_psychogenic_neptuneproportional,6,Pat Deegan,,https://github.com/psychogenic/tt04-neptune,3854c9280281eac0806a5b2f9983e316c6406a09,1x1,868,136
+007,RGB Mixer demo,tt_um_mattvenn_rgb_mixer,7,Matt Venn,Zero to ASIC demo project,https://github.com/mattvenn/tt06-rgb-mixer,73b9b9a8ad9f6e2656c30faa81a76aee2b797b00,1x1,551,111
+008,MULDIV unit (4-bit signed/unsigned),tt_um_dlmiles_muldiv4,8,Darryl Miles,,https://github.com/dlmiles/tt04-muldiv4,1be4eb1afe68dd31b53dc008477c6746e870d557,1x1,,
+009,One Sprite Pony,tt_um_top_mole99,9,Leo Moser,,https://github.com/mole99/tt05-one-sprite-pony,763590f5892dad22081c96777b660326b326c83c,1x1,1190,255
+010,VGA Experiments,tt_um_tomkeddie_a,10,Tom Keddie,,https://github.com/TomKeddie/tinytapeout-2023-tt05a,621f0f1604bb5d5ea33630bae4f026edd93948cb,1x1,950,95
+011,Super Mario Tune on A Piezo Speaker,tt_um_meriac_play_tune,11,Milosch Meriac,,https://github.com/meriac/tt05-play-tune,554f6a5be2c5362097ce867ed9c3aa783d56e0fc,1x1,442,52
+012,ROTFPGA v2,tt_um_htfab_rotfpga2,12,htfab,,https://github.com/htfab/rotfpga2,369dae341d4d6d73c76958e78849efbda5640ebd,1x1,2179,64
+013,Character Selector,tt_um_wokwi_380408823952452609,13,Dakota W Winslow,,https://github.com/dakotawinslow/TinyTapeout5,ba59a42f6cde2818a6a8b80be1c42e3492eb4408,1x1,141,3
+014,Flappy VGA,tt_um_flappy_vga_cutout1,14,Daniel Robinson,,https://github.com/Cutout1/tt05-flappy-vga,ba3ea911955f88c4ff137a878be4bf49c4e67658,1x1,683,82
+015,Classic 8-bit era Programmable Sound Generator AY-3-8913,tt_um_rejunity_ay8913,15,ReJ aka Renaldas Zioma,,https://github.com/rejunity/tt05-psg-ay8913,a93ee1da79593aca863c5d507e2177e233f67ffe,1x1,1351,219
+016,UART uwuifier,tt_um_uwuifier,16,Anish Singhani,,https://github.com/asinghani/uwuifier-tt05,bf8bcdb06a3b21943d9a78886e99f0ac4f9155b6,1x1,634,135
+017,USB CDC (Serial),tt_um_urish_usb_cdc,17,Uri Shaked,,https://github.com/TinyTapeout/tt04-usbcdc,91b374368fe50a87ca772199ca287de41c83f9ea,1x2,2622,383
+018,Tiny Breakout,tt_um_robojan_top,18,Robbert-Jan de Jager,,https://github.com/robojan/tt04-breakout-submission,19bec184c8db4208729cbac44f92abc956d84f39,1x2,1961,400
+019,TinyQV Risc-V SoC,tt_um_MichaelBell_tinyQV,19,Michael Bell,A Risc-V SoC for Tiny Tapeout,https://github.com/MichaelBell/tt06-tinyQV,981d02792d4c2545e995b57b89df889cae925cd5,2x2,5477,1036
+020,VGA Dino Game,tt_um_dinogame,20,Anish Singhani,,https://github.com/asinghani/dinogame-tt05,1260f6cce9c49f074d378ede868ff53714f2e17d,2x2,3143,263
+021,No Time for Squares,tt_um_no_time_for_squares_tommythorn,21,Tommy Thorn,,https://github.com/tommythorn/no-time-for-squares,e790eadb9ef3e7cea80ea629d8d2abceb4f720fe,3x2,6459,651
+022,raybox-zero TT07 edition,tt_um_algofoogle_raybox_zero,22,algofoogle (Anton Maurovic),TT07 improved resub of 'simple VGA ray caster game demo' from TT04,https://github.com/algofoogle/tt07-raybox-zero,52f0c950ce848645954d855fd43489ddb16e0dc4,6x2,12093,1357
+023,KianV uLinux SoC,tt_um_kianV_rv32ima_uLinux_SoC,23,Hirosh Dabui,A RISC-V ASIC that can boot μLinux.,https://github.com/splinedrive/KianV-RV32IMA-RISC-V-uLinux-SoC,2878bee2545d2ee02f16e4b0f17d784585b475af,8x2,19265,2563
+shared,"Multiplexer and controller, with the combinational projects",,,,,,,,559,3

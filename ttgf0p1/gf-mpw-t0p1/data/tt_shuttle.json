@@ -1,0 +1,12 @@
+{
+ "commit": "37caa2d6ece538cdcb29e79477f80d16c21cc52e",
+ "id": "ttgf0p1",
+ "name": "Tiny Tapeout GF 0.1",
+ "release": {
+  "date": "2025-11-24",
+  "description": "Tiny Tapeout publishes the die's final layout (v23) for a GlobalFoundries private MPW run",
+  "tag": "v23",
+  "url": "https://github.com/TinyTapeout/tinytapeout-gf-0p1/releases/tag/v23"
+ },
+ "repo": "https://github.com/TinyTapeout/tinytapeout-gf-0p1"
+}
