@@ -1,0 +1,611 @@
+slot_id,cell_name,scope,device,uses,count,area_um2,avg_area_um2,unit
+CEL2,CEL2_tt_cell_macro_2,designer,custom_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,custom_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,custom_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,native,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,ldmos,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,moscap,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,mim,0,0,0.0,0,FuseTop shape; area of the capacitor top plate
+CEL2,CEL2_tt_cell_macro_2,designer,hres,0,0,0.0,0,resistor body; area of the body under its marker
+CEL2,CEL2_tt_cell_macro_2,designer,poly_unsal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL2,CEL2_tt_cell_macro_2,designer,poly_sal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL2,CEL2_tt_cell_macro_2,designer,diff_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL2,CEL2_tt_cell_macro_2,designer,nwell_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL2,CEL2_tt_cell_macro_2,designer,metal_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL2,CEL2_tt_cell_macro_2,designer,dnwell,0,0,0.0,0,merged marker shape; area of the marker
+CEL2,CEL2_tt_cell_macro_2,designer,bjt,0,0,0.0,0,merged marker shape; area of the marker
+CEL2,CEL2_tt_cell_macro_2,designer,schottky,0,0,0.0,0,merged marker shape; area of the marker
+CEL2,CEL2_tt_cell_macro_2,designer,diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL2,CEL2_tt_cell_macro_2,designer,well_diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL2,CEL2_tt_cell_macro_2,designer,zener,0,0,0.0,0,merged marker shape; area of the marker
+CEL2,CEL2_tt_cell_macro_2,designer,efuse,0,0,0.0,0,merged marker shape; area of the marker
+CEL2,CEL2_tt_cell_macro_2,designer,otp,0,0,0.0,0,merged marker shape; area of the marker
+CEL2,CEL2_tt_cell_macro_2,designer,inductor,0,0,0.0,0,merged marker shape; area of the marker
+CEL2,CEL2_tt_cell_macro_2,designer,cap_marker_other,0,0,0.0,0,merged marker shape; area of the marker
+CEL2,CEL2_tt_cell_macro_2,designer,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,designer,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,pads,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL2,CEL2_tt_cell_macro_2,library,std:hfd_sc_mcu7t5v0,1,2506,0.0,0.0,cell placement; no area
+CEL2,CEL2_tt_cell_macro_2,designer,highest_metal,1,5,0,0,"metal level (1-5, 6 = MetalTop)"
+CEL1,CEL1_tt_cell_macro_1,designer,custom_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,custom_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,custom_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,native,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,ldmos,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,moscap,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,mim,0,0,0.0,0,FuseTop shape; area of the capacitor top plate
+CEL1,CEL1_tt_cell_macro_1,designer,hres,0,0,0.0,0,resistor body; area of the body under its marker
+CEL1,CEL1_tt_cell_macro_1,designer,poly_unsal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL1,CEL1_tt_cell_macro_1,designer,poly_sal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL1,CEL1_tt_cell_macro_1,designer,diff_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL1,CEL1_tt_cell_macro_1,designer,nwell_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL1,CEL1_tt_cell_macro_1,designer,metal_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL1,CEL1_tt_cell_macro_1,designer,dnwell,0,0,0.0,0,merged marker shape; area of the marker
+CEL1,CEL1_tt_cell_macro_1,designer,bjt,0,0,0.0,0,merged marker shape; area of the marker
+CEL1,CEL1_tt_cell_macro_1,designer,schottky,0,0,0.0,0,merged marker shape; area of the marker
+CEL1,CEL1_tt_cell_macro_1,designer,diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL1,CEL1_tt_cell_macro_1,designer,well_diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL1,CEL1_tt_cell_macro_1,designer,zener,0,0,0.0,0,merged marker shape; area of the marker
+CEL1,CEL1_tt_cell_macro_1,designer,efuse,0,0,0.0,0,merged marker shape; area of the marker
+CEL1,CEL1_tt_cell_macro_1,designer,otp,0,0,0.0,0,merged marker shape; area of the marker
+CEL1,CEL1_tt_cell_macro_1,designer,inductor,0,0,0.0,0,merged marker shape; area of the marker
+CEL1,CEL1_tt_cell_macro_1,designer,cap_marker_other,0,0,0.0,0,merged marker shape; area of the marker
+CEL1,CEL1_tt_cell_macro_1,designer,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,designer,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,pads,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL1,CEL1_tt_cell_macro_1,library,std:fd_sc_mcu9t5v0,1,2279,0.0,0.0,cell placement; no area
+CEL1,CEL1_tt_cell_macro_1,designer,highest_metal,1,5,0,0,"metal level (1-5, 6 = MetalTop)"
+CEL3,CEL3_tt_cell_macro_3,designer,custom_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,custom_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,custom_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,native,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,ldmos,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,moscap,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,mim,0,0,0.0,0,FuseTop shape; area of the capacitor top plate
+CEL3,CEL3_tt_cell_macro_3,designer,hres,0,0,0.0,0,resistor body; area of the body under its marker
+CEL3,CEL3_tt_cell_macro_3,designer,poly_unsal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL3,CEL3_tt_cell_macro_3,designer,poly_sal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL3,CEL3_tt_cell_macro_3,designer,diff_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL3,CEL3_tt_cell_macro_3,designer,nwell_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL3,CEL3_tt_cell_macro_3,designer,metal_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL3,CEL3_tt_cell_macro_3,designer,dnwell,0,0,0.0,0,merged marker shape; area of the marker
+CEL3,CEL3_tt_cell_macro_3,designer,bjt,0,0,0.0,0,merged marker shape; area of the marker
+CEL3,CEL3_tt_cell_macro_3,designer,schottky,0,0,0.0,0,merged marker shape; area of the marker
+CEL3,CEL3_tt_cell_macro_3,designer,diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL3,CEL3_tt_cell_macro_3,designer,well_diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL3,CEL3_tt_cell_macro_3,designer,zener,0,0,0.0,0,merged marker shape; area of the marker
+CEL3,CEL3_tt_cell_macro_3,designer,efuse,0,0,0.0,0,merged marker shape; area of the marker
+CEL3,CEL3_tt_cell_macro_3,designer,otp,0,0,0.0,0,merged marker shape; area of the marker
+CEL3,CEL3_tt_cell_macro_3,designer,inductor,0,0,0.0,0,merged marker shape; area of the marker
+CEL3,CEL3_tt_cell_macro_3,designer,cap_marker_other,0,0,0.0,0,merged marker shape; area of the marker
+CEL3,CEL3_tt_cell_macro_3,designer,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,designer,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,pads,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL3,CEL3_tt_cell_macro_3,library,std:hfd_sc_mcu9t5v0,1,2279,0.0,0.0,cell placement; no area
+CEL3,CEL3_tt_cell_macro_3,designer,highest_metal,1,5,0,0,"metal level (1-5, 6 = MetalTop)"
+MAIN,MAIN_tt_main_macro,designer,custom_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,custom_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,custom_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,native,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,ldmos,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,moscap,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,mim,0,0,0.0,0,FuseTop shape; area of the capacitor top plate
+MAIN,MAIN_tt_main_macro,designer,hres,0,0,0.0,0,resistor body; area of the body under its marker
+MAIN,MAIN_tt_main_macro,designer,poly_unsal,0,0,0.0,0,resistor body; area of the body under its marker
+MAIN,MAIN_tt_main_macro,designer,poly_sal,0,0,0.0,0,resistor body; area of the body under its marker
+MAIN,MAIN_tt_main_macro,designer,diff_res,0,0,0.0,0,resistor body; area of the body under its marker
+MAIN,MAIN_tt_main_macro,designer,nwell_res,0,0,0.0,0,resistor body; area of the body under its marker
+MAIN,MAIN_tt_main_macro,designer,metal_res,0,0,0.0,0,resistor body; area of the body under its marker
+MAIN,MAIN_tt_main_macro,designer,dnwell,0,0,0.0,0,merged marker shape; area of the marker
+MAIN,MAIN_tt_main_macro,designer,bjt,0,0,0.0,0,merged marker shape; area of the marker
+MAIN,MAIN_tt_main_macro,designer,schottky,0,0,0.0,0,merged marker shape; area of the marker
+MAIN,MAIN_tt_main_macro,designer,diode,0,0,0.0,0,merged marker shape; area of the marker
+MAIN,MAIN_tt_main_macro,designer,well_diode,0,0,0.0,0,merged marker shape; area of the marker
+MAIN,MAIN_tt_main_macro,designer,zener,0,0,0.0,0,merged marker shape; area of the marker
+MAIN,MAIN_tt_main_macro,designer,efuse,0,0,0.0,0,merged marker shape; area of the marker
+MAIN,MAIN_tt_main_macro,designer,otp,0,0,0.0,0,merged marker shape; area of the marker
+MAIN,MAIN_tt_main_macro,designer,inductor,0,0,0.0,0,merged marker shape; area of the marker
+MAIN,MAIN_tt_main_macro,designer,cap_marker_other,0,0,0.0,0,merged marker shape; area of the marker
+MAIN,MAIN_tt_main_macro,designer,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,designer,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,pads,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+MAIN,MAIN_tt_main_macro,library,std:fd_sc_mcu7t5v0,1,166553,0.0,0.0,cell placement; no area
+MAIN,MAIN_tt_main_macro,designer,highest_metal,1,5,0,0,"metal level (1-5, 6 = MetalTop)"
+CEL0,CEL0_tt_cell_macro_0,designer,custom_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,custom_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,custom_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,native,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,ldmos,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,moscap,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,mim,0,0,0.0,0,FuseTop shape; area of the capacitor top plate
+CEL0,CEL0_tt_cell_macro_0,designer,hres,0,0,0.0,0,resistor body; area of the body under its marker
+CEL0,CEL0_tt_cell_macro_0,designer,poly_unsal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL0,CEL0_tt_cell_macro_0,designer,poly_sal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL0,CEL0_tt_cell_macro_0,designer,diff_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL0,CEL0_tt_cell_macro_0,designer,nwell_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL0,CEL0_tt_cell_macro_0,designer,metal_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL0,CEL0_tt_cell_macro_0,designer,dnwell,0,0,0.0,0,merged marker shape; area of the marker
+CEL0,CEL0_tt_cell_macro_0,designer,bjt,0,0,0.0,0,merged marker shape; area of the marker
+CEL0,CEL0_tt_cell_macro_0,designer,schottky,0,0,0.0,0,merged marker shape; area of the marker
+CEL0,CEL0_tt_cell_macro_0,designer,diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL0,CEL0_tt_cell_macro_0,designer,well_diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL0,CEL0_tt_cell_macro_0,designer,zener,0,0,0.0,0,merged marker shape; area of the marker
+CEL0,CEL0_tt_cell_macro_0,designer,efuse,0,0,0.0,0,merged marker shape; area of the marker
+CEL0,CEL0_tt_cell_macro_0,designer,otp,0,0,0.0,0,merged marker shape; area of the marker
+CEL0,CEL0_tt_cell_macro_0,designer,inductor,0,0,0.0,0,merged marker shape; area of the marker
+CEL0,CEL0_tt_cell_macro_0,designer,cap_marker_other,0,0,0.0,0,merged marker shape; area of the marker
+CEL0,CEL0_tt_cell_macro_0,designer,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,designer,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,pads,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL0,CEL0_tt_cell_macro_0,library,std:fd_sc_mcu7t5v0,1,2506,0.0,0.0,cell placement; no area
+CEL0,CEL0_tt_cell_macro_0,designer,highest_metal,1,5,0,0,"metal level (1-5, 6 = MetalTop)"
+BUFR,BUFR_tt_buffer_macro,designer,custom_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,custom_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,custom_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,native,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,ldmos,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,moscap,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,mim,0,0,0.0,0,FuseTop shape; area of the capacitor top plate
+BUFR,BUFR_tt_buffer_macro,designer,hres,0,0,0.0,0,resistor body; area of the body under its marker
+BUFR,BUFR_tt_buffer_macro,designer,poly_unsal,0,0,0.0,0,resistor body; area of the body under its marker
+BUFR,BUFR_tt_buffer_macro,designer,poly_sal,0,0,0.0,0,resistor body; area of the body under its marker
+BUFR,BUFR_tt_buffer_macro,designer,diff_res,0,0,0.0,0,resistor body; area of the body under its marker
+BUFR,BUFR_tt_buffer_macro,designer,nwell_res,0,0,0.0,0,resistor body; area of the body under its marker
+BUFR,BUFR_tt_buffer_macro,designer,metal_res,0,0,0.0,0,resistor body; area of the body under its marker
+BUFR,BUFR_tt_buffer_macro,designer,dnwell,0,0,0.0,0,merged marker shape; area of the marker
+BUFR,BUFR_tt_buffer_macro,designer,bjt,0,0,0.0,0,merged marker shape; area of the marker
+BUFR,BUFR_tt_buffer_macro,designer,schottky,0,0,0.0,0,merged marker shape; area of the marker
+BUFR,BUFR_tt_buffer_macro,designer,diode,0,0,0.0,0,merged marker shape; area of the marker
+BUFR,BUFR_tt_buffer_macro,designer,well_diode,0,0,0.0,0,merged marker shape; area of the marker
+BUFR,BUFR_tt_buffer_macro,designer,zener,0,0,0.0,0,merged marker shape; area of the marker
+BUFR,BUFR_tt_buffer_macro,designer,efuse,0,0,0.0,0,merged marker shape; area of the marker
+BUFR,BUFR_tt_buffer_macro,designer,otp,0,0,0.0,0,merged marker shape; area of the marker
+BUFR,BUFR_tt_buffer_macro,designer,inductor,0,0,0.0,0,merged marker shape; area of the marker
+BUFR,BUFR_tt_buffer_macro,designer,cap_marker_other,0,0,0.0,0,merged marker shape; area of the marker
+BUFR,BUFR_tt_buffer_macro,designer,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,designer,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,pads,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+BUFR,BUFR_tt_buffer_macro,library,std:fd_sc_mcu7t5v0,1,252,0.0,0.0,cell placement; no area
+BUFR,BUFR_tt_buffer_macro,designer,highest_metal,1,5,0,0,"metal level (1-5, 6 = MetalTop)"
+CEL4,CEL4_tt_cell_macro_4,designer,custom_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,custom_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,custom_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,native,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,ldmos,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,moscap,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,mim,0,0,0.0,0,FuseTop shape; area of the capacitor top plate
+CEL4,CEL4_tt_cell_macro_4,designer,hres,0,0,0.0,0,resistor body; area of the body under its marker
+CEL4,CEL4_tt_cell_macro_4,designer,poly_unsal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL4,CEL4_tt_cell_macro_4,designer,poly_sal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL4,CEL4_tt_cell_macro_4,designer,diff_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL4,CEL4_tt_cell_macro_4,designer,nwell_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL4,CEL4_tt_cell_macro_4,designer,metal_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL4,CEL4_tt_cell_macro_4,designer,dnwell,0,0,0.0,0,merged marker shape; area of the marker
+CEL4,CEL4_tt_cell_macro_4,designer,bjt,0,0,0.0,0,merged marker shape; area of the marker
+CEL4,CEL4_tt_cell_macro_4,designer,schottky,0,0,0.0,0,merged marker shape; area of the marker
+CEL4,CEL4_tt_cell_macro_4,designer,diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL4,CEL4_tt_cell_macro_4,designer,well_diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL4,CEL4_tt_cell_macro_4,designer,zener,0,0,0.0,0,merged marker shape; area of the marker
+CEL4,CEL4_tt_cell_macro_4,designer,efuse,0,0,0.0,0,merged marker shape; area of the marker
+CEL4,CEL4_tt_cell_macro_4,designer,otp,0,0,0.0,0,merged marker shape; area of the marker
+CEL4,CEL4_tt_cell_macro_4,designer,inductor,0,0,0.0,0,merged marker shape; area of the marker
+CEL4,CEL4_tt_cell_macro_4,designer,cap_marker_other,0,0,0.0,0,merged marker shape; area of the marker
+CEL4,CEL4_tt_cell_macro_4,designer,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,designer,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,pads,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL4,CEL4_tt_cell_macro_4,library,std:osu_sc_gp9t3v3,1,3612,0.0,0.0,cell placement; no area
+CEL4,CEL4_tt_cell_macro_4,designer,highest_metal,1,5,0,0,"metal level (1-5, 6 = MetalTop)"
+CEL7,CEL7_tt_cell_macro_7,designer,custom_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,custom_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,custom_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,native,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,ldmos,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,moscap,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,mim,0,0,0.0,0,FuseTop shape; area of the capacitor top plate
+CEL7,CEL7_tt_cell_macro_7,designer,hres,0,0,0.0,0,resistor body; area of the body under its marker
+CEL7,CEL7_tt_cell_macro_7,designer,poly_unsal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL7,CEL7_tt_cell_macro_7,designer,poly_sal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL7,CEL7_tt_cell_macro_7,designer,diff_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL7,CEL7_tt_cell_macro_7,designer,nwell_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL7,CEL7_tt_cell_macro_7,designer,metal_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL7,CEL7_tt_cell_macro_7,designer,dnwell,0,0,0.0,0,merged marker shape; area of the marker
+CEL7,CEL7_tt_cell_macro_7,designer,bjt,0,0,0.0,0,merged marker shape; area of the marker
+CEL7,CEL7_tt_cell_macro_7,designer,schottky,0,0,0.0,0,merged marker shape; area of the marker
+CEL7,CEL7_tt_cell_macro_7,designer,diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL7,CEL7_tt_cell_macro_7,designer,well_diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL7,CEL7_tt_cell_macro_7,designer,zener,0,0,0.0,0,merged marker shape; area of the marker
+CEL7,CEL7_tt_cell_macro_7,designer,efuse,0,0,0.0,0,merged marker shape; area of the marker
+CEL7,CEL7_tt_cell_macro_7,designer,otp,0,0,0.0,0,merged marker shape; area of the marker
+CEL7,CEL7_tt_cell_macro_7,designer,inductor,0,0,0.0,0,merged marker shape; area of the marker
+CEL7,CEL7_tt_cell_macro_7,designer,cap_marker_other,0,0,0.0,0,merged marker shape; area of the marker
+CEL7,CEL7_tt_cell_macro_7,designer,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,designer,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,pads,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL7,CEL7_tt_cell_macro_7,library,std:as_sc_mcu7t3v3,1,2923,0.0,0.0,cell placement; no area
+CEL7,CEL7_tt_cell_macro_7,designer,highest_metal,1,5,0,0,"metal level (1-5, 6 = MetalTop)"
+CEL5,CEL5_tt_cell_macro_5,designer,custom_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,custom_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,custom_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,native,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,ldmos,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,moscap,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,mim,0,0,0.0,0,FuseTop shape; area of the capacitor top plate
+CEL5,CEL5_tt_cell_macro_5,designer,hres,0,0,0.0,0,resistor body; area of the body under its marker
+CEL5,CEL5_tt_cell_macro_5,designer,poly_unsal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL5,CEL5_tt_cell_macro_5,designer,poly_sal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL5,CEL5_tt_cell_macro_5,designer,diff_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL5,CEL5_tt_cell_macro_5,designer,nwell_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL5,CEL5_tt_cell_macro_5,designer,metal_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL5,CEL5_tt_cell_macro_5,designer,dnwell,0,0,0.0,0,merged marker shape; area of the marker
+CEL5,CEL5_tt_cell_macro_5,designer,bjt,0,0,0.0,0,merged marker shape; area of the marker
+CEL5,CEL5_tt_cell_macro_5,designer,schottky,0,0,0.0,0,merged marker shape; area of the marker
+CEL5,CEL5_tt_cell_macro_5,designer,diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL5,CEL5_tt_cell_macro_5,designer,well_diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL5,CEL5_tt_cell_macro_5,designer,zener,0,0,0.0,0,merged marker shape; area of the marker
+CEL5,CEL5_tt_cell_macro_5,designer,efuse,0,0,0.0,0,merged marker shape; area of the marker
+CEL5,CEL5_tt_cell_macro_5,designer,otp,0,0,0.0,0,merged marker shape; area of the marker
+CEL5,CEL5_tt_cell_macro_5,designer,inductor,0,0,0.0,0,merged marker shape; area of the marker
+CEL5,CEL5_tt_cell_macro_5,designer,cap_marker_other,0,0,0.0,0,merged marker shape; area of the marker
+CEL5,CEL5_tt_cell_macro_5,designer,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,designer,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,pads,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL5,CEL5_tt_cell_macro_5,library,std:osu_sc_gp12t3v3,1,3319,0.0,0.0,cell placement; no area
+CEL5,CEL5_tt_cell_macro_5,designer,highest_metal,1,5,0,0,"metal level (1-5, 6 = MetalTop)"
+CEL6,CEL6_tt_cell_macro_6,designer,custom_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,custom_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,custom_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,native,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,ldmos,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,moscap,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,mim,0,0,0.0,0,FuseTop shape; area of the capacitor top plate
+CEL6,CEL6_tt_cell_macro_6,designer,hres,0,0,0.0,0,resistor body; area of the body under its marker
+CEL6,CEL6_tt_cell_macro_6,designer,poly_unsal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL6,CEL6_tt_cell_macro_6,designer,poly_sal,0,0,0.0,0,resistor body; area of the body under its marker
+CEL6,CEL6_tt_cell_macro_6,designer,diff_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL6,CEL6_tt_cell_macro_6,designer,nwell_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL6,CEL6_tt_cell_macro_6,designer,metal_res,0,0,0.0,0,resistor body; area of the body under its marker
+CEL6,CEL6_tt_cell_macro_6,designer,dnwell,0,0,0.0,0,merged marker shape; area of the marker
+CEL6,CEL6_tt_cell_macro_6,designer,bjt,0,0,0.0,0,merged marker shape; area of the marker
+CEL6,CEL6_tt_cell_macro_6,designer,schottky,0,0,0.0,0,merged marker shape; area of the marker
+CEL6,CEL6_tt_cell_macro_6,designer,diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL6,CEL6_tt_cell_macro_6,designer,well_diode,0,0,0.0,0,merged marker shape; area of the marker
+CEL6,CEL6_tt_cell_macro_6,designer,zener,0,0,0.0,0,merged marker shape; area of the marker
+CEL6,CEL6_tt_cell_macro_6,designer,efuse,0,0,0.0,0,merged marker shape; area of the marker
+CEL6,CEL6_tt_cell_macro_6,designer,otp,0,0,0.0,0,merged marker shape; area of the marker
+CEL6,CEL6_tt_cell_macro_6,designer,inductor,0,0,0.0,0,merged marker shape; area of the marker
+CEL6,CEL6_tt_cell_macro_6,designer,cap_marker_other,0,0,0.0,0,merged marker shape; area of the marker
+CEL6,CEL6_tt_cell_macro_6,designer,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,designer,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,nmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,nmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,nmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,pmos_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,pmos_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,pmos_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,nmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,nmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,nmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,pmos_sab_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,pmos_sab_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,pmos_sab_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,nmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,nmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,nmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,pmoscap_3v3,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,pmoscap_5v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,pads,pmoscap_6v,0,0,0.0,0,gate finger; area of Poly2 AND COMP
+CEL6,CEL6_tt_cell_macro_6,library,std:as_sc_mcu7t3v3,1,2923,0.0,0.0,cell placement; no area
+CEL6,CEL6_tt_cell_macro_6,designer,highest_metal,1,5,0,0,"metal level (1-5, 6 = MetalTop)"

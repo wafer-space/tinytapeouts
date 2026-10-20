@@ -1,0 +1,11 @@
+slot_id,cell_name,die_area_mm2,sram_area_mm2,pad_area_mm2,core_area_mm2
+CEL2,CEL2_tt_cell_macro_2,0.0506,0.0000,0.0000,
+CEL1,CEL1_tt_cell_macro_1,0.0506,0.0000,0.0000,
+CEL3,CEL3_tt_cell_macro_3,0.0506,0.0000,0.0000,
+MAIN,MAIN_tt_main_macro,2.5600,0.0000,0.0000,
+CEL0,CEL0_tt_cell_macro_0,0.0506,0.0000,0.0000,
+BUFR,BUFR_tt_buffer_macro,0.0169,0.0000,0.0000,
+CEL4,CEL4_tt_cell_macro_4,0.0506,0.0000,0.0000,
+CEL7,CEL7_tt_cell_macro_7,0.0506,0.0000,0.0000,
+CEL5,CEL5_tt_cell_macro_5,0.0506,0.0000,0.0000,
+CEL6,CEL6_tt_cell_macro_6,0.0506,0.0000,0.0000,

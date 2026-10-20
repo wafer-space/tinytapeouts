@@ -1,0 +1,11 @@
+slot_id,cell_name,device,source_class,ip_cell,ip_origin,count,area_um2,avg_area_um2,basis
+CEL2,CEL2_tt_cell_macro_2,standard_cells_5v0,third_party,gf180mcu_hfd_sc_mcu7t5v0,unknown vendor prefix gf180mcu_hfd_,2506,,,confirmed: library cell name prefix
+CEL1,CEL1_tt_cell_macro_1,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),2279,,,confirmed: library cell name prefix
+CEL3,CEL3_tt_cell_macro_3,standard_cells_5v0,third_party,gf180mcu_hfd_sc_mcu9t5v0,unknown vendor prefix gf180mcu_hfd_,2279,,,confirmed: library cell name prefix
+MAIN,MAIN_tt_main_macro,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),166553,,,confirmed: library cell name prefix
+CEL0,CEL0_tt_cell_macro_0,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),2506,,,confirmed: library cell name prefix
+BUFR,BUFR_tt_buffer_macro,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),252,,,confirmed: library cell name prefix
+CEL4,CEL4_tt_cell_macro_4,standard_cells_3v3,third_party,gf180mcu_osu_sc_gp9t3v3,Oklahoma State University (gf180mcu_osu_*),3612,,,confirmed: library cell name prefix
+CEL7,CEL7_tt_cell_macro_7,standard_cells_3v3,third_party,gf180mcu_as_sc_mcu7t3v3,Avalon Semiconductors (gf180mcu_as_*),2923,,,confirmed: library cell name prefix
+CEL5,CEL5_tt_cell_macro_5,standard_cells_3v3,third_party,gf180mcu_osu_sc_gp12t3v3,Oklahoma State University (gf180mcu_osu_*),3319,,,confirmed: library cell name prefix
+CEL6,CEL6_tt_cell_macro_6,standard_cells_3v3,third_party,gf180mcu_as_sc_mcu7t3v3,Avalon Semiconductors (gf180mcu_as_*),2923,,,confirmed: library cell name prefix
