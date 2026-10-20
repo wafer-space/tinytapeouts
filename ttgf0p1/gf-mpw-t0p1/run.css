@@ -1,0 +1,277 @@
+/* Additions to the wafer.space theme for the run pages.
+   Everything else comes from the main website's stylesheets. */
+
+:root {
+  --run-accent: var(--color-default, #5ca7db);
+  --run-surface: #ffffff;
+  --run-ink: #2e3440;
+  --run-muted: #7a8594;
+  --run-line: #e3e8ee;
+  --run-track: #eef1f5;
+}
+
+[data-theme="dark"] {
+  --run-surface: #2a2a2a;
+  --run-ink: #e0e0e0;
+  --run-muted: #9aa3ad;
+  --run-line: #3a3a3a;
+  --run-track: #333333;
+}
+
+.run-mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 0.9em; }
+.run-stat { font-variant-numeric: tabular-nums; }
+
+/* Tables */
+.run-table { color: var(--run-ink); font-variant-numeric: tabular-nums; }
+/* Bootstrap colours table cells from its own variables, which the dark theme does not set. */
+.run-table { --bs-table-color: var(--run-ink); --bs-table-bg: transparent; }
+.run-table th { font-weight: 600; white-space: nowrap; }
+.run-table td, .run-table th { border-color: var(--run-line); vertical-align: middle; }
+[data-theme="dark"] .run-table.bg-white { background: var(--run-surface) !important; }
+/* Each project's share of a shared block (Tiny Tapeout GF 0.1), as a bar with its percentage. */
+.run-netlist-bar { width: 22%; min-width: 140px; white-space: nowrap; }
+.run-netlist-bar span { display: inline-block; vertical-align: middle; height: 10px; min-width: 2px; max-width: 70%;
+  margin-right: 6px; border-radius: 2px; background: var(--run-tt); }
+
+/* Stacked area bars */
+.run-bar { display: flex; height: 14px; border-radius: 3px; overflow: hidden; background: var(--run-track); }
+.run-bar > * { display: block; height: 100%; min-width: 1px; }
+.run-bar > * + * { box-shadow: -1px 0 0 var(--run-surface); }
+.run-bar-large { height: 44px; border-radius: 6px; }
+.run-bar-large span { display: block; line-height: 44px; text-align: center; font-weight: 600; color: #1f2a37; font-size: 0.9rem; }
+
+.run-legend { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px 24px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); font-size: 0.9rem; }
+.run-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 8px; vertical-align: -1px; }
+
+/* One row per design */
+.run-rows { display: grid; gap: 2px; }
+.run-row { display: grid; grid-template-columns: minmax(120px, 280px) 1fr auto; gap: 14px; align-items: center; padding: 5px 8px; border-radius: 4px; color: var(--run-ink); text-decoration: none; font-size: 0.9rem; }
+.run-row:hover { background: var(--run-track); color: var(--run-ink); }
+.run-row-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.run-row-value { font-variant-numeric: tabular-nums; min-width: 5.5em; text-align: right; }
+
+.run-density { position: relative; height: 14px; background: var(--run-track); border-radius: 3px; }
+.run-density i { position: absolute; left: 0; top: 0; height: 100%; border-radius: 3px; }
+.run-density .core { background: var(--run-accent); }
+.run-density .peak { border: 1.5px solid var(--run-accent); background: transparent; box-sizing: border-box; }
+
+/* Categories */
+.run-category { display: grid; grid-template-columns: minmax(140px, 220px) 1fr 2em; gap: 12px; align-items: center; padding: 6px 0; color: var(--run-ink); text-decoration: none; }
+.run-category:hover { color: var(--run-accent); }
+.run-category-bar { height: 10px; background: var(--run-track); border-radius: 5px; overflow: hidden; }
+.run-category-bar i { display: block; height: 100%; border-radius: 5px; }
+.run-category-count { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.run-category-title { margin: 30px 0 20px; display: flex; align-items: center; gap: 10px; scroll-margin-top: 90px; }
+.run-category-title i { width: 14px; height: 14px; border-radius: 3px; }
+.run-category-title span { font-size: 0.7em; font-weight: 400; }
+.run-badge { color: #fff; font-weight: 500; margin-bottom: 8px; }
+
+/* Project cards */
+.run-card { display: flex; flex-direction: column; padding: 0; overflow: hidden; color: var(--run-ink); text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.run-card:hover { transform: translateY(-3px); color: var(--run-ink); }
+.run-card-image { position: relative; margin: 0; background: #0a0c14; aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; }
+.run-card-image img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.run-code, .run-code-inline { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-weight: 700; letter-spacing: 0.04em; }
+.run-code { position: absolute; left: 10px; top: 10px; padding: 2px 8px; border-radius: 4px; background: rgba(10, 12, 20, 0.72); color: #fff; font-size: 0.85rem; }
+.run-card-body { padding: 16px 18px 18px; }
+.run-card-icons span { margin-right: 12px; color: var(--run-muted); }
+[data-theme="dark"] .run-card.bg-white { background: var(--run-surface) !important; }
+
+/* Reticle map */
+.run-reticle-frame.with-labels { display: grid; grid-template-columns: 1.8em 1fr; grid-template-rows: 1.8em auto; }
+.run-reticle-frame.with-labels .run-reticle { grid-column: 2; grid-row: 2; }
+.run-reticle-cols, .run-reticle-rows { position: relative; font-size: 0.8rem; font-weight: 600; color: var(--run-muted); font-variant-numeric: tabular-nums; }
+.run-reticle-cols { grid-column: 2; grid-row: 1; }
+.run-reticle-rows { grid-column: 1; grid-row: 2; }
+.run-reticle-cols span, .run-reticle-rows span { position: absolute; display: flex; align-items: center; justify-content: center; border-radius: 3px; transition: background 0.12s ease, color 0.12s ease; }
+.run-reticle-cols span { top: 0; bottom: 0.25em; }
+.run-reticle-rows span { left: 0; right: 0.25em; }
+.run-reticle { position: relative; background: #0a0c14; border-radius: 6px; overflow: hidden; line-height: 0; }
+.run-reticle img { width: 100%; height: auto; }
+.run-reticle.framed { background: transparent; border-radius: 0; outline: 1px dashed var(--run-line); }
+.run-reticle-slot { position: absolute; display: flex; align-items: flex-end; justify-content: flex-start; border: 1px solid transparent; text-decoration: none; line-height: 1; }
+.run-reticle-slot span { margin: 3px; padding: 1px 4px; border-radius: 2px; background: rgba(10, 12, 20, 0.7); color: #fff; font-size: 10px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; opacity: 0; transition: opacity 0.12s ease; }
+.run-reticle-slot:hover, .run-reticle-slot:focus-visible { border-color: #fff; background: rgba(255, 255, 255, 0.12); }
+.run-reticle-slot:hover span, .run-reticle-slot:focus-visible span { opacity: 1; }
+
+/* Timeline */
+.run-timeline { list-style: none; margin: 0 0 12px; padding: 0 0 0 22px; border-left: 2px solid var(--run-line); }
+.run-timeline li { position: relative; padding: 0 0 16px; display: flex; flex-direction: column; color: var(--run-ink); }
+.run-timeline li::before { content: ""; position: absolute; left: -29px; top: 4px; width: 12px; height: 12px; border-radius: 50%; background: var(--run-surface); border: 2px solid var(--run-muted); }
+.run-timeline li.done::before { background: var(--run-accent); border-color: var(--run-accent); }
+.run-timeline li.pending { opacity: 0.7; }
+.run-timeline-date { font-size: 0.8rem; color: var(--run-muted); font-variant-numeric: tabular-nums; }
+
+/* Render viewer and embeds */
+.run-viewer { display: block; background: #0a0c14; border-radius: 6px; overflow: hidden; line-height: 0; text-align: center; }
+.run-viewer img { max-width: 100%; height: auto; max-height: 82vh; width: auto; }
+.run-viewer-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.run-swatch { display: inline-block; margin-right: 10px; white-space: nowrap; }
+.run-swatch i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; border: 1px solid var(--run-line); }
+.run-embed { border-radius: 6px; overflow: hidden; background: #1a1a1a; }
+.run-embed iframe { display: block; width: 100%; height: 820px; border: 0; }
+
+.run-photo { position: relative; display: block; border-radius: 6px; overflow: hidden; background: #0a0c14; aspect-ratio: 1; }
+.run-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.2s ease; }
+.run-photo:hover img { transform: scale(1.04); }
+.run-photo span { position: absolute; left: 8px; bottom: 8px; padding: 2px 8px; border-radius: 4px; background: rgba(10, 12, 20, 0.72); color: #fff; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 0.85rem; font-weight: 700; }
+
+/* Density map */
+.run-heatmap { width: 100%; max-height: 520px; background: var(--run-surface); border-radius: 6px; }
+.run-heatmap rect { fill: var(--run-accent); stroke: var(--run-surface); stroke-width: 0.03; }
+.run-heatmap rect.sram { fill: var(--run-track); fill-opacity: 1; stroke-dasharray: 0.08 0.06; stroke: var(--run-muted); }
+.run-heatmap rect.sram-macro { fill: none; stroke: var(--run-ink); stroke-width: 0.025; stroke-dasharray: 0.06 0.04; }
+.run-heatmap rect.window { fill: none; stroke: #e2626b; stroke-width: 0.04; stroke-opacity: 0.9; }
+.run-heatmap text { paint-order: stroke; font-size: 0.22px; text-anchor: middle; dominant-baseline: central; fill: var(--run-ink); font-variant-numeric: tabular-nums; pointer-events: none; }
+.run-heatmap text.light { fill: #fff; }
+
+/* Small pieces */
+.run-method, .run-files { padding-left: 1.1em; }
+.run-method li { margin-bottom: 8px; }
+.run-files { columns: 2; font-size: 0.9rem; }
+.run-crumb { color: rgba(255, 255, 255, 0.75); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; }
+.run-crumb:hover { color: #fff; }
+.run-crumb a { color: inherit; }
+.run-crumb a:hover { color: #fff; }
+.run-pager { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding-top: 30px; padding-bottom: 30px; }
+.run-pager a { color: #fff; font-weight: 600; }
+.run-pager a span { font-weight: 400; opacity: 0.7; }
+
+@media (max-width: 575px) {
+  .run-row { grid-template-columns: 1fr; gap: 4px; }
+  .run-row-value { text-align: left; }
+  .run-files { columns: 1; }
+  .run-embed iframe { height: 620px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .run-card, .run-photo img, .run-reticle-slot span, .run-reticle-cols span, .run-reticle-rows span { transition: none; }
+}
+.run-warn { color: #c0392b; }
+[data-theme="dark"] .run-warn { color: #ff8a80; }
+.run-description p { margin-bottom: 0.6rem; }
+.run-chip { display: inline-block; font-size: 0.7rem; padding: 0 0.4rem; margin: 0.1rem 0.15rem 0 0; border-radius: 0.6rem; background: var(--run-track); color: var(--run-ink); }
+.page-title-sub { display: block; font-size: 0.5em; line-height: 1.3; }
+.page-title-sub:first-of-type { margin-top: 0.3em; }
+.run-guidance { font-size: 0.85rem; }
+.run-guidance thead th { vertical-align: bottom; white-space: nowrap; }
+.run-guidance .run-groups th { border-bottom: 0; padding-bottom: 0; }
+.run-guidance .run-group { text-align: center; font-weight: 600; border-bottom: 1px solid var(--run-line); }
+.run-guidance .run-group, .run-guidance .run-group-start { border-left: 1px solid var(--run-line); }
+.run-guidance .run-note { display: block; font-size: 0.75rem; font-weight: 400; color: var(--run-muted); }
+.run-ip-only { opacity: 0.55; }
+
+/* Who owns a timeline step, where two schedules meet (a Tiny Tapeout die on a wafer.space run). */
+.run-owner { display: inline-block; font-size: 0.7rem; font-weight: 600; line-height: 1.4; padding: 0 6px; border-radius: 3px;
+  margin-right: 6px; color: #fff; vertical-align: 1px; }
+.run-owner-tt { background: #7b4fa3; }
+.run-owner-ws { background: var(--run-accent); }
+.run-timeline li.run-timeline-tt::before { border-color: #7b4fa3; }
+.run-timeline li.run-timeline-tt.done::before { background: #7b4fa3; border-color: #7b4fa3; }
+
+/* The top of the run pages: the theme's hero and section padding leave most of the first screen empty.
+   The hero only needs to clear the 82 px navbar that sits over it. */
+.page-title-wrapper.run-hero .inner { padding-top: 112px; padding-bottom: 48px; }
+.wrapper.run-first .inner { padding-top: 56px; padding-bottom: 56px; }
+@media (max-width: 767px) {
+  .page-title-wrapper.run-hero .inner { padding-bottom: 36px; }
+  .wrapper.run-first .inner { padding-top: 40px; padding-bottom: 40px; }
+}
+
+/* Section links, as on GitHub's rendered Markdown: a link icon after each heading, shown while the heading is
+   hovered or the link has keyboard focus, and always faintly on touch screens. The link takes no width, so
+   centred headings stay centred; the icon hangs just past the end of the text. */
+.run-anchor { position: relative; display: inline-block; width: 0; height: 1em; vertical-align: baseline;
+  color: inherit; opacity: 0; transition: opacity 0.15s ease; }
+.run-anchor svg { position: absolute; left: 0.3em; bottom: 0.05em; width: 0.6em; height: 0.6em; fill: currentColor; }
+:is(h2, h3, h4):hover > .run-anchor, .run-anchor:focus-visible { opacity: 0.6; }
+.run-anchor:hover, .run-anchor:focus-visible { opacity: 1; color: var(--run-accent); }
+@media (hover: none) { .run-anchor { opacity: 0.35; } }
+:is(h2, h3, h4)[id] { scroll-margin-top: 90px; }
+
+/* Tiny Tapeout: the demo board and the chips still to come. Tiny Tapeout's purple marks its parts, as on the
+   run timeline. Callouts are the theme's Bootstrap alerts; the site's dark mode sets data-theme, not
+   data-bs-theme, so give them Bootstrap's own dark colours. */
+:root { --run-tt: #7b4fa3; }
+[data-theme="dark"] { --run-tt: #b28ad6;
+  --bs-primary-text-emphasis: #6ea8fe; --bs-primary-bg-subtle: #031633; --bs-primary-border-subtle: #084298;
+  --bs-secondary-text-emphasis: #a7acb1; --bs-secondary-bg-subtle: #161719; --bs-secondary-border-subtle: #41464b; }
+/* The theme's dark headings and links would override the alert's own colours. */
+[data-theme="dark"] .alert-heading { color: inherit; }
+[data-theme="dark"] .alert-link { color: var(--bs-alert-link-color); }
+.run-inner-slim { padding-top: 30px; padding-bottom: 30px; }
+.run-board img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.run-status { display: inline-block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;
+  padding: 2px 8px; border-radius: 3px; color: #fff; background: var(--run-muted); }
+.run-status-open { background: var(--run-tt); }
+[data-theme="dark"] .run-coming.bg-white, [data-theme="dark"] #other .box.bg-white { background: var(--run-surface) !important; }
+.run-related { list-style: none; padding: 0; margin: 0; }
+.run-related li { padding: 6px 0; border-bottom: 1px solid var(--run-line); }
+.run-related li:last-child { border-bottom: 0; }
+/* A design's versions on the run timeline's line: Tiny Tapeout purple, Google shuttles hollow, wafer.space
+   dies in the accent colour. */
+.run-history li { gap: 2px; }
+.run-history li.run-history-tt::before { background: var(--run-tt); border-color: var(--run-tt); }
+.run-history li.run-history-ws::before { background: var(--run-accent); border-color: var(--run-accent); }
+.run-history-current strong { color: var(--run-ink); }
+.run-history-key span { display: inline-block; white-space: nowrap; margin-right: 14px; }
+.run-history-key span::before { content: ""; display: inline-block; vertical-align: -1px; width: 10px; height: 10px;
+  border-radius: 50%; margin-right: 6px; border: 2px solid var(--run-muted); box-sizing: border-box; }
+.run-history-key .run-history-key-tt::before { background: var(--run-tt); border-color: var(--run-tt); }
+.run-history-key .run-history-key-ws::before { background: var(--run-accent); border-color: var(--run-accent); }
+/* The run page's designs with a history: each a row of its versions, joined by arrows. */
+.run-grew { list-style: none; padding: 0; margin: 0 0 10px; }
+.run-grew > li { padding: 10px 0; border-bottom: 1px solid var(--run-line); }
+.run-grew > li:last-child { border-bottom: 0; }
+.run-grew-name { font-weight: 600; margin-right: 6px; }
+.run-grew-stages { list-style: none; padding: 0; margin: 4px 0 0; font-size: 0.85rem; line-height: 1.9; }
+.run-grew-stages li { display: inline; color: var(--run-ink); }
+.run-grew-label { white-space: nowrap; }
+.run-grew-label::before { content: ""; display: inline-block; vertical-align: -1px; width: 10px; height: 10px;
+  border-radius: 50%; margin-right: 5px; border: 2px solid var(--run-muted); box-sizing: border-box; }
+.run-grew-stages li:not(:last-child)::after { content: "→"; margin: 0 8px 0 6px; color: var(--run-muted); }
+.run-grew-stages .run-history-tt .run-grew-label::before { background: var(--run-tt); border-color: var(--run-tt); }
+.run-grew-stages .run-history-ws .run-grew-label::before { background: var(--run-accent); border-color: var(--run-accent); }
+.run-grew-stages .text-muted { margin-left: 4px; }
+
+/* The reticle beside a design's placements, with its slots picked out. */
+.run-minimap { display: block; width: 140px; margin-top: 8px; }
+.run-minimap svg { display: block; width: 100%; height: auto; background: var(--run-track); border-radius: 3px; }
+.run-minimap rect { fill: var(--run-line); stroke: var(--run-surface); stroke-width: 0.12; }
+.run-minimap rect.mine { fill: var(--run-accent); }
+
+/* Today on the run timeline: the rocket from the wafer.space logo, in the accent colour, on the line. */
+.run-timeline li.run-today { padding-bottom: 16px; }
+.run-timeline li.run-today::before { display: none; }
+.run-today-rocket { position: absolute; left: -36px; top: -6px; width: 26px; height: 26px; background: var(--run-accent);
+  transform: rotate(135deg); /* the logo's rocket points up and right; turn it to fly down the line, towards today */
+  -webkit-mask: url("rocket.png") no-repeat center / contain; mask: url("rocket.png") no-repeat center / contain; }
+.run-today .run-timeline-date { color: var(--run-accent); font-weight: 600; }
+
+/* A design's fact tables: a steady label column that may wrap, so long names do not squeeze the values. */
+.run-facts th { width: 38%; white-space: normal; }
+.run-facts td { overflow-wrap: anywhere; }
+@media (max-width: 575px) { .run-facts th { width: 42%; font-size: 0.9em; } }
+/* The layer buttons under a render: small, on one line where they fit. */
+.run-viewer-tabs .btn { padding: 0.3rem 0.85rem; font-size: 0.68rem; line-height: 1.4; }
+.run-facts th, .run-facts td { vertical-align: top; }
+.run-oxides th { white-space: normal; }
+.run-oxides td:last-child { min-width: 12rem; }
+
+/* Where to go next (the theme's process steps): get a chip, put a design on the next one, make a whole chip. */
+.run-next h5 { margin-bottom: 8px; }
+.run-next p { max-width: 34ch; margin-left: auto; margin-right: auto; }
+.run-hero-actions { margin-top: 18px; }
+.run-hero-actions .btn { margin: 0 4px 8px; }
+/* Running text and notes at a readable length on wide screens. */
+.run-measure { max-width: 80ch; }
+.text-center.run-measure, .text-center .run-measure { margin-left: auto; margin-right: auto; }
+/* Links in a hero's lead line stay readable on the photograph, in either theme. */
+.run-hero .lead a, [data-theme="dark"] .run-hero .lead a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+/* A collection card holds its own actions: the image and title link to the die, the footer buys or tries it. */
+.run-card .run-card-body { flex: 1; }
+.run-card .post-title a { color: inherit; }
+.run-card-actions { padding: 0 18px 18px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; font-size: 0.85rem; }
+.run-card-actions .btn { margin: 0; }
+/* The planned Tiny Tapeout chips, as a compact table under the open ones. */
+.run-planned { max-width: 900px; margin: 0 auto 20px; }

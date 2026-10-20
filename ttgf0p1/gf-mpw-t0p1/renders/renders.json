@@ -1,0 +1,274 @@
+{
+ "px_per_mm": 3000.0,
+ "reticle": {
+  "file": "reticle.webp",
+  "width_mm": 2.935,
+  "height_mm": 2.935,
+  "frame_width_mm": 2.935,
+  "frame_height_mm": 2.935,
+  "width_px": 1174,
+  "height_px": 1174
+ },
+ "styles": {
+  "full": "All layers",
+  "devices": "Transistors",
+  "routing": "Signal routing",
+  "power": "Power and pads"
+ },
+ "layers": {
+  "nwell": {
+   "label": "Nwell",
+   "colour": "#282c46"
+  },
+  "comp": {
+   "label": "Diffusion",
+   "colour": "#3cbe5a"
+  },
+  "poly": {
+   "label": "Polysilicon",
+   "colour": "#eb4646"
+  },
+  "metal1": {
+   "label": "Metal 1",
+   "colour": "#3c78ff"
+  },
+  "metal2": {
+   "label": "Metal 2",
+   "colour": "#c850e6"
+  },
+  "metal3": {
+   "label": "Metal 3",
+   "colour": "#32d2dc"
+  },
+  "metal4": {
+   "label": "Metal 4",
+   "colour": "#f0c83c"
+  },
+  "metal5": {
+   "label": "Metal 5",
+   "colour": "#f58c32"
+  },
+  "metaltop": {
+   "label": "Top metal",
+   "colour": "#e6e6eb"
+  },
+  "pad": {
+   "label": "Pad openings",
+   "colour": "#ffffff"
+  }
+ },
+ "placements": [
+  {
+   "code": "CEL2",
+   "x_mm": 0.3967,
+   "y_mm": 0.6677000000000001,
+   "width_mm": 0.225,
+   "height_mm": 0.225
+  },
+  {
+   "code": "CEL1",
+   "x_mm": 0.3967,
+   "y_mm": 2.0427,
+   "width_mm": 0.225,
+   "height_mm": 0.225
+  },
+  {
+   "code": "CEL3",
+   "x_mm": 0.6677000000000001,
+   "y_mm": 0.3967,
+   "width_mm": 0.225,
+   "height_mm": 0.225
+  },
+  {
+   "code": "MAIN",
+   "x_mm": 0.6677000000000001,
+   "y_mm": 0.6677000000000001,
+   "width_mm": 1.6,
+   "height_mm": 1.6
+  },
+  {
+   "code": "CEL0",
+   "x_mm": 0.6677000000000001,
+   "y_mm": 2.3137000000000003,
+   "width_mm": 0.225,
+   "height_mm": 0.225
+  },
+  {
+   "code": "BUFR",
+   "x_mm": 1.1047,
+   "y_mm": 2.4637000000000002,
+   "width_mm": 0.225,
+   "height_mm": 0.075
+  },
+  {
+   "code": "CEL4",
+   "x_mm": 2.0427,
+   "y_mm": 0.3967,
+   "width_mm": 0.225,
+   "height_mm": 0.225
+  },
+  {
+   "code": "CEL7",
+   "x_mm": 2.0427,
+   "y_mm": 2.3137000000000003,
+   "width_mm": 0.225,
+   "height_mm": 0.225
+  },
+  {
+   "code": "CEL5",
+   "x_mm": 2.3137000000000003,
+   "y_mm": 0.6677000000000001,
+   "width_mm": 0.225,
+   "height_mm": 0.225
+  },
+  {
+   "code": "CEL6",
+   "x_mm": 2.3137000000000003,
+   "y_mm": 2.0427,
+   "width_mm": 0.225,
+   "height_mm": 0.225
+  }
+ ],
+ "designs": {
+  "BUFR": {
+   "width_px": 675,
+   "height_px": 225,
+   "width_mm": 0.225,
+   "height_mm": 0.075,
+   "files": {
+    "full": "BUFR_full.webp",
+    "thumb": "BUFR_thumb.webp",
+    "devices": "BUFR_devices.webp",
+    "routing": "BUFR_routing.webp",
+    "power": "BUFR_power.webp"
+   },
+   "px_per_mm": 3000.0
+  },
+  "CEL0": {
+   "width_px": 675,
+   "height_px": 675,
+   "width_mm": 0.225,
+   "height_mm": 0.225,
+   "files": {
+    "full": "CEL0_full.webp",
+    "thumb": "CEL0_thumb.webp",
+    "devices": "CEL0_devices.webp",
+    "routing": "CEL0_routing.webp",
+    "power": "CEL0_power.webp"
+   },
+   "px_per_mm": 3000.0
+  },
+  "CEL1": {
+   "width_px": 675,
+   "height_px": 675,
+   "width_mm": 0.225,
+   "height_mm": 0.225,
+   "files": {
+    "full": "CEL1_full.webp",
+    "thumb": "CEL1_thumb.webp",
+    "devices": "CEL1_devices.webp",
+    "routing": "CEL1_routing.webp",
+    "power": "CEL1_power.webp"
+   },
+   "px_per_mm": 3000.0
+  },
+  "CEL2": {
+   "width_px": 675,
+   "height_px": 675,
+   "width_mm": 0.225,
+   "height_mm": 0.225,
+   "files": {
+    "full": "CEL2_full.webp",
+    "thumb": "CEL2_thumb.webp",
+    "devices": "CEL2_devices.webp",
+    "routing": "CEL2_routing.webp",
+    "power": "CEL2_power.webp"
+   },
+   "px_per_mm": 3000.0
+  },
+  "CEL3": {
+   "width_px": 675,
+   "height_px": 675,
+   "width_mm": 0.225,
+   "height_mm": 0.225,
+   "files": {
+    "full": "CEL3_full.webp",
+    "thumb": "CEL3_thumb.webp",
+    "devices": "CEL3_devices.webp",
+    "routing": "CEL3_routing.webp",
+    "power": "CEL3_power.webp"
+   },
+   "px_per_mm": 3000.0
+  },
+  "CEL4": {
+   "width_px": 675,
+   "height_px": 675,
+   "width_mm": 0.225,
+   "height_mm": 0.225,
+   "files": {
+    "full": "CEL4_full.webp",
+    "thumb": "CEL4_thumb.webp",
+    "devices": "CEL4_devices.webp",
+    "routing": "CEL4_routing.webp",
+    "power": "CEL4_power.webp"
+   },
+   "px_per_mm": 3000.0
+  },
+  "CEL5": {
+   "width_px": 675,
+   "height_px": 675,
+   "width_mm": 0.225,
+   "height_mm": 0.225,
+   "files": {
+    "full": "CEL5_full.webp",
+    "thumb": "CEL5_thumb.webp",
+    "devices": "CEL5_devices.webp",
+    "routing": "CEL5_routing.webp",
+    "power": "CEL5_power.webp"
+   },
+   "px_per_mm": 3000.0
+  },
+  "CEL6": {
+   "width_px": 675,
+   "height_px": 675,
+   "width_mm": 0.225,
+   "height_mm": 0.225,
+   "files": {
+    "full": "CEL6_full.webp",
+    "thumb": "CEL6_thumb.webp",
+    "devices": "CEL6_devices.webp",
+    "routing": "CEL6_routing.webp",
+    "power": "CEL6_power.webp"
+   },
+   "px_per_mm": 3000.0
+  },
+  "CEL7": {
+   "width_px": 675,
+   "height_px": 675,
+   "width_mm": 0.225,
+   "height_mm": 0.225,
+   "files": {
+    "full": "CEL7_full.webp",
+    "thumb": "CEL7_thumb.webp",
+    "devices": "CEL7_devices.webp",
+    "routing": "CEL7_routing.webp",
+    "power": "CEL7_power.webp"
+   },
+   "px_per_mm": 3000.0
+  },
+  "MAIN": {
+   "width_px": 1600,
+   "height_px": 1600,
+   "width_mm": 1.6,
+   "height_mm": 1.6,
+   "files": {
+    "full": "MAIN_full.webp",
+    "thumb": "MAIN_thumb.webp",
+    "devices": "MAIN_devices.webp",
+    "routing": "MAIN_routing.webp",
+    "power": "MAIN_power.webp"
+   },
+   "px_per_mm": 1000.0
+  }
+ }
+}
