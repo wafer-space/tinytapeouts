@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=e922b8f332">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=e990a249d3">
 </head>
 <body>
   <div class="content-wrapper">
@@ -143,7 +143,7 @@
       <div class="col-lg-5">
 <p class="lead">A tiny FABulous FPGA fabric, ready for use with Yosys and nextpnr.</p>        <p class="run-design-links">
           <a class="btn btn-s mb-10 me-10" href="https://github.com/mole99/tt-fabulous-gf-0p3/tree/61493f1ab098e70e3495b145d0b3a591c0607b89">Source repository</a>
-<a href="https://tinytapeout.com/chips/ttgf0p3/tt_um_fabulous_gf_0p3">Its page on Tiny Tapeout</a><a href="https://store.tinytapeout.com/products/Development-Kits-c198115270">Tiny Tapeout kits</a>        </p>
+<a href="https://tinytapeout.com/chips/ttgf0p3/tt_um_fabulous_gf_0p3">Its page on Tiny Tapeout</a><a href="https://store.tinytapeout.com/products/Development-Kits-c198115270">Buy a chip and board</a>        </p>
         <table class="table table-sm run-table run-facts">
           <tbody>
             <tr><th>Size</th><td>1440 × 737 µm
@@ -174,7 +174,7 @@
     <div class="row gutter-50">
       <div class="col-lg-7 mb-30">
         <h3 id="area" class="mb-10">Where the area went<a class="run-anchor" href="#area" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
-        <p class="small text-muted mb-10">How this design's area splits between working logic, memory, filler and the pad ring.</p>
+        <p class="small text-muted mb-10">How this project's area splits between logic cells, filler and tap cells and other.</p>
         <div class="run-bar run-bar-large mb-10">
           <div style="width: 57.93%; background: #5ca7db"
                title="Logic cells: 0.62 mm²">
@@ -189,8 +189,6 @@
         <ul class="run-legend">
           <li><i style="background: #5ca7db"></i><strong>Logic cells</strong>
             0.62 mm² <span class="text-muted">(58%)</span></li>
-          <li><i style="background: #9b6bd6"></i><strong>SRAM</strong>
-            0.00 mm² <span class="text-muted">(0%)</span></li>
           <li><i style="background: #b9c7d6"></i><strong>Filler and tap cells</strong>
             0.28 mm² <span class="text-muted">(27%)</span></li>
           <li><i style="background: #e6ebf0"></i><strong>Other</strong>
@@ -354,108 +352,207 @@
           <rect x="13.000" y="0.030" width="1.000" height="0.370" style="fill-opacity: 0.060"><title>0 logic cells, 737 transistors</title></rect>
           <rect x="14.000" y="0.030" width="0.400" height="0.370" style="fill-opacity: 0.060"><title>0 logic cells, 279 transistors</title></rect>
           <rect class="window" x="1.800" y="1.000" width="1" height="1"><title>Densest SRAM-free 0.1 mm square: 320 logic cells</title></rect>
-          <text x="0.500" y="6.900" class="">13</text>
-          <text x="1.500" y="6.900" class="">109</text>
-          <text x="2.500" y="6.900" class="light">179</text>
-          <text x="3.500" y="6.900" class="">144</text>
-          <text x="4.500" y="6.900" class="light">202</text>
-          <text x="5.500" y="6.900" class="">125</text>
-          <text x="6.500" y="6.900" class="light">172</text>
-          <text x="7.500" y="6.900" class="light">171</text>
-          <text x="8.500" y="6.900" class="">145</text>
-          <text x="9.500" y="6.900" class="light">204</text>
-          <text x="10.500" y="6.900" class="">124</text>
-          <text x="11.500" y="6.900" class="light">171</text>
-          <text x="12.500" y="6.900" class="light">196</text>
-          <text x="13.500" y="6.900" class="">63</text>
-          <text x="0.500" y="5.900" class="">0</text>
-          <text x="1.500" y="5.900" class="">141</text>
-          <text x="2.500" y="5.900" class="light">283</text>
-          <text x="3.500" y="5.900" class="light">269</text>
-          <text x="4.500" y="5.900" class="light">287</text>
-          <text x="5.500" y="5.900" class="light">276</text>
-          <text x="6.500" y="5.900" class="light">264</text>
-          <text x="7.500" y="5.900" class="light">290</text>
-          <text x="8.500" y="5.900" class="light">265</text>
-          <text x="9.500" y="5.900" class="light">272</text>
-          <text x="10.500" y="5.900" class="light">292</text>
-          <text x="11.500" y="5.900" class="light">271</text>
-          <text x="12.500" y="5.900" class="light">242</text>
-          <text x="13.500" y="5.900" class="">64</text>
-          <text x="0.500" y="4.900" class="">1</text>
-          <text x="1.500" y="4.900" class="">116</text>
-          <text x="2.500" y="4.900" class="light">248</text>
-          <text x="3.500" y="4.900" class="light">239</text>
-          <text x="4.500" y="4.900" class="light">241</text>
-          <text x="5.500" y="4.900" class="light">250</text>
-          <text x="6.500" y="4.900" class="light">249</text>
-          <text x="7.500" y="4.900" class="light">256</text>
-          <text x="8.500" y="4.900" class="light">234</text>
-          <text x="9.500" y="4.900" class="light">234</text>
-          <text x="10.500" y="4.900" class="light">254</text>
-          <text x="11.500" y="4.900" class="light">255</text>
-          <text x="12.500" y="4.900" class="light">250</text>
-          <text x="13.500" y="4.900" class="">57</text>
-          <text x="0.500" y="3.900" class="">63</text>
-          <text x="1.500" y="3.900" class="">153</text>
-          <text x="2.500" y="3.900" class="light">259</text>
-          <text x="3.500" y="3.900" class="light">231</text>
-          <text x="4.500" y="3.900" class="light">264</text>
-          <text x="5.500" y="3.900" class="light">237</text>
-          <text x="6.500" y="3.900" class="light">245</text>
-          <text x="7.500" y="3.900" class="light">257</text>
-          <text x="8.500" y="3.900" class="light">229</text>
-          <text x="9.500" y="3.900" class="light">249</text>
-          <text x="10.500" y="3.900" class="light">253</text>
-          <text x="11.500" y="3.900" class="light">242</text>
-          <text x="12.500" y="3.900" class="light">229</text>
-          <text x="13.500" y="3.900" class="">49</text>
-          <text x="0.500" y="2.900" class="">24</text>
-          <text x="1.500" y="2.900" class="">131</text>
-          <text x="2.500" y="2.900" class="light">268</text>
-          <text x="3.500" y="2.900" class="light">255</text>
-          <text x="4.500" y="2.900" class="light">266</text>
-          <text x="5.500" y="2.900" class="light">268</text>
-          <text x="6.500" y="2.900" class="light">249</text>
-          <text x="7.500" y="2.900" class="light">276</text>
-          <text x="8.500" y="2.900" class="light">248</text>
-          <text x="9.500" y="2.900" class="light">256</text>
-          <text x="10.500" y="2.900" class="light">281</text>
-          <text x="11.500" y="2.900" class="light">256</text>
-          <text x="12.500" y="2.900" class="light">255</text>
-          <text x="13.500" y="2.900" class="">70</text>
-          <text x="0.500" y="1.900" class="">89</text>
-          <text x="1.500" y="1.900" class="light">166</text>
-          <text x="2.500" y="1.900" class="light">239</text>
-          <text x="3.500" y="1.900" class="light">219</text>
-          <text x="4.500" y="1.900" class="light">218</text>
-          <text x="5.500" y="1.900" class="light">229</text>
-          <text x="6.500" y="1.900" class="light">226</text>
-          <text x="7.500" y="1.900" class="light">235</text>
-          <text x="8.500" y="1.900" class="light">213</text>
-          <text x="9.500" y="1.900" class="light">210</text>
-          <text x="10.500" y="1.900" class="light">235</text>
-          <text x="11.500" y="1.900" class="light">231</text>
-          <text x="12.500" y="1.900" class="light">225</text>
-          <text x="13.500" y="1.900" class="">41</text>
-          <text x="0.500" y="0.900" class="">60</text>
-          <text x="1.500" y="0.900" class="light">182</text>
-          <text x="2.500" y="0.900" class="light">235</text>
-          <text x="3.500" y="0.900" class="">129</text>
-          <text x="4.500" y="0.900" class="light">186</text>
-          <text x="5.500" y="0.900" class="light">214</text>
-          <text x="6.500" y="0.900" class="light">197</text>
-          <text x="7.500" y="0.900" class="light">208</text>
-          <text x="8.500" y="0.900" class="light">193</text>
-          <text x="9.500" y="0.900" class="light">211</text>
-          <text x="10.500" y="0.900" class="">130</text>
-          <text x="11.500" y="0.900" class="">94</text>
-          <text x="12.500" y="0.900" class="light">175</text>
-          <text x="13.500" y="0.900" class="">56</text>
+          <text x="0.500" y="6.900" class=""
+                style="font-size: 0.374px">1k</text>
+          <text x="1.500" y="6.900" class=""
+                style="font-size: 0.374px">11k</text>
+          <text x="2.500" y="6.900" class="light"
+                style="font-size: 0.374px">18k</text>
+          <text x="3.500" y="6.900" class=""
+                style="font-size: 0.374px">14k</text>
+          <text x="4.500" y="6.900" class="light"
+                style="font-size: 0.374px">20k</text>
+          <text x="5.500" y="6.900" class=""
+                style="font-size: 0.374px">12k</text>
+          <text x="6.500" y="6.900" class="light"
+                style="font-size: 0.374px">17k</text>
+          <text x="7.500" y="6.900" class="light"
+                style="font-size: 0.374px">17k</text>
+          <text x="8.500" y="6.900" class=""
+                style="font-size: 0.374px">14k</text>
+          <text x="9.500" y="6.900" class="light"
+                style="font-size: 0.374px">20k</text>
+          <text x="10.500" y="6.900" class=""
+                style="font-size: 0.374px">12k</text>
+          <text x="11.500" y="6.900" class="light"
+                style="font-size: 0.374px">17k</text>
+          <text x="12.500" y="6.900" class="light"
+                style="font-size: 0.374px">20k</text>
+          <text x="13.500" y="6.900" class=""
+                style="font-size: 0.374px">6k</text>
+          <text x="0.500" y="5.900" class=""
+                style="font-size: 0.374px">0</text>
+          <text x="1.500" y="5.900" class=""
+                style="font-size: 0.374px">14k</text>
+          <text x="2.500" y="5.900" class="light"
+                style="font-size: 0.374px">28k</text>
+          <text x="3.500" y="5.900" class="light"
+                style="font-size: 0.374px">27k</text>
+          <text x="4.500" y="5.900" class="light"
+                style="font-size: 0.374px">29k</text>
+          <text x="5.500" y="5.900" class="light"
+                style="font-size: 0.374px">28k</text>
+          <text x="6.500" y="5.900" class="light"
+                style="font-size: 0.374px">26k</text>
+          <text x="7.500" y="5.900" class="light"
+                style="font-size: 0.374px">29k</text>
+          <text x="8.500" y="5.900" class="light"
+                style="font-size: 0.374px">26k</text>
+          <text x="9.500" y="5.900" class="light"
+                style="font-size: 0.374px">27k</text>
+          <text x="10.500" y="5.900" class="light"
+                style="font-size: 0.374px">29k</text>
+          <text x="11.500" y="5.900" class="light"
+                style="font-size: 0.374px">27k</text>
+          <text x="12.500" y="5.900" class="light"
+                style="font-size: 0.374px">24k</text>
+          <text x="13.500" y="5.900" class=""
+                style="font-size: 0.374px">6k</text>
+          <text x="0.500" y="4.900" class=""
+                style="font-size: 0.374px">&lt;1k</text>
+          <text x="1.500" y="4.900" class=""
+                style="font-size: 0.374px">12k</text>
+          <text x="2.500" y="4.900" class="light"
+                style="font-size: 0.374px">25k</text>
+          <text x="3.500" y="4.900" class="light"
+                style="font-size: 0.374px">24k</text>
+          <text x="4.500" y="4.900" class="light"
+                style="font-size: 0.374px">24k</text>
+          <text x="5.500" y="4.900" class="light"
+                style="font-size: 0.374px">25k</text>
+          <text x="6.500" y="4.900" class="light"
+                style="font-size: 0.374px">25k</text>
+          <text x="7.500" y="4.900" class="light"
+                style="font-size: 0.374px">26k</text>
+          <text x="8.500" y="4.900" class="light"
+                style="font-size: 0.374px">23k</text>
+          <text x="9.500" y="4.900" class="light"
+                style="font-size: 0.374px">23k</text>
+          <text x="10.500" y="4.900" class="light"
+                style="font-size: 0.374px">25k</text>
+          <text x="11.500" y="4.900" class="light"
+                style="font-size: 0.374px">25k</text>
+          <text x="12.500" y="4.900" class="light"
+                style="font-size: 0.374px">25k</text>
+          <text x="13.500" y="4.900" class=""
+                style="font-size: 0.374px">6k</text>
+          <text x="0.500" y="3.900" class=""
+                style="font-size: 0.374px">6k</text>
+          <text x="1.500" y="3.900" class=""
+                style="font-size: 0.374px">15k</text>
+          <text x="2.500" y="3.900" class="light"
+                style="font-size: 0.374px">26k</text>
+          <text x="3.500" y="3.900" class="light"
+                style="font-size: 0.374px">23k</text>
+          <text x="4.500" y="3.900" class="light"
+                style="font-size: 0.374px">26k</text>
+          <text x="5.500" y="3.900" class="light"
+                style="font-size: 0.374px">24k</text>
+          <text x="6.500" y="3.900" class="light"
+                style="font-size: 0.374px">24k</text>
+          <text x="7.500" y="3.900" class="light"
+                style="font-size: 0.374px">26k</text>
+          <text x="8.500" y="3.900" class="light"
+                style="font-size: 0.374px">23k</text>
+          <text x="9.500" y="3.900" class="light"
+                style="font-size: 0.374px">25k</text>
+          <text x="10.500" y="3.900" class="light"
+                style="font-size: 0.374px">25k</text>
+          <text x="11.500" y="3.900" class="light"
+                style="font-size: 0.374px">24k</text>
+          <text x="12.500" y="3.900" class="light"
+                style="font-size: 0.374px">23k</text>
+          <text x="13.500" y="3.900" class=""
+                style="font-size: 0.374px">5k</text>
+          <text x="0.500" y="2.900" class=""
+                style="font-size: 0.374px">2k</text>
+          <text x="1.500" y="2.900" class=""
+                style="font-size: 0.374px">13k</text>
+          <text x="2.500" y="2.900" class="light"
+                style="font-size: 0.374px">27k</text>
+          <text x="3.500" y="2.900" class="light"
+                style="font-size: 0.374px">25k</text>
+          <text x="4.500" y="2.900" class="light"
+                style="font-size: 0.374px">27k</text>
+          <text x="5.500" y="2.900" class="light"
+                style="font-size: 0.374px">27k</text>
+          <text x="6.500" y="2.900" class="light"
+                style="font-size: 0.374px">25k</text>
+          <text x="7.500" y="2.900" class="light"
+                style="font-size: 0.374px">28k</text>
+          <text x="8.500" y="2.900" class="light"
+                style="font-size: 0.374px">25k</text>
+          <text x="9.500" y="2.900" class="light"
+                style="font-size: 0.374px">26k</text>
+          <text x="10.500" y="2.900" class="light"
+                style="font-size: 0.374px">28k</text>
+          <text x="11.500" y="2.900" class="light"
+                style="font-size: 0.374px">26k</text>
+          <text x="12.500" y="2.900" class="light"
+                style="font-size: 0.374px">25k</text>
+          <text x="13.500" y="2.900" class=""
+                style="font-size: 0.374px">7k</text>
+          <text x="0.500" y="1.900" class=""
+                style="font-size: 0.374px">9k</text>
+          <text x="1.500" y="1.900" class="light"
+                style="font-size: 0.374px">17k</text>
+          <text x="2.500" y="1.900" class="light"
+                style="font-size: 0.374px">24k</text>
+          <text x="3.500" y="1.900" class="light"
+                style="font-size: 0.374px">22k</text>
+          <text x="4.500" y="1.900" class="light"
+                style="font-size: 0.374px">22k</text>
+          <text x="5.500" y="1.900" class="light"
+                style="font-size: 0.374px">23k</text>
+          <text x="6.500" y="1.900" class="light"
+                style="font-size: 0.374px">23k</text>
+          <text x="7.500" y="1.900" class="light"
+                style="font-size: 0.374px">23k</text>
+          <text x="8.500" y="1.900" class="light"
+                style="font-size: 0.374px">21k</text>
+          <text x="9.500" y="1.900" class="light"
+                style="font-size: 0.374px">21k</text>
+          <text x="10.500" y="1.900" class="light"
+                style="font-size: 0.374px">23k</text>
+          <text x="11.500" y="1.900" class="light"
+                style="font-size: 0.374px">23k</text>
+          <text x="12.500" y="1.900" class="light"
+                style="font-size: 0.374px">22k</text>
+          <text x="13.500" y="1.900" class=""
+                style="font-size: 0.374px">4k</text>
+          <text x="0.500" y="0.900" class=""
+                style="font-size: 0.374px">6k</text>
+          <text x="1.500" y="0.900" class="light"
+                style="font-size: 0.374px">18k</text>
+          <text x="2.500" y="0.900" class="light"
+                style="font-size: 0.374px">23k</text>
+          <text x="3.500" y="0.900" class=""
+                style="font-size: 0.374px">13k</text>
+          <text x="4.500" y="0.900" class="light"
+                style="font-size: 0.374px">19k</text>
+          <text x="5.500" y="0.900" class="light"
+                style="font-size: 0.374px">21k</text>
+          <text x="6.500" y="0.900" class="light"
+                style="font-size: 0.374px">20k</text>
+          <text x="7.500" y="0.900" class="light"
+                style="font-size: 0.374px">21k</text>
+          <text x="8.500" y="0.900" class="light"
+                style="font-size: 0.374px">19k</text>
+          <text x="9.500" y="0.900" class="light"
+                style="font-size: 0.374px">21k</text>
+          <text x="10.500" y="0.900" class=""
+                style="font-size: 0.374px">13k</text>
+          <text x="11.500" y="0.900" class=""
+                style="font-size: 0.374px">9k</text>
+          <text x="12.500" y="0.900" class="light"
+                style="font-size: 0.374px">17k</text>
+          <text x="13.500" y="0.900" class=""
+                style="font-size: 0.374px">6k</text>
         </svg>
-        <p class="small text-muted mb-0">Logic cells in each 0.1 mm square of the project. Hatched outlines are SRAM
-          macros; the bold outline is the densest 0.1 mm square that avoids them, found by sliding a
-          0.1 mm square over the project in 20 µm steps. Edge squares are smaller than 0.1 mm square.</p>
+        <p class="small text-muted mb-0">Logic cells per mm² in each 0.1 mm square of the
+          project (counted in the square, scaled up to a mm²). Hatched
+          outlines are SRAM macros; the bold outline is the densest 0.1 mm square that avoids them, found by sliding a
+          0.1 mm square over the project in 20 µm steps. Squares at the edges are partial, so they read low.</p>
       </div>
     </div>
     <h3 id="related" class="mt-20 mb-10">How this design grew<a class="run-anchor" href="#related" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
@@ -592,6 +689,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=e922b8f332"></script>
+  <script src="../run.js?v=e990a249d3"></script>
 </body>
 </html>
