@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=e990a249d3">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=41e907b34a">
 </head>
 <body>
   <div class="content-wrapper">
@@ -132,7 +132,7 @@
 <span class="text-muted">(37% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>58%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>296k average,
-              294k in the densest 0.1 mm square</td></tr>
+              294k in the densest 0.1 mm square of logic</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf0p2/ws-run1-ttpg">public layout</a>, the same way for every
@@ -551,7 +551,7 @@
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each 0.1 mm square of the
           project (counted in the square, scaled up to a mm²). Hatched
-          outlines are SRAM macros; the bold outline is the densest 0.1 mm square that avoids them, found by sliding a
+          outlines are SRAM macros; the red outline is the densest 0.1 mm square that avoids them, found by sliding a
           0.1 mm square over the project in 20 µm steps. Squares at the edges are partial, so they read low.</p>
       </div>
     </div>
@@ -561,19 +561,19 @@
     <ol class="run-timeline run-history">
       <li class="run-history-tt">
         <span class="run-timeline-date">Nov 2023 · <a href="https://tinytapeout.com/chips/tt05/">Tiny Tapeout 5</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt05/tt_um_kianV_rv32ima_uLinux_SoC">KianV uLinux SoC</a> <span class="text-muted">— 8×2 tiles</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt05/tt_um_kianV_rv32ima_uLinux_SoC">KianV uLinux SoC</a> <span class="text-muted">— 8 × 2 tiles</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Apr 2024 · <a href="https://tinytapeout.com/chips/tt06/">Tiny Tapeout 6</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt06/tt_um_kianV_rv32ima_uLinux_SoC">KianV uLinux SoC</a> <span class="text-muted">— 8×2 tiles</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt06/tt_um_kianV_rv32ima_uLinux_SoC">KianV uLinux SoC</a> <span class="text-muted">— 8 × 2 tiles</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Jun 2024 · <a href="https://tinytapeout.com/chips/tt07/">Tiny Tapeout 7</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt07/tt_um_kianv_bare_metal">KianV RISC-V RV32E Baremetal SoC</a> <span class="text-muted">— 3×2 tiles, RV32E bare-metal version</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt07/tt_um_kianv_bare_metal">KianV RISC-V RV32E Baremetal SoC</a> <span class="text-muted">— 3 × 2 tiles, RV32E bare-metal version</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Nov 2024 · <a href="https://tinytapeout.com/chips/ttihp0p2/">Tiny Tapeout IHP 0.2</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_kianv_bare_metal">KianV RISC-V RV32E Baremetal SoC</a> <span class="text-muted">— 4×2 tiles, RV32E bare-metal version</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_kianv_bare_metal">KianV RISC-V RV32E Baremetal SoC</a> <span class="text-muted">— 4 × 2 tiles, RV32E bare-metal version</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Nov 2025 · <a href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/">Tiny Tapeout GF 0.1</a></span>
@@ -581,23 +581,23 @@
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Nov 2025 · <a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/">Tiny Tapeout GF 0.2</a></span>
-        <span class="run-history-step run-history-current"><strong>KianV uLinux SoC</strong> <span class="text-muted">— 4×4 tiles</span></span>
+        <span class="run-history-step run-history-current"><strong>KianV uLinux SoC</strong> <span class="text-muted">— 4 × 4 tiles</span></span>
       </li>
       <li class="run-history-ws">
         <span class="run-timeline-date">Dec 2025 · <a href="https://wafer.space/ws-run1/">wafer.space Run 1</a></span>
-        <span class="run-history-step"><a href="https://wafer.space/ws-run1/projects/KIAN.html">KIAN KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU</a> <span class="text-muted">— 1×1 slot, 5 V standard cells and SRAM</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run1/projects/KIAN.html">KIAN KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU</a> <span class="text-muted">— 1 × 1 slot, 5 V standard cells and SRAM</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Mar 2026 · <a href="https://tinytapeout.com/chips/ttihp26a/">Tiny Tapeout IHP 26a</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp26a/tt_um_kianv_sv32_soc">KianV SV32 TT Linux SoC</a> <span class="text-muted">— 8×4 tiles</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp26a/tt_um_kianv_sv32_soc">KianV SV32 TT Linux SoC</a> <span class="text-muted">— 8 × 4 tiles</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Jul 2026 · <a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/">Tiny Tapeout GF 0.3</a></span>
-        <span class="run-history-step"><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/518.html">KianV uLinux SoC</a> <span class="text-muted">— 4×4 tiles</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/518.html">KianV uLinux SoC</a> <span class="text-muted">— 4 × 4 tiles</span></span>
       </li>
       <li class="run-history-ws">
         <span class="run-timeline-date">Jul 2026 · <a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></span>
-        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/KIAN.html">KIAN KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2</a> <span class="text-muted">— 1×1 slot, 3.3 V standard cells and SRAM</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/KIAN.html">KIAN KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2</a> <span class="text-muted">— 1 × 1 slot, 3.3 V standard cells and SRAM</span></span>
       </li>
     </ol>
     <p class="small text-muted mb-20 run-history-key"><span class="run-history-key-tt">Tiny Tapeout tile</span>
@@ -692,6 +692,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=e990a249d3"></script>
+  <script src="../run.js?v=41e907b34a"></script>
 </body>
 </html>
