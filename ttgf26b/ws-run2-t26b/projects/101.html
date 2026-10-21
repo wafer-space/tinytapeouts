@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=e922b8f332">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=e990a249d3">
 </head>
 <body>
   <div class="content-wrapper">
@@ -143,7 +143,7 @@
       <div class="col-lg-5">
 <p class="lead">Robot-arm reflex core: relays joint commands to CAN via an MCP2515, blocks the stream on a danger trigger and injects a reflex pose. Tuning values (recoil/speed/debounce) hardcoded; rules/threshold/flinch programmable.</p>        <p class="run-design-links">
           <a class="btn btn-s mb-10 me-10" href="https://github.com/khu-haeun/aer_reflex/tree/188408d7aeb4096eedfd79366c92b6a73e766584">Source repository</a>
-<a href="https://tinytapeout.com/chips/ttgf26b/tt_um_reflex_s4">Its page on Tiny Tapeout</a><a href="https://store.tinytapeout.com/products/Development-Kits-c198115270">Tiny Tapeout kits</a>        </p>
+<a href="https://tinytapeout.com/chips/ttgf26b/tt_um_reflex_s4">Its page on Tiny Tapeout</a><a href="https://store.tinytapeout.com/products/Development-Kits-c198115270">Buy a chip and board</a>        </p>
         <table class="table table-sm run-table run-facts">
           <tbody>
             <tr><th>Size</th><td>1076 × 325 µm
@@ -174,7 +174,7 @@
     <div class="row gutter-50">
       <div class="col-lg-7 mb-30">
         <h3 id="area" class="mb-10">Where the area went<a class="run-anchor" href="#area" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
-        <p class="small text-muted mb-10">How this design's area splits between working logic, memory, filler and the pad ring.</p>
+        <p class="small text-muted mb-10">How this project's area splits between logic cells, filler and tap cells and other.</p>
         <div class="run-bar run-bar-large mb-10">
           <div style="width: 63.01%; background: #5ca7db"
                title="Logic cells: 0.22 mm²">
@@ -189,8 +189,6 @@
         <ul class="run-legend">
           <li><i style="background: #5ca7db"></i><strong>Logic cells</strong>
             0.22 mm² <span class="text-muted">(63%)</span></li>
-          <li><i style="background: #9b6bd6"></i><strong>SRAM</strong>
-            0.00 mm² <span class="text-muted">(0%)</span></li>
           <li><i style="background: #b9c7d6"></i><strong>Filler and tap cells</strong>
             0.11 mm² <span class="text-muted">(32%)</span></li>
           <li><i style="background: #e6ebf0"></i><strong>Other</strong>
@@ -278,43 +276,77 @@
           <rect x="9.000" y="0.050" width="1.000" height="0.250" style="fill-opacity: 0.675"><title>45 logic cells, 616 transistors</title></rect>
           <rect x="10.000" y="0.050" width="0.760" height="0.250" style="fill-opacity: 0.618"><title>31 logic cells, 442 transistors</title></rect>
           <rect class="window" x="4.200" y="0.500" width="1" height="1"><title>Densest SRAM-free 0.1 mm square: 285 logic cells</title></rect>
-          <text x="0.500" y="2.800" class="light">199</text>
-          <text x="1.500" y="2.800" class="light">230</text>
-          <text x="2.500" y="2.800" class="light">245</text>
-          <text x="3.500" y="2.800" class="light">239</text>
-          <text x="4.500" y="2.800" class="light">258</text>
-          <text x="5.500" y="2.800" class="light">237</text>
-          <text x="6.500" y="2.800" class="light">251</text>
-          <text x="7.500" y="2.800" class="light">228</text>
-          <text x="8.500" y="2.800" class="light">247</text>
-          <text x="9.500" y="2.800" class="light">227</text>
-          <text x="10.380" y="2.800" class="light">144</text>
-          <text x="0.500" y="1.800" class="light">225</text>
-          <text x="1.500" y="1.800" class="light">238</text>
-          <text x="2.500" y="1.800" class="light">243</text>
-          <text x="3.500" y="1.800" class="light">275</text>
-          <text x="4.500" y="1.800" class="light">252</text>
-          <text x="5.500" y="1.800" class="light">251</text>
-          <text x="6.500" y="1.800" class="light">255</text>
-          <text x="7.500" y="1.800" class="light">246</text>
-          <text x="8.500" y="1.800" class="light">242</text>
-          <text x="9.500" y="1.800" class="light">239</text>
-          <text x="10.380" y="1.800" class="light">153</text>
-          <text x="0.500" y="0.800" class="light">226</text>
-          <text x="1.500" y="0.800" class="light">215</text>
-          <text x="2.500" y="0.800" class="light">241</text>
-          <text x="3.500" y="0.800" class="light">249</text>
-          <text x="4.500" y="0.800" class="light">253</text>
-          <text x="5.500" y="0.800" class="light">236</text>
-          <text x="6.500" y="0.800" class="light">235</text>
-          <text x="7.500" y="0.800" class="light">247</text>
-          <text x="8.500" y="0.800" class="light">224</text>
-          <text x="9.500" y="0.800" class="light">200</text>
-          <text x="10.380" y="0.800" class="light">130</text>
+          <text x="0.500" y="2.800" class="light"
+                style="font-size: 0.281px">20k</text>
+          <text x="1.500" y="2.800" class="light"
+                style="font-size: 0.281px">23k</text>
+          <text x="2.500" y="2.800" class="light"
+                style="font-size: 0.281px">24k</text>
+          <text x="3.500" y="2.800" class="light"
+                style="font-size: 0.281px">24k</text>
+          <text x="4.500" y="2.800" class="light"
+                style="font-size: 0.281px">26k</text>
+          <text x="5.500" y="2.800" class="light"
+                style="font-size: 0.281px">24k</text>
+          <text x="6.500" y="2.800" class="light"
+                style="font-size: 0.281px">25k</text>
+          <text x="7.500" y="2.800" class="light"
+                style="font-size: 0.281px">23k</text>
+          <text x="8.500" y="2.800" class="light"
+                style="font-size: 0.281px">25k</text>
+          <text x="9.500" y="2.800" class="light"
+                style="font-size: 0.281px">23k</text>
+          <text x="10.380" y="2.800" class="light"
+                style="font-size: 0.281px">14k</text>
+          <text x="0.500" y="1.800" class="light"
+                style="font-size: 0.281px">22k</text>
+          <text x="1.500" y="1.800" class="light"
+                style="font-size: 0.281px">24k</text>
+          <text x="2.500" y="1.800" class="light"
+                style="font-size: 0.281px">24k</text>
+          <text x="3.500" y="1.800" class="light"
+                style="font-size: 0.281px">27k</text>
+          <text x="4.500" y="1.800" class="light"
+                style="font-size: 0.281px">25k</text>
+          <text x="5.500" y="1.800" class="light"
+                style="font-size: 0.281px">25k</text>
+          <text x="6.500" y="1.800" class="light"
+                style="font-size: 0.281px">25k</text>
+          <text x="7.500" y="1.800" class="light"
+                style="font-size: 0.281px">25k</text>
+          <text x="8.500" y="1.800" class="light"
+                style="font-size: 0.281px">24k</text>
+          <text x="9.500" y="1.800" class="light"
+                style="font-size: 0.281px">24k</text>
+          <text x="10.380" y="1.800" class="light"
+                style="font-size: 0.281px">15k</text>
+          <text x="0.500" y="0.800" class="light"
+                style="font-size: 0.281px">23k</text>
+          <text x="1.500" y="0.800" class="light"
+                style="font-size: 0.281px">21k</text>
+          <text x="2.500" y="0.800" class="light"
+                style="font-size: 0.281px">24k</text>
+          <text x="3.500" y="0.800" class="light"
+                style="font-size: 0.281px">25k</text>
+          <text x="4.500" y="0.800" class="light"
+                style="font-size: 0.281px">25k</text>
+          <text x="5.500" y="0.800" class="light"
+                style="font-size: 0.281px">24k</text>
+          <text x="6.500" y="0.800" class="light"
+                style="font-size: 0.281px">23k</text>
+          <text x="7.500" y="0.800" class="light"
+                style="font-size: 0.281px">25k</text>
+          <text x="8.500" y="0.800" class="light"
+                style="font-size: 0.281px">22k</text>
+          <text x="9.500" y="0.800" class="light"
+                style="font-size: 0.281px">20k</text>
+          <text x="10.380" y="0.800" class="light"
+                style="font-size: 0.281px">13k</text>
         </svg>
-        <p class="small text-muted mb-0">Logic cells in each 0.1 mm square of the project. Hatched outlines are SRAM
-          macros; the bold outline is the densest 0.1 mm square that avoids them, found by sliding a
-          0.1 mm square over the project in 20 µm steps. Edge squares are smaller than 0.1 mm square.</p>
+        <p class="small text-muted mb-0">Logic cells per mm² in each 0.1 mm square of the
+          project (counted in the square, scaled up to a mm²). Hatched
+          outlines are SRAM macros; the bold outline is the densest 0.1 mm square that avoids them, found by sliding a
+          0.1 mm square over the project in 20 µm steps. Squares at the edges are partial, so they read low.</p>
       </div>
     </div>
   </div>
@@ -352,7 +384,7 @@
   <div class="container inner run-pager">
     <a href="../projects/100.html">← 100 <span>Neuromorphic PUF (distinct-tap LFSR arbiter + memristor XOR, GF180)</span></a>
     <a href="../index.html#projects">All projects</a>
-    <a href="../projects/102.html"><span>Wafer.space Logo VGA Screensaver</span> 102 →</a>
+    <a href="../projects/102.html"><span>wafer.space Logo VGA Screensaver</span> 102 →</a>
   </div>
 </div>
 
@@ -399,6 +431,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=e922b8f332"></script>
+  <script src="../run.js?v=e990a249d3"></script>
 </body>
 </html>

@@ -50,7 +50,7 @@ In practice, real designs achieve significantly less because:
 
 ## Achieved Standard Cell Density — Design Averages
 
-The following tables show the average logic standard cell density for each design's "core area" — the interior of the chip excluding the I/O pad ring (a 350um border of large pads around the perimeter used for external connections).
+The following tables show the average logic standard cell density for each design's "core area" — the interior of the chip excluding the I/O pad ring (a 442um border of large pads around the perimeter used for external connections).
 
 "% of max" compares against the buffer theoretical maximum for the design's primary library. "Cell area" is the share of the core area actually covered by logic cells — the placement utilisation of the die as a whole, including any area left empty or given to SRAM.
 
@@ -79,7 +79,7 @@ The following tables show the average logic standard cell density for each desig
 | [288](https://wafer.space/tinytapeouts/ttgf26b/ws-run2-t26b/projects/288.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 21k | 27% | 63% | 2k | 0 | [100Mbps Ethernet Accelerator Wrapper](https://github.com/Essenceia/Teapot) |
 | [581](https://wafer.space/tinytapeouts/ttgf26b/ws-run2-t26b/projects/581.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 20k | 27% | 53% | 1k | 0 | [Aswarby INT8 MAC](https://github.com/markd666/tt-aswarby-mac) |
 | [103](https://wafer.space/tinytapeouts/ttgf26b/ws-run2-t26b/projects/103.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 20k | 27% | 53% | 2k | 0 | [Music for ASICs](https://github.com/d5smith/tt_um_d5smith_mfa) |
-| [102](https://wafer.space/tinytapeouts/ttgf26b/ws-run2-t26b/projects/102.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 19k | 25% | 53% | 2k | 0 | [Wafer.space Logo VGA Screensaver](https://github.com/TinyTapeout/tt-waferspace-vga-screensaver) |
+| [102](https://wafer.space/tinytapeouts/ttgf26b/ws-run2-t26b/projects/102.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 19k | 25% | 53% | 2k | 0 | [wafer.space Logo VGA Screensaver](https://github.com/TinyTapeout/tt-waferspace-vga-screensaver) |
 | [135](https://wafer.space/tinytapeouts/ttgf26b/ws-run2-t26b/projects/135.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 19k | 25% | 53% | 7k | 0 | [2048 sliding tile puzzle game (VGA)](https://github.com/urish/tt-2048-game) |
 | [517](https://wafer.space/tinytapeouts/ttgf26b/ws-run2-t26b/projects/517.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 19k | 25% | 56% | 1k | 0 | [I2C Slave Template with Emulated Sensor](https://github.com/BastiBudde/TTSky26b_I2C-Slave-Sensor) |
 | [454](https://wafer.space/tinytapeouts/ttgf26b/ws-run2-t26b/projects/454.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 19k | 25% | 53% | 4k | 0 | [Spiking Neural Network WTA Inference Engine (GF180)](https://github.com/ragansanthosh/tt_um_santhosh_snn_wta_gf_pub) |
@@ -501,7 +501,7 @@ Detection uses the open GF180MCU layers: a transistor is gate polysilicon ([30/0
 
 - **Logic cell counts** come from walking the layout hierarchy and counting instances of every cell whose name contains a standard cell library prefix, excluding types starting with `fill`, `endcap`, `filltie`, `fillcap`, `decap`, `tap`, `antenna`, `diode`, `tiel`, `tieh`.
 - **Transistor counts** are the number of merged polygons in the boolean AND of the diffusion ([22/0](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html#drawn-layer-definition-and-abbreviation)) and gate polysilicon ([30/0](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html#drawn-layer-definition-and-abbreviation)) layers, leaving out dummy fill cells, whose diffusion and polysilicon squares overlap without forming transistors.
-- **Core area** is (die width − 0.70mm) x (die height − 0.70mm), removing a 350um pad ring from each side.
+- **Core area** is each design's whole area.
 - **Cell dimensions** are the width and height of each standard cell's placement boundary ([GDS 0/0](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html#drawn-layer-definition-and-abbreviation)), measured from the cells present in this layout.
 - **Theoretical maximum** = (1000um / cell width) x (1000um / row height).
 - **Pads** are openings on the pad layer ([37/0](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html#drawn-layer-definition-and-abbreviation)) at least 20um across. Those in the pad ring (within 400um of the die edge) or in a second ring of pads inside it are bond pads; the others are probe pads, shown as "+ N probe". Letters and logos on the pad layer are not pads.
