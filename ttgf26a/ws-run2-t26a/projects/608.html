@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=1a84e24183">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=6845eef8df">
 </head>
 <body>
   <div class="content-wrapper">
@@ -85,8 +85,8 @@
   <div class="container inner text-center">
     <p class="mb-10"><a class="run-crumb" href="../index.html">Tiny Tapeout GF 26a · Die T26A on wafer.space Run 2</a></p>
     <h1 class="page-title">Rhyloo’s first Wokwi design</h1>
-    <p class="lead"><span class="run-code-inline">608</span> · First designs · 1 × 1 tile</p>
-<p class="mb-0">by Jorge Benavides Macías <a class="small text-muted run-nowrap" href="https://github.com/rhyloo" title="Owner of the project's repository">@rhyloo</a></p>  </div>
+    <p class="lead"><span class="run-code-inline">608</span> · First designs · <span class="run-nowrap">1 × 1 tile</span></p>
+<p class="mb-0">by Jorge Benavides Macías <span class="small run-account run-nowrap">· repository <a href="https://github.com/rhyloo" title="The GitHub account that owns the project's repository">@rhyloo</a></span></p>  </div>
 </div>
 
 <div class="wrapper light-wrapper run-first">
@@ -113,18 +113,8 @@
           per pixel. Layers:
 <span class="run-swatch"><i style="background: #282c46"></i>Nwell</span><span class="run-swatch"><i style="background: #3cbe5a"></i>Diffusion</span><span class="run-swatch"><i style="background: #eb4646"></i>Polysilicon</span><span class="run-swatch"><i style="background: #3c78ff"></i>Metal 1</span><span class="run-swatch"><i style="background: #c850e6"></i>Metal 2</span><span class="run-swatch"><i style="background: #32d2dc"></i>Metal 3</span><span class="run-swatch"><i style="background: #f0c83c"></i>Metal 4</span><span class="run-swatch"><i style="background: #f58c32"></i>Metal 5</span><span class="run-swatch"><i style="background: #e6e6eb"></i>Top metal</span><span class="run-swatch"><i style="background: #ffffff"></i>Pad openings</span>        </p>
 
-        <h4 id="density" class="mt-30 mb-10">Logic density<a class="run-anchor" href="#density" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h4>
-        <table class="table table-sm run-table run-facts">
-          <tbody>
-            <tr><th>Core average<br><span class="small text-muted fw-normal">logic cells per mm²</span></th><td>&lt;1k
-<span class="text-muted">(&lt;1% of buffer maximum)</span></td></tr>
-            <tr><th>Densest 0.1 mm square<br><span class="small text-muted fw-normal">logic cells per mm²</span></th><td>&lt;1k
-<span class="text-muted">(1% of buffer maximum)</span></td></tr>
-            <tr><th>Core covered by logic</th><td>&lt;1%</td></tr>
-            <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>203k average,
-              213k in the densest 0.1 mm square of logic</td></tr>
-          </tbody>
-        </table>
+        <p class="mt-30 mb-10">7 logic cells: too few for density figures, which are
+          given for projects of 1,000 or more.</p>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf26a/ws-run2-t26a">public layout</a>, the same way for every
           design on the chip: see <a href="../index.html#data">data and method</a>, and
           <a href="../index.html#features">how its designs used the process</a>.</p>
@@ -149,7 +139,7 @@
             <tr><th>Libraries</th><td>
               <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a> <span class="text-muted">(7)</span>
 </td></tr>
-            <tr><th>SRAM</th><td>None</td></tr>
+            <tr><th>SRAM</th><td>No SRAM</td></tr>
           </tbody>
         </table>
 
@@ -177,22 +167,22 @@
         <p class="small text-muted mb-10">How this project's area splits between logic cells, filler and tap cells and other.</p>
         <div class="run-bar run-bar-large mb-10">
           <div style="width: 0.23%; background: #5ca7db"
-               title="Logic cells: 0.00 mm²">
+               title="Logic cells: 130 µm²">
           </div>
           <div style="width: 92.57%; background: #b9c7d6"
                title="Filler and tap cells: 0.05 mm²">
 <span>93%</span>          </div>
           <div style="width: 7.20%; background: #e6ebf0"
-               title="Other: 0.00 mm²">
+               title="Other: 4,033 µm²">
           </div>
         </div>
         <ul class="run-legend">
           <li><i style="background: #5ca7db"></i><strong>Logic cells</strong>
-            0.00 mm² <span class="text-muted">(&lt;1%)</span></li>
+            130 µm² <span class="text-muted">(&lt;1%)</span></li>
           <li><i style="background: #b9c7d6"></i><strong>Filler and tap cells</strong>
             0.05 mm² <span class="text-muted">(93%)</span></li>
           <li><i style="background: #e6ebf0"></i><strong>Other</strong>
-            0.00 mm² <span class="text-muted">(7%)</span></li>
+            4,033 µm² <span class="text-muted">(7%)</span></li>
         </ul>
 
         <h3 id="cells" class="mt-30 mb-10">Most used cells<a class="run-anchor" href="#cells" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
@@ -216,35 +206,6 @@
       </div>
 
       <div class="col-lg-5 mb-30">
-        <h3 id="map" class="mb-10">Logic density map<a class="run-anchor" href="#map" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
-        <svg class="run-heatmap" viewBox="0 0 3.5 1.6" role="img"
-             aria-label="Logic cells per square millimetre across the project">
-          <rect x="0.000" y="0.600" width="1.000" height="1.000" style="fill-opacity: 0.060"><title>0 logic cells, 2,031 transistors</title></rect>
-          <rect x="1.000" y="0.600" width="1.000" height="1.000" style="fill-opacity: 0.060"><title>0 logic cells, 2,128 transistors</title></rect>
-          <rect x="2.000" y="0.600" width="1.000" height="1.000" style="fill-opacity: 0.060"><title>0 logic cells, 2,105 transistors</title></rect>
-          <rect x="3.000" y="0.600" width="0.470" height="1.000" style="fill-opacity: 0.060"><title>0 logic cells, 882 transistors</title></rect>
-          <rect x="0.000" y="-0.010" width="1.000" height="0.610" style="fill-opacity: 0.060"><title>0 logic cells, 1,193 transistors</title></rect>
-          <rect x="1.000" y="-0.010" width="1.000" height="0.610" style="fill-opacity: 0.944"><title>4 logic cells, 1,258 transistors</title></rect>
-          <rect x="2.000" y="-0.010" width="1.000" height="0.610" style="fill-opacity: 0.281"><title>1 logic cells, 1,245 transistors</title></rect>
-          <rect x="3.000" y="-0.010" width="0.470" height="0.610" style="fill-opacity: 1.000"><title>2 logic cells, 524 transistors</title></rect>
-          <rect class="window" x="1.000" y="0.000" width="1" height="1"><title>Densest SRAM-free 0.1 mm square: 4 logic cells</title></rect>
-          <text x="0.500" y="1.100" class=""
-                style="font-size: 0.220px">0</text>
-          <text x="1.500" y="1.100" class=""
-                style="font-size: 0.220px">0</text>
-          <text x="2.500" y="1.100" class=""
-                style="font-size: 0.220px">0</text>
-          <text x="0.500" y="0.295" class=""
-                style="font-size: 0.220px">0</text>
-          <text x="1.500" y="0.295" class="light"
-                style="font-size: 0.220px">&lt;1k</text>
-          <text x="2.500" y="0.295" class=""
-                style="font-size: 0.220px">&lt;1k</text>
-        </svg>
-        <p class="small text-muted mb-0">Logic cells per mm² in each 0.1 mm square of the
-          project (counted in the square, scaled up to a mm²). Hatched
-          outlines are SRAM macros; the red outline is the densest 0.1 mm square that avoids them, found by sliding a
-          0.1 mm square over the project in 20 µm steps. Squares at the edges are partial, so they read low.</p>
 
       </div>
     </div>
@@ -330,6 +291,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=1a84e24183"></script>
+  <script src="../run.js?v=6845eef8df"></script>
 </body>
 </html>
