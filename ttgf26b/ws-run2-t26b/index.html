@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="run.css?v=9fd13fffae">
+  <link rel="stylesheet" type="text/css" href="run.css?v=31068a0376">
 </head>
 <body>
   <div class="content-wrapper">
@@ -83,7 +83,7 @@
 <div class="wrapper image-wrapper bg-image page-title-wrapper run-hero inverse-text"
      data-image-src="https://wafer.space/assets/images/header/mpw-one-partial-dice-top-1.jpg">
   <div class="container inner text-center">
-    <h1 class="page-title">Tiny Tapeout GF 26b<span class="page-title-sub">Die T26B on wafer.space Run 2</span></h1>
+    <h1 class="page-title">Tiny Tapeout GF 26b<span class="page-title-sub">Die T26B on <a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></span></h1>
     <p class="lead">90 projects on
 <a href="https://wafer.space/ws-run2/projects/T26B.html">die T26B</a>      of <a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></p>
     <p class="mb-0 run-hero-actions">
@@ -2042,25 +2042,703 @@ Early Q4 2026</span>
 <div id="projects" class="wrapper light-wrapper">
   <div class="container inner">
     <h2 class="section-title mb-10 text-center">The projects<a class="run-anchor" href="#projects" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h2>
-    <p class="lead text-center mb-40">Every project on this chip, grouped by
-      what it does. Select one for its layout, its measurements and any die photographs.</p>
+    <p class="lead text-center mb-40">Every project on this chip: an index,
+      then grouped by what it does. Select one for its layout, its measurements and any die photographs.</p>
+    <h3 id="index" class="run-category-title">Project index<a class="run-anchor" href="#index" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
+    <p class="mb-20 run-measure">All 90 projects by their address on the chip's multiplexer, with
+      how many tiles each took and how much logic it packs.</p>
+    <div class="table-responsive run-index">
+    <table class="table table-sm run-table">
+      <thead><tr><th>Address</th><th>Project</th><th class="d-none d-md-table-cell">Author</th><th>Tiles</th>
+        <th class="d-none d-lg-table-cell">What it is</th><th class="text-end">Logic cells</th>
+        <th class="text-end d-none d-sm-table-cell">Cells per mm²</th></tr></thead>
+      <tbody>
+      <tr><td class="run-mono">000</td>
+        <td><a href="projects/000.html">Chip ROM</a></td>
+        <td class="d-none d-md-table-cell">Uri Shaked</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">226</td>
+        <td class="text-end d-none d-sm-table-cell">4k</td></tr>
+      <tr><td class="run-mono">001</td>
+        <td><a href="projects/001.html">Tiny Tapeout Factory Test</a></td>
+        <td class="d-none d-md-table-cell">Tiny Tapeout</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#test">Test structures</a></td>
+        <td class="text-end">108</td>
+        <td class="text-end d-none d-sm-table-cell">2k</td></tr>
+      <tr><td class="run-mono">003</td>
+        <td><a href="projects/003.html">TT-Arrakeen-SPSRAM-direct-sramrules</a></td>
+        <td class="d-none d-md-table-cell">Staf Verhaegen</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">8</td>
+        <td class="text-end d-none d-sm-table-cell">&lt;1k</td></tr>
+      <tr><td class="run-mono">005</td>
+        <td><a href="projects/005.html">spiPWMio</a></td>
+        <td class="d-none d-md-table-cell">Sönke Appel</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">710</td>
+        <td class="text-end d-none d-sm-table-cell">13k</td></tr>
+      <tr><td class="run-mono">007</td>
+        <td><a href="projects/007.html">ECC Scalar Multiplication</a></td>
+        <td class="d-none d-md-table-cell">Dhanush Kulkarni</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#multiproject">Multi-project die</a></td>
+        <td class="text-end">65</td>
+        <td class="text-end d-none d-sm-table-cell">1k</td></tr>
+      <tr><td class="run-mono">032</td>
+        <td><a href="projects/032.html">8-bit Interactive ALU</a></td>
+        <td class="d-none d-md-table-cell">Matanel Kadosh</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
+        <td class="text-end">303</td>
+        <td class="text-end d-none d-sm-table-cell">5k</td></tr>
+      <tr><td class="run-mono">033</td>
+        <td><a href="projects/033.html">60 Hz Grid-Forming ASIC with Dump-Load Control</a></td>
+        <td class="d-none d-md-table-cell">Eric Pearson</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#accelerators">Accelerators</a></td>
+        <td class="text-end">2,936</td>
+        <td class="text-end d-none d-sm-table-cell">25k</td></tr>
+      <tr><td class="run-mono">034</td>
+        <td><a href="projects/034.html">Neuromorphic Spike Codec (GF180)</a></td>
+        <td class="d-none d-md-table-cell">Prof. Santhosh Sivasubramani, IIT Delhi</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">1,899</td>
+        <td class="text-end d-none d-sm-table-cell">16k</td></tr>
+      <tr><td class="run-mono">036</td>
+        <td><a href="projects/036.html">Neural Spike Detector</a></td>
+        <td class="d-none d-md-table-cell">Layla Adeli</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#accelerators">Accelerators</a></td>
+        <td class="text-end">3,296</td>
+        <td class="text-end d-none d-sm-table-cell">29k</td></tr>
+      <tr><td class="run-mono">038</td>
+        <td><a href="projects/038.html">Lightscan</a></td>
+        <td class="d-none d-md-table-cell">Emilio Perez Juarez</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">2,796</td>
+        <td class="text-end d-none d-sm-table-cell">24k</td></tr>
+      <tr><td class="run-mono">039</td>
+        <td><a href="projects/039.html">ChaCha20</a></td>
+        <td class="d-none d-md-table-cell">Raphael Eguchi</td>
+        <td class="run-nowrap">3 × 4</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#security">Security</a></td>
+        <td class="text-end">11,717</td>
+        <td class="text-end d-none d-sm-table-cell">15k</td></tr>
+      <tr><td class="run-mono">065</td>
+        <td><a href="projects/065.html">TT-Arrakeen-SPSRAM-direct-5V</a></td>
+        <td class="d-none d-md-table-cell">Staf Verhaegen</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#analog">Analog and mixed-signal</a></td>
+        <td class="text-end">8</td>
+        <td class="text-end d-none d-sm-table-cell">&lt;1k</td></tr>
+      <tr><td class="run-mono">067</td>
+        <td><a href="projects/067.html">Car Trip</a></td>
+        <td class="d-none d-md-table-cell">Luke Silva</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
+        <td class="text-end">1,901</td>
+        <td class="text-end d-none d-sm-table-cell">34k</td></tr>
+      <tr><td class="run-mono">069</td>
+        <td><a href="projects/069.html">triad01</a></td>
+        <td class="d-none d-md-table-cell">Duan Yihe</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">402</td>
+        <td class="text-end d-none d-sm-table-cell">7k</td></tr>
+      <tr><td class="run-mono">071</td>
+        <td><a href="projects/071.html">4-Neuron LIF Spiking Neural Network</a></td>
+        <td class="d-none d-md-table-cell">Ilim Stankulov</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#accelerators">Accelerators</a></td>
+        <td class="text-end">1,459</td>
+        <td class="text-end d-none d-sm-table-cell">26k</td></tr>
+      <tr><td class="run-mono">096</td>
+        <td><a href="projects/096.html">Asynchronous-AER Spike Router (4-phase REQ/ACK, 16-entry routing table, GF180)</a></td>
+        <td class="d-none d-md-table-cell">Prof. Santhosh Sivasubramani, IIT Delhi</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">1,594</td>
+        <td class="text-end d-none d-sm-table-cell">14k</td></tr>
+      <tr><td class="run-mono">098</td>
+        <td><a href="projects/098.html">CIM Controller with BIST and Fault Map (GF180)</a></td>
+        <td class="d-none d-md-table-cell">Prof. Santhosh Sivasubramani, IIT Delhi</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">1,759</td>
+        <td class="text-end d-none d-sm-table-cell">15k</td></tr>
+      <tr><td class="run-mono">100</td>
+        <td><a href="projects/100.html">Neuromorphic PUF (distinct-tap LFSR arbiter + memristor XOR, GF180)</a></td>
+        <td class="d-none d-md-table-cell">Prof. Santhosh Sivasubramani, IIT Delhi</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#security">Security</a></td>
+        <td class="text-end">1,971</td>
+        <td class="text-end d-none d-sm-table-cell">17k</td></tr>
+      <tr><td class="run-mono">101</td>
+        <td><a href="projects/101.html">AER Reflex Chip - MCP2515 CAN gateway</a></td>
+        <td class="d-none d-md-table-cell">khu-haeun</td>
+        <td class="run-nowrap">3 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">8,164</td>
+        <td class="text-end d-none d-sm-table-cell">23k</td></tr>
+      <tr><td class="run-mono">102</td>
+        <td><a href="projects/102.html">Wafer.space Logo VGA Screensaver</a></td>
+        <td class="d-none d-md-table-cell">Uri Shaked</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#art">Art and logos</a></td>
+        <td class="text-end">2,228</td>
+        <td class="text-end d-none d-sm-table-cell">19k</td></tr>
+      <tr><td class="run-mono">103</td>
+        <td><a href="projects/103.html">Music for ASICs</a></td>
+        <td class="d-none d-md-table-cell">d5smith</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">2,360</td>
+        <td class="text-end d-none d-sm-table-cell">20k</td></tr>
+      <tr><td class="run-mono">128</td>
+        <td><a href="projects/128.html">UART_SOC</a></td>
+        <td class="d-none d-md-table-cell">Siri Jagadeesh</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">56</td>
+        <td class="text-end d-none d-sm-table-cell">1k</td></tr>
+      <tr><td class="run-mono">129</td>
+        <td><a href="projects/129.html">CWRU CHIPS Simple Counter with 7-segment Display</a></td>
+        <td class="d-none d-md-table-cell">Andrew Chen, John Paul Magbitang</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
+        <td class="text-end">1,478</td>
+        <td class="text-end d-none d-sm-table-cell">13k</td></tr>
+      <tr><td class="run-mono">130</td>
+        <td><a href="projects/130.html">Raksha</a></td>
+        <td class="d-none d-md-table-cell">Sinchana</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">16</td>
+        <td class="text-end d-none d-sm-table-cell">&lt;1k</td></tr>
+      <tr><td class="run-mono">132</td>
+        <td><a href="projects/132.html">8-bit WNN Pattern Recognizer</a></td>
+        <td class="d-none d-md-table-cell">Your Name</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#accelerators">Accelerators</a></td>
+        <td class="text-end">23</td>
+        <td class="text-end d-none d-sm-table-cell">&lt;1k</td></tr>
+      <tr><td class="run-mono">134</td>
+        <td><a href="projects/134.html">Secure TRNG Entropy Generator</a></td>
+        <td class="d-none d-md-table-cell">Likitha</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">16</td>
+        <td class="text-end d-none d-sm-table-cell">&lt;1k</td></tr>
+      <tr><td class="run-mono">135</td>
+        <td><a href="projects/135.html">2048 sliding tile puzzle game (VGA)</a></td>
+        <td class="d-none d-md-table-cell">Uri Shaked</td>
+        <td class="run-nowrap">3 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
+        <td class="text-end">6,736</td>
+        <td class="text-end d-none d-sm-table-cell">19k</td></tr>
+      <tr><td class="run-mono">192</td>
+        <td><a href="projects/192.html">ECDSA Verification</a></td>
+        <td class="d-none d-md-table-cell">Lyra</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">26</td>
+        <td class="text-end d-none d-sm-table-cell">&lt;1k</td></tr>
+      <tr><td class="run-mono">194</td>
+        <td><a href="projects/194.html">ECC Processor</a></td>
+        <td class="d-none d-md-table-cell">Dhanush Kulkarni</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
+        <td class="text-end">183</td>
+        <td class="text-end d-none d-sm-table-cell">3k</td></tr>
+      <tr><td class="run-mono">195</td>
+        <td><a href="projects/195.html">LEA-128</a></td>
+        <td class="d-none d-md-table-cell">awayzer JCT</td>
+        <td class="run-nowrap">2 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#security">Security</a></td>
+        <td class="text-end">6,850</td>
+        <td class="text-end d-none d-sm-table-cell">29k</td></tr>
+      <tr><td class="run-mono">196</td>
+        <td><a href="projects/196.html">Fast Authentication Accelerator</a></td>
+        <td class="d-none d-md-table-cell">Nagaraj</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#accelerators">Accelerators</a></td>
+        <td class="text-end">252</td>
+        <td class="text-end d-none d-sm-table-cell">5k</td></tr>
+      <tr><td class="run-mono">198</td>
+        <td><a href="projects/198.html">TRNG using Ring Oscillator</a></td>
+        <td class="d-none d-md-table-cell">Karthik</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">27</td>
+        <td class="text-end d-none d-sm-table-cell">&lt;1k</td></tr>
+      <tr><td class="run-mono">199</td>
+        <td><a href="projects/199.html">100Mpbs 3 port Ethernet switch</a></td>
+        <td class="d-none d-md-table-cell">Julia Desmazes</td>
+        <td class="run-nowrap">2 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#accelerators">Accelerators</a></td>
+        <td class="text-end">3,297</td>
+        <td class="text-end d-none d-sm-table-cell">14k</td></tr>
+      <tr><td class="run-mono">288</td>
+        <td><a href="projects/288.html">100Mbps Ethernet Accelerator Wrapper</a></td>
+        <td class="d-none d-md-table-cell">Julia Desmazes</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#accelerators">Accelerators</a></td>
+        <td class="text-end">2,406</td>
+        <td class="text-end d-none d-sm-table-cell">21k</td></tr>
+      <tr><td class="run-mono">295</td>
+        <td><a href="projects/295.html">ASCON Integrated Crypto Processor</a></td>
+        <td class="d-none d-md-table-cell">Dr. Mohamed El-Hadedy</td>
+        <td class="run-nowrap">4 × 4</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#security">Security</a></td>
+        <td class="text-end">30,184</td>
+        <td class="text-end d-none d-sm-table-cell">28k</td></tr>
+      <tr><td class="run-mono">352</td>
+        <td><a href="projects/352.html">Procedural ASIC</a></td>
+        <td class="d-none d-md-table-cell">Conner Daehler</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">1,581</td>
+        <td class="text-end d-none d-sm-table-cell">14k</td></tr>
+      <tr><td class="run-mono">353</td>
+        <td><a href="projects/353.html">ttgf jct PoC</a></td>
+        <td class="d-none d-md-table-cell">awayzer JCT</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#security">Security</a></td>
+        <td class="text-end">101</td>
+        <td class="text-end d-none d-sm-table-cell">2k</td></tr>
+      <tr><td class="run-mono">354</td>
+        <td><a href="projects/354.html">PWM-Analyser</a></td>
+        <td class="d-none d-md-table-cell">Pauline Kreis, Muhammad Saim Bilal</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">2,960</td>
+        <td class="text-end d-none d-sm-table-cell">26k</td></tr>
+      <tr><td class="run-mono">355</td>
+        <td><a href="projects/355.html">CORDIC sin/cos generator</a></td>
+        <td class="d-none d-md-table-cell">Jacques Te</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#accelerators">Accelerators</a></td>
+        <td class="text-end">434</td>
+        <td class="text-end d-none d-sm-table-cell">8k</td></tr>
+      <tr><td class="run-mono">356</td>
+        <td><a href="projects/356.html">Arctic0 16-bit CPU</a></td>
+        <td class="d-none d-md-table-cell">Einosuke Okazaki</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
+        <td class="text-end">3,152</td>
+        <td class="text-end d-none d-sm-table-cell">27k</td></tr>
+      <tr><td class="run-mono">357</td>
+        <td><a href="projects/357.html">Three Channel RGB PWM Controller</a></td>
+        <td class="d-none d-md-table-cell">Aiden Koch</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">191</td>
+        <td class="text-end d-none d-sm-table-cell">3k</td></tr>
+      <tr><td class="run-mono">358</td>
+        <td><a href="projects/358.html">Pong</a></td>
+        <td class="d-none d-md-table-cell">Lukas Hahne</td>
+        <td class="run-nowrap">1 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">2,680</td>
+        <td class="text-end d-none d-sm-table-cell">23k</td></tr>
+      <tr><td class="run-mono">359</td>
+        <td><a href="projects/359.html">Tremolo guitar pedal ASIC</a></td>
+        <td class="d-none d-md-table-cell">Preston Schuetz</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">356</td>
+        <td class="text-end d-none d-sm-table-cell">6k</td></tr>
+      <tr><td class="run-mono">385</td>
+        <td><a href="projects/385.html">PWM Generator</a></td>
+        <td class="d-none d-md-table-cell">Omar, Nitin</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">118</td>
+        <td class="text-end d-none d-sm-table-cell">2k</td></tr>
+      <tr><td class="run-mono">386</td>
+        <td><a href="projects/386.html">Elemental Harmony Game</a></td>
+        <td class="d-none d-md-table-cell">Aakarshitha Suresh</td>
+        <td class="run-nowrap">2 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">6,656</td>
+        <td class="text-end d-none d-sm-table-cell">28k</td></tr>
+      <tr><td class="run-mono">387</td>
+        <td><a href="projects/387.html">WashingMachine_FSM</a></td>
+        <td class="d-none d-md-table-cell">Charithma Perera, Kim Luu</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">108</td>
+        <td class="text-end d-none d-sm-table-cell">2k</td></tr>
+      <tr><td class="run-mono">389</td>
+        <td><a href="projects/389.html">Traffic Light FSM</a></td>
+        <td class="d-none d-md-table-cell">Eric Kiecksee</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">296</td>
+        <td class="text-end d-none d-sm-table-cell">5k</td></tr>
+      <tr><td class="run-mono">390</td>
+        <td><a href="projects/390.html">Smerity-Mandelbrot</a></td>
+        <td class="d-none d-md-table-cell">Stephen Merity</td>
+        <td class="run-nowrap">2 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#fpga">FPGA</a></td>
+        <td class="text-end">5,977</td>
+        <td class="text-end d-none d-sm-table-cell">26k</td></tr>
+      <tr><td class="run-mono">391</td>
+        <td><a href="projects/391.html">fibbonaci_tt</a></td>
+        <td class="d-none d-md-table-cell">Jake Sabree</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">150</td>
+        <td class="text-end d-none d-sm-table-cell">3k</td></tr>
+      <tr><td class="run-mono">449</td>
+        <td><a href="projects/449.html">Simple Sprinkler</a></td>
+        <td class="d-none d-md-table-cell">Noah Perez</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">159</td>
+        <td class="text-end d-none d-sm-table-cell">3k</td></tr>
+      <tr><td class="run-mono">450</td>
+        <td><a href="projects/450.html">Programmable Waveform and PWM Generator</a></td>
+        <td class="d-none d-md-table-cell">silicon_nomad</td>
+        <td class="run-nowrap">2 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#analog">Analog and mixed-signal</a></td>
+        <td class="text-end">3,560</td>
+        <td class="text-end d-none d-sm-table-cell">15k</td></tr>
+      <tr><td class="run-mono">451</td>
+        <td><a href="projects/451.html">Universal Binary to Segment Decoder</a></td>
+        <td class="d-none d-md-table-cell">Rebecca G. Bettencourt</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">606</td>
+        <td class="text-end d-none d-sm-table-cell">11k</td></tr>
+      <tr><td class="run-mono">453</td>
+        <td><a href="projects/453.html">Hardware UTF Encoder/Decoder</a></td>
+        <td class="d-none d-md-table-cell">Rebecca G. Bettencourt</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">1,220</td>
+        <td class="text-end d-none d-sm-table-cell">22k</td></tr>
+      <tr><td class="run-mono">454</td>
+        <td><a href="projects/454.html">Spiking Neural Network WTA Inference Engine (GF180)</a></td>
+        <td class="d-none d-md-table-cell">Prof. Santhosh Sivasubramani, IIT Delhi</td>
+        <td class="run-nowrap">2 × 2</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#accelerators">Accelerators</a></td>
+        <td class="text-end">4,367</td>
+        <td class="text-end d-none d-sm-table-cell">19k</td></tr>
+      <tr><td class="run-mono">455</td>
+        <td><a href="projects/455.html">SPI Master Slave Communication</a></td>
+        <td class="d-none d-md-table-cell">Nevin Philip</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">128</td>
+        <td class="text-end d-none d-sm-table-cell">2k</td></tr>
+      <tr><td class="run-mono">480</td>
+        <td><a href="projects/480.html">Configurable 8-bit PWM Generator</a></td>
+        <td class="d-none d-md-table-cell">Vinuta</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">57</td>
+        <td class="text-end d-none d-sm-table-cell">1k</td></tr>
+      <tr><td class="run-mono">481</td>
+        <td><a href="projects/481.html">Secure V2X Mini Demonstrator</a></td>
+        <td class="d-none d-md-table-cell">Pushkar Kulkarni</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">31</td>
+        <td class="text-end d-none d-sm-table-cell">1k</td></tr>
+      <tr><td class="run-mono">482</td>
+        <td><a href="projects/482.html">Digital Door Lock</a></td>
+        <td class="d-none d-md-table-cell">Rameshwar</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">9</td>
+        <td class="text-end d-none d-sm-table-cell">&lt;1k</td></tr>
+      <tr><td class="run-mono">483</td>
+        <td><a href="projects/483.html">AES S-Box Accelerator</a></td>
+        <td class="d-none d-md-table-cell">Santosh</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#accelerators">Accelerators</a></td>
+        <td class="text-end">62</td>
+        <td class="text-end d-none d-sm-table-cell">1k</td></tr>
+      <tr><td class="run-mono">484</td>
+        <td><a href="projects/484.html">8-bit LFSR Circuit</a></td>
+        <td class="d-none d-md-table-cell">Satya Roop Bankuru</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">16</td>
+        <td class="text-end d-none d-sm-table-cell">&lt;1k</td></tr>
+      <tr><td class="run-mono">485</td>
+        <td><a href="projects/485.html">Hardware Anomaly Detection</a></td>
+        <td class="d-none d-md-table-cell">Vinayak</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#accelerators">Accelerators</a></td>
+        <td class="text-end">450</td>
+        <td class="text-end d-none d-sm-table-cell">8k</td></tr>
+      <tr><td class="run-mono">486</td>
+        <td><a href="projects/486.html">V2X Collision Warning</a></td>
+        <td class="d-none d-md-table-cell">PM Likhith Kumar</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">115</td>
+        <td class="text-end d-none d-sm-table-cell">2k</td></tr>
+      <tr><td class="run-mono">487</td>
+        <td><a href="projects/487.html">Multi-Protocol Communication Controller</a></td>
+        <td class="d-none d-md-table-cell">Chirantan J Tilavalli</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">110</td>
+        <td class="text-end d-none d-sm-table-cell">2k</td></tr>
+      <tr><td class="run-mono">512</td>
+        <td><a href="projects/512.html">SPI Slave with 8-Register File</a></td>
+        <td class="d-none d-md-table-cell">Usha</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">467</td>
+        <td class="text-end d-none d-sm-table-cell">8k</td></tr>
+      <tr><td class="run-mono">513</td>
+        <td><a href="projects/513.html">Project</a></td>
+        <td class="d-none d-md-table-cell">DHR</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">115</td>
+        <td class="text-end d-none d-sm-table-cell">2k</td></tr>
+      <tr><td class="run-mono">514</td>
+        <td><a href="projects/514.html">4 bit Accumulator CPU</a></td>
+        <td class="d-none d-md-table-cell">Darshan</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
+        <td class="text-end">101</td>
+        <td class="text-end d-none d-sm-table-cell">2k</td></tr>
+      <tr><td class="run-mono">515</td>
+        <td><a href="projects/515.html">Simple SPI configuration for analog designs</a></td>
+        <td class="d-none d-md-table-cell">Alan G</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#analog">Analog and mixed-signal</a></td>
+        <td class="text-end">56</td>
+        <td class="text-end d-none d-sm-table-cell">1k</td></tr>
+      <tr><td class="run-mono">516</td>
+        <td><a href="projects/516.html">Programmable Chaotic NLFSR</a></td>
+        <td class="d-none d-md-table-cell">Aishu</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#security">Security</a></td>
+        <td class="text-end">82</td>
+        <td class="text-end d-none d-sm-table-cell">1k</td></tr>
+      <tr><td class="run-mono">517</td>
+        <td><a href="projects/517.html">I2C Slave Template with Emulated Sensor</a></td>
+        <td class="d-none d-md-table-cell">Sebastian Budde, Janina Speckmann</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">1,051</td>
+        <td class="text-end d-none d-sm-table-cell">19k</td></tr>
+      <tr><td class="run-mono">518</td>
+        <td><a href="projects/518.html">PQC NTT Butterfly Core</a></td>
+        <td class="d-none d-md-table-cell">Aishwarya Gadela &amp; Bojji Reddy Rishika</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">279</td>
+        <td class="text-end d-none d-sm-table-cell">5k</td></tr>
+      <tr><td class="run-mono">519</td>
+        <td><a href="projects/519.html">BSD Convolution Adder Tree</a></td>
+        <td class="d-none d-md-table-cell">Vincent Mertens</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">355</td>
+        <td class="text-end d-none d-sm-table-cell">6k</td></tr>
+      <tr><td class="run-mono">545</td>
+        <td><a href="projects/545.html">Quadrature sine generator</a></td>
+        <td class="d-none d-md-table-cell">Framcesco Osti</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">1,017</td>
+        <td class="text-end d-none d-sm-table-cell">18k</td></tr>
+      <tr><td class="run-mono">547</td>
+        <td><a href="projects/547.html">Tiny RIng Oscillator PUF</a></td>
+        <td class="d-none d-md-table-cell">Manuel Roales</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#security">Security</a></td>
+        <td class="text-end">1,039</td>
+        <td class="text-end d-none d-sm-table-cell">19k</td></tr>
+      <tr><td class="run-mono">549</td>
+        <td><a href="projects/549.html">Detronyx UART Trace Exerciser</a></td>
+        <td class="d-none d-md-table-cell">Detronyx contributors</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">978</td>
+        <td class="text-end d-none d-sm-table-cell">17k</td></tr>
+      <tr><td class="run-mono">551</td>
+        <td><a href="projects/551.html">BRISQ</a></td>
+        <td class="d-none d-md-table-cell">Poiku</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">1,555</td>
+        <td class="text-end d-none d-sm-table-cell">28k</td></tr>
+      <tr><td class="run-mono">576</td>
+        <td><a href="projects/576.html">4-bit Maximum-Length LFSR</a></td>
+        <td class="d-none d-md-table-cell">Geeta Doddamani</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">21</td>
+        <td class="text-end d-none d-sm-table-cell">&lt;1k</td></tr>
+      <tr><td class="run-mono">577</td>
+        <td><a href="projects/577.html">SPI-CPU</a></td>
+        <td class="d-none d-md-table-cell">MS College of Engineering</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
+        <td class="text-end">843</td>
+        <td class="text-end d-none d-sm-table-cell">15k</td></tr>
+      <tr><td class="run-mono">578</td>
+        <td><a href="projects/578.html">ECC Scalar Accelerator</a></td>
+        <td class="d-none d-md-table-cell">PM LIKHITH KUMAR AND PRAJWAL T</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#accelerators">Accelerators</a></td>
+        <td class="text-end">325</td>
+        <td class="text-end d-none d-sm-table-cell">6k</td></tr>
+      <tr><td class="run-mono">579</td>
+        <td><a href="projects/579.html">I2C Master Controller</a></td>
+        <td class="d-none d-md-table-cell">Akshaya Institute of Technology</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">46</td>
+        <td class="text-end d-none d-sm-table-cell">1k</td></tr>
+      <tr><td class="run-mono">580</td>
+        <td><a href="projects/580.html">Configurable PWM Generator</a></td>
+        <td class="d-none d-md-table-cell">Shivaranjani GR, Ganesh Ragava, Sidharth Kamalakkannan</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">82</td>
+        <td class="text-end d-none d-sm-table-cell">1k</td></tr>
+      <tr><td class="run-mono">581</td>
+        <td><a href="projects/581.html">Aswarby INT8 MAC</a></td>
+        <td class="d-none d-md-table-cell">Mark Shilton</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">1,146</td>
+        <td class="text-end d-none d-sm-table-cell">20k</td></tr>
+      <tr><td class="run-mono">582</td>
+        <td><a href="projects/582.html">8-bit Comparator</a></td>
+        <td class="d-none d-md-table-cell">Nagaraj</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">57</td>
+        <td class="text-end d-none d-sm-table-cell">1k</td></tr>
+      <tr><td class="run-mono">583</td>
+        <td><a href="projects/583.html">TT-Arrakeen-SPSRAM-direct</a></td>
+        <td class="d-none d-md-table-cell">Staf Verhaegen</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">8</td>
+        <td class="text-end d-none d-sm-table-cell">&lt;1k</td></tr>
+      <tr><td class="run-mono">608</td>
+        <td><a href="projects/608.html">7SegmentDice</a></td>
+        <td class="d-none d-md-table-cell">Jannis Rohleder, Aishwarya Kanade</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">538</td>
+        <td class="text-end d-none d-sm-table-cell">10k</td></tr>
+      <tr><td class="run-mono">609</td>
+        <td><a href="projects/609.html">XORing given bits</a></td>
+        <td class="d-none d-md-table-cell">Jan Cerny</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">837</td>
+        <td class="text-end d-none d-sm-table-cell">15k</td></tr>
+      <tr><td class="run-mono">610</td>
+        <td><a href="projects/610.html">PDM Voice Activity Detector</a></td>
+        <td class="d-none d-md-table-cell">Kevin</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">1,357</td>
+        <td class="text-end d-none d-sm-table-cell">24k</td></tr>
+      <tr><td class="run-mono">611</td>
+        <td><a href="projects/611.html">PolyTrig Digital Waveform Synthesis Core</a></td>
+        <td class="d-none d-md-table-cell">Saeed Seyedfaraji</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">601</td>
+        <td class="text-end d-none d-sm-table-cell">11k</td></tr>
+      <tr><td class="run-mono">612</td>
+        <td><a href="projects/612.html">Detronyx Arithmetic Lab Tile</a></td>
+        <td class="d-none d-md-table-cell">Detronyx contributors</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#multiproject">Multi-project die</a></td>
+        <td class="text-end">1,427</td>
+        <td class="text-end d-none d-sm-table-cell">25k</td></tr>
+      <tr><td class="run-mono">613</td>
+        <td><a href="projects/613.html">Simon Says memory game</a></td>
+        <td class="d-none d-md-table-cell">Uri Shaked</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">1,301</td>
+        <td class="text-end d-none d-sm-table-cell">23k</td></tr>
+      <tr><td class="run-mono">614</td>
+        <td><a href="projects/614.html">Nearest Neighbor Interpolation</a></td>
+        <td class="d-none d-md-table-cell">Dan Mangum</td>
+        <td class="run-nowrap">1 × 1</td>
+        <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
+        <td class="text-end">583</td>
+        <td class="text-end d-none d-sm-table-cell">10k</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="mb-40"></div>
     <h3 id="grew" class="run-category-title">Designs that grew<a class="run-anchor" href="#grew" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
     <p class="mb-20 run-measure">Some designers on this chip kept going: they made their design again on
-      later Tiny Tapeout chips, and several now have a whole die of their own on a wafer.space run.      Oldest version first; this chip in bold.</p>
-    <ul class="run-grew">
-      <li>
-        <a class="run-grew-name" href="projects/199.html#related">Expresso Ethernet switch</a>
-        <span class="text-muted small">199, 288</span>
-        <ol class="run-grew-stages">
-          <li class="run-history-tt"><strong class="run-grew-label">Tiny Tapeout GF 26b</strong> <span class="text-muted">2×2 tiles, 1×2 tiles</span></li>
-          <li class="run-history-tt"><span class="run-grew-label">Tiny Tapeout GF 0.3</span> <span class="text-muted">2×2 tiles</span></li>
-          <li class="run-history-ws"><span class="run-grew-label">wafer.space Run 2</span> <span class="text-muted">0.5×0.5 slot</span></li>
-        </ol>
-      </li>
-    </ul>
-    <p class="small text-muted mb-40 run-history-key"><span class="run-history-key-tt">Tiny Tapeout tile</span>
-      <span class="run-history-key-google">Google shuttle</span>
-      <span class="run-history-key-ws">wafer.space die</span></p>
+      later Tiny Tapeout chips, and several now have a whole die of their own on a wafer.space run.      Newest first; the ringed dot is this chip.</p>
+    <div class="run-tl">
+  <div class="run-tl-row run-tl-axis" aria-hidden="true">
+    <div class="run-tl-name"></div>
+    <div class="run-tl-track"><span style="left: 0.0%">2026</span></div>
+  </div>
+  <div class="run-tl-row">
+    <div class="run-tl-name"><a href="projects/199.html#related">Expresso Ethernet switch</a> <span class="small text-muted">199, 288</span></div>
+    <div class="run-tl-track">
+<i class="run-tl-grid" style="left: 0.0%" aria-hidden="true"></i>      <a class="run-tl-dot run-tl-tt current" href="https://wafer.space/tinytapeouts/ttgf26b/ws-run2-t26b/projects/199.html"
+         style="left: 47.12%; --dy: 0px"
+         aria-label="Tiny Tapeout GF 26b, Jun 2026, 2×2 tiles, 1×2 tiles (this chip)">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 26b</strong> · Jun 2026<br>100Mpbs 3 port Ethernet switch; 100Mbps Ethernet Accelerator Wrapper<br><span class="text-muted">2×2 tiles, 1×2 tiles</span></span>
+      </a>
+      <a class="run-tl-dot run-tl-tt" href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/099.html"
+         style="left: 51.23%; --dy: 0px"
+         aria-label="Tiny Tapeout GF 0.3, Jul 2026, 2×2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.3</strong> · Jul 2026<br>Until heat death do us part<br><span class="text-muted">2×2 tiles</span></span>
+      </a>
+      <a class="run-tl-dot run-tl-ws" href="https://wafer.space/ws-run2/projects/CAFE.html"
+         style="left: 53.15%; --dy: 0px"
+         aria-label="wafer.space Run 2, Jul 2026, 0.5×0.5 slot">
+        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 2</strong> · Jul 2026<br>CAFE Expresso Ethernet Chip: 100Mbps Ethernet switch + Heat death of the Universe Beacon - 0.5x0.5 version - Preferred version<br><span class="text-muted">0.5×0.5 slot</span></span>
+      </a>
+    </div>
+  </div>
+</div>
+<p class="small text-muted mt-10 mb-10 run-tl-key">
+  <span class="run-tl-key-tt">Tiny Tapeout tile</span>
+  <span class="run-tl-key-google">Google shuttle</span>
+  <span class="run-tl-key-ws">wafer.space die</span>
+<span class="run-tl-key-current">this chip</span>  · Each dot is one version: point at it for details, select it for its page.</p>
+<details class="run-more">
+  <summary>As a table</summary>
+  <div class="table-responsive">
+  <table class="table table-sm run-table">
+    <thead><tr><th>Design</th><th>Made on</th><th>When</th><th>Version</th><th>Size</th></tr></thead>
+    <tbody>
+    <tr><th rowspan="3"><a href="projects/199.html#related">Expresso Ethernet switch</a></th>      <td><a href="https://tinytapeout.com/chips/ttgf26b/">Tiny Tapeout GF 26b</a></td><td class="run-nowrap">Jun 2026</td>
+      <td><a href="https://wafer.space/tinytapeouts/ttgf26b/ws-run2-t26b/projects/199.html">100Mpbs 3 port Ethernet switch; 100Mbps Ethernet Accelerator Wrapper</a></td><td>2×2 tiles, 1×2 tiles</td></tr>
+    <tr>      <td><a href="https://tinytapeout.com/chips/ttgf0p3/">Tiny Tapeout GF 0.3</a></td><td class="run-nowrap">Jul 2026</td>
+      <td><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/099.html">Until heat death do us part</a></td><td>2×2 tiles</td></tr>
+    <tr>      <td><a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></td><td class="run-nowrap">Jul 2026</td>
+      <td><a href="https://wafer.space/ws-run2/projects/CAFE.html">CAFE Expresso Ethernet Chip: 100Mbps Ethernet switch + Heat death of the Universe Beacon - 0.5x0.5 version - Preferred version</a></td><td>0.5×0.5 slot</td></tr>
+    </tbody>
+  </table>
+  </div>
+</details>
+
+    <div class="mb-40"></div>
     <h3 id="digital" class="run-category-title">
       <i style="background: #5ca7db"></i>Other digital
       <span class="text-muted">55</span><a class="run-anchor" href="#digital" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a>
@@ -4028,7 +4706,7 @@ Early Q4 2026</span>
 </div>
 <div class="wrapper light-wrapper">
   <div class="container inner">
-    <div class="row gutter-50 align-items-center">
+    <div class="row gutter-50 align-items-start justify-content-center">
       <div class="col-lg-7 mb-30">
         <h2 id="tinytapeout" class="section-title mb-20">What is Tiny Tapeout?<a class="run-anchor" href="#tinytapeout" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h2>
 <p class="lead"><a href="https://tinytapeout.com/">Tiny Tapeout</a> is the quickest and cheapest way to get your own design made on a
@@ -4046,7 +4724,7 @@ Early Q4 2026</span>
 <a class="btn btn-s mb-10 me-10" href="https://store.tinytapeout.com/products/Development-Kits-c198115270">Tiny Tapeout kits</a><a href="https://tinytapeout.com/chips/ttgf26b/">All its projects on tinytapeout.com</a></p>
 </div>
       </div>
-      <div class="col-lg-5 mb-30">
+      <div class="col-md-8 col-lg-4 mb-30">
         <figure class="run-board mb-0">
   <img src="images/tt-demo-board.webp" width="700" height="762" loading="lazy"
        alt="The Tiny Tapeout demo board, with the socket in the middle where the chip's breakout card plugs in">
@@ -4059,7 +4737,7 @@ Early Q4 2026</span>
 
       </div>
     </div>
-    <div class="mt-30"><p class="small text-muted mb-0 run-measure">Tiny Tapeout and wafer.space are independent companies that work
+    <div class="mt-20 run-measure mx-auto text-center"><p class="small text-muted mb-0 run-measure">Tiny Tapeout and wafer.space are independent companies that work
   together (<a href="https://tinytapeout.com/news/wafer-space-partnership/">announcement</a>). Tiny Tapeout runs its own shuttles: it takes the projects,
   builds the die, and sells and supports the chips and boards. wafer.space has the dies manufactured on its GF180MCU
   runs, and these pages are wafer.space's measurements of them. For anything about a Tiny Tapeout project, chip or
@@ -4110,6 +4788,6 @@ Early Q4 2026</span>
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="run.js?v=9fd13fffae"></script>
+  <script src="run.js?v=31068a0376"></script>
 </body>
 </html>
