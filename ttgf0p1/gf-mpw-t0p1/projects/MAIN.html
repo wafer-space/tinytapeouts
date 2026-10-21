@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=1a84e24183">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=6845eef8df">
 </head>
 <body>
   <div class="content-wrapper">
@@ -85,7 +85,7 @@
   <div class="container inner text-center">
     <p class="mb-10"><a class="run-crumb" href="../index.html">Tiny Tapeout GF 0.1 · Made on a GlobalFoundries private MPW run</a></p>
     <h1 class="page-title">The 24 Tiny Tapeout projects</h1>
-    <p class="lead"><span class="run-code-inline">MAIN</span> · Shared project block · 1.6 × 1.6 mm </p>
+    <p class="lead"><span class="run-code-inline">MAIN</span> · Shared project block · <span class="run-nowrap">1.6 × 1.6 mm </span></p>
   </div>
 </div>
 
@@ -122,7 +122,7 @@
 <span class="text-muted">(57% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>72%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>292k average,
-              292k in the densest 0.1 mm square of logic</td></tr>
+              292k in the 0.1 mm square with the most logic cells</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf0p1/gf-mpw-t0p1">public layout</a>, the same way for every
@@ -145,7 +145,7 @@
             <tr><th>Libraries</th><td>
               <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a> <span class="text-muted">(63k)</span>
 </td></tr>
-            <tr><th>SRAM</th><td>None</td></tr>
+            <tr><th>SRAM</th><td>No SRAM</td></tr>
           </tbody>
         </table>
 
@@ -202,7 +202,7 @@
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/oai21/gf180mcu_fd_sc_mcu7t5v0__oai21_1.html"><span class="run-mono">oai21_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
               <td class="text-end">4,989</td><td class="text-muted">OR-AND-Invert compound gate</td></tr>
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/dffq/gf180mcu_fd_sc_mcu7t5v0__dffq_4.html"><span class="run-mono">dffq_4</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
-              <td class="text-end">4,982</td><td class="text-muted">D flip-flop (1 bit storage) (4x drive)</td></tr>
+              <td class="text-end">4,982</td><td class="text-muted">D flip-flop (1 bit storage, 4x drive)</td></tr>
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nor2/gf180mcu_fd_sc_mcu7t5v0__nor2_1.html"><span class="run-mono">nor2_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
               <td class="text-end">4,323</td><td class="text-muted">2-input NOR gate</td></tr>
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/aoi21/gf180mcu_fd_sc_mcu7t5v0__aoi21_1.html"><span class="run-mono">aoi21_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
@@ -996,11 +996,13 @@
                 style="font-size: 0.416px">23k</text>
           <text x="15.500" y="0.500" class=""
                 style="font-size: 0.416px">16k</text>
+          <text x="1.300" y="10.688" class="window-label"
+                style="font-size: 0.416px">43k</text>
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each 0.1 mm square of the
           block (counted in the square, scaled up to a mm²). Hatched
-          outlines are SRAM macros; the red outline is the densest 0.1 mm square that avoids them, found by sliding a
-          0.1 mm square over the block in 20 µm steps. Squares at the edges are partial, so they read low.</p>
+          outlines are SRAM macros; the red outline, labelled in red, is the densest 0.1 mm square that avoids them, found by sliding a
+          0.1 mm square over the block in 20 µm steps, so it can straddle the fixed squares and find more than any one of them. Squares at the edges are partial, so they read low.</p>
 
       </div>
     </div>
@@ -1086,6 +1088,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=1a84e24183"></script>
+  <script src="../run.js?v=6845eef8df"></script>
 </body>
 </html>

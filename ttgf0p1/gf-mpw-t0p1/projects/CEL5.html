@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=1a84e24183">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=6845eef8df">
 </head>
 <body>
   <div class="content-wrapper">
@@ -85,7 +85,7 @@
   <div class="container inner text-center">
     <p class="mb-10"><a class="run-crumb" href="../index.html">Tiny Tapeout GF 0.1 · Made on a GlobalFoundries private MPW run</a></p>
     <h1 class="page-title">Cell test: OSU 12-track 3.3 V cells</h1>
-    <p class="lead"><span class="run-code-inline">CEL5</span> · Test structures · 0.225 × 0.225 mm </p>
+    <p class="lead"><span class="run-code-inline">CEL5</span> · Test structures · <span class="run-nowrap">0.225 × 0.225 mm </span></p>
   </div>
 </div>
 
@@ -122,7 +122,7 @@
 </td></tr>
             <tr><th>Core covered by logic</th><td>41%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>52k average,
-              78k in the densest 0.1 mm square of logic</td></tr>
+              78k in the 0.1 mm square with the most logic cells</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf0p1/gf-mpw-t0p1">public layout</a>, the same way for every
@@ -145,7 +145,7 @@
             <tr><th>Libraries</th><td>
               <a href="https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc/tree/main/gf180mcu_osu_sc_gp12t3v3">OSU 12t-3.3V</a> <span class="text-muted">(1k)</span>
 </td></tr>
-            <tr><th>SRAM</th><td>None</td></tr>
+            <tr><th>SRAM</th><td>No SRAM</td></tr>
           </tbody>
         </table>
 
@@ -200,7 +200,7 @@
             <tr><td><a href="https://cdn.jsdelivr.net/gh/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc@8a2f58f283a2eaa725314c9e1b8b7d1d343f23a3/docs/gf180mcu_osu_sc_gp12t3v3_TT_25C.ccs.pdf#page=60"><span class="run-mono">clkinv_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc/tree/main/gf180mcu_osu_sc_gp12t3v3">OSU 12t-3.3V</a></td>
               <td class="text-end">1,029</td><td class="text-muted">Clock inverter</td></tr>
             <tr><td><a href="https://cdn.jsdelivr.net/gh/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc@8a2f58f283a2eaa725314c9e1b8b7d1d343f23a3/docs/gf180mcu_osu_sc_gp12t3v3_TT_25C.ccs.pdf#page=130"><span class="run-mono">dff_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc/tree/main/gf180mcu_osu_sc_gp12t3v3">OSU 12t-3.3V</a></td>
-              <td class="text-end">12</td><td class="text-muted"></td></tr>
+              <td class="text-end">12</td><td class="text-muted">D flip-flop (1 bit storage)</td></tr>
             <tr><td><a href="https://cdn.jsdelivr.net/gh/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc@8a2f58f283a2eaa725314c9e1b8b7d1d343f23a3/docs/gf180mcu_osu_sc_gp12t3v3_TT_25C.ccs.pdf#page=176"><span class="run-mono">nor2_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc/tree/main/gf180mcu_osu_sc_gp12t3v3">OSU 12t-3.3V</a></td>
               <td class="text-end">7</td><td class="text-muted">2-input NOR gate</td></tr>
             <tr><td><a href="https://cdn.jsdelivr.net/gh/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc@8a2f58f283a2eaa725314c9e1b8b7d1d343f23a3/docs/gf180mcu_osu_sc_gp12t3v3_TT_25C.ccs.pdf#page=212"><span class="run-mono">xnor2_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc/tree/main/gf180mcu_osu_sc_gp12t3v3">OSU 12t-3.3V</a></td>
@@ -245,11 +245,13 @@
                 style="font-size: 0.220px">25k</text>
           <text x="1.500" y="0.800" class="light"
                 style="font-size: 0.220px">30k</text>
+          <text x="1.500" y="0.135" class="window-label"
+                style="font-size: 0.220px">30k</text>
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each 0.1 mm square of the
           block (counted in the square, scaled up to a mm²). Hatched
-          outlines are SRAM macros; the red outline is the densest 0.1 mm square that avoids them, found by sliding a
-          0.1 mm square over the block in 20 µm steps. Squares at the edges are partial, so they read low.</p>
+          outlines are SRAM macros; the red outline, labelled in red, is the densest 0.1 mm square that avoids them, found by sliding a
+          0.1 mm square over the block in 20 µm steps, so it can straddle the fixed squares and find more than any one of them. Squares at the edges are partial, so they read low.</p>
 
       </div>
     </div>
@@ -335,6 +337,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=1a84e24183"></script>
+  <script src="../run.js?v=6845eef8df"></script>
 </body>
 </html>
