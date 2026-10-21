@@ -114,7 +114,7 @@ These designs contain fewer than 1,000 logic standard cells:
 | [609](https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/609.html) | 761 | 15k | 0 | 0 | [Super-Simple-SPI-CPU](https://github.com/Sheffield-Chip-Design-Team/SPI-CPU-Final) |
 | [610](https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/610.html) | 62 | 12k | 0 | 0 | [Example of Bad Synchronizer](https://github.com/dlmiles/ttgf25a-bad-synchronizer) |
 | [612](https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/612.html) | 977 | 14k | 0 | 0 | [One Bit PUF](https://github.com/Capulus123/ttihp03-multi-bit-puf) |
-| [613](https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/613.html) | 90 | 12k | 0 | 0 | [DDR throughput and flop aperature test](https://github.com/dlmiles/ttgf25a-ddr-throughput-test) |
+| [613](https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/613.html) | 90 | 12k | 0 | 0 | [DDR throughput and flop aperture test](https://github.com/dlmiles/ttgf25a-ddr-throughput-test) |
 | [614](https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/614.html) | 473 | 12k | 0 | 0 | [Ring osc on VGA](https://github.com/algofoogle/ttgf0p2-vga-ring-osc) |
 | [615](https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttp2/projects/615.html) | 81 | 12k | 0 | 0 | [GF180MCU loopback tile with input skew measurement](https://github.com/dlmiles/ttgf25a-loopback-with-skew) |
 
