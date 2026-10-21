@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=1a84e24183">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=6845eef8df">
 </head>
 <body>
   <div class="content-wrapper">
@@ -85,8 +85,8 @@
   <div class="container inner text-center">
     <p class="mb-10"><a class="run-crumb" href="../index.html">Tiny Tapeout GF 0.2 · Die TTPG on wafer.space Run 1: the power-gated edition</a></p>
     <h1 class="page-title">2048 sliding tile puzzle game (VGA)</h1>
-    <p class="lead"><span class="run-code-inline">194</span> · Retro computing · 2 × 2 tiles</p>
-<p class="mb-0">by Uri Shaked <a class="small text-muted run-nowrap" href="https://github.com/urish" title="Owner of the project's repository">@urish</a></p>  </div>
+    <p class="lead"><span class="run-code-inline">194</span> · Retro computing · <span class="run-nowrap">2 × 2 tiles</span></p>
+<p class="mb-0">by Uri Shaked <span class="small run-account run-nowrap">· repository <a href="https://github.com/urish" title="The GitHub account that owns the project's repository">@urish</a></span></p>  </div>
 </div>
 
 <div class="wrapper light-wrapper run-first">
@@ -122,7 +122,7 @@
 <span class="text-muted">(50% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>54%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>284k average,
-              322k in the densest 0.1 mm square of logic</td></tr>
+              322k in the 0.1 mm square with the most logic cells</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf0p2/ws-run1-ttpg">public layout</a>, the same way for every
@@ -149,7 +149,7 @@
             <tr><th>Libraries</th><td>
               <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a> <span class="text-muted">(5k)</span>
 </td></tr>
-            <tr><th>SRAM</th><td>None</td></tr>
+            <tr><th>SRAM</th><td>No SRAM</td></tr>
           </tbody>
         </table>
 
@@ -306,11 +306,13 @@
                 style="font-size: 0.220px">10k</text>
           <text x="6.500" y="0.800" class=""
                 style="font-size: 0.220px">0</text>
+          <text x="1.500" y="0.535" class="window-label"
+                style="font-size: 0.220px">38k</text>
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each 0.1 mm square of the
           project (counted in the square, scaled up to a mm²). Hatched
-          outlines are SRAM macros; the red outline is the densest 0.1 mm square that avoids them, found by sliding a
-          0.1 mm square over the project in 20 µm steps. Squares at the edges are partial, so they read low.</p>
+          outlines are SRAM macros; the red outline, labelled in red, is the densest 0.1 mm square that avoids them, found by sliding a
+          0.1 mm square over the project in 20 µm steps, so it can straddle the fixed squares and find more than any one of them. Squares at the edges are partial, so they read low.</p>
 
       </div>
     </div>
@@ -396,6 +398,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=1a84e24183"></script>
+  <script src="../run.js?v=6845eef8df"></script>
 </body>
 </html>
