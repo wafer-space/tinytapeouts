@@ -238,7 +238,7 @@ Which transistor voltages and optional devices of the GF180MCU process the 32 de
 | [Diffusion resistors](https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_4.html) | 0 of 32 | — |
 | [N-well resistors](https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_4.html) | 0 of 32 | — |
 | [Metal resistors](https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_4.html) | 0 of 32 | — |
-| [Diodes (DIODE_MK)](https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_3.html) | 0 of 32 | — |
+| [Diodes](https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_3.html) | 0 of 32 | — |
 | [Well diodes](https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_3.html) | 0 of 32 | — |
 | [Schottky diodes](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_10_14.html) | 0 of 32 | — |
 | [Zener diodes](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html) | 0 of 32 | — |
