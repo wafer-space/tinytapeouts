@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=1a84e24183">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=6845eef8df">
 </head>
 <body>
   <div class="content-wrapper">
@@ -85,8 +85,8 @@
   <div class="container inner text-center">
     <p class="mb-10"><a class="run-crumb" href="../index.html">Tiny Tapeout GF 0.2 · Die TTP2 on wafer.space Run 1: the standard edition</a></p>
     <h1 class="page-title">easy PAL</h1>
-    <p class="lead"><span class="run-code-inline">198</span> · Other digital · 1 × 2 tiles</p>
-<p class="mb-0">by Ken Pettit <a class="small text-muted run-nowrap" href="https://github.com/kdp1965" title="Owner of the project's repository">@kdp1965</a></p>  </div>
+    <p class="lead"><span class="run-code-inline">198</span> · Other digital · <span class="run-nowrap">1 × 2 tiles</span></p>
+<p class="mb-0">by Ken Pettit <span class="small run-account run-nowrap">· repository <a href="https://github.com/kdp1965" title="The GitHub account that owns the project's repository">@kdp1965</a></span></p>  </div>
 </div>
 
 <div class="wrapper light-wrapper run-first">
@@ -122,7 +122,7 @@
 <span class="text-muted">(35% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>61%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>291k average,
-              331k in the densest 0.1 mm square of logic</td></tr>
+              331k in the 0.1 mm square with the most logic cells</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf0p2/ws-run1-ttp2">public layout</a>, the same way for every
@@ -149,7 +149,7 @@
             <tr><th>Libraries</th><td>
               <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a> <span class="text-muted">(2k)</span>
 </td></tr>
-            <tr><th>SRAM</th><td>None</td></tr>
+            <tr><th>SRAM</th><td>No SRAM</td></tr>
           </tbody>
         </table>
 
@@ -216,11 +216,11 @@
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/buf/gf180mcu_fd_sc_mcu7t5v0__buf_1.html"><span class="run-mono">buf_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
               <td class="text-end">31</td><td class="text-muted">Buffer</td></tr>
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/aoi22/gf180mcu_fd_sc_mcu7t5v0__aoi22_2.html"><span class="run-mono">aoi22_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
-              <td class="text-end">28</td><td class="text-muted">AND-OR-Invert (2x2 inputs) (2x drive)</td></tr>
+              <td class="text-end">28</td><td class="text-muted">AND-OR-Invert (2x2 inputs, 2x drive)</td></tr>
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/clkinv/gf180mcu_fd_sc_mcu7t5v0__clkinv_1.html"><span class="run-mono">clkinv_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
               <td class="text-end">26</td><td class="text-muted">Clock inverter</td></tr>
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/or4/gf180mcu_fd_sc_mcu7t5v0__or4_2.html"><span class="run-mono">or4_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
-              <td class="text-end">21</td><td class="text-muted"></td></tr>
+              <td class="text-end">21</td><td class="text-muted">4-input OR gate (2x drive)</td></tr>
           </tbody>
         </table>
         </div>
@@ -266,11 +266,13 @@
                 style="font-size: 0.220px">22k</text>
           <text x="2.500" y="0.800" class="light"
                 style="font-size: 0.220px">22k</text>
+          <text x="1.100" y="1.265" class="window-label"
+                style="font-size: 0.220px">26k</text>
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each 0.1 mm square of the
           project (counted in the square, scaled up to a mm²). Hatched
-          outlines are SRAM macros; the red outline is the densest 0.1 mm square that avoids them, found by sliding a
-          0.1 mm square over the project in 20 µm steps. Squares at the edges are partial, so they read low.</p>
+          outlines are SRAM macros; the red outline, labelled in red, is the densest 0.1 mm square that avoids them, found by sliding a
+          0.1 mm square over the project in 20 µm steps, so it can straddle the fixed squares and find more than any one of them. Squares at the edges are partial, so they read low.</p>
 
       </div>
     </div>
@@ -356,6 +358,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=1a84e24183"></script>
+  <script src="../run.js?v=6845eef8df"></script>
 </body>
 </html>

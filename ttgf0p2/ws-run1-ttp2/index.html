@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="run.css?v=1a84e24183">
+  <link rel="stylesheet" type="text/css" href="run.css?v=6845eef8df">
 </head>
 <body>
   <div class="content-wrapper">
@@ -96,7 +96,7 @@
   <div class="container inner">
     <h2 class="section-title mb-10 text-center">What was built<a class="run-anchor" href="#summary" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h2>
     <p class="lead text-center mb-40">The chip as a whole: what its projects add up to.</p>
-    <div class="row justify-content-center">
+<p class="run-measure mx-auto text-center mb-40">This is the standard edition of Tiny Tapeout GF 0.2. The same 52 projects were also made on a <a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/">power-gated edition</a>, which can switch off the power to the projects that are not selected.</p>    <div class="row justify-content-center">
       <div class="col-6 col-md-4 col-lg-2 mb-20">
   <div class="box bg-white shadow p-20 text-center h-100">
     <h3 class="mb-5 color-dark run-stat">52</h3>
@@ -127,8 +127,7 @@
 
     </div>
     <p class="text-center text-muted small mb-0">Counted inside the projects only, so these totals are smaller than
-      the die's own figures on <a href="https://wafer.space/ws-run1/#reticle">its run's page</a>: the pads, Tiny Tapeout's multiplexer, controller and power switches,
-      and the fill are left out.</p>
+      the die's own figures on <a href="https://wafer.space/ws-run1/#reticle">its run's page</a>: the pads, Tiny Tapeout's multiplexer and controller and the fill are left out.</p>
     <h2 id="next" class="section-title mt-60 mb-10 text-center">Get this chip, or make your own<a class="run-anchor" href="#next" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h2>
     <p class="lead text-center mb-40">Tiny Tapeout puts many small designs on one chip. Start with a tile,
       then come back with a whole die.</p>
@@ -1113,7 +1112,8 @@
         <div class="box bg-white shadow p-30 h-100">
           <h3 class="mb-5 color-dark">21k</h3>
           <p class="mb-0 font-weight-600 color-dark">Typical project</p>
-          <p class="mb-0 small text-muted">median logic cells/mm² of core across 36 digital projects</p>
+          <p class="mb-0 small text-muted">median logic cells/mm² of core across 36 digital projects
+            (1,000 or more logic cells)</p>
           <p class="mb-0 small text-muted">61% of the core covered by logic cells</p>
         </div>
       </div>
@@ -1132,7 +1132,7 @@
       <table class="table table-sm run-table run-guidance bg-white shadow">
         <thead><tr class="run-groups">
           <th colspan="4"></th>
-          <th colspan="2" class="run-group">Logic cells in its projects</th>
+          <th colspan="2" class="run-group">Logic cells in its digital projects<span class="run-note">1,000 or more logic cells</span></th>
           <th colspan="2" class="run-group">Logic cells at this chip's density</th>
           <th colspan="2" class="run-group">Theoretical maximum, 7t-5V cells</th>
         </tr><tr>
@@ -1205,7 +1205,7 @@
 <a href="https://app.tinytapeout.com/shuttles/ttgf26c">the next Tiny Tapeout chip</a>, by 7 December 2026.</p>
 
     <h3 id="densities" class="mb-10">Logic density of every digital design<a class="run-anchor" href="#densities" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
-    <p class="text-muted small mb-20">Solid bar: average over the core. Outlined bar: the densest 0.1 mm square
+    <p class="text-muted small mb-20">A digital project here is one with 1,000 or more logic cells. Solid bar: average over the core. Outlined bar: the densest 0.1 mm square
       outside SRAM, per mm² (a dash where memory covers most of the design). The scale
       ends at the buffer theoretical maximum (76k cells/mm²). The numbers are
       core / densest, in logic cells per mm².</p>
@@ -1812,97 +1812,97 @@
         <td class="text-end d-none d-sm-table-cell">19k</td></tr>
       <tr><td class="run-mono">038</td>
         <td><a href="projects/038.html">Wildcat RISC-V</a></td>
-<td class="d-none d-md-table-cell">Martin Schoeberl <a class="small text-muted run-nowrap" href="https://github.com/schoeberl" title="Owner of the project's repository">@schoeberl</a></td>        <td class="run-nowrap">3 × 2</td>
+<td class="d-none d-md-table-cell">Martin Schoeberl <span class="small run-account run-nowrap">· repository <a href="https://github.com/schoeberl" title="The GitHub account that owns the project's repository">@schoeberl</a></span></td>        <td class="run-nowrap">3 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
         <td class="text-end">5,867</td>
         <td class="text-end d-none d-sm-table-cell">16k</td></tr>
       <tr><td class="run-mono">039</td>
         <td><a href="projects/039.html">TinyQV RISC-V SoC</a></td>
-<td class="d-none d-md-table-cell">Michael Bell <a class="small text-muted run-nowrap" href="https://github.com/MichaelBell" title="Owner of the project's repository">@MichaelBell</a></td>        <td class="run-nowrap">3 × 4</td>
+<td class="d-none d-md-table-cell">Michael Bell <span class="small run-account run-nowrap">· repository <a href="https://github.com/MichaelBell" title="The GitHub account that owns the project's repository">@MichaelBell</a></span></td>        <td class="run-nowrap">3 × 4</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
         <td class="text-end">20,084</td>
         <td class="text-end d-none d-sm-table-cell">25k</td></tr>
       <tr><td class="run-mono">101</td>
         <td><a href="projects/101.html">SCµM-BLE-RX</a></td>
-<td class="d-none d-md-table-cell">Dingyu Zhou <a class="small text-muted run-nowrap" href="https://github.com/ZDYnb" title="Owner of the project's repository">@ZDYnb</a></td>        <td class="run-nowrap">3 × 4</td>
+<td class="d-none d-md-table-cell">Dingyu Zhou <span class="small run-account run-nowrap">· repository <a href="https://github.com/ZDYnb" title="The GitHub account that owns the project's repository">@ZDYnb</a></span></td>        <td class="run-nowrap">3 × 4</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">22,709</td>
         <td class="text-end d-none d-sm-table-cell">28k</td></tr>
       <tr><td class="run-mono">102</td>
         <td><a href="projects/102.html">Silly-Faust</a></td>
-<td class="d-none d-md-table-cell">Louis Ledoux, Cochard Pierre <a class="small text-muted run-nowrap" href="https://github.com/Bynaryman" title="Owner of the project's repository">@Bynaryman</a></td>        <td class="run-nowrap">4 × 2</td>
+<td class="d-none d-md-table-cell">Louis Ledoux, Cochard Pierre <span class="small run-account run-nowrap">· repository <a href="https://github.com/Bynaryman" title="The GitHub account that owns the project's repository">@Bynaryman</a></span></td>        <td class="run-nowrap">4 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">9,814</td>
         <td class="text-end d-none d-sm-table-cell">21k</td></tr>
       <tr><td class="run-mono">103</td>
         <td><a href="projects/103.html">Simon&#39;s Caterpillar</a></td>
-<td class="d-none d-md-table-cell">htfab <a class="small text-muted run-nowrap" href="https://github.com/htfab" title="Owner of the project's repository">@htfab</a></td>        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">htfab <span class="small run-account run-nowrap">· repository <a href="https://github.com/htfab" title="The GitHub account that owns the project's repository">@htfab</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">2,486</td>
         <td class="text-end d-none d-sm-table-cell">22k</td></tr>
       <tr><td class="run-mono">128</td>
         <td><a href="projects/128.html">VGA clock</a></td>
-<td class="d-none d-md-table-cell">Matt Venn <a class="small text-muted run-nowrap" href="https://github.com/mattvenn" title="Owner of the project's repository">@mattvenn</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Matt Venn <span class="small run-account run-nowrap">· repository <a href="https://github.com/mattvenn" title="The GitHub account that owns the project's repository">@mattvenn</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">860</td>
         <td class="text-end d-none d-sm-table-cell">15k</td></tr>
       <tr><td class="run-mono">129</td>
         <td><a href="projects/129.html">2x2 MAC Systolic array with DFT</a></td>
-<td class="d-none d-md-table-cell">Julia Desmazes <a class="small text-muted run-nowrap" href="https://github.com/Essenceia" title="Owner of the project's repository">@Essenceia</a></td>        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Julia Desmazes <span class="small run-account run-nowrap">· repository <a href="https://github.com/Essenceia" title="The GitHub account that owns the project's repository">@Essenceia</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">2,711</td>
         <td class="text-end d-none d-sm-table-cell">23k</td></tr>
       <tr><td class="run-mono">130</td>
         <td><a href="projects/130.html">USB CDC (Serial) Device</a></td>
-<td class="d-none d-md-table-cell">Uri Shaked <a class="small text-muted run-nowrap" href="https://github.com/urish" title="Owner of the project's repository">@urish</a></td>        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Uri Shaked <span class="small run-account run-nowrap">· repository <a href="https://github.com/urish" title="The GitHub account that owns the project's repository">@urish</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">2,943</td>
         <td class="text-end d-none d-sm-table-cell">25k</td></tr>
       <tr><td class="run-mono">134</td>
         <td><a href="projects/134.html">VGA Drop (audio/visual demo)</a></td>
-<td class="d-none d-md-table-cell">ReJ aka Renaldas Zioma, eriQue aka Erik Hemming, Matthias Kampa <a class="small text-muted run-nowrap" href="https://github.com/rejunity" title="Owner of the project's repository">@rejunity</a></td>        <td class="run-nowrap">2 × 2</td>
+<td class="d-none d-md-table-cell">ReJ aka Renaldas Zioma, eriQue aka Erik Hemming, Matthias Kampa <span class="small run-account run-nowrap">· repository <a href="https://github.com/rejunity" title="The GitHub account that owns the project's repository">@rejunity</a></span></td>        <td class="run-nowrap">2 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">3,625</td>
         <td class="text-end d-none d-sm-table-cell">15k</td></tr>
       <tr><td class="run-mono">135</td>
         <td><a href="projects/135.html">raybox-zero TTGF0p2 edition</a></td>
-<td class="d-none d-md-table-cell">algofoogle (Anton Maurovic) <a class="small text-muted run-nowrap" href="https://github.com/algofoogle" title="Owner of the project's repository">@algofoogle</a></td>        <td class="run-nowrap">3 × 4</td>
+<td class="d-none d-md-table-cell">algofoogle (Anton Maurovic) <span class="small run-account run-nowrap">· repository <a href="https://github.com/algofoogle" title="The GitHub account that owns the project's repository">@algofoogle</a></span></td>        <td class="run-nowrap">3 × 4</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">16,500</td>
         <td class="text-end d-none d-sm-table-cell">21k</td></tr>
       <tr><td class="run-mono">194</td>
         <td><a href="projects/194.html">2048 sliding tile puzzle game (VGA)</a></td>
-<td class="d-none d-md-table-cell">Uri Shaked <a class="small text-muted run-nowrap" href="https://github.com/urish" title="Owner of the project's repository">@urish</a></td>        <td class="run-nowrap">2 × 2</td>
+<td class="d-none d-md-table-cell">Uri Shaked <span class="small run-account run-nowrap">· repository <a href="https://github.com/urish" title="The GitHub account that owns the project's repository">@urish</a></span></td>        <td class="run-nowrap">2 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">4,680</td>
         <td class="text-end d-none d-sm-table-cell">20k</td></tr>
       <tr><td class="run-mono">196</td>
         <td><a href="projects/196.html">Quickscope</a></td>
-<td class="d-none d-md-table-cell">Frans Skarman <a class="small text-muted run-nowrap" href="https://github.com/TheZoq2" title="Owner of the project's repository">@TheZoq2</a></td>        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Frans Skarman <span class="small run-account run-nowrap">· repository <a href="https://github.com/TheZoq2" title="The GitHub account that owns the project's repository">@TheZoq2</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,718</td>
         <td class="text-end d-none d-sm-table-cell">15k</td></tr>
       <tr class="run-extra"><td class="run-mono">197</td>
         <td><a href="projects/197.html">LISA 8-Bit Microcontroller</a></td>
-<td class="d-none d-md-table-cell">Ken Pettit <a class="small text-muted run-nowrap" href="https://github.com/kdp1965" title="Owner of the project's repository">@kdp1965</a></td>        <td class="run-nowrap">3 × 4</td>
+<td class="d-none d-md-table-cell">Ken Pettit <span class="small run-account run-nowrap">· repository <a href="https://github.com/kdp1965" title="The GitHub account that owns the project's repository">@kdp1965</a></span></td>        <td class="run-nowrap">3 × 4</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
         <td class="text-end">17,231</td>
         <td class="text-end d-none d-sm-table-cell">22k</td></tr>
       <tr class="run-extra"><td class="run-mono">198</td>
         <td><a href="projects/198.html">easy PAL</a></td>
-<td class="d-none d-md-table-cell">Ken Pettit <a class="small text-muted run-nowrap" href="https://github.com/kdp1965" title="Owner of the project's repository">@kdp1965</a></td>        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Ken Pettit <span class="small run-account run-nowrap">· repository <a href="https://github.com/kdp1965" title="The GitHub account that owns the project's repository">@kdp1965</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,890</td>
         <td class="text-end d-none d-sm-table-cell">16k</td></tr>
       <tr class="run-extra"><td class="run-mono">199</td>
         <td><a href="projects/199.html">VGA Nyan Cat</a></td>
-<td class="d-none d-md-table-cell">Andy Sloane <a class="small text-muted run-nowrap" href="https://github.com/a1k0n" title="Owner of the project's repository">@a1k0n</a></td>        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Andy Sloane <span class="small run-account run-nowrap">· repository <a href="https://github.com/a1k0n" title="The GitHub account that owns the project's repository">@a1k0n</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">2,662</td>
         <td class="text-end d-none d-sm-table-cell">23k</td></tr>
       <tr class="run-extra"><td class="run-mono">288</td>
         <td><a href="projects/288.html">Notre Dame - Lockpick Game TT Example</a></td>
-<td class="d-none d-md-table-cell">Matthew Morrison <a class="small text-muted run-nowrap" href="https://github.com/mmorri22" title="Owner of the project's repository">@mmorri22</a></td>        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Matthew Morrison <span class="small run-account run-nowrap">· repository <a href="https://github.com/mmorri22" title="The GitHub account that owns the project's repository">@mmorri22</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">2,722</td>
         <td class="text-end d-none d-sm-table-cell">24k</td></tr>
@@ -1914,145 +1914,145 @@
         <td class="text-end d-none d-sm-table-cell">19k</td></tr>
       <tr class="run-extra"><td class="run-mono">358</td>
         <td><a href="projects/358.html">Notre Dame - CSE 30342 - DIC - Advanced FSM Final Project Example</a></td>
-<td class="d-none d-md-table-cell">Matthew Morrison <a class="small text-muted run-nowrap" href="https://github.com/mmorri22" title="Owner of the project's repository">@mmorri22</a></td>        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Matthew Morrison <span class="small run-account run-nowrap">· repository <a href="https://github.com/mmorri22" title="The GitHub account that owns the project's repository">@mmorri22</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">2,044</td>
         <td class="text-end d-none d-sm-table-cell">18k</td></tr>
       <tr class="run-extra"><td class="run-mono">359</td>
         <td><a href="projects/359.html">Simple RISC-V</a></td>
-<td class="d-none d-md-table-cell">kinako71-2 <a class="small text-muted run-nowrap" href="https://github.com/urish" title="Owner of the project's repository">@urish</a></td>        <td class="run-nowrap">4 × 2</td>
+<td class="d-none d-md-table-cell">kinako71-2 <span class="small run-account run-nowrap">· repository <a href="https://github.com/urish" title="The GitHub account that owns the project's repository">@urish</a></span></td>        <td class="run-nowrap">4 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
         <td class="text-end">11,000</td>
         <td class="text-end d-none d-sm-table-cell">23k</td></tr>
       <tr class="run-extra"><td class="run-mono">384</td>
         <td><a href="projects/384.html">LEDs Racer</a></td>
-<td class="d-none d-md-table-cell">KerCrafter <a class="small text-muted run-nowrap" href="https://github.com/KerCrafter" title="Owner of the project's repository">@KerCrafter</a></td>        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">KerCrafter <span class="small run-account run-nowrap">· repository <a href="https://github.com/KerCrafter" title="The GitHub account that owns the project's repository">@KerCrafter</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,315</td>
         <td class="text-end d-none d-sm-table-cell">11k</td></tr>
       <tr class="run-extra"><td class="run-mono">385</td>
         <td><a href="projects/385.html">Frequency Counter SSD1306 OLED</a></td>
-<td class="d-none d-md-table-cell">Pawel Sitarz (embelon) <a class="small text-muted run-nowrap" href="https://github.com/embelon" title="Owner of the project's repository">@embelon</a></td>        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Pawel Sitarz (embelon) <span class="small run-account run-nowrap">· repository <a href="https://github.com/embelon" title="The GitHub account that owns the project's repository">@embelon</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,157</td>
         <td class="text-end d-none d-sm-table-cell">10k</td></tr>
       <tr class="run-extra"><td class="run-mono">391</td>
         <td><a href="projects/391.html">megabytebeat</a></td>
-<td class="d-none d-md-table-cell">proppy <a class="small text-muted run-nowrap" href="https://github.com/proppy" title="Owner of the project's repository">@proppy</a></td>        <td class="run-nowrap">3 × 2</td>
+<td class="d-none d-md-table-cell">proppy <span class="small run-account run-nowrap">· repository <a href="https://github.com/proppy" title="The GitHub account that owns the project's repository">@proppy</a></span></td>        <td class="run-nowrap">3 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">8,785</td>
         <td class="text-end d-none d-sm-table-cell">25k</td></tr>
       <tr class="run-extra"><td class="run-mono">451</td>
         <td><a href="projects/451.html">Asicle v2</a></td>
-<td class="d-none d-md-table-cell">htfab <a class="small text-muted run-nowrap" href="https://github.com/htfab" title="Owner of the project's repository">@htfab</a></td>        <td class="run-nowrap">2 × 2</td>
+<td class="d-none d-md-table-cell">htfab <span class="small run-account run-nowrap">· repository <a href="https://github.com/htfab" title="The GitHub account that owns the project's repository">@htfab</a></span></td>        <td class="run-nowrap">2 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">4,018</td>
         <td class="text-end d-none d-sm-table-cell">17k</td></tr>
       <tr class="run-extra"><td class="run-mono">454</td>
         <td><a href="projects/454.html">CAN Controller for Rocket</a></td>
-<td class="d-none d-md-table-cell">Noritsuna Imamura <a class="small text-muted run-nowrap" href="https://github.com/noritsuna" title="Owner of the project's repository">@noritsuna</a></td>        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Noritsuna Imamura <span class="small run-account run-nowrap">· repository <a href="https://github.com/noritsuna" title="The GitHub account that owns the project's repository">@noritsuna</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,218</td>
         <td class="text-end d-none d-sm-table-cell">11k</td></tr>
       <tr class="run-extra"><td class="run-mono">455</td>
         <td><a href="projects/455.html">Zilog Z80</a></td>
-<td class="d-none d-md-table-cell">ReJ aka Renaldas Zioma <a class="small text-muted run-nowrap" href="https://github.com/rejunity" title="Owner of the project's repository">@rejunity</a></td>        <td class="run-nowrap">2 × 2</td>
+<td class="d-none d-md-table-cell">ReJ aka Renaldas Zioma <span class="small run-account run-nowrap">· repository <a href="https://github.com/rejunity" title="The GitHub account that owns the project's repository">@rejunity</a></span></td>        <td class="run-nowrap">2 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">4,918</td>
         <td class="text-end d-none d-sm-table-cell">21k</td></tr>
       <tr class="run-extra"><td class="run-mono">481</td>
         <td><a href="projects/481.html">ROTFPGA v2</a></td>
-<td class="d-none d-md-table-cell">htfab <a class="small text-muted run-nowrap" href="https://github.com/htfab" title="Owner of the project's repository">@htfab</a></td>        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">htfab <span class="small run-account run-nowrap">· repository <a href="https://github.com/htfab" title="The GitHub account that owns the project's repository">@htfab</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">2,269</td>
         <td class="text-end d-none d-sm-table-cell">20k</td></tr>
       <tr class="run-extra"><td class="run-mono">483</td>
         <td><a href="projects/483.html">7-Segment Digital Desk Clock</a></td>
-<td class="d-none d-md-table-cell">Samuel Ellicott <a class="small text-muted run-nowrap" href="https://github.com/sellicott" title="Owner of the project's repository">@sellicott</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Samuel Ellicott <span class="small run-account run-nowrap">· repository <a href="https://github.com/sellicott" title="The GitHub account that owns the project's repository">@sellicott</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">746</td>
         <td class="text-end d-none d-sm-table-cell">13k</td></tr>
       <tr class="run-extra"><td class="run-mono">485</td>
         <td><a href="projects/485.html">MarcoPolo</a></td>
-<td class="d-none d-md-table-cell">Javier Munoz Saez <a class="small text-muted run-nowrap" href="https://github.com/javiBajoCero" title="Owner of the project's repository">@javiBajoCero</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Javier Munoz Saez <span class="small run-account run-nowrap">· repository <a href="https://github.com/javiBajoCero" title="The GitHub account that owns the project's repository">@javiBajoCero</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#first">First designs</a></td>
         <td class="text-end">726</td>
         <td class="text-end d-none d-sm-table-cell">13k</td></tr>
       <tr class="run-extra"><td class="run-mono">487</td>
         <td><a href="projects/487.html">Linear Timecode (LTC) generator</a></td>
-<td class="d-none d-md-table-cell">Thomas Flummer <a class="small text-muted run-nowrap" href="https://github.com/flummer" title="Owner of the project's repository">@flummer</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Thomas Flummer <span class="small run-account run-nowrap">· repository <a href="https://github.com/flummer" title="The GitHub account that owns the project's repository">@flummer</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">777</td>
         <td class="text-end d-none d-sm-table-cell">14k</td></tr>
       <tr class="run-extra"><td class="run-mono">513</td>
         <td><a href="projects/513.html">Classic 8-bit era Programmable Sound Generator SN76489</a></td>
-<td class="d-none d-md-table-cell">ReJ aka Renaldas Zioma <a class="small text-muted run-nowrap" href="https://github.com/rejunity" title="Owner of the project's repository">@rejunity</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">ReJ aka Renaldas Zioma <span class="small run-account run-nowrap">· repository <a href="https://github.com/rejunity" title="The GitHub account that owns the project's repository">@rejunity</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,380</td>
         <td class="text-end d-none d-sm-table-cell">25k</td></tr>
       <tr class="run-extra"><td class="run-mono">515</td>
         <td><a href="projects/515.html">VGA Tiny Logo</a></td>
-<td class="d-none d-md-table-cell">Renaldas Zioma <a class="small text-muted run-nowrap" href="https://github.com/rejunity" title="Owner of the project's repository">@rejunity</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Renaldas Zioma <span class="small run-account run-nowrap">· repository <a href="https://github.com/rejunity" title="The GitHub account that owns the project's repository">@rejunity</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#art">Art and logos</a></td>
         <td class="text-end">1,095</td>
         <td class="text-end d-none d-sm-table-cell">20k</td></tr>
       <tr class="run-extra"><td class="run-mono">517</td>
         <td><a href="projects/517.html">Ring Oscillator (5 inverter)</a></td>
-<td class="d-none d-md-table-cell">Darryl Miles <a class="small text-muted run-nowrap" href="https://github.com/dlmiles" title="Owner of the project's repository">@dlmiles</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Darryl Miles <span class="small run-account run-nowrap">· repository <a href="https://github.com/dlmiles" title="The GitHub account that owns the project's repository">@dlmiles</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">61</td>
         <td class="text-end d-none d-sm-table-cell">1k</td></tr>
       <tr class="run-extra"><td class="run-mono">519</td>
         <td><a href="projects/519.html">Simon Says memory game</a></td>
-<td class="d-none d-md-table-cell">Uri Shaked <a class="small text-muted run-nowrap" href="https://github.com/urish" title="Owner of the project's repository">@urish</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Uri Shaked <span class="small run-account run-nowrap">· repository <a href="https://github.com/urish" title="The GitHub account that owns the project's repository">@urish</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,507</td>
         <td class="text-end d-none d-sm-table-cell">27k</td></tr>
       <tr class="run-extra"><td class="run-mono">545</td>
         <td><a href="projects/545.html">Flame demo</a></td>
-<td class="d-none d-md-table-cell">Konrad Beckmann &amp; Linus Mårtensson <a class="small text-muted run-nowrap" href="https://github.com/kbeckmann" title="Owner of the project's repository">@kbeckmann</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Konrad Beckmann &amp; Linus Mårtensson <span class="small run-account run-nowrap">· repository <a href="https://github.com/kbeckmann" title="The GitHub account that owns the project's repository">@kbeckmann</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,230</td>
         <td class="text-end d-none d-sm-table-cell">22k</td></tr>
       <tr class="run-extra"><td class="run-mono">547</td>
         <td><a href="projects/547.html">WokwiPWM</a></td>
-<td class="d-none d-md-table-cell">Ken Pettit <a class="small text-muted run-nowrap" href="https://github.com/kdp1965" title="Owner of the project's repository">@kdp1965</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Ken Pettit <span class="small run-account run-nowrap">· repository <a href="https://github.com/kdp1965" title="The GitHub account that owns the project's repository">@kdp1965</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,481</td>
         <td class="text-end d-none d-sm-table-cell">26k</td></tr>
       <tr class="run-extra"><td class="run-mono">549</td>
         <td><a href="projects/549.html">Dog Battle Game</a></td>
-<td class="d-none d-md-table-cell">Sophus Andreassen <a class="small text-muted run-nowrap" href="https://github.com/jorgenkraghjakobsen" title="Owner of the project's repository">@jorgenkraghjakobsen</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Sophus Andreassen <span class="small run-account run-nowrap">· repository <a href="https://github.com/jorgenkraghjakobsen" title="The GitHub account that owns the project's repository">@jorgenkraghjakobsen</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">1,047</td>
         <td class="text-end d-none d-sm-table-cell">19k</td></tr>
       <tr class="run-extra"><td class="run-mono">551</td>
         <td><a href="projects/551.html">PVTMonitorSuite</a></td>
-<td class="d-none d-md-table-cell">Susumu Yamazaki <a class="small text-muted run-nowrap" href="https://github.com/zacky1972" title="Owner of the project's repository">@zacky1972</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Susumu Yamazaki <span class="small run-account run-nowrap">· repository <a href="https://github.com/zacky1972" title="The GitHub account that owns the project's repository">@zacky1972</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,123</td>
         <td class="text-end d-none d-sm-table-cell">20k</td></tr>
       <tr class="run-extra"><td class="run-mono">577</td>
         <td><a href="projects/577.html">PILIPINAS_IC</a></td>
-<td class="d-none d-md-table-cell">Alexander Co Abad and Dino Dominic Ligutan <a class="small text-muted run-nowrap" href="https://github.com/alexandercoabad" title="Owner of the project's repository">@alexandercoabad</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Alexander Co Abad and Dino Dominic Ligutan <span class="small run-account run-nowrap">· repository <a href="https://github.com/alexandercoabad" title="The GitHub account that owns the project's repository">@alexandercoabad</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">82</td>
         <td class="text-end d-none d-sm-table-cell">1k</td></tr>
       <tr class="run-extra"><td class="run-mono">579</td>
         <td><a href="projects/579.html">PRISM 8 with TinySnake</a></td>
-<td class="d-none d-md-table-cell">Ken Pettit <a class="small text-muted run-nowrap" href="https://github.com/kdp1965" title="Owner of the project's repository">@kdp1965</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Ken Pettit <span class="small run-account run-nowrap">· repository <a href="https://github.com/kdp1965" title="The GitHub account that owns the project's repository">@kdp1965</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,401</td>
         <td class="text-end d-none d-sm-table-cell">25k</td></tr>
       <tr class="run-extra"><td class="run-mono">581</td>
         <td><a href="projects/581.html">Register bank accessible through SPI and I2C</a></td>
-<td class="d-none d-md-table-cell">Caio Alonso da Costa <a class="small text-muted run-nowrap" href="https://github.com/calonso88" title="Owner of the project's repository">@calonso88</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Caio Alonso da Costa <span class="small run-account run-nowrap">· repository <a href="https://github.com/calonso88" title="The GitHub account that owns the project's repository">@calonso88</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">897</td>
         <td class="text-end d-none d-sm-table-cell">16k</td></tr>
       <tr class="run-extra"><td class="run-mono">583</td>
         <td><a href="projects/583.html">Cell mux</a></td>
-<td class="d-none d-md-table-cell">htfab <a class="small text-muted run-nowrap" href="https://github.com/htfab" title="Owner of the project's repository">@htfab</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">htfab <span class="small run-account run-nowrap">· repository <a href="https://github.com/htfab" title="The GitHub account that owns the project's repository">@htfab</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">677</td>
         <td class="text-end d-none d-sm-table-cell">12k</td></tr>
@@ -2064,37 +2064,37 @@
         <td class="text-end d-none d-sm-table-cell">14k</td></tr>
       <tr class="run-extra"><td class="run-mono">610</td>
         <td><a href="projects/610.html">Example of Bad Synchronizer</a></td>
-<td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith <a class="small text-muted run-nowrap" href="https://github.com/dlmiles" title="Owner of the project's repository">@dlmiles</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith <span class="small run-account run-nowrap">· repository <a href="https://github.com/dlmiles" title="The GitHub account that owns the project's repository">@dlmiles</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">62</td>
         <td class="text-end d-none d-sm-table-cell">1k</td></tr>
       <tr class="run-extra"><td class="run-mono">611</td>
         <td><a href="projects/611.html">Video mode tester</a></td>
-<td class="d-none d-md-table-cell">htfab <a class="small text-muted run-nowrap" href="https://github.com/htfab" title="Owner of the project's repository">@htfab</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">htfab <span class="small run-account run-nowrap">· repository <a href="https://github.com/htfab" title="The GitHub account that owns the project's repository">@htfab</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">1,234</td>
         <td class="text-end d-none d-sm-table-cell">22k</td></tr>
       <tr class="run-extra"><td class="run-mono">612</td>
         <td><a href="projects/612.html">One Bit PUF</a></td>
-<td class="d-none d-md-table-cell">Yimin Gao and Ceylan Morgul <a class="small text-muted run-nowrap" href="https://github.com/Capulus123" title="Owner of the project's repository">@Capulus123</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Yimin Gao and Ceylan Morgul <span class="small run-account run-nowrap">· repository <a href="https://github.com/Capulus123" title="The GitHub account that owns the project's repository">@Capulus123</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#security">Security</a></td>
         <td class="text-end">977</td>
         <td class="text-end d-none d-sm-table-cell">17k</td></tr>
       <tr class="run-extra"><td class="run-mono">613</td>
         <td><a href="projects/613.html">DDR throughput and flop aperture test</a></td>
-<td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith <a class="small text-muted run-nowrap" href="https://github.com/dlmiles" title="Owner of the project's repository">@dlmiles</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith <span class="small run-account run-nowrap">· repository <a href="https://github.com/dlmiles" title="The GitHub account that owns the project's repository">@dlmiles</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">90</td>
         <td class="text-end d-none d-sm-table-cell">2k</td></tr>
       <tr class="run-extra"><td class="run-mono">614</td>
         <td><a href="projects/614.html">Ring osc on VGA</a></td>
-<td class="d-none d-md-table-cell">algofoogle (Anton Maurovic) <a class="small text-muted run-nowrap" href="https://github.com/algofoogle" title="Owner of the project's repository">@algofoogle</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">algofoogle (Anton Maurovic) <span class="small run-account run-nowrap">· repository <a href="https://github.com/algofoogle" title="The GitHub account that owns the project's repository">@algofoogle</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">473</td>
         <td class="text-end d-none d-sm-table-cell">8k</td></tr>
       <tr class="run-extra"><td class="run-mono">615</td>
         <td><a href="projects/615.html">GF180MCU loopback tile with input skew measurement</a></td>
-<td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith <a class="small text-muted run-nowrap" href="https://github.com/dlmiles" title="Owner of the project's repository">@dlmiles</a></td>        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith <span class="small run-account run-nowrap">· repository <a href="https://github.com/dlmiles" title="The GitHub account that owns the project's repository">@dlmiles</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">81</td>
         <td class="text-end d-none d-sm-table-cell">1k</td></tr>
@@ -2102,7 +2102,8 @@
     </table>
     </div>
 <label for="run-index-all" class="run-index-more"><span class="run-show">Show all
-      52 projects</span><span class="run-hide">Show the first 16 only</span></label>    <div class="mb-40"></div>
+      52 projects</span><span class="run-hide">Show the first 16 only</span></label>    <p class="d-sm-none small text-muted mt-10 mb-0">Swipe the table sideways for more columns.</p>
+    <div class="mb-40"></div>
     <h3 id="grew" class="run-category-title">Designs that grew<a class="run-anchor" href="#grew" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
     <p class="mb-20 run-measure">Some designs on this chip have been made many times, on earlier and later
       Tiny Tapeout chips, and several now have a whole die of their own on a wafer.space run.      The ringed marker is this chip.</p>
@@ -2117,22 +2118,22 @@
 <i class="run-tl-grid" style="left: 14.38%" aria-hidden="true"></i><i class="run-tl-grid" style="left: 42.97%" aria-hidden="true"></i><i class="run-tl-grid" style="left: 71.48%" aria-hidden="true"></i>      <a class="run-tl-dot run-tl-tt run-tl-start" href="https://tinytapeout.com/chips/tt06/tt_um_MichaelBell_tinyQV"
          style="left: 22.89%; --dy: 0px; --dym: 0px"
          aria-label="Tiny Tapeout 6, Apr 2024, 2 × 2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 6</strong> · Apr 2024<br>TinyQV Risc-V SoC<br><span class="text-muted">2 × 2 tiles</span></span>
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 6</strong> · Apr 2024<br>TinyQV RISC-V SoC<br><span class="text-muted">2 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/ttihp0p2/tt_um_MichaelBell_tinyQV"
          style="left: 38.44%; --dy: 0px; --dym: 0px"
          aria-label="Tiny Tapeout IHP 0.2, Nov 2024, 2 × 2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 0.2</strong> · Nov 2024<br>TinyQV Risc-V SoC<br><span class="text-muted">2 × 2 tiles</span></span>
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 0.2</strong> · Nov 2024<br>TinyQV RISC-V SoC<br><span class="text-muted">2 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/ttihp25a/tt_um_MichaelBell_tinyQV"
          style="left: 49.69%; --dy: 0px; --dym: 0px"
          aria-label="Tiny Tapeout IHP 25a, Mar 2025, 3 × 2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 25a</strong> · Mar 2025<br>TinyQV Risc-V SoC<br><span class="text-muted">3 × 2 tiles</span></span>
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 25a</strong> · Mar 2025<br>TinyQV RISC-V SoC<br><span class="text-muted">3 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/ttihp25b/tt_um_tt_tinyQV"
          style="left: 61.95%; --dy: 0px; --dym: 0px"
          aria-label="Tiny Tapeout IHP 25b, Sep 2025, 5 × 4 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 25b</strong> · Sep 2025<br>TinyQV - Crowdsourced Risc-V SoC<br><span class="text-muted">5 × 4 tiles</span></span>
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 25b</strong> · Sep 2025<br>TinyQV - Crowdsourced RISC-V SoC<br><span class="text-muted">5 × 4 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/ttsky25a/tt_um_tt_tinyQV"
          style="left: 63.05%; --dy: -18px; --dym: -18px"
@@ -2142,17 +2143,17 @@
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/ttsky25b/tt_um_MichaelBell_tinyQV"
          style="left: 67.42%; --dy: 0px; --dym: 18px"
          aria-label="Tiny Tapeout SKY 25b, Nov 2025, 3 × 2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout SKY 25b</strong> · Nov 2025<br>TinyQV Risc-V SoC<br><span class="text-muted">3 × 2 tiles</span></span>
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout SKY 25b</strong> · Nov 2025<br>TinyQV RISC-V SoC<br><span class="text-muted">3 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/#p019"
          style="left: 68.52%; --dy: -18px; --dym: 0px"
          aria-label="Tiny Tapeout GF 0.1, Nov 2025, in a shared block">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.1</strong> · Nov 2025<br>TinyQV Risc-V SoC<br><span class="text-muted">in a shared block</span></span>
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.1</strong> · Nov 2025<br>TinyQV RISC-V SoC<br><span class="text-muted">in a shared block</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt current" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/039.html"
          style="left: 68.52%; --dy: 18px; --dym: -36px"
          aria-label="Tiny Tapeout GF 0.2, Nov 2025, 3 × 4 tiles (this chip)">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.2</strong> · Nov 2025<br>TinyQV Risc-V SoC<br><span class="text-muted">3 × 4 tiles</span></span>
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.2</strong> · Nov 2025<br>TinyQV RISC-V SoC<br><span class="text-muted">3 × 4 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-ws" href="https://wafer.space/ws-run1/projects/TQVA.html"
          style="left: 69.22%; --dy: -36px; --dym: -18px"
@@ -2160,9 +2161,9 @@
         <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 1</strong> · Dec 2025<br>3 dies<br><span class="text-muted">TQVA ½ × ½ slot, TQVB ½ × 1 slot, TQVC 1 × ½ slot</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt run-tl-end" href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/199.html"
-         style="left: 86.09%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout GF 0.3, Jul 2026, 4 × 2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.3</strong> · Jul 2026<br>TinyQV Risc-V SoC<br><span class="text-muted">4 × 2 tiles</span></span>
+         style="left: 84.69%; --dy: 0px; --dym: 0px"
+         aria-label="Tiny Tapeout GF 0.3, Jun 2026, 4 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.3</strong> · Jun 2026<br>TinyQV RISC-V SoC<br><span class="text-muted">4 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-ws run-tl-end" href="https://wafer.space/ws-run2/projects/TQVA.html"
          style="left: 86.64%; --dy: -18px; --dym: -18px"
@@ -2215,9 +2216,9 @@
         <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 26a</strong> · Mar 2026<br>KianV SV32 TT Linux SoC<br><span class="text-muted">8 × 4 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt run-tl-end" href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/518.html"
-         style="left: 86.09%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout GF 0.3, Jul 2026, 4 × 4 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.3</strong> · Jul 2026<br>KianV uLinux SoC<br><span class="text-muted">4 × 4 tiles</span></span>
+         style="left: 84.69%; --dy: 0px; --dym: 0px"
+         aria-label="Tiny Tapeout GF 0.3, Jun 2026, 4 × 4 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.3</strong> · Jun 2026<br>KianV uLinux SoC<br><span class="text-muted">4 × 4 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-ws run-tl-end" href="https://wafer.space/ws-run2/projects/KIAN.html"
          style="left: 86.64%; --dy: -18px; --dym: -18px"
@@ -2320,25 +2321,25 @@
     <thead><tr><th>Design</th><th>Made on</th><th>When</th><th>Version</th><th>Size</th></tr></thead>
     <tbody>
     <tr><th rowspan="11"><a href="projects/039.html#related">TinyQV RISC-V SoC</a></th>      <td><a href="https://tinytapeout.com/chips/tt06/">Tiny Tapeout 6</a></td><td class="run-nowrap">Apr 2024</td>
-      <td><a href="https://tinytapeout.com/chips/tt06/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a></td><td>2 × 2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/tt06/tt_um_MichaelBell_tinyQV">TinyQV RISC-V SoC</a></td><td>2 × 2 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttihp0p2/">Tiny Tapeout IHP 0.2</a></td><td class="run-nowrap">Nov 2024</td>
-      <td><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a></td><td>2 × 2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_MichaelBell_tinyQV">TinyQV RISC-V SoC</a></td><td>2 × 2 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttihp25a/">Tiny Tapeout IHP 25a</a></td><td class="run-nowrap">Mar 2025</td>
-      <td><a href="https://tinytapeout.com/chips/ttihp25a/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a></td><td>3 × 2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttihp25a/tt_um_MichaelBell_tinyQV">TinyQV RISC-V SoC</a></td><td>3 × 2 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttihp25b/">Tiny Tapeout IHP 25b</a></td><td class="run-nowrap">Sep 2025</td>
-      <td><a href="https://tinytapeout.com/chips/ttihp25b/tt_um_tt_tinyQV">TinyQV - Crowdsourced Risc-V SoC</a></td><td>5 × 4 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttihp25b/tt_um_tt_tinyQV">TinyQV - Crowdsourced RISC-V SoC</a></td><td>5 × 4 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttsky25a/">Tiny Tapeout SKY 25a</a></td><td class="run-nowrap">Sep 2025</td>
-      <td><a href="https://tinytapeout.com/chips/ttsky25a/tt_um_tt_tinyQV">TinyQV &#39;Asteroids&#39; - Crowdsourced Risc-V SoC; TinyQV &#39;Berzerk&#39; - Crowdsourced Risc-V SoC</a></td><td>8 × 4 tiles, 4 × 4 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttsky25a/tt_um_tt_tinyQV">TinyQV &#39;Asteroids&#39; - Crowdsourced RISC-V SoC; TinyQV &#39;Berzerk&#39; - Crowdsourced RISC-V SoC</a></td><td>8 × 4 tiles, 4 × 4 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttsky25b/">Tiny Tapeout SKY 25b</a></td><td class="run-nowrap">Nov 2025</td>
-      <td><a href="https://tinytapeout.com/chips/ttsky25b/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a></td><td>3 × 2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttsky25b/tt_um_MichaelBell_tinyQV">TinyQV RISC-V SoC</a></td><td>3 × 2 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/">Tiny Tapeout GF 0.1</a></td><td class="run-nowrap">Nov 2025</td>
-      <td><a href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/#p019">TinyQV Risc-V SoC</a></td><td>in a shared block</td></tr>
+      <td><a href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/#p019">TinyQV RISC-V SoC</a></td><td>in a shared block</td></tr>
     <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/">Tiny Tapeout GF 0.2</a></td><td class="run-nowrap">Nov 2025</td>
-      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/039.html">TinyQV Risc-V SoC</a></td><td>3 × 4 tiles</td></tr>
+      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/039.html">TinyQV RISC-V SoC</a></td><td>3 × 4 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/ws-run1/">wafer.space Run 1</a></td><td class="run-nowrap">Dec 2025</td>
       <td><a href="https://wafer.space/ws-run1/projects/TQVA.html">TQVA TinyQV - Crowdsourced RISC-V SoC; TQVB TinyQV - Crowdsourced RISC-V SoC (0.5x1); TQVC TinyQV - Crowdsourced RISC-V SoC (1x0.5)</a></td><td>TQVA ½ × ½ slot, TQVB ½ × 1 slot, TQVC 1 × ½ slot</td></tr>
-    <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/">Tiny Tapeout GF 0.3</a></td><td class="run-nowrap">Jul 2026</td>
-      <td><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/199.html">TinyQV Risc-V SoC</a></td><td>4 × 2 tiles</td></tr>
+    <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/">Tiny Tapeout GF 0.3</a></td><td class="run-nowrap">Jun 2026</td>
+      <td><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/199.html">TinyQV RISC-V SoC</a></td><td>4 × 2 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></td><td class="run-nowrap">Jul 2026</td>
       <td><a href="https://wafer.space/ws-run2/projects/TQVA.html">TQVA TinyQV - Crowdsourced RISC-V SoC; TQVC TinyQV - Crowdsourced RISC-V SoC (1x0.5); TQVD TinyQV - RISC-V SoC with HDMI output; TQVE TinyQV - RISC-V SoC with experimental pad setup</a></td><td>TQVA ½ × ½ slot, TQVC 1 × ½ slot, TQVD ½ × ½ slot, TQVE ½ × ½ slot</td></tr>
     <tr><th rowspan="10"><a href="projects/295.html#related">KianV RISC-V Linux SoC</a></th>      <td><a href="https://tinytapeout.com/chips/tt05/">Tiny Tapeout 5</a></td><td class="run-nowrap">Nov 2023</td>
@@ -2357,7 +2358,7 @@
       <td><a href="https://wafer.space/ws-run1/projects/KIAN.html">KIAN KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU</a></td><td>1 × 1 slot</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttihp26a/">Tiny Tapeout IHP 26a</a></td><td class="run-nowrap">Mar 2026</td>
       <td><a href="https://tinytapeout.com/chips/ttihp26a/tt_um_kianv_sv32_soc">KianV SV32 TT Linux SoC</a></td><td>8 × 4 tiles</td></tr>
-    <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/">Tiny Tapeout GF 0.3</a></td><td class="run-nowrap">Jul 2026</td>
+    <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/">Tiny Tapeout GF 0.3</a></td><td class="run-nowrap">Jun 2026</td>
       <td><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/518.html">KianV uLinux SoC</a></td><td>4 × 4 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></td><td class="run-nowrap">Jul 2026</td>
       <td><a href="https://wafer.space/ws-run2/projects/KIAN.html">KIAN KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2</a></td><td>1 × 1 slot</td></tr>
@@ -3372,7 +3373,7 @@
 <span class="text-muted">(34% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>46%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>251k average,
-              310k in the densest mm² of logic</td></tr>
+              310k in the mm² with the most logic cells</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/ws-run1">public layout</a>, the same way for every
@@ -3381,7 +3382,7 @@
       </div>
 
       <div class="col-lg-5">
-        <div class="run-description"><p class="lead">https://tinytapeout.com</p></div>
+        <div class="run-description"><p class="lead"><a href="https://tinytapeout.com">https://tinytapeout.com</a></p></div>
         <p class="run-design-links">
           <a class="btn btn-s mb-10 me-10" href="https://github.com/TinyTapeout/tinytapeout-gf-0p2">Source repository</a>
         </p>
@@ -3442,7 +3443,7 @@
               <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a> <span class="text-muted">(200k)</span>, 
               <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a> <span class="text-muted">(4k)</span>
 </td></tr>
-            <tr><th>SRAM</th><td>None</td></tr>
+            <tr><th>SRAM</th><td>No SRAM</td></tr>
           </tbody>
         </table>
 
@@ -3535,7 +3536,7 @@ The licence and template were read from the repository at commit
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/buf/gf180mcu_fd_sc_mcu7t5v0__buf_4.html"><span class="run-mono">buf_4</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
               <td class="text-end">6,477</td><td class="text-muted">Buffer (4x drive)</td></tr>
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/dffq/gf180mcu_fd_sc_mcu7t5v0__dffq_4.html"><span class="run-mono">dffq_4</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
-              <td class="text-end">6,262</td><td class="text-muted">D flip-flop (1 bit storage) (4x drive)</td></tr>
+              <td class="text-end">6,262</td><td class="text-muted">D flip-flop (1 bit storage, 4x drive)</td></tr>
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/mux2/gf180mcu_fd_sc_mcu7t5v0__mux2_2.html"><span class="run-mono">mux2_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
               <td class="text-end">5,989</td><td class="text-muted">2-input multiplexer (2x drive)</td></tr>
           </tbody>
@@ -3613,11 +3614,13 @@ The licence and template were read from the repository at commit
                 style="font-size: 0.220px">7k</text>
           <text x="3.466" y="0.620" class=""
                 style="font-size: 0.220px">2k</text>
+          <text x="2.600" y="1.055" class="window-label"
+                style="font-size: 0.220px">26k</text>
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each square millimetre of the
           die. Hatched
-          outlines are SRAM macros; the red outline is the densest mm² that avoids them, found by sliding a
-          1 mm square over the die in 0.1 mm steps. Squares at the edges are partial, so they read low.</p>
+          outlines are SRAM macros; the red outline, labelled in red, is the densest mm² that avoids them, found by sliding a
+          1 mm square over the die in 0.1 mm steps, so it can straddle the fixed squares and find more than any one of them. Squares at the edges are partial, so they read low.</p>
 
       </div>
     </div>
@@ -3803,6 +3806,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="run.js?v=1a84e24183"></script>
+  <script src="run.js?v=6845eef8df"></script>
 </body>
 </html>
