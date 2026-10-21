@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="run.css?v=e990a249d3">
+  <link rel="stylesheet" type="text/css" href="run.css?v=41e907b34a">
 </head>
 <body>
   <div class="content-wrapper">
@@ -84,8 +84,8 @@
      data-image-src="https://wafer.space/assets/images/header/mpw-one-partial-dice-top-1.jpg">
   <div class="container inner text-center">
     <h1 class="page-title">Tiny Tapeout GF 0.2<span class="page-title-sub">Die TTP2 on <a href="https://wafer.space/ws-run1/">wafer.space Run 1</a>: the standard edition</span></h1>
-    <p class="lead">52 projects on
-<a href="#die">die TTP2</a>      of <a href="https://wafer.space/ws-run1/">wafer.space Run 1</a></p>
+    <p class="lead">52 projects on one chip, measured
+      <a href="#projects">one by one</a> and as <a href="#die">a whole die</a></p>
     <p class="mb-0 run-hero-actions">
 <a class="btn btn-s" href="https://store.tinytapeout.com/products/TTGF0p2-Development-Kit-P2-edition-p841828501">Buy this chip</a><a class="btn btn-s btn-white" href="https://app.tinytapeout.com/shuttles/ttgf26c">Put your design on the next one</a><a class="btn btn-s btn-white" href="https://tinytapeout.com/chips/ttgf0p2/">All its projects on tinytapeout.com</a></p>
   </div>
@@ -323,10 +323,6 @@
             <strong><a href="https://github.com/TinyTapeout/tinytapeout-gf-0p2/releases/tag/tapeout-ws2512">Tiny Tapeout GF 0.2 tapeout release</a></strong>
             <span class="small text-muted">Tiny Tapeout publishes the die&#39;s layout (tapeout-ws2512) and sends it to wafer.space</span>
           </li>
-        </ul>
-        </div>
-        <div class="col-md-6">
-        <ul class="run-timeline">
           <li class="done run-timeline-milestone run-timeline-ws">
             <span class="run-timeline-date"><span class="run-owner run-owner-ws">wafer.space</span>
 8 January 2026</span>
@@ -1048,7 +1044,7 @@
     <div class="row text-center gutter-30 justify-content-center">
       <div class="col-md-6 col-lg-3 mb-30">
         <div class="box bg-white shadow p-30 h-100">
-          <h3 class="mb-5 color-dark">~113,885</h3>
+          <h3 class="mb-5 color-dark">~114k</h3>
           <p class="mb-0 font-weight-600 color-dark">Inverters per mm²</p>
           <p class="mb-10 small text-muted">GF180MCU maximum,<br>with <span class="run-nowrap">
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>
@@ -1060,7 +1056,7 @@
       </div>
       <div class="col-md-6 col-lg-3 mb-30">
         <div class="box bg-white shadow p-30 h-100">
-          <h3 class="mb-5 color-dark">~91,108</h3>
+          <h3 class="mb-5 color-dark">~91k</h3>
           <p class="mb-0 font-weight-600 color-dark">NAND gates per mm²</p>
           <p class="mb-10 small text-muted">GF180MCU maximum,<br>with <span class="run-nowrap">
             <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>
@@ -1072,7 +1068,7 @@
       </div>
       <div class="col-md-6 col-lg-3 mb-30">
         <div class="box bg-white shadow p-30 h-100">
-          <h3 class="mb-5 color-dark">~75,923</h3>
+          <h3 class="mb-5 color-dark">~76k</h3>
           <p class="mb-0 font-weight-600 color-dark">Buffers per mm²</p>
           <p class="mb-10 small text-muted">GF180MCU maximum,<br>with <span class="run-nowrap">
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>
@@ -1084,7 +1080,7 @@
       </div>
       <div class="col-md-6 col-lg-3 mb-30">
         <div class="box bg-white shadow p-30 h-100">
-          <h3 class="mb-5 color-dark">~16,872</h3>
+          <h3 class="mb-5 color-dark">~17k</h3>
           <p class="mb-0 font-weight-600 color-dark">Flip-flops per mm²</p>
           <p class="mb-10 small text-muted">GF180MCU maximum,<br>with <span class="run-nowrap">
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>
@@ -1100,7 +1096,7 @@
       <div class="col-md-4 mb-20">
         <div class="box bg-white shadow p-30 h-100">
           <h3 class="mb-5 color-dark">28k</h3>
-          <p class="mb-0 font-weight-600 color-dark">Best design average</p>
+          <p class="mb-0 font-weight-600 color-dark">Best core average</p>
           <p class="mb-0 small text-muted">logic cells/mm² of core — 37% of the buffer maximum</p>
           <p class="mb-0 small"><a href="projects/101.html">SCµM-BLE-RX</a></p>
         </div>
@@ -1134,14 +1130,13 @@
         <thead><tr class="run-groups">
           <th colspan="4"></th>
           <th colspan="2" class="run-group">Logic cells in its projects</th>
-          <th colspan="3" class="run-group">Logic cells at this chip's density</th>
-          <th colspan="2" class="run-group">Theoretical maximum</th>
+          <th colspan="2" class="run-group">Logic cells at this chip's density</th>
+          <th colspan="2" class="run-group">Theoretical maximum, 7t-5V cells</th>
         </tr><tr>
           <th class="">Tiles<span class="run-note"> </span></th><th class="">Size<span class="run-note"> </span></th>
           <th class="text-end">Core area<span class="run-note"> </span></th><th class="text-end">Projects<span class="run-note"> </span></th>
           <th class="text-end run-group-start">Most<span class="run-note"> </span></th><th class="text-end">Median<span class="run-note"> </span></th>
           <th class="text-end run-group-start">Typical<span class="run-note">21k / mm²</span></th><th class="text-end">Best<span class="run-note">28k / mm²</span></th>
-          <th class="text-end">Densest<span class="run-note">42k / mm²</span></th>
           <th class="text-end run-group-start">NAND gates<span class="run-note"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nand2/gf180mcu_fd_sc_mcu7t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></span></th><th class="text-end">Flip-flops<span class="run-note"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/dffq/gf180mcu_fd_sc_mcu7t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></span></th>
         </tr></thead>
         <tbody>
@@ -1150,7 +1145,6 @@
             <td class="text-end run-group-start">1.5k</td><td class="text-end">1.2k</td>
             <td class="text-end run-group-start">1.2k</td>
             <td class="text-end">1.6k</td>
-            <td class="text-end">2.4k</td>
             <td class="text-end run-group-start">5.1k</td>
             <td class="text-end">880</td></tr>
           <tr><td class="text-nowrap"><strong>1 × 2</strong></td><td class="text-nowrap">0.35 × 0.33 mm</td>
@@ -1158,7 +1152,6 @@
             <td class="text-end run-group-start">2.9k</td><td class="text-end">2.2k</td>
             <td class="text-end run-group-start">2.4k</td>
             <td class="text-end">3.3k</td>
-            <td class="text-end">4.9k</td>
             <td class="text-end run-group-start">10.5k</td>
             <td class="text-end">1.8k</td></tr>
           <tr><td class="text-nowrap"><strong>2 × 2</strong></td><td class="text-nowrap">0.71 × 0.33 mm</td>
@@ -1166,7 +1159,6 @@
             <td class="text-end run-group-start">4.9k</td><td class="text-end">4.3k</td>
             <td class="text-end run-group-start">4.9k</td>
             <td class="text-end">6.7k</td>
-            <td class="text-end">9.8k</td>
             <td class="text-end run-group-start">21.3k</td>
             <td class="text-end">3.7k</td></tr>
           <tr><td class="text-nowrap"><strong>3 × 2</strong></td><td class="text-nowrap">1.08 × 0.33 mm</td>
@@ -1174,7 +1166,6 @@
             <td class="text-end run-group-start">8.8k</td><td class="text-end">7.3k</td>
             <td class="text-end run-group-start">7.4k</td>
             <td class="text-end">10.1k</td>
-            <td class="text-end">15.0k</td>
             <td class="text-end run-group-start">32.5k</td>
             <td class="text-end">5.6k</td></tr>
           <tr><td class="text-nowrap"><strong>3 × 4</strong></td><td class="text-nowrap">1.08 × 0.74 mm</td>
@@ -1182,7 +1173,6 @@
             <td class="text-end run-group-start">22.7k</td><td class="text-end">18.7k</td>
             <td class="text-end run-group-start">16.6k</td>
             <td class="text-end">22.7k</td>
-            <td class="text-end">33.6k</td>
             <td class="text-end run-group-start">72.8k</td>
             <td class="text-end">12.6k</td></tr>
           <tr><td class="text-nowrap"><strong>4 × 2</strong></td><td class="text-nowrap">1.44 × 0.33 mm</td>
@@ -1190,7 +1180,6 @@
             <td class="text-end run-group-start">11.0k</td><td class="text-end">10.4k</td>
             <td class="text-end run-group-start">9.9k</td>
             <td class="text-end">13.5k</td>
-            <td class="text-end">20.0k</td>
             <td class="text-end run-group-start">43.3k</td>
             <td class="text-end">7.5k</td></tr>
           <tr><td class="text-nowrap"><strong>4 × 4</strong></td><td class="text-nowrap">1.44 × 0.74 mm</td>
@@ -1198,15 +1187,14 @@
             <td class="text-end run-group-start">20.3k</td><td class="text-end">20.3k</td>
             <td class="text-end run-group-start">22.2k</td>
             <td class="text-end">30.3k</td>
-            <td class="text-end">44.8k</td>
             <td class="text-end run-group-start">97.1k</td>
             <td class="text-end">16.7k</td></tr>
         </tbody>
       </table>
     </div>
+    <p class="d-md-none small text-muted mt-10 mb-10">Swipe the table sideways for more columns.</p>
     <p class="small text-muted mb-40">Core area is the whole project. "Typical"
-      and "best" multiply the core area by this chip's median and best design logic densities, and "densest" by the
-      densest 0.1 mm square any design on this chip reached; SRAM and analog
+      and "best" multiply the core area by this chip's median and best core densities; SRAM and analog
       blocks take their area out of that. The theoretical maxima fill the core with nothing but that one cell of
       <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>, the
       library most used on this chip, edge to edge with no routing.</p>
@@ -1225,8 +1213,7 @@
           <i class="peak" style="width: 51.76%"></i>
           <i class="core" style="width: 37.43%"></i>
         </span>
-        <span class="run-row-value">28k
-          <span class="text-muted">/ 39k</span></span>
+        <span class="run-row-value">28k          <span class="text-muted">/ 39k</span></span>
       </a>
       <a class="run-row" href="projects/519.html" title="519 Simon Says memory game — 7t-5V">
         <span class="run-row-label"><strong>519</strong> <span class="text-muted">Simon Says memory game</span></span>
@@ -1234,8 +1221,7 @@
           <i class="peak" style="width: 50.31%"></i>
           <i class="core" style="width: 35.44%"></i>
         </span>
-        <span class="run-row-value">27k
-          <span class="text-muted">/ 38k</span></span>
+        <span class="run-row-value">27k          <span class="text-muted">/ 38k</span></span>
       </a>
       <a class="run-row" href="projects/547.html" title="547 WokwiPWM — 7t-5V">
         <span class="run-row-label"><strong>547</strong> <span class="text-muted">WokwiPWM</span></span>
@@ -1243,8 +1229,7 @@
           <i class="peak" style="width: 42.94%"></i>
           <i class="core" style="width: 34.83%"></i>
         </span>
-        <span class="run-row-value">26k
-          <span class="text-muted">/ 33k</span></span>
+        <span class="run-row-value">26k          <span class="text-muted">/ 33k</span></span>
       </a>
       <a class="run-row" href="projects/130.html" title="130 USB CDC (Serial) Device — 7t-5V">
         <span class="run-row-label"><strong>130</strong> <span class="text-muted">USB CDC (Serial) Device</span></span>
@@ -1252,8 +1237,7 @@
           <i class="peak" style="width: 44.78%"></i>
           <i class="core" style="width: 33.56%"></i>
         </span>
-        <span class="run-row-value">25k
-          <span class="text-muted">/ 34k</span></span>
+        <span class="run-row-value">25k          <span class="text-muted">/ 34k</span></span>
       </a>
       <a class="run-row" href="projects/039.html" title="039 TinyQV RISC-V SoC — 7t-5V">
         <span class="run-row-label"><strong>039</strong> <span class="text-muted">TinyQV RISC-V SoC</span></span>
@@ -1261,8 +1245,7 @@
           <i class="peak" style="width: 48.60%"></i>
           <i class="core" style="width: 33.10%"></i>
         </span>
-        <span class="run-row-value">25k
-          <span class="text-muted">/ 37k</span></span>
+        <span class="run-row-value">25k          <span class="text-muted">/ 37k</span></span>
       </a>
       <a class="run-row" href="projects/579.html" title="579 PRISM 8 with TinySnake — 7t-5V">
         <span class="run-row-label"><strong>579</strong> <span class="text-muted">PRISM 8 with TinySnake</span></span>
@@ -1270,8 +1253,7 @@
           <i class="peak" style="width: 43.33%"></i>
           <i class="core" style="width: 32.95%"></i>
         </span>
-        <span class="run-row-value">25k
-          <span class="text-muted">/ 33k</span></span>
+        <span class="run-row-value">25k          <span class="text-muted">/ 33k</span></span>
       </a>
       <a class="run-row" href="projects/391.html" title="391 megabytebeat — 7t-5V">
         <span class="run-row-label"><strong>391</strong> <span class="text-muted">megabytebeat</span></span>
@@ -1279,8 +1261,7 @@
           <i class="peak" style="width: 55.32%"></i>
           <i class="core" style="width: 32.47%"></i>
         </span>
-        <span class="run-row-value">25k
-          <span class="text-muted">/ 42k</span></span>
+        <span class="run-row-value">25k          <span class="text-muted">/ 42k</span></span>
       </a>
       <a class="run-row" href="projects/513.html" title="513 Classic 8-bit era Programmable Sound Generator SN76489 — 7t-5V">
         <span class="run-row-label"><strong>513</strong> <span class="text-muted">Classic 8-bit era Programmable Sound Generator SN76489</span></span>
@@ -1288,8 +1269,7 @@
           <i class="peak" style="width: 46.89%"></i>
           <i class="core" style="width: 32.46%"></i>
         </span>
-        <span class="run-row-value">25k
-          <span class="text-muted">/ 36k</span></span>
+        <span class="run-row-value">25k          <span class="text-muted">/ 36k</span></span>
       </a>
       <a class="run-row" href="projects/288.html" title="288 Notre Dame - Lockpick Game TT Example — 7t-5V">
         <span class="run-row-label"><strong>288</strong> <span class="text-muted">Notre Dame - Lockpick Game TT Example</span></span>
@@ -1297,8 +1277,7 @@
           <i class="peak" style="width: 37.93%"></i>
           <i class="core" style="width: 31.04%"></i>
         </span>
-        <span class="run-row-value">24k
-          <span class="text-muted">/ 29k</span></span>
+        <span class="run-row-value">24k          <span class="text-muted">/ 29k</span></span>
       </a>
       <a class="run-row" href="projects/129.html" title="129 2x2 MAC Systolic array with DFT — 7t-5V">
         <span class="run-row-label"><strong>129</strong> <span class="text-muted">2x2 MAC Systolic array with DFT</span></span>
@@ -1306,8 +1285,7 @@
           <i class="peak" style="width: 46.76%"></i>
           <i class="core" style="width: 30.92%"></i>
         </span>
-        <span class="run-row-value">23k
-          <span class="text-muted">/ 36k</span></span>
+        <span class="run-row-value">23k          <span class="text-muted">/ 36k</span></span>
       </a>
       <a class="run-row" href="projects/359.html" title="359 Simple RISC-V — 7t-5V">
         <span class="run-row-label"><strong>359</strong> <span class="text-muted">Simple RISC-V</span></span>
@@ -1315,8 +1293,7 @@
           <i class="peak" style="width: 43.20%"></i>
           <i class="core" style="width: 30.49%"></i>
         </span>
-        <span class="run-row-value">23k
-          <span class="text-muted">/ 33k</span></span>
+        <span class="run-row-value">23k          <span class="text-muted">/ 33k</span></span>
       </a>
       <a class="run-row" href="projects/199.html" title="199 VGA Nyan Cat — 7t-5V">
         <span class="run-row-label"><strong>199</strong> <span class="text-muted">VGA Nyan Cat</span></span>
@@ -1324,8 +1301,7 @@
           <i class="peak" style="width: 45.70%"></i>
           <i class="core" style="width: 30.36%"></i>
         </span>
-        <span class="run-row-value">23k
-          <span class="text-muted">/ 35k</span></span>
+        <span class="run-row-value">23k          <span class="text-muted">/ 35k</span></span>
       </a>
     </div>
     <details class="run-more">
@@ -1336,8 +1312,7 @@
           <i class="peak" style="width: 40.83%"></i>
           <i class="core" style="width: 29.21%"></i>
         </span>
-        <span class="run-row-value">22k
-          <span class="text-muted">/ 31k</span></span>
+        <span class="run-row-value">22k          <span class="text-muted">/ 31k</span></span>
       </a>
       <a class="run-row" href="projects/611.html" title="611 Video mode tester — 7t-5V">
         <span class="run-row-label"><strong>611</strong> <span class="text-muted">Video mode tester</span></span>
@@ -1345,8 +1320,7 @@
           <i class="peak" style="width: 35.69%"></i>
           <i class="core" style="width: 29.02%"></i>
         </span>
-        <span class="run-row-value">22k
-          <span class="text-muted">/ 27k</span></span>
+        <span class="run-row-value">22k          <span class="text-muted">/ 27k</span></span>
       </a>
       <a class="run-row" href="projects/545.html" title="545 Flame demo — 7t-5V">
         <span class="run-row-label"><strong>545</strong> <span class="text-muted">Flame demo</span></span>
@@ -1354,8 +1328,7 @@
           <i class="peak" style="width: 40.70%"></i>
           <i class="core" style="width: 28.93%"></i>
         </span>
-        <span class="run-row-value">22k
-          <span class="text-muted">/ 31k</span></span>
+        <span class="run-row-value">22k          <span class="text-muted">/ 31k</span></span>
       </a>
       <a class="run-row" href="projects/197.html" title="197 LISA 8-Bit Microcontroller — 7t-5V">
         <span class="run-row-label"><strong>197</strong> <span class="text-muted">LISA 8-Bit Microcontroller</span></span>
@@ -1363,8 +1336,7 @@
           <i class="peak" style="width: 42.54%"></i>
           <i class="core" style="width: 28.40%"></i>
         </span>
-        <span class="run-row-value">22k
-          <span class="text-muted">/ 32k</span></span>
+        <span class="run-row-value">22k          <span class="text-muted">/ 32k</span></span>
       </a>
       <a class="run-row" href="projects/103.html" title="103 Simon&#39;s Caterpillar — 7t-5V">
         <span class="run-row-label"><strong>103</strong> <span class="text-muted">Simon&#39;s Caterpillar</span></span>
@@ -1372,8 +1344,7 @@
           <i class="peak" style="width: 41.62%"></i>
           <i class="core" style="width: 28.35%"></i>
         </span>
-        <span class="run-row-value">22k
-          <span class="text-muted">/ 32k</span></span>
+        <span class="run-row-value">22k          <span class="text-muted">/ 32k</span></span>
       </a>
       <a class="run-row" href="projects/455.html" title="455 Zilog Z80 — 7t-5V">
         <span class="run-row-label"><strong>455</strong> <span class="text-muted">Zilog Z80</span></span>
@@ -1381,8 +1352,7 @@
           <i class="peak" style="width: 44.12%"></i>
           <i class="core" style="width: 27.65%"></i>
         </span>
-        <span class="run-row-value">21k
-          <span class="text-muted">/ 34k</span></span>
+        <span class="run-row-value">21k          <span class="text-muted">/ 34k</span></span>
       </a>
       <a class="run-row" href="projects/102.html" title="102 Silly-Faust — 7t-5V">
         <span class="run-row-label"><strong>102</strong> <span class="text-muted">Silly-Faust</span></span>
@@ -1390,8 +1360,7 @@
           <i class="peak" style="width: 47.15%"></i>
           <i class="core" style="width: 27.20%"></i>
         </span>
-        <span class="run-row-value">21k
-          <span class="text-muted">/ 36k</span></span>
+        <span class="run-row-value">21k          <span class="text-muted">/ 36k</span></span>
       </a>
       <a class="run-row" href="projects/135.html" title="135 raybox-zero TTGF0p2 edition — 7t-5V">
         <span class="run-row-label"><strong>135</strong> <span class="text-muted">raybox-zero TTGF0p2 edition</span></span>
@@ -1399,8 +1368,7 @@
           <i class="peak" style="width: 46.23%"></i>
           <i class="core" style="width: 27.19%"></i>
         </span>
-        <span class="run-row-value">21k
-          <span class="text-muted">/ 35k</span></span>
+        <span class="run-row-value">21k          <span class="text-muted">/ 35k</span></span>
       </a>
       <a class="run-row" href="projects/551.html" title="551 PVTMonitorSuite — 7t-5V">
         <span class="run-row-label"><strong>551</strong> <span class="text-muted">PVTMonitorSuite</span></span>
@@ -1408,8 +1376,7 @@
           <i class="peak" style="width: 41.49%"></i>
           <i class="core" style="width: 26.41%"></i>
         </span>
-        <span class="run-row-value">20k
-          <span class="text-muted">/ 32k</span></span>
+        <span class="run-row-value">20k          <span class="text-muted">/ 32k</span></span>
       </a>
       <a class="run-row" href="projects/194.html" title="194 2048 sliding tile puzzle game (VGA) — 7t-5V">
         <span class="run-row-label"><strong>194</strong> <span class="text-muted">2048 sliding tile puzzle game (VGA)</span></span>
@@ -1417,8 +1384,7 @@
           <i class="peak" style="width: 50.18%"></i>
           <i class="core" style="width: 26.31%"></i>
         </span>
-        <span class="run-row-value">20k
-          <span class="text-muted">/ 38k</span></span>
+        <span class="run-row-value">20k          <span class="text-muted">/ 38k</span></span>
       </a>
       <a class="run-row" href="projects/481.html" title="481 ROTFPGA v2 — 7t-5V">
         <span class="run-row-label"><strong>481</strong> <span class="text-muted">ROTFPGA v2</span></span>
@@ -1426,8 +1392,7 @@
           <i class="peak" style="width: 40.70%"></i>
           <i class="core" style="width: 25.87%"></i>
         </span>
-        <span class="run-row-value">20k
-          <span class="text-muted">/ 31k</span></span>
+        <span class="run-row-value">20k          <span class="text-muted">/ 31k</span></span>
       </a>
       <a class="run-row" href="projects/515.html" title="515 VGA Tiny Logo — 7t-5V">
         <span class="run-row-label"><strong>515</strong> <span class="text-muted">VGA Tiny Logo</span></span>
@@ -1435,8 +1400,7 @@
           <i class="peak" style="width: 45.70%"></i>
           <i class="core" style="width: 25.75%"></i>
         </span>
-        <span class="run-row-value">20k
-          <span class="text-muted">/ 35k</span></span>
+        <span class="run-row-value">20k          <span class="text-muted">/ 35k</span></span>
       </a>
       <a class="run-row" href="projects/033.html" title="033 wafer.space Logo VGA Screensaver — 7t-5V">
         <span class="run-row-label"><strong>033</strong> <span class="text-muted">wafer.space Logo VGA Screensaver</span></span>
@@ -1444,8 +1408,7 @@
           <i class="peak" style="width: 35.96%"></i>
           <i class="core" style="width: 25.41%"></i>
         </span>
-        <span class="run-row-value">19k
-          <span class="text-muted">/ 27k</span></span>
+        <span class="run-row-value">19k          <span class="text-muted">/ 27k</span></span>
       </a>
       <a class="run-row" href="projects/295.html" title="295 KianV uLinux SoC — 7t-5V">
         <span class="run-row-label"><strong>295</strong> <span class="text-muted">KianV uLinux SoC</span></span>
@@ -1453,8 +1416,7 @@
           <i class="peak" style="width: 36.88%"></i>
           <i class="core" style="width: 25.05%"></i>
         </span>
-        <span class="run-row-value">19k
-          <span class="text-muted">/ 28k</span></span>
+        <span class="run-row-value">19k          <span class="text-muted">/ 28k</span></span>
       </a>
       <a class="run-row" href="projects/549.html" title="549 Dog Battle Game — 7t-5V">
         <span class="run-row-label"><strong>549</strong> <span class="text-muted">Dog Battle Game</span></span>
@@ -1462,8 +1424,7 @@
           <i class="peak" style="width: 35.83%"></i>
           <i class="core" style="width: 24.63%"></i>
         </span>
-        <span class="run-row-value">19k
-          <span class="text-muted">/ 27k</span></span>
+        <span class="run-row-value">19k          <span class="text-muted">/ 27k</span></span>
       </a>
       <a class="run-row" href="projects/358.html" title="358 Notre Dame - CSE 30342 - DIC - Advanced FSM Final Project Example — 7t-5V">
         <span class="run-row-label"><strong>358</strong> <span class="text-muted">Notre Dame - CSE 30342 - DIC - Advanced FSM Final Project Example</span></span>
@@ -1471,8 +1432,7 @@
           <i class="peak" style="width: 46.63%"></i>
           <i class="core" style="width: 23.31%"></i>
         </span>
-        <span class="run-row-value">18k
-          <span class="text-muted">/ 35k</span></span>
+        <span class="run-row-value">18k          <span class="text-muted">/ 35k</span></span>
       </a>
       <a class="run-row" href="projects/451.html" title="451 Asicle v2 — 7t-5V">
         <span class="run-row-label"><strong>451</strong> <span class="text-muted">Asicle v2</span></span>
@@ -1480,8 +1440,7 @@
           <i class="peak" style="width: 44.65%"></i>
           <i class="core" style="width: 22.59%"></i>
         </span>
-        <span class="run-row-value">17k
-          <span class="text-muted">/ 34k</span></span>
+        <span class="run-row-value">17k          <span class="text-muted">/ 34k</span></span>
       </a>
       <a class="run-row" href="projects/038.html" title="038 Wildcat RISC-V — 7t-5V">
         <span class="run-row-label"><strong>038</strong> <span class="text-muted">Wildcat RISC-V</span></span>
@@ -1489,8 +1448,7 @@
           <i class="peak" style="width: 44.65%"></i>
           <i class="core" style="width: 21.68%"></i>
         </span>
-        <span class="run-row-value">16k
-          <span class="text-muted">/ 34k</span></span>
+        <span class="run-row-value">16k          <span class="text-muted">/ 34k</span></span>
       </a>
       <a class="run-row" href="projects/198.html" title="198 easy PAL — 7t-5V">
         <span class="run-row-label"><strong>198</strong> <span class="text-muted">easy PAL</span></span>
@@ -1498,8 +1456,7 @@
           <i class="peak" style="width: 34.51%"></i>
           <i class="core" style="width: 21.55%"></i>
         </span>
-        <span class="run-row-value">16k
-          <span class="text-muted">/ 26k</span></span>
+        <span class="run-row-value">16k          <span class="text-muted">/ 26k</span></span>
       </a>
       <a class="run-row" href="projects/134.html" title="134 VGA Drop (audio/visual demo) — 9t-5V">
         <span class="run-row-label"><strong>134</strong> <span class="text-muted">VGA Drop (audio/visual demo)</span></span>
@@ -1507,8 +1464,7 @@
           <i class="peak" style="width: 35.83%"></i>
           <i class="core" style="width: 20.38%"></i>
         </span>
-        <span class="run-row-value">15k
-          <span class="text-muted">/ 27k</span></span>
+        <span class="run-row-value">15k          <span class="text-muted">/ 27k</span></span>
       </a>
       <a class="run-row" href="projects/196.html" title="196 Quickscope — 7t-5V">
         <span class="run-row-label"><strong>196</strong> <span class="text-muted">Quickscope</span></span>
@@ -1516,8 +1472,7 @@
           <i class="peak" style="width: 38.72%"></i>
           <i class="core" style="width: 19.59%"></i>
         </span>
-        <span class="run-row-value">15k
-          <span class="text-muted">/ 29k</span></span>
+        <span class="run-row-value">15k          <span class="text-muted">/ 29k</span></span>
       </a>
       <a class="run-row" href="projects/384.html" title="384 LEDs Racer — 7t-5V">
         <span class="run-row-label"><strong>384</strong> <span class="text-muted">LEDs Racer</span></span>
@@ -1525,8 +1480,7 @@
           <i class="peak" style="width: 41.23%"></i>
           <i class="core" style="width: 15.00%"></i>
         </span>
-        <span class="run-row-value">11k
-          <span class="text-muted">/ 31k</span></span>
+        <span class="run-row-value">11k          <span class="text-muted">/ 31k</span></span>
       </a>
       <a class="run-row" href="projects/454.html" title="454 CAN Controller for Rocket — 7t-5V">
         <span class="run-row-label"><strong>454</strong> <span class="text-muted">CAN Controller for Rocket</span></span>
@@ -1534,8 +1488,7 @@
           <i class="peak" style="width: 34.77%"></i>
           <i class="core" style="width: 13.89%"></i>
         </span>
-        <span class="run-row-value">11k
-          <span class="text-muted">/ 26k</span></span>
+        <span class="run-row-value">11k          <span class="text-muted">/ 26k</span></span>
       </a>
       <a class="run-row" href="projects/385.html" title="385 Frequency Counter SSD1306 OLED — 7t-5V">
         <span class="run-row-label"><strong>385</strong> <span class="text-muted">Frequency Counter SSD1306 OLED</span></span>
@@ -1543,8 +1496,7 @@
           <i class="peak" style="width: 39.51%"></i>
           <i class="core" style="width: 13.19%"></i>
         </span>
-        <span class="run-row-value">10k
-          <span class="text-muted">/ 30k</span></span>
+        <span class="run-row-value">10k          <span class="text-muted">/ 30k</span></span>
       </a>
 </div>
     </details>
@@ -1833,365 +1785,313 @@
       <tbody>
       <tr><td class="run-mono">000</td>
         <td><a href="projects/000.html">Chip ROM</a></td>
-        <td class="d-none d-md-table-cell">Uri Shaked</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Uri Shaked</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">237</td>
         <td class="text-end d-none d-sm-table-cell">4k</td></tr>
       <tr><td class="run-mono">001</td>
         <td><a href="projects/001.html">Tiny Tapeout Factory Test</a></td>
-        <td class="d-none d-md-table-cell">Tiny Tapeout</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Tiny Tapeout</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#test">Test structures</a></td>
         <td class="text-end">90</td>
         <td class="text-end d-none d-sm-table-cell">2k</td></tr>
       <tr><td class="run-mono">032</td>
         <td><a href="projects/032.html">Zedulo TestChip1</a></td>
-        <td class="d-none d-md-table-cell">Zedulo</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Zedulo</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,242</td>
         <td class="text-end d-none d-sm-table-cell">22k</td></tr>
       <tr><td class="run-mono">033</td>
         <td><a href="projects/033.html">wafer.space Logo VGA Screensaver</a></td>
-        <td class="d-none d-md-table-cell">Uri Shaked</td>
-        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Uri Shaked</td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#art">Art and logos</a></td>
         <td class="text-end">2,228</td>
         <td class="text-end d-none d-sm-table-cell">19k</td></tr>
       <tr><td class="run-mono">038</td>
         <td><a href="projects/038.html">Wildcat RISC-V</a></td>
-        <td class="d-none d-md-table-cell">Martin Schoeberl</td>
-        <td class="run-nowrap">3 × 2</td>
+<td class="d-none d-md-table-cell">Martin Schoeberl</td>        <td class="run-nowrap">3 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
         <td class="text-end">5,867</td>
         <td class="text-end d-none d-sm-table-cell">16k</td></tr>
       <tr><td class="run-mono">039</td>
         <td><a href="projects/039.html">TinyQV RISC-V SoC</a></td>
-        <td class="d-none d-md-table-cell">Michael Bell</td>
-        <td class="run-nowrap">3 × 4</td>
+<td class="d-none d-md-table-cell">Michael Bell</td>        <td class="run-nowrap">3 × 4</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
         <td class="text-end">20,084</td>
         <td class="text-end d-none d-sm-table-cell">25k</td></tr>
       <tr><td class="run-mono">101</td>
         <td><a href="projects/101.html">SCµM-BLE-RX</a></td>
-        <td class="d-none d-md-table-cell">Dingyu Zhou</td>
-        <td class="run-nowrap">3 × 4</td>
+<td class="d-none d-md-table-cell">Dingyu Zhou</td>        <td class="run-nowrap">3 × 4</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">22,709</td>
         <td class="text-end d-none d-sm-table-cell">28k</td></tr>
       <tr><td class="run-mono">102</td>
         <td><a href="projects/102.html">Silly-Faust</a></td>
-        <td class="d-none d-md-table-cell">Louis Ledoux, Cochard Pierre</td>
-        <td class="run-nowrap">4 × 2</td>
+<td class="d-none d-md-table-cell">Louis Ledoux, Cochard Pierre</td>        <td class="run-nowrap">4 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">9,814</td>
         <td class="text-end d-none d-sm-table-cell">21k</td></tr>
       <tr><td class="run-mono">103</td>
         <td><a href="projects/103.html">Simon&#39;s Caterpillar</a></td>
-        <td class="d-none d-md-table-cell">htfab</td>
-        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">htfab</td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">2,486</td>
         <td class="text-end d-none d-sm-table-cell">22k</td></tr>
       <tr><td class="run-mono">128</td>
         <td><a href="projects/128.html">VGA clock</a></td>
-        <td class="d-none d-md-table-cell">Matt Venn</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Matt Venn</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">860</td>
         <td class="text-end d-none d-sm-table-cell">15k</td></tr>
       <tr><td class="run-mono">129</td>
         <td><a href="projects/129.html">2x2 MAC Systolic array with DFT</a></td>
-        <td class="d-none d-md-table-cell">Julia Desmazes</td>
-        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Julia Desmazes</td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">2,711</td>
         <td class="text-end d-none d-sm-table-cell">23k</td></tr>
       <tr><td class="run-mono">130</td>
         <td><a href="projects/130.html">USB CDC (Serial) Device</a></td>
-        <td class="d-none d-md-table-cell">Uri Shaked</td>
-        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Uri Shaked</td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">2,943</td>
         <td class="text-end d-none d-sm-table-cell">25k</td></tr>
       <tr><td class="run-mono">134</td>
         <td><a href="projects/134.html">VGA Drop (audio/visual demo)</a></td>
-        <td class="d-none d-md-table-cell">ReJ aka Renaldas Zioma, eriQue aka Erik Hemming, Matthias Kampa</td>
-        <td class="run-nowrap">2 × 2</td>
+<td class="d-none d-md-table-cell">ReJ aka Renaldas Zioma, eriQue aka Erik Hemming, Matthias Kampa</td>        <td class="run-nowrap">2 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">3,625</td>
         <td class="text-end d-none d-sm-table-cell">15k</td></tr>
       <tr><td class="run-mono">135</td>
         <td><a href="projects/135.html">raybox-zero TTGF0p2 edition</a></td>
-        <td class="d-none d-md-table-cell">algofoogle (Anton Maurovic)</td>
-        <td class="run-nowrap">3 × 4</td>
+<td class="d-none d-md-table-cell">algofoogle (Anton Maurovic)</td>        <td class="run-nowrap">3 × 4</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">16,500</td>
         <td class="text-end d-none d-sm-table-cell">21k</td></tr>
       <tr><td class="run-mono">194</td>
         <td><a href="projects/194.html">2048 sliding tile puzzle game (VGA)</a></td>
-        <td class="d-none d-md-table-cell">Uri Shaked</td>
-        <td class="run-nowrap">2 × 2</td>
+<td class="d-none d-md-table-cell">Uri Shaked</td>        <td class="run-nowrap">2 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">4,680</td>
         <td class="text-end d-none d-sm-table-cell">20k</td></tr>
       <tr><td class="run-mono">196</td>
         <td><a href="projects/196.html">Quickscope</a></td>
-        <td class="d-none d-md-table-cell">Frans Skarman</td>
-        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Frans Skarman</td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,718</td>
         <td class="text-end d-none d-sm-table-cell">15k</td></tr>
       <tr class="run-extra"><td class="run-mono">197</td>
         <td><a href="projects/197.html">LISA 8-Bit Microcontroller</a></td>
-        <td class="d-none d-md-table-cell">Ken Pettit</td>
-        <td class="run-nowrap">3 × 4</td>
+<td class="d-none d-md-table-cell">Ken Pettit</td>        <td class="run-nowrap">3 × 4</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
         <td class="text-end">17,231</td>
         <td class="text-end d-none d-sm-table-cell">22k</td></tr>
       <tr class="run-extra"><td class="run-mono">198</td>
         <td><a href="projects/198.html">easy PAL</a></td>
-        <td class="d-none d-md-table-cell">Ken Pettit</td>
-        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Ken Pettit</td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,890</td>
         <td class="text-end d-none d-sm-table-cell">16k</td></tr>
       <tr class="run-extra"><td class="run-mono">199</td>
         <td><a href="projects/199.html">VGA Nyan Cat</a></td>
-        <td class="d-none d-md-table-cell">Andy Sloane</td>
-        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Andy Sloane</td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">2,662</td>
         <td class="text-end d-none d-sm-table-cell">23k</td></tr>
       <tr class="run-extra"><td class="run-mono">288</td>
         <td><a href="projects/288.html">Notre Dame - Lockpick Game TT Example</a></td>
-        <td class="d-none d-md-table-cell">Matthew Morrison</td>
-        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Matthew Morrison</td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">2,722</td>
         <td class="text-end d-none d-sm-table-cell">24k</td></tr>
       <tr class="run-extra"><td class="run-mono">295</td>
         <td><a href="projects/295.html">KianV uLinux SoC</a></td>
-        <td class="d-none d-md-table-cell">Hirosh Dabui</td>
-        <td class="run-nowrap">4 × 4</td>
+<td class="d-none d-md-table-cell">Hirosh Dabui</td>        <td class="run-nowrap">4 × 4</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
         <td class="text-end">20,266</td>
         <td class="text-end d-none d-sm-table-cell">19k</td></tr>
       <tr class="run-extra"><td class="run-mono">358</td>
         <td><a href="projects/358.html">Notre Dame - CSE 30342 - DIC - Advanced FSM Final Project Example</a></td>
-        <td class="d-none d-md-table-cell">Matthew Morrison</td>
-        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Matthew Morrison</td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">2,044</td>
         <td class="text-end d-none d-sm-table-cell">18k</td></tr>
       <tr class="run-extra"><td class="run-mono">359</td>
         <td><a href="projects/359.html">Simple RISC-V</a></td>
-        <td class="d-none d-md-table-cell">kinako71-2</td>
-        <td class="run-nowrap">4 × 2</td>
+<td class="d-none d-md-table-cell">kinako71-2</td>        <td class="run-nowrap">4 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
         <td class="text-end">11,000</td>
         <td class="text-end d-none d-sm-table-cell">23k</td></tr>
       <tr class="run-extra"><td class="run-mono">384</td>
         <td><a href="projects/384.html">LEDs Racer</a></td>
-        <td class="d-none d-md-table-cell">KerCrafter</td>
-        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">KerCrafter</td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,315</td>
         <td class="text-end d-none d-sm-table-cell">11k</td></tr>
       <tr class="run-extra"><td class="run-mono">385</td>
         <td><a href="projects/385.html">Frequency Counter SSD1306 OLED</a></td>
-        <td class="d-none d-md-table-cell">Pawel Sitarz (embelon)</td>
-        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Pawel Sitarz (embelon)</td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,157</td>
         <td class="text-end d-none d-sm-table-cell">10k</td></tr>
       <tr class="run-extra"><td class="run-mono">391</td>
         <td><a href="projects/391.html">megabytebeat</a></td>
-        <td class="d-none d-md-table-cell">proppy</td>
-        <td class="run-nowrap">3 × 2</td>
+<td class="d-none d-md-table-cell">proppy</td>        <td class="run-nowrap">3 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">8,785</td>
         <td class="text-end d-none d-sm-table-cell">25k</td></tr>
       <tr class="run-extra"><td class="run-mono">451</td>
         <td><a href="projects/451.html">Asicle v2</a></td>
-        <td class="d-none d-md-table-cell">htfab</td>
-        <td class="run-nowrap">2 × 2</td>
+<td class="d-none d-md-table-cell">htfab</td>        <td class="run-nowrap">2 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">4,018</td>
         <td class="text-end d-none d-sm-table-cell">17k</td></tr>
       <tr class="run-extra"><td class="run-mono">454</td>
         <td><a href="projects/454.html">CAN Controller for Rocket</a></td>
-        <td class="d-none d-md-table-cell">Noritsuna Imamura</td>
-        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">Noritsuna Imamura</td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,218</td>
         <td class="text-end d-none d-sm-table-cell">11k</td></tr>
       <tr class="run-extra"><td class="run-mono">455</td>
         <td><a href="projects/455.html">Zilog Z80</a></td>
-        <td class="d-none d-md-table-cell">ReJ aka Renaldas Zioma</td>
-        <td class="run-nowrap">2 × 2</td>
+<td class="d-none d-md-table-cell">ReJ aka Renaldas Zioma</td>        <td class="run-nowrap">2 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">4,918</td>
         <td class="text-end d-none d-sm-table-cell">21k</td></tr>
       <tr class="run-extra"><td class="run-mono">481</td>
         <td><a href="projects/481.html">ROTFPGA v2</a></td>
-        <td class="d-none d-md-table-cell">htfab</td>
-        <td class="run-nowrap">1 × 2</td>
+<td class="d-none d-md-table-cell">htfab</td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">2,269</td>
         <td class="text-end d-none d-sm-table-cell">20k</td></tr>
       <tr class="run-extra"><td class="run-mono">483</td>
         <td><a href="projects/483.html">7-Segment Digital Desk Clock</a></td>
-        <td class="d-none d-md-table-cell">Samuel Ellicott</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Samuel Ellicott</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">746</td>
         <td class="text-end d-none d-sm-table-cell">13k</td></tr>
       <tr class="run-extra"><td class="run-mono">485</td>
         <td><a href="projects/485.html">MarcoPolo</a></td>
-        <td class="d-none d-md-table-cell">Javier Munoz Saez</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Javier Munoz Saez</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#first">First designs</a></td>
         <td class="text-end">726</td>
         <td class="text-end d-none d-sm-table-cell">13k</td></tr>
       <tr class="run-extra"><td class="run-mono">487</td>
         <td><a href="projects/487.html">Linear Timecode (LTC) generator</a></td>
-        <td class="d-none d-md-table-cell">Thomas Flummer</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Thomas Flummer</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">777</td>
         <td class="text-end d-none d-sm-table-cell">14k</td></tr>
       <tr class="run-extra"><td class="run-mono">513</td>
         <td><a href="projects/513.html">Classic 8-bit era Programmable Sound Generator SN76489</a></td>
-        <td class="d-none d-md-table-cell">ReJ aka Renaldas Zioma</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">ReJ aka Renaldas Zioma</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,380</td>
         <td class="text-end d-none d-sm-table-cell">25k</td></tr>
       <tr class="run-extra"><td class="run-mono">515</td>
         <td><a href="projects/515.html">VGA Tiny Logo</a></td>
-        <td class="d-none d-md-table-cell">Renaldas Zioma</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Renaldas Zioma</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#art">Art and logos</a></td>
         <td class="text-end">1,095</td>
         <td class="text-end d-none d-sm-table-cell">20k</td></tr>
       <tr class="run-extra"><td class="run-mono">517</td>
         <td><a href="projects/517.html">Ring Oscillator (5 inverter)</a></td>
-        <td class="d-none d-md-table-cell">Darryl Miles</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Darryl Miles</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">61</td>
         <td class="text-end d-none d-sm-table-cell">1k</td></tr>
       <tr class="run-extra"><td class="run-mono">519</td>
         <td><a href="projects/519.html">Simon Says memory game</a></td>
-        <td class="d-none d-md-table-cell">Uri Shaked</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Uri Shaked</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,507</td>
         <td class="text-end d-none d-sm-table-cell">27k</td></tr>
       <tr class="run-extra"><td class="run-mono">545</td>
         <td><a href="projects/545.html">Flame demo</a></td>
-        <td class="d-none d-md-table-cell">Konrad Beckmann &amp; Linus Mårtensson</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Konrad Beckmann &amp; Linus Mårtensson</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,230</td>
         <td class="text-end d-none d-sm-table-cell">22k</td></tr>
       <tr class="run-extra"><td class="run-mono">547</td>
         <td><a href="projects/547.html">WokwiPWM</a></td>
-        <td class="d-none d-md-table-cell">Ken Pettit</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Ken Pettit</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,481</td>
         <td class="text-end d-none d-sm-table-cell">26k</td></tr>
       <tr class="run-extra"><td class="run-mono">549</td>
         <td><a href="projects/549.html">Dog Battle Game</a></td>
-        <td class="d-none d-md-table-cell">Sophus Andreassen</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Sophus Andreassen</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">1,047</td>
         <td class="text-end d-none d-sm-table-cell">19k</td></tr>
       <tr class="run-extra"><td class="run-mono">551</td>
         <td><a href="projects/551.html">PVTMonitorSuite</a></td>
-        <td class="d-none d-md-table-cell">Susumu Yamazaki</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Susumu Yamazaki</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,123</td>
         <td class="text-end d-none d-sm-table-cell">20k</td></tr>
       <tr class="run-extra"><td class="run-mono">577</td>
         <td><a href="projects/577.html">PILIPINAS_IC</a></td>
-        <td class="d-none d-md-table-cell">Alexander Co Abad and Dino Dominic Ligutan</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Alexander Co Abad and Dino Dominic Ligutan</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">82</td>
         <td class="text-end d-none d-sm-table-cell">1k</td></tr>
       <tr class="run-extra"><td class="run-mono">579</td>
         <td><a href="projects/579.html">PRISM 8 with TinySnake</a></td>
-        <td class="d-none d-md-table-cell">Ken Pettit</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Ken Pettit</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,401</td>
         <td class="text-end d-none d-sm-table-cell">25k</td></tr>
       <tr class="run-extra"><td class="run-mono">581</td>
         <td><a href="projects/581.html">Register bank accessible through SPI and I2C</a></td>
-        <td class="d-none d-md-table-cell">Caio Alonso da Costa</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Caio Alonso da Costa</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">897</td>
         <td class="text-end d-none d-sm-table-cell">16k</td></tr>
       <tr class="run-extra"><td class="run-mono">583</td>
         <td><a href="projects/583.html">Cell mux</a></td>
-        <td class="d-none d-md-table-cell">htfab</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">htfab</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">677</td>
         <td class="text-end d-none d-sm-table-cell">12k</td></tr>
       <tr class="run-extra"><td class="run-mono">609</td>
         <td><a href="projects/609.html">Super-Simple-SPI-CPU</a></td>
-        <td class="d-none d-md-table-cell">James Ashie Kotey</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">James Ashie Kotey</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
         <td class="text-end">761</td>
         <td class="text-end d-none d-sm-table-cell">14k</td></tr>
       <tr class="run-extra"><td class="run-mono">610</td>
         <td><a href="projects/610.html">Example of Bad Synchronizer</a></td>
-        <td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">62</td>
         <td class="text-end d-none d-sm-table-cell">1k</td></tr>
       <tr class="run-extra"><td class="run-mono">611</td>
         <td><a href="projects/611.html">Video mode tester</a></td>
-        <td class="d-none d-md-table-cell">htfab</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">htfab</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">1,234</td>
         <td class="text-end d-none d-sm-table-cell">22k</td></tr>
       <tr class="run-extra"><td class="run-mono">612</td>
         <td><a href="projects/612.html">One Bit PUF</a></td>
-        <td class="d-none d-md-table-cell">Yimin Gao and Ceylan Morgul</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Yimin Gao and Ceylan Morgul</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#security">Security</a></td>
         <td class="text-end">977</td>
         <td class="text-end d-none d-sm-table-cell">17k</td></tr>
       <tr class="run-extra"><td class="run-mono">613</td>
         <td><a href="projects/613.html">DDR throughput and flop aperature test</a></td>
-        <td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">90</td>
         <td class="text-end d-none d-sm-table-cell">2k</td></tr>
       <tr class="run-extra"><td class="run-mono">614</td>
         <td><a href="projects/614.html">Ring osc on VGA</a></td>
-        <td class="d-none d-md-table-cell">algofoogle (Anton Maurovic)</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">algofoogle (Anton Maurovic)</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">473</td>
         <td class="text-end d-none d-sm-table-cell">8k</td></tr>
       <tr class="run-extra"><td class="run-mono">615</td>
         <td><a href="projects/615.html">GF180MCU loopback tile with input skew measurement</a></td>
-        <td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith</td>
-        <td class="run-nowrap">1 × 1</td>
+<td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">81</td>
         <td class="text-end d-none d-sm-table-cell">1k</td></tr>
@@ -2202,7 +2102,7 @@
       52 projects</span><span class="run-hide">Show the first 16 only</span></label>    <div class="mb-40"></div>
     <h3 id="grew" class="run-category-title">Designs that grew<a class="run-anchor" href="#grew" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
     <p class="mb-20 run-measure">Some designs on this chip have been made many times, on earlier and later
-      Tiny Tapeout chips, and several now have a whole die of their own on a wafer.space run.      Newest first; the ringed marker is this chip.</p>
+      Tiny Tapeout chips, and several now have a whole die of their own on a wafer.space run.      The ringed marker is this chip.</p>
     <div class="run-tl">
   <div class="run-tl-row run-tl-axis" aria-hidden="true">
     <div class="run-tl-name"></div>
@@ -2210,36 +2110,36 @@
   </div>
   <div class="run-tl-row">
     <div class="run-tl-name"><a href="projects/039.html#related">TinyQV RISC-V SoC</a> <span class="small text-muted">039</span></div>
-    <div class="run-tl-track" style="--h: 42px; --hm: 68px">
+    <div class="run-tl-track" style="--h: 52px; --hm: 78px">
 <i class="run-tl-grid" style="left: 14.38%" aria-hidden="true"></i><i class="run-tl-grid" style="left: 42.97%" aria-hidden="true"></i><i class="run-tl-grid" style="left: 71.48%" aria-hidden="true"></i>      <a class="run-tl-dot run-tl-tt run-tl-start" href="https://tinytapeout.com/chips/tt06/tt_um_MichaelBell_tinyQV"
          style="left: 22.89%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout 6, Apr 2024, 2×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 6</strong> · Apr 2024<br>TinyQV Risc-V SoC<br><span class="text-muted">2×2 tiles</span></span>
+         aria-label="Tiny Tapeout 6, Apr 2024, 2 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 6</strong> · Apr 2024<br>TinyQV Risc-V SoC<br><span class="text-muted">2 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/ttihp0p2/tt_um_MichaelBell_tinyQV"
          style="left: 38.44%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout IHP 0.2, Nov 2024, 2×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 0.2</strong> · Nov 2024<br>TinyQV Risc-V SoC<br><span class="text-muted">2×2 tiles</span></span>
+         aria-label="Tiny Tapeout IHP 0.2, Nov 2024, 2 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 0.2</strong> · Nov 2024<br>TinyQV Risc-V SoC<br><span class="text-muted">2 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/ttihp25a/tt_um_MichaelBell_tinyQV"
          style="left: 49.69%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout IHP 25a, Mar 2025, 3×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 25a</strong> · Mar 2025<br>TinyQV Risc-V SoC<br><span class="text-muted">3×2 tiles</span></span>
+         aria-label="Tiny Tapeout IHP 25a, Mar 2025, 3 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 25a</strong> · Mar 2025<br>TinyQV Risc-V SoC<br><span class="text-muted">3 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/ttihp25b/tt_um_tt_tinyQV"
          style="left: 61.95%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout IHP 25b, Sep 2025, 5×4 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 25b</strong> · Sep 2025<br>TinyQV - Crowdsourced Risc-V SoC<br><span class="text-muted">5×4 tiles</span></span>
+         aria-label="Tiny Tapeout IHP 25b, Sep 2025, 5 × 4 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 25b</strong> · Sep 2025<br>TinyQV - Crowdsourced Risc-V SoC<br><span class="text-muted">5 × 4 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/ttsky25a/tt_um_tt_tinyQV"
          style="left: 63.05%; --dy: -13px; --dym: -13px"
-         aria-label="Tiny Tapeout SKY 25a, Sep 2025, 8×4 tiles, 4×4 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout SKY 25a</strong> · Sep 2025<br>2 projects<br><span class="text-muted">8×4 tiles, 4×4 tiles</span></span>
+         aria-label="Tiny Tapeout SKY 25a, Sep 2025, 8 × 4 tiles, 4 × 4 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout SKY 25a</strong> · Sep 2025<br>2 projects<br><span class="text-muted">8 × 4 tiles, 4 × 4 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/ttsky25b/tt_um_MichaelBell_tinyQV"
          style="left: 67.42%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout SKY 25b, Nov 2025, 3×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout SKY 25b</strong> · Nov 2025<br>TinyQV Risc-V SoC<br><span class="text-muted">3×2 tiles</span></span>
+         aria-label="Tiny Tapeout SKY 25b, Nov 2025, 3 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout SKY 25b</strong> · Nov 2025<br>TinyQV Risc-V SoC<br><span class="text-muted">3 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/#p019"
          style="left: 68.52%; --dy: -13px; --dym: -13px"
@@ -2248,48 +2148,48 @@
       </a>
       <a class="run-tl-dot run-tl-tt current" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/039.html"
          style="left: 68.52%; --dy: 13px; --dym: 13px"
-         aria-label="Tiny Tapeout GF 0.2, Nov 2025, 3×4 tiles (this chip)">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.2</strong> · Nov 2025<br>TinyQV Risc-V SoC<br><span class="text-muted">3×4 tiles</span></span>
+         aria-label="Tiny Tapeout GF 0.2, Nov 2025, 3 × 4 tiles (this chip)">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.2</strong> · Nov 2025<br>TinyQV Risc-V SoC<br><span class="text-muted">3 × 4 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-ws" href="https://wafer.space/ws-run1/projects/TQVA.html"
          style="left: 69.22%; --dy: 0px; --dym: -26px"
-         aria-label="wafer.space Run 1, Dec 2025, 0.5×0.5 slot, 0.5×1 slot, 1×0.5 slot">
-        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 1</strong> · Dec 2025<br>3 dies<br><span class="text-muted">0.5×0.5 slot, 0.5×1 slot, 1×0.5 slot</span></span>
+         aria-label="wafer.space Run 1, Dec 2025, TQVA ½ × ½ slot, TQVB ½ × 1 slot, TQVC 1 × ½ slot">
+        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 1</strong> · Dec 2025<br>3 dies<br><span class="text-muted">TQVA ½ × ½ slot, TQVB ½ × 1 slot, TQVC 1 × ½ slot</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt run-tl-end" href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/199.html"
          style="left: 86.09%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout GF 0.3, Jul 2026, 4×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.3</strong> · Jul 2026<br>TinyQV Risc-V SoC<br><span class="text-muted">4×2 tiles</span></span>
+         aria-label="Tiny Tapeout GF 0.3, Jul 2026, 4 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.3</strong> · Jul 2026<br>TinyQV Risc-V SoC<br><span class="text-muted">4 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-ws run-tl-end" href="https://wafer.space/ws-run2/projects/TQVA.html"
          style="left: 86.64%; --dy: -13px; --dym: -13px"
-         aria-label="wafer.space Run 2, Jul 2026, 0.5×0.5 slot, 1×0.5 slot">
-        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 2</strong> · Jul 2026<br>4 dies<br><span class="text-muted">0.5×0.5 slot, 1×0.5 slot</span></span>
+         aria-label="wafer.space Run 2, Jul 2026, TQVA ½ × ½ slot, TQVC 1 × ½ slot, TQVD ½ × ½ slot, TQVE ½ × ½ slot">
+        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 2</strong> · Jul 2026<br>4 dies<br><span class="text-muted">TQVA ½ × ½ slot, TQVC 1 × ½ slot, TQVD ½ × ½ slot, TQVE ½ × ½ slot</span></span>
       </a>
     </div>
   </div>
   <div class="run-tl-row">
-    <div class="run-tl-name"><a href="projects/295.html#related">KianV RISC-V Linux SoC</a> <span class="small text-muted">295</span></div>
-    <div class="run-tl-track" style="--h: 42px; --hm: 42px">
+    <div class="run-tl-name"><a href="projects/295.html#related">KianV RISC-V Linux SoC</a> <span class="small text-muted">295 KianV uLinux SoC</span></div>
+    <div class="run-tl-track" style="--h: 52px; --hm: 52px">
 <i class="run-tl-grid" style="left: 14.38%" aria-hidden="true"></i><i class="run-tl-grid" style="left: 42.97%" aria-hidden="true"></i><i class="run-tl-grid" style="left: 71.48%" aria-hidden="true"></i>      <a class="run-tl-dot run-tl-tt run-tl-start" href="https://tinytapeout.com/chips/tt05/tt_um_kianV_rv32ima_uLinux_SoC"
          style="left: 9.84%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout 5, Nov 2023, 8×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 5</strong> · Nov 2023<br>KianV uLinux SoC<br><span class="text-muted">8×2 tiles</span></span>
+         aria-label="Tiny Tapeout 5, Nov 2023, 8 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 5</strong> · Nov 2023<br>KianV uLinux SoC<br><span class="text-muted">8 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt run-tl-start" href="https://tinytapeout.com/chips/tt06/tt_um_kianV_rv32ima_uLinux_SoC"
          style="left: 22.89%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout 6, Apr 2024, 8×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 6</strong> · Apr 2024<br>KianV uLinux SoC<br><span class="text-muted">8×2 tiles</span></span>
+         aria-label="Tiny Tapeout 6, Apr 2024, 8 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 6</strong> · Apr 2024<br>KianV uLinux SoC<br><span class="text-muted">8 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/tt07/tt_um_kianv_bare_metal"
          style="left: 26.25%; --dy: 0px; --dym: -13px"
-         aria-label="Tiny Tapeout 7, Jun 2024, 3×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 7</strong> · Jun 2024<br>KianV RISC-V RV32E Baremetal SoC<br><span class="text-muted">3×2 tiles</span></span>
+         aria-label="Tiny Tapeout 7, Jun 2024, 3 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 7</strong> · Jun 2024<br>KianV RISC-V RV32E Baremetal SoC<br><span class="text-muted">3 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/ttihp0p2/tt_um_kianv_bare_metal"
          style="left: 38.44%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout IHP 0.2, Nov 2024, 4×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 0.2</strong> · Nov 2024<br>KianV RISC-V RV32E Baremetal SoC<br><span class="text-muted">4×2 tiles</span></span>
+         aria-label="Tiny Tapeout IHP 0.2, Nov 2024, 4 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 0.2</strong> · Nov 2024<br>KianV RISC-V RV32E Baremetal SoC<br><span class="text-muted">4 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/#p023"
          style="left: 68.52%; --dy: 0px; --dym: 0px"
@@ -2298,48 +2198,48 @@
       </a>
       <a class="run-tl-dot run-tl-tt current" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/295.html"
          style="left: 68.52%; --dy: -13px; --dym: -13px"
-         aria-label="Tiny Tapeout GF 0.2, Nov 2025, 4×4 tiles (this chip)">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.2</strong> · Nov 2025<br>KianV uLinux SoC<br><span class="text-muted">4×4 tiles</span></span>
+         aria-label="Tiny Tapeout GF 0.2, Nov 2025, 4 × 4 tiles (this chip)">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.2</strong> · Nov 2025<br>KianV uLinux SoC<br><span class="text-muted">4 × 4 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-ws" href="https://wafer.space/ws-run1/projects/KIAN.html"
          style="left: 69.22%; --dy: 13px; --dym: 13px"
-         aria-label="wafer.space Run 1, Dec 2025, 1×1 slot">
-        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 1</strong> · Dec 2025<br>KIAN KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU<br><span class="text-muted">1×1 slot</span></span>
+         aria-label="wafer.space Run 1, Dec 2025, 1 × 1 slot">
+        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 1</strong> · Dec 2025<br>KIAN KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU<br><span class="text-muted">1 × 1 slot</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt run-tl-end" href="https://tinytapeout.com/chips/ttihp26a/tt_um_kianv_sv32_soc"
          style="left: 77.81%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout IHP 26a, Mar 2026, 8×4 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 26a</strong> · Mar 2026<br>KianV SV32 TT Linux SoC<br><span class="text-muted">8×4 tiles</span></span>
+         aria-label="Tiny Tapeout IHP 26a, Mar 2026, 8 × 4 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 26a</strong> · Mar 2026<br>KianV SV32 TT Linux SoC<br><span class="text-muted">8 × 4 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt run-tl-end" href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/518.html"
          style="left: 86.09%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout GF 0.3, Jul 2026, 4×4 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.3</strong> · Jul 2026<br>KianV uLinux SoC<br><span class="text-muted">4×4 tiles</span></span>
+         aria-label="Tiny Tapeout GF 0.3, Jul 2026, 4 × 4 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.3</strong> · Jul 2026<br>KianV uLinux SoC<br><span class="text-muted">4 × 4 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-ws run-tl-end" href="https://wafer.space/ws-run2/projects/KIAN.html"
          style="left: 86.64%; --dy: -13px; --dym: -13px"
-         aria-label="wafer.space Run 2, Jul 2026, 1×1 slot">
-        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 2</strong> · Jul 2026<br>KIAN KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2<br><span class="text-muted">1×1 slot</span></span>
+         aria-label="wafer.space Run 2, Jul 2026, 1 × 1 slot">
+        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 2</strong> · Jul 2026<br>KIAN KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2<br><span class="text-muted">1 × 1 slot</span></span>
       </a>
     </div>
   </div>
   <div class="run-tl-row">
-    <div class="run-tl-name"><a href="projects/135.html#related">raybox-zero</a> <span class="small text-muted">135</span></div>
-    <div class="run-tl-track" style="--h: 42px; --hm: 42px">
+    <div class="run-tl-name"><a href="projects/135.html#related">raybox-zero</a> <span class="small text-muted">135 raybox-zero TTGF0p2 edition</span></div>
+    <div class="run-tl-track" style="--h: 52px; --hm: 52px">
 <i class="run-tl-grid" style="left: 14.38%" aria-hidden="true"></i><i class="run-tl-grid" style="left: 42.97%" aria-hidden="true"></i><i class="run-tl-grid" style="left: 71.48%" aria-hidden="true"></i>      <a class="run-tl-dot run-tl-tt run-tl-start" href="https://tinytapeout.com/chips/tt04/tt_um_algofoogle_raybox_zero"
          style="left: 5.39%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout 4, Sep 2023, 4×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 4</strong> · Sep 2023<br>raybox-zero<br><span class="text-muted">4×2 tiles</span></span>
+         aria-label="Tiny Tapeout 4, Sep 2023, 4 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 4</strong> · Sep 2023<br>raybox-zero<br><span class="text-muted">4 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/tt07/tt_um_algofoogle_raybox_zero"
          style="left: 26.25%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout 7, Jun 2024, 6×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 7</strong> · Jun 2024<br>raybox-zero TT07 edition<br><span class="text-muted">6×2 tiles</span></span>
+         aria-label="Tiny Tapeout 7, Jun 2024, 6 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 7</strong> · Jun 2024<br>raybox-zero TT07 edition<br><span class="text-muted">6 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/ttihp0p2/tt_um_algofoogle_raybox_zero"
          style="left: 38.44%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout IHP 0.2, Nov 2024, 4×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 0.2</strong> · Nov 2024<br>raybox-zero TTIHP0p2 edition<br><span class="text-muted">4×2 tiles</span></span>
+         aria-label="Tiny Tapeout IHP 0.2, Nov 2024, 4 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 0.2</strong> · Nov 2024<br>raybox-zero TTIHP0p2 edition<br><span class="text-muted">4 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/#p022"
          style="left: 68.52%; --dy: 0px; --dym: 0px"
@@ -2348,58 +2248,58 @@
       </a>
       <a class="run-tl-dot run-tl-tt current" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/135.html"
          style="left: 68.52%; --dy: -13px; --dym: -13px"
-         aria-label="Tiny Tapeout GF 0.2, Nov 2025, 3×4 tiles (this chip)">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.2</strong> · Nov 2025<br>raybox-zero TTGF0p2 edition<br><span class="text-muted">3×4 tiles</span></span>
+         aria-label="Tiny Tapeout GF 0.2, Nov 2025, 3 × 4 tiles (this chip)">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.2</strong> · Nov 2025<br>raybox-zero TTGF0p2 edition<br><span class="text-muted">3 × 4 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt run-tl-end" href="https://tinytapeout.com/chips/ttihp0p4/tt_um_algofoogle_raybox_zero"
          style="left: 78.2%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout IHP 0.4, Mar 2026, 6×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 0.4</strong> · Mar 2026<br>raybox-zero TTIHP0p4 edition<br><span class="text-muted">6×2 tiles</span></span>
+         aria-label="Tiny Tapeout IHP 0.4, Mar 2026, 6 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 0.4</strong> · Mar 2026<br>raybox-zero TTIHP0p4 edition<br><span class="text-muted">6 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-ws run-tl-end" href="https://wafer.space/ws-run2/projects/AMM1.html"
          style="left: 86.64%; --dy: 0px; --dym: 0px"
-         aria-label="wafer.space Run 2, Jul 2026, 1×0.5 slot">
-        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 2</strong> · Jul 2026<br>AMM1 raybox-zero wafer.space run 2 half height<br><span class="text-muted">1×0.5 slot</span></span>
+         aria-label="wafer.space Run 2, Jul 2026, 1 × ½ slot">
+        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 2</strong> · Jul 2026<br>AMM1 raybox-zero wafer.space run 2 half height<br><span class="text-muted">1 × ½ slot</span></span>
       </a>
     </div>
   </div>
   <div class="run-tl-row">
-    <div class="run-tl-name"><a href="projects/455.html#related">Open-source Z80</a> <span class="small text-muted">455</span></div>
-    <div class="run-tl-track" style="--h: 42px; --hm: 42px">
+    <div class="run-tl-name"><a href="projects/455.html#related">Open-source Z80</a> <span class="small text-muted">455 Zilog Z80</span></div>
+    <div class="run-tl-track" style="--h: 52px; --hm: 52px">
 <i class="run-tl-grid" style="left: 14.38%" aria-hidden="true"></i><i class="run-tl-grid" style="left: 42.97%" aria-hidden="true"></i><i class="run-tl-grid" style="left: 71.48%" aria-hidden="true"></i>      <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/tt07/tt_um_rejunity_z80"
          style="left: 26.25%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout 7, Jun 2024, 2×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 7</strong> · Jun 2024<br>Zilog Z80<br><span class="text-muted">2×2 tiles</span></span>
+         aria-label="Tiny Tapeout 7, Jun 2024, 2 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 7</strong> · Jun 2024<br>Zilog Z80<br><span class="text-muted">2 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/ttihp0p2/tt_um_rejunity_z80"
          style="left: 38.44%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout IHP 0.2, Nov 2024, 2×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 0.2</strong> · Nov 2024<br>Zilog Z80<br><span class="text-muted">2×2 tiles</span></span>
+         aria-label="Tiny Tapeout IHP 0.2, Nov 2024, 2 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 0.2</strong> · Nov 2024<br>Zilog Z80<br><span class="text-muted">2 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/tt09/tt_um_rejunity_z80"
          style="left: 38.91%; --dy: -13px; --dym: -13px"
-         aria-label="Tiny Tapeout 9, Nov 2024, 2×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 9</strong> · Nov 2024<br>Zilog Z80<br><span class="text-muted">2×2 tiles</span></span>
+         aria-label="Tiny Tapeout 9, Nov 2024, 2 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout 9</strong> · Nov 2024<br>Zilog Z80<br><span class="text-muted">2 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt" href="https://tinytapeout.com/chips/ttihp25a/tt_um_rejunity_z80"
          style="left: 49.69%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout IHP 25a, Mar 2025, 2×2 tiles">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 25a</strong> · Mar 2025<br>Zilog Z80<br><span class="text-muted">2×2 tiles</span></span>
+         aria-label="Tiny Tapeout IHP 25a, Mar 2025, 2 × 2 tiles">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout IHP 25a</strong> · Mar 2025<br>Zilog Z80<br><span class="text-muted">2 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-tt current" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/455.html"
          style="left: 68.52%; --dy: 0px; --dym: 0px"
-         aria-label="Tiny Tapeout GF 0.2, Nov 2025, 2×2 tiles (this chip)">
-        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.2</strong> · Nov 2025<br>Zilog Z80<br><span class="text-muted">2×2 tiles</span></span>
+         aria-label="Tiny Tapeout GF 0.2, Nov 2025, 2 × 2 tiles (this chip)">
+        <span class="run-tl-tip" role="tooltip"><strong>Tiny Tapeout GF 0.2</strong> · Nov 2025<br>Zilog Z80<br><span class="text-muted">2 × 2 tiles</span></span>
       </a>
       <a class="run-tl-dot run-tl-ws" href="https://wafer.space/ws-run1/projects/HZ80.html"
          style="left: 69.22%; --dy: -13px; --dym: -13px"
-         aria-label="wafer.space Run 1, Dec 2025, 0.5×1 slot, 1×1 slot">
-        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 1</strong> · Dec 2025<br>2 dies<br><span class="text-muted">0.5×1 slot, 1×1 slot</span></span>
+         aria-label="wafer.space Run 1, Dec 2025, HZ80 ½ × 1 slot, RZ80 1 × 1 slot">
+        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 1</strong> · Dec 2025<br>2 dies<br><span class="text-muted">HZ80 ½ × 1 slot, RZ80 1 × 1 slot</span></span>
       </a>
       <a class="run-tl-dot run-tl-ws run-tl-end" href="https://wafer.space/ws-run2/projects/HZ80.html"
          style="left: 86.64%; --dy: 0px; --dym: 0px"
-         aria-label="wafer.space Run 2, Jul 2026, 0.5×1 slot, 0.5×0.5 slot">
-        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 2</strong> · Jul 2026<br>2 dies<br><span class="text-muted">0.5×1 slot, 0.5×0.5 slot</span></span>
+         aria-label="wafer.space Run 2, Jul 2026, HZ80 ½ × 1 slot, QZ80 ½ × ½ slot">
+        <span class="run-tl-tip" role="tooltip"><strong>wafer.space Run 2</strong> · Jul 2026<br>2 dies<br><span class="text-muted">HZ80 ½ × 1 slot, QZ80 ½ × ½ slot</span></span>
       </a>
     </div>
   </div>
@@ -2409,7 +2309,7 @@
   <span class="run-tl-key-google">Google shuttle</span>
   <span class="run-tl-key-ws">wafer.space die</span>
 <span class="run-tl-key-current">this chip</span>  <br>Each marker is one version of the design: hover over it or focus it for details, and select it to open its
-  page. The table below lists every one.</p>
+  page. On a phone, the table below lists every one.</p>
 <details class="run-more">
   <summary>As a table</summary>
   <div class="table-responsive">
@@ -2417,75 +2317,75 @@
     <thead><tr><th>Design</th><th>Made on</th><th>When</th><th>Version</th><th>Size</th></tr></thead>
     <tbody>
     <tr><th rowspan="11"><a href="projects/039.html#related">TinyQV RISC-V SoC</a></th>      <td><a href="https://tinytapeout.com/chips/tt06/">Tiny Tapeout 6</a></td><td class="run-nowrap">Apr 2024</td>
-      <td><a href="https://tinytapeout.com/chips/tt06/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a></td><td>2×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/tt06/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a></td><td>2 × 2 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttihp0p2/">Tiny Tapeout IHP 0.2</a></td><td class="run-nowrap">Nov 2024</td>
-      <td><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a></td><td>2×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a></td><td>2 × 2 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttihp25a/">Tiny Tapeout IHP 25a</a></td><td class="run-nowrap">Mar 2025</td>
-      <td><a href="https://tinytapeout.com/chips/ttihp25a/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a></td><td>3×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttihp25a/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a></td><td>3 × 2 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttihp25b/">Tiny Tapeout IHP 25b</a></td><td class="run-nowrap">Sep 2025</td>
-      <td><a href="https://tinytapeout.com/chips/ttihp25b/tt_um_tt_tinyQV">TinyQV - Crowdsourced Risc-V SoC</a></td><td>5×4 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttihp25b/tt_um_tt_tinyQV">TinyQV - Crowdsourced Risc-V SoC</a></td><td>5 × 4 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttsky25a/">Tiny Tapeout SKY 25a</a></td><td class="run-nowrap">Sep 2025</td>
-      <td><a href="https://tinytapeout.com/chips/ttsky25a/tt_um_tt_tinyQV">TinyQV &#39;Asteroids&#39; - Crowdsourced Risc-V SoC; TinyQV &#39;Berzerk&#39; - Crowdsourced Risc-V SoC</a></td><td>8×4 tiles, 4×4 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttsky25a/tt_um_tt_tinyQV">TinyQV &#39;Asteroids&#39; - Crowdsourced Risc-V SoC; TinyQV &#39;Berzerk&#39; - Crowdsourced Risc-V SoC</a></td><td>8 × 4 tiles, 4 × 4 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttsky25b/">Tiny Tapeout SKY 25b</a></td><td class="run-nowrap">Nov 2025</td>
-      <td><a href="https://tinytapeout.com/chips/ttsky25b/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a></td><td>3×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttsky25b/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a></td><td>3 × 2 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/">Tiny Tapeout GF 0.1</a></td><td class="run-nowrap">Nov 2025</td>
       <td><a href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/#p019">TinyQV Risc-V SoC</a></td><td>in a shared block</td></tr>
     <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/">Tiny Tapeout GF 0.2</a></td><td class="run-nowrap">Nov 2025</td>
-      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/039.html">TinyQV Risc-V SoC</a></td><td>3×4 tiles</td></tr>
+      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/039.html">TinyQV Risc-V SoC</a></td><td>3 × 4 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/ws-run1/">wafer.space Run 1</a></td><td class="run-nowrap">Dec 2025</td>
-      <td><a href="https://wafer.space/ws-run1/projects/TQVA.html">TQVA TinyQV - Crowdsourced Risc-V SoC; TQVB TinyQV - Crowdsourced Risc-V SoC (0.5x1); TQVC TinyQV - Crowdsourced Risc-V SoC (1x0.5)</a></td><td>0.5×0.5 slot, 0.5×1 slot, 1×0.5 slot</td></tr>
+      <td><a href="https://wafer.space/ws-run1/projects/TQVA.html">TQVA TinyQV - Crowdsourced Risc-V SoC; TQVB TinyQV - Crowdsourced Risc-V SoC (0.5x1); TQVC TinyQV - Crowdsourced Risc-V SoC (1x0.5)</a></td><td>TQVA ½ × ½ slot, TQVB ½ × 1 slot, TQVC 1 × ½ slot</td></tr>
     <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/">Tiny Tapeout GF 0.3</a></td><td class="run-nowrap">Jul 2026</td>
-      <td><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/199.html">TinyQV Risc-V SoC</a></td><td>4×2 tiles</td></tr>
+      <td><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/199.html">TinyQV Risc-V SoC</a></td><td>4 × 2 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></td><td class="run-nowrap">Jul 2026</td>
-      <td><a href="https://wafer.space/ws-run2/projects/TQVA.html">TQVA TinyQV - Crowdsourced Risc-V SoC; TQVC TinyQV - Crowdsourced Risc-V SoC (1x0.5); TQVD TinyQV - RISC-V SoC with HDMI output; TQVE TinyQV - RISC-V SoC with experimental pad setup</a></td><td>0.5×0.5 slot, 1×0.5 slot</td></tr>
+      <td><a href="https://wafer.space/ws-run2/projects/TQVA.html">TQVA TinyQV - Crowdsourced Risc-V SoC; TQVC TinyQV - Crowdsourced Risc-V SoC (1x0.5); TQVD TinyQV - RISC-V SoC with HDMI output; TQVE TinyQV - RISC-V SoC with experimental pad setup</a></td><td>TQVA ½ × ½ slot, TQVC 1 × ½ slot, TQVD ½ × ½ slot, TQVE ½ × ½ slot</td></tr>
     <tr><th rowspan="10"><a href="projects/295.html#related">KianV RISC-V Linux SoC</a></th>      <td><a href="https://tinytapeout.com/chips/tt05/">Tiny Tapeout 5</a></td><td class="run-nowrap">Nov 2023</td>
-      <td><a href="https://tinytapeout.com/chips/tt05/tt_um_kianV_rv32ima_uLinux_SoC">KianV uLinux SoC</a></td><td>8×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/tt05/tt_um_kianV_rv32ima_uLinux_SoC">KianV uLinux SoC</a></td><td>8 × 2 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/tt06/">Tiny Tapeout 6</a></td><td class="run-nowrap">Apr 2024</td>
-      <td><a href="https://tinytapeout.com/chips/tt06/tt_um_kianV_rv32ima_uLinux_SoC">KianV uLinux SoC</a></td><td>8×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/tt06/tt_um_kianV_rv32ima_uLinux_SoC">KianV uLinux SoC</a></td><td>8 × 2 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/tt07/">Tiny Tapeout 7</a></td><td class="run-nowrap">Jun 2024</td>
-      <td><a href="https://tinytapeout.com/chips/tt07/tt_um_kianv_bare_metal">KianV RISC-V RV32E Baremetal SoC</a></td><td>3×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/tt07/tt_um_kianv_bare_metal">KianV RISC-V RV32E Baremetal SoC</a></td><td>3 × 2 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttihp0p2/">Tiny Tapeout IHP 0.2</a></td><td class="run-nowrap">Nov 2024</td>
-      <td><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_kianv_bare_metal">KianV RISC-V RV32E Baremetal SoC</a></td><td>4×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_kianv_bare_metal">KianV RISC-V RV32E Baremetal SoC</a></td><td>4 × 2 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/">Tiny Tapeout GF 0.1</a></td><td class="run-nowrap">Nov 2025</td>
       <td><a href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/#p023">KianV uLinux SoC</a></td><td>in a shared block</td></tr>
     <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/">Tiny Tapeout GF 0.2</a></td><td class="run-nowrap">Nov 2025</td>
-      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/295.html">KianV uLinux SoC</a></td><td>4×4 tiles</td></tr>
+      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/295.html">KianV uLinux SoC</a></td><td>4 × 4 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/ws-run1/">wafer.space Run 1</a></td><td class="run-nowrap">Dec 2025</td>
-      <td><a href="https://wafer.space/ws-run1/projects/KIAN.html">KIAN KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU</a></td><td>1×1 slot</td></tr>
+      <td><a href="https://wafer.space/ws-run1/projects/KIAN.html">KIAN KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU</a></td><td>1 × 1 slot</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttihp26a/">Tiny Tapeout IHP 26a</a></td><td class="run-nowrap">Mar 2026</td>
-      <td><a href="https://tinytapeout.com/chips/ttihp26a/tt_um_kianv_sv32_soc">KianV SV32 TT Linux SoC</a></td><td>8×4 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttihp26a/tt_um_kianv_sv32_soc">KianV SV32 TT Linux SoC</a></td><td>8 × 4 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/">Tiny Tapeout GF 0.3</a></td><td class="run-nowrap">Jul 2026</td>
-      <td><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/518.html">KianV uLinux SoC</a></td><td>4×4 tiles</td></tr>
+      <td><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/518.html">KianV uLinux SoC</a></td><td>4 × 4 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></td><td class="run-nowrap">Jul 2026</td>
-      <td><a href="https://wafer.space/ws-run2/projects/KIAN.html">KIAN KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2</a></td><td>1×1 slot</td></tr>
+      <td><a href="https://wafer.space/ws-run2/projects/KIAN.html">KIAN KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2</a></td><td>1 × 1 slot</td></tr>
     <tr><th rowspan="7"><a href="projects/135.html#related">raybox-zero</a></th>      <td><a href="https://tinytapeout.com/chips/tt04/">Tiny Tapeout 4</a></td><td class="run-nowrap">Sep 2023</td>
-      <td><a href="https://tinytapeout.com/chips/tt04/tt_um_algofoogle_raybox_zero">raybox-zero</a></td><td>4×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/tt04/tt_um_algofoogle_raybox_zero">raybox-zero</a></td><td>4 × 2 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/tt07/">Tiny Tapeout 7</a></td><td class="run-nowrap">Jun 2024</td>
-      <td><a href="https://tinytapeout.com/chips/tt07/tt_um_algofoogle_raybox_zero">raybox-zero TT07 edition</a></td><td>6×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/tt07/tt_um_algofoogle_raybox_zero">raybox-zero TT07 edition</a></td><td>6 × 2 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttihp0p2/">Tiny Tapeout IHP 0.2</a></td><td class="run-nowrap">Nov 2024</td>
-      <td><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_algofoogle_raybox_zero">raybox-zero TTIHP0p2 edition</a></td><td>4×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_algofoogle_raybox_zero">raybox-zero TTIHP0p2 edition</a></td><td>4 × 2 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/">Tiny Tapeout GF 0.1</a></td><td class="run-nowrap">Nov 2025</td>
       <td><a href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/#p022">raybox-zero TT07 edition</a></td><td>in a shared block</td></tr>
     <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/">Tiny Tapeout GF 0.2</a></td><td class="run-nowrap">Nov 2025</td>
-      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/135.html">raybox-zero TTGF0p2 edition</a></td><td>3×4 tiles</td></tr>
+      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/135.html">raybox-zero TTGF0p2 edition</a></td><td>3 × 4 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttihp0p4/">Tiny Tapeout IHP 0.4</a></td><td class="run-nowrap">Mar 2026</td>
-      <td><a href="https://tinytapeout.com/chips/ttihp0p4/tt_um_algofoogle_raybox_zero">raybox-zero TTIHP0p4 edition</a></td><td>6×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttihp0p4/tt_um_algofoogle_raybox_zero">raybox-zero TTIHP0p4 edition</a></td><td>6 × 2 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></td><td class="run-nowrap">Jul 2026</td>
-      <td><a href="https://wafer.space/ws-run2/projects/AMM1.html">AMM1 raybox-zero wafer.space run 2 half height</a></td><td>1×0.5 slot</td></tr>
+      <td><a href="https://wafer.space/ws-run2/projects/AMM1.html">AMM1 raybox-zero wafer.space run 2 half height</a></td><td>1 × ½ slot</td></tr>
     <tr><th rowspan="7"><a href="projects/455.html#related">Open-source Z80</a></th>      <td><a href="https://tinytapeout.com/chips/tt07/">Tiny Tapeout 7</a></td><td class="run-nowrap">Jun 2024</td>
-      <td><a href="https://tinytapeout.com/chips/tt07/tt_um_rejunity_z80">Zilog Z80</a></td><td>2×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/tt07/tt_um_rejunity_z80">Zilog Z80</a></td><td>2 × 2 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttihp0p2/">Tiny Tapeout IHP 0.2</a></td><td class="run-nowrap">Nov 2024</td>
-      <td><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_rejunity_z80">Zilog Z80</a></td><td>2×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_rejunity_z80">Zilog Z80</a></td><td>2 × 2 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/tt09/">Tiny Tapeout 9</a></td><td class="run-nowrap">Nov 2024</td>
-      <td><a href="https://tinytapeout.com/chips/tt09/tt_um_rejunity_z80">Zilog Z80</a></td><td>2×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/tt09/tt_um_rejunity_z80">Zilog Z80</a></td><td>2 × 2 tiles</td></tr>
     <tr>      <td><a href="https://tinytapeout.com/chips/ttihp25a/">Tiny Tapeout IHP 25a</a></td><td class="run-nowrap">Mar 2025</td>
-      <td><a href="https://tinytapeout.com/chips/ttihp25a/tt_um_rejunity_z80">Zilog Z80</a></td><td>2×2 tiles</td></tr>
+      <td><a href="https://tinytapeout.com/chips/ttihp25a/tt_um_rejunity_z80">Zilog Z80</a></td><td>2 × 2 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/">Tiny Tapeout GF 0.2</a></td><td class="run-nowrap">Nov 2025</td>
-      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/455.html">Zilog Z80</a></td><td>2×2 tiles</td></tr>
+      <td><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/455.html">Zilog Z80</a></td><td>2 × 2 tiles</td></tr>
     <tr>      <td><a href="https://wafer.space/ws-run1/">wafer.space Run 1</a></td><td class="run-nowrap">Dec 2025</td>
-      <td><a href="https://wafer.space/ws-run1/projects/HZ80.html">HZ80 FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot); RZ80 FOSSi open-source replacement for Z80 classic 8-bit CPU</a></td><td>0.5×1 slot, 1×1 slot</td></tr>
+      <td><a href="https://wafer.space/ws-run1/projects/HZ80.html">HZ80 FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot); RZ80 FOSSi open-source replacement for Z80 classic 8-bit CPU</a></td><td>HZ80 ½ × 1 slot, RZ80 1 × 1 slot</td></tr>
     <tr>      <td><a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></td><td class="run-nowrap">Jul 2026</td>
-      <td><a href="https://wafer.space/ws-run2/projects/HZ80.html">HZ80 FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot); QZ80 FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 0.5 slot)</a></td><td>0.5×1 slot, 0.5×0.5 slot</td></tr>
+      <td><a href="https://wafer.space/ws-run2/projects/HZ80.html">HZ80 FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot); QZ80 FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 0.5 slot)</a></td><td>HZ80 ½ × 1 slot, QZ80 ½ × ½ slot</td></tr>
     </tbody>
   </table>
   </div>
@@ -3480,7 +3380,7 @@
 <span class="text-muted">(34% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>46%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>251k average,
-              310k in the densest mm²</td></tr>
+              310k in the densest mm² of logic</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/ws-run1">public layout</a>, the same way for every
@@ -3713,7 +3613,7 @@ The licence and template were read from the repository at commit
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each square millimetre of the
           die. Hatched
-          outlines are SRAM macros; the bold outline is the densest mm² that avoids them, found by sliding a
+          outlines are SRAM macros; the red outline is the densest mm² that avoids them, found by sliding a
           1 mm square over the die in 0.1 mm steps. Squares at the edges are partial, so they read low.</p>
       </div>
     </div>
@@ -3899,6 +3799,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="run.js?v=e990a249d3"></script>
+  <script src="run.js?v=41e907b34a"></script>
 </body>
 </html>
