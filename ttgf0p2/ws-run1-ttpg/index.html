@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="run.css?v=116b00abe3">
+  <link rel="stylesheet" type="text/css" href="run.css?v=f2283c2488">
 </head>
 <body>
   <div class="content-wrapper">
@@ -314,7 +314,7 @@
           <li class="done run-timeline-critical run-timeline-ws">
             <span class="run-timeline-date"><span class="run-owner run-owner-ws">wafer.space</span>
 3 December 2025, 23:59 AoE</span>
-            <strong><a href="https://wafer.space/how.html">Design submission</a></strong>
+            <strong><a href="https://wafer.space/technology">Design submission</a></strong>
             <span class="small text-muted">Final deadline to submit GDS files for fabrication</span>
           </li>
           <li class="done run-timeline-milestone run-timeline-tt">
@@ -376,7 +376,7 @@
         <div class="col-md-6">
 <h3 class="run-status-head">Still to come</h3>        <ul class="run-timeline">
           <li class="run-today"><span class="run-today-rocket" aria-hidden="true"></span>
-            <span class="run-timeline-date">Today, 24 October 2026</span></li>          <li class="pending run-timeline-delivery run-timeline-ws">
+            <span class="run-timeline-date">Today, 28 October 2026</span></li>          <li class="pending run-timeline-delivery run-timeline-ws">
             <span class="run-timeline-date"><span class="run-owner run-owner-ws">wafer.space</span>
 31 October 2026 (expected)</span>
             <strong>Packaged parts shipped</strong>
@@ -635,10 +635,7 @@
              title="Other: 0.01 mm² (7%)"></i>
         </span>
       </a>
-    </div>
-    <details class="run-more">
-      <summary>Show all 52 projects</summary>
-      <div class="run-rows">      <a class="run-row" href="projects/199.html">
+      <a class="run-row" href="projects/199.html">
         <span class="run-row-label"><strong>199</strong> <span class="text-muted">VGA Nyan Cat</span></span>
         <span class="run-bar">
           <i style="width: 62.78%; background: #5ca7db"
@@ -1078,8 +1075,7 @@
              title="Other: 0.00 mm² (7%)"></i>
         </span>
       </a>
-</div>
-    </details>
+    </div>
   </div>
 </div>
 
@@ -1105,9 +1101,18 @@
           <p class="mb-10 small text-muted">GF180MCU maximum,<br>with <span class="run-nowrap">
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">inv_2</span></a></span></p>
-          <p class="mb-0 small text-muted">With this chip's libraries:</p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>: 114k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/inv/gf180mcu_fd_sc_mcu7t5v0__inv_1.html"><span class="run-mono">inv_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a>: 89k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/inv/gf180mcu_fd_sc_mcu9t5v0__inv_1.html"><span class="run-mono">inv_1</span></a></p>
+          <p class="mb-5 small text-muted">With this chip's libraries:</p>
+          <table class="run-mini small mx-auto">
+            <caption class="visually-hidden">Inverters per mm² with each of this chip's libraries, and the cell measured</caption>
+            <tbody>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></th>
+                <td class="run-mini-num">114k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/inv/gf180mcu_fd_sc_mcu7t5v0__inv_1.html"><span class="run-mono">inv_1</span></a></td></tr>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></th>
+                <td class="run-mini-num">89k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/inv/gf180mcu_fd_sc_mcu9t5v0__inv_1.html"><span class="run-mono">inv_1</span></a></td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 mb-30">
@@ -1117,9 +1122,18 @@
           <p class="mb-10 small text-muted">GF180MCU maximum,<br>with <span class="run-nowrap">
             <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>
             <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nand2/gf180mcu_fd_sc_mcu7t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></span></p>
-          <p class="mb-0 small text-muted">With this chip's libraries:</p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>: 91k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nand2/gf180mcu_fd_sc_mcu7t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a>: 71k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/nand2/gf180mcu_fd_sc_mcu9t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></p>
+          <p class="mb-5 small text-muted">With this chip's libraries:</p>
+          <table class="run-mini small mx-auto">
+            <caption class="visually-hidden">NAND gates per mm² with each of this chip's libraries, and the cell measured</caption>
+            <tbody>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></th>
+                <td class="run-mini-num">91k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nand2/gf180mcu_fd_sc_mcu7t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></td></tr>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></th>
+                <td class="run-mini-num">71k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/nand2/gf180mcu_fd_sc_mcu9t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 mb-30">
@@ -1129,9 +1143,18 @@
           <p class="mb-10 small text-muted">GF180MCU maximum,<br>with <span class="run-nowrap">
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">buff_2</span></a></span></p>
-          <p class="mb-0 small text-muted">With this chip's libraries:</p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>: 76k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/buf/gf180mcu_fd_sc_mcu7t5v0__buf_1.html"><span class="run-mono">buf_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a>: 59k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/buf/gf180mcu_fd_sc_mcu9t5v0__buf_1.html"><span class="run-mono">buf_1</span></a></p>
+          <p class="mb-5 small text-muted">With this chip's libraries:</p>
+          <table class="run-mini small mx-auto">
+            <caption class="visually-hidden">Buffers per mm² with each of this chip's libraries, and the cell measured</caption>
+            <tbody>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></th>
+                <td class="run-mini-num">76k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/buf/gf180mcu_fd_sc_mcu7t5v0__buf_1.html"><span class="run-mono">buf_1</span></a></td></tr>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></th>
+                <td class="run-mini-num">59k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/buf/gf180mcu_fd_sc_mcu9t5v0__buf_1.html"><span class="run-mono">buf_1</span></a></td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 mb-30">
@@ -1141,9 +1164,18 @@
           <p class="mb-10 small text-muted">GF180MCU maximum,<br>with <span class="run-nowrap">
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">dfxtp_2</span></a></span></p>
-          <p class="mb-0 small text-muted">With this chip's libraries:</p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>: 16k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/dffq/gf180mcu_fd_sc_mcu7t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a>: 13k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/dffq/gf180mcu_fd_sc_mcu9t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></p>
+          <p class="mb-5 small text-muted">With this chip's libraries:</p>
+          <table class="run-mini small mx-auto">
+            <caption class="visually-hidden">Flip-flops per mm² with each of this chip's libraries, and the cell measured</caption>
+            <tbody>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></th>
+                <td class="run-mini-num">16k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/dffq/gf180mcu_fd_sc_mcu7t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></td></tr>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></th>
+                <td class="run-mini-num">13k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/dffq/gf180mcu_fd_sc_mcu9t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -1363,10 +1395,7 @@
         </span>
         <span class="run-row-value">23k          <span class="text-muted">/ 35k</span></span>
       </a>
-    </div>
-    <details class="run-more">
-      <summary>Show all 36 digital projects</summary>
-      <div class="run-rows">      <a class="run-row" href="projects/032.html" title="032 Zedulo TestChip1 — 7t-5V">
+      <a class="run-row" href="projects/032.html" title="032 Zedulo TestChip1 — 7t-5V">
         <span class="run-row-label"><strong>032</strong> <span class="text-muted">Zedulo TestChip1</span></span>
         <span class="run-density">
           <i class="peak" style="width: 40.83%"></i>
@@ -1558,8 +1587,7 @@
         </span>
         <span class="run-row-value">10k          <span class="text-muted">/ 30k</span></span>
       </a>
-</div>
-    </details>
+    </div>
     <details class="run-more">
       <summary>Every digital project's densities as a table</summary>
       <div class="table-responsive">
@@ -1837,7 +1865,7 @@
     <h3 id="index" class="run-category-title">Project index<a class="run-anchor" href="#index" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
     <p class="mb-20 run-measure">All 52 projects by their address on the chip's multiplexer, with
       how many tiles each took and how much logic it packs.</p>
-<input type="checkbox" id="run-index-all" class="run-index-toggle">    <div class="table-responsive run-index">
+    <div class="table-responsive run-index">
     <table class="table table-sm run-table">
       <thead><tr><th>Address</th><th>Project</th><th class="d-none d-md-table-cell">Author</th><th>Tiles</th>
         <th class="d-none d-lg-table-cell">What it is</th><th class="text-end">Logic cells</th>
@@ -1939,217 +1967,217 @@
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,718</td>
         <td class="text-end d-none d-sm-table-cell">15k</td></tr>
-      <tr class="run-extra"><td class="run-mono">197</td>
+      <tr><td class="run-mono">197</td>
         <td><a href="projects/197.html">LISA 8-Bit Microcontroller</a></td>
 <td class="d-none d-md-table-cell">Ken Pettit <span class="small run-account run-nowrap">· repository <a href="https://github.com/kdp1965" title="The GitHub account that owns the project's repository">@kdp1965</a></span></td>        <td class="run-nowrap">3 × 4</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
         <td class="text-end">17,231</td>
         <td class="text-end d-none d-sm-table-cell">22k</td></tr>
-      <tr class="run-extra"><td class="run-mono">198</td>
+      <tr><td class="run-mono">198</td>
         <td><a href="projects/198.html">easy PAL</a></td>
 <td class="d-none d-md-table-cell">Ken Pettit <span class="small run-account run-nowrap">· repository <a href="https://github.com/kdp1965" title="The GitHub account that owns the project's repository">@kdp1965</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,890</td>
         <td class="text-end d-none d-sm-table-cell">16k</td></tr>
-      <tr class="run-extra"><td class="run-mono">199</td>
+      <tr><td class="run-mono">199</td>
         <td><a href="projects/199.html">VGA Nyan Cat</a></td>
 <td class="d-none d-md-table-cell">Andy Sloane <span class="small run-account run-nowrap">· repository <a href="https://github.com/a1k0n" title="The GitHub account that owns the project's repository">@a1k0n</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">2,662</td>
         <td class="text-end d-none d-sm-table-cell">23k</td></tr>
-      <tr class="run-extra"><td class="run-mono">288</td>
+      <tr><td class="run-mono">288</td>
         <td><a href="projects/288.html">Notre Dame - Lockpick Game TT Example</a></td>
 <td class="d-none d-md-table-cell">Matthew Morrison <span class="small run-account run-nowrap">· repository <a href="https://github.com/mmorri22" title="The GitHub account that owns the project's repository">@mmorri22</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#games">Games</a></td>
         <td class="text-end">2,722</td>
         <td class="text-end d-none d-sm-table-cell">24k</td></tr>
-      <tr class="run-extra"><td class="run-mono">295</td>
+      <tr><td class="run-mono">295</td>
         <td><a href="projects/295.html">KianV uLinux SoC</a></td>
 <td class="d-none d-md-table-cell">Hirosh Dabui</td>        <td class="run-nowrap">4 × 4</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
         <td class="text-end">20,266</td>
         <td class="text-end d-none d-sm-table-cell">19k</td></tr>
-      <tr class="run-extra"><td class="run-mono">358</td>
+      <tr><td class="run-mono">358</td>
         <td><a href="projects/358.html">Notre Dame - CSE 30342 - DIC - Advanced FSM Final Project Example</a></td>
 <td class="d-none d-md-table-cell">Matthew Morrison <span class="small run-account run-nowrap">· repository <a href="https://github.com/mmorri22" title="The GitHub account that owns the project's repository">@mmorri22</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">2,044</td>
         <td class="text-end d-none d-sm-table-cell">18k</td></tr>
-      <tr class="run-extra"><td class="run-mono">359</td>
+      <tr><td class="run-mono">359</td>
         <td><a href="projects/359.html">Simple RISC-V</a></td>
 <td class="d-none d-md-table-cell">kinako71-2 <span class="small run-account run-nowrap">· repository <a href="https://github.com/urish" title="The GitHub account that owns the project's repository">@urish</a></span></td>        <td class="run-nowrap">4 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
         <td class="text-end">11,000</td>
         <td class="text-end d-none d-sm-table-cell">23k</td></tr>
-      <tr class="run-extra"><td class="run-mono">384</td>
+      <tr><td class="run-mono">384</td>
         <td><a href="projects/384.html">LEDs Racer</a></td>
 <td class="d-none d-md-table-cell">KerCrafter <span class="small run-account run-nowrap">· repository <a href="https://github.com/KerCrafter" title="The GitHub account that owns the project's repository">@KerCrafter</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#games">Games</a></td>
         <td class="text-end">1,315</td>
         <td class="text-end d-none d-sm-table-cell">11k</td></tr>
-      <tr class="run-extra"><td class="run-mono">385</td>
+      <tr><td class="run-mono">385</td>
         <td><a href="projects/385.html">Frequency Counter SSD1306 OLED</a></td>
 <td class="d-none d-md-table-cell">Pawel Sitarz (embelon) <span class="small run-account run-nowrap">· repository <a href="https://github.com/embelon" title="The GitHub account that owns the project's repository">@embelon</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,157</td>
         <td class="text-end d-none d-sm-table-cell">10k</td></tr>
-      <tr class="run-extra"><td class="run-mono">391</td>
+      <tr><td class="run-mono">391</td>
         <td><a href="projects/391.html">megabytebeat</a></td>
 <td class="d-none d-md-table-cell">proppy <span class="small run-account run-nowrap">· repository <a href="https://github.com/proppy" title="The GitHub account that owns the project's repository">@proppy</a></span></td>        <td class="run-nowrap">3 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">8,785</td>
         <td class="text-end d-none d-sm-table-cell">25k</td></tr>
-      <tr class="run-extra"><td class="run-mono">451</td>
+      <tr><td class="run-mono">451</td>
         <td><a href="projects/451.html">Asicle v2</a></td>
 <td class="d-none d-md-table-cell">htfab <span class="small run-account run-nowrap">· repository <a href="https://github.com/htfab" title="The GitHub account that owns the project's repository">@htfab</a></span></td>        <td class="run-nowrap">2 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">4,018</td>
         <td class="text-end d-none d-sm-table-cell">17k</td></tr>
-      <tr class="run-extra"><td class="run-mono">454</td>
+      <tr><td class="run-mono">454</td>
         <td><a href="projects/454.html">CAN Controller for Rocket</a></td>
 <td class="d-none d-md-table-cell">Noritsuna Imamura <span class="small run-account run-nowrap">· repository <a href="https://github.com/noritsuna" title="The GitHub account that owns the project's repository">@noritsuna</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#comms">Communications</a></td>
         <td class="text-end">1,218</td>
         <td class="text-end d-none d-sm-table-cell">11k</td></tr>
-      <tr class="run-extra"><td class="run-mono">455</td>
+      <tr><td class="run-mono">455</td>
         <td><a href="projects/455.html">Zilog Z80</a></td>
 <td class="d-none d-md-table-cell">ReJ aka Renaldas Zioma <span class="small run-account run-nowrap">· repository <a href="https://github.com/rejunity" title="The GitHub account that owns the project's repository">@rejunity</a></span></td>        <td class="run-nowrap">2 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">4,918</td>
         <td class="text-end d-none d-sm-table-cell">21k</td></tr>
-      <tr class="run-extra"><td class="run-mono">481</td>
+      <tr><td class="run-mono">481</td>
         <td><a href="projects/481.html">ROTFPGA v2</a></td>
 <td class="d-none d-md-table-cell">htfab <span class="small run-account run-nowrap">· repository <a href="https://github.com/htfab" title="The GitHub account that owns the project's repository">@htfab</a></span></td>        <td class="run-nowrap">1 × 2</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">2,269</td>
         <td class="text-end d-none d-sm-table-cell">20k</td></tr>
-      <tr class="run-extra"><td class="run-mono">483</td>
+      <tr><td class="run-mono">483</td>
         <td><a href="projects/483.html">7-Segment Digital Desk Clock</a></td>
 <td class="d-none d-md-table-cell">Samuel Ellicott <span class="small run-account run-nowrap">· repository <a href="https://github.com/sellicott" title="The GitHub account that owns the project's repository">@sellicott</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">746</td>
         <td class="text-end d-none d-sm-table-cell">13k</td></tr>
-      <tr class="run-extra"><td class="run-mono">485</td>
+      <tr><td class="run-mono">485</td>
         <td><a href="projects/485.html">MarcoPolo</a></td>
 <td class="d-none d-md-table-cell">Javier Munoz Saez <span class="small run-account run-nowrap">· repository <a href="https://github.com/javiBajoCero" title="The GitHub account that owns the project's repository">@javiBajoCero</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#first">First designs</a></td>
         <td class="text-end">726</td>
         <td class="text-end d-none d-sm-table-cell">13k</td></tr>
-      <tr class="run-extra"><td class="run-mono">487</td>
+      <tr><td class="run-mono">487</td>
         <td><a href="projects/487.html">Linear Timecode (LTC) generator</a></td>
 <td class="d-none d-md-table-cell">Thomas Flummer <span class="small run-account run-nowrap">· repository <a href="https://github.com/flummer" title="The GitHub account that owns the project's repository">@flummer</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">777</td>
         <td class="text-end d-none d-sm-table-cell">14k</td></tr>
-      <tr class="run-extra"><td class="run-mono">513</td>
+      <tr><td class="run-mono">513</td>
         <td><a href="projects/513.html">Classic 8-bit era Programmable Sound Generator SN76489</a></td>
 <td class="d-none d-md-table-cell">ReJ aka Renaldas Zioma <span class="small run-account run-nowrap">· repository <a href="https://github.com/rejunity" title="The GitHub account that owns the project's repository">@rejunity</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,380</td>
         <td class="text-end d-none d-sm-table-cell">25k</td></tr>
-      <tr class="run-extra"><td class="run-mono">515</td>
+      <tr><td class="run-mono">515</td>
         <td><a href="projects/515.html">VGA Tiny Logo</a></td>
 <td class="d-none d-md-table-cell">Renaldas Zioma <span class="small run-account run-nowrap">· repository <a href="https://github.com/rejunity" title="The GitHub account that owns the project's repository">@rejunity</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#art">Art and logos</a></td>
         <td class="text-end">1,095</td>
         <td class="text-end d-none d-sm-table-cell">20k</td></tr>
-      <tr class="run-extra"><td class="run-mono">517</td>
+      <tr><td class="run-mono">517</td>
         <td><a href="projects/517.html">Ring Oscillator (5 inverter)</a></td>
 <td class="d-none d-md-table-cell">Darryl Miles <span class="small run-account run-nowrap">· repository <a href="https://github.com/dlmiles" title="The GitHub account that owns the project's repository">@dlmiles</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">61</td>
         <td class="text-end d-none d-sm-table-cell">1k</td></tr>
-      <tr class="run-extra"><td class="run-mono">519</td>
+      <tr><td class="run-mono">519</td>
         <td><a href="projects/519.html">Simon Says memory game</a></td>
 <td class="d-none d-md-table-cell">Uri Shaked <span class="small run-account run-nowrap">· repository <a href="https://github.com/urish" title="The GitHub account that owns the project's repository">@urish</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#games">Games</a></td>
         <td class="text-end">1,507</td>
         <td class="text-end d-none d-sm-table-cell">27k</td></tr>
-      <tr class="run-extra"><td class="run-mono">545</td>
+      <tr><td class="run-mono">545</td>
         <td><a href="projects/545.html">Flame demo</a></td>
 <td class="d-none d-md-table-cell">Konrad Beckmann &amp; Linus Mårtensson <span class="small run-account run-nowrap">· repository <a href="https://github.com/kbeckmann" title="The GitHub account that owns the project's repository">@kbeckmann</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,230</td>
         <td class="text-end d-none d-sm-table-cell">22k</td></tr>
-      <tr class="run-extra"><td class="run-mono">547</td>
+      <tr><td class="run-mono">547</td>
         <td><a href="projects/547.html">WokwiPWM</a></td>
 <td class="d-none d-md-table-cell">Ken Pettit <span class="small run-account run-nowrap">· repository <a href="https://github.com/kdp1965" title="The GitHub account that owns the project's repository">@kdp1965</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,481</td>
         <td class="text-end d-none d-sm-table-cell">26k</td></tr>
-      <tr class="run-extra"><td class="run-mono">549</td>
+      <tr><td class="run-mono">549</td>
         <td><a href="projects/549.html">Dog Battle Game</a></td>
 <td class="d-none d-md-table-cell">Sophus Andreassen <span class="small run-account run-nowrap">· repository <a href="https://github.com/jorgenkraghjakobsen" title="The GitHub account that owns the project's repository">@jorgenkraghjakobsen</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#games">Games</a></td>
         <td class="text-end">1,047</td>
         <td class="text-end d-none d-sm-table-cell">19k</td></tr>
-      <tr class="run-extra"><td class="run-mono">551</td>
+      <tr><td class="run-mono">551</td>
         <td><a href="projects/551.html">PVTMonitorSuite</a></td>
 <td class="d-none d-md-table-cell">Susumu Yamazaki <span class="small run-account run-nowrap">· repository <a href="https://github.com/zacky1972" title="The GitHub account that owns the project's repository">@zacky1972</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">1,123</td>
         <td class="text-end d-none d-sm-table-cell">20k</td></tr>
-      <tr class="run-extra"><td class="run-mono">577</td>
+      <tr><td class="run-mono">577</td>
         <td><a href="projects/577.html">PILIPINAS_IC</a></td>
 <td class="d-none d-md-table-cell">Alexander Co Abad and Dino Dominic Ligutan <span class="small run-account run-nowrap">· repository <a href="https://github.com/alexandercoabad" title="The GitHub account that owns the project's repository">@alexandercoabad</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">82</td>
         <td class="text-end d-none d-sm-table-cell">1k</td></tr>
-      <tr class="run-extra"><td class="run-mono">579</td>
+      <tr><td class="run-mono">579</td>
         <td><a href="projects/579.html">PRISM 8 with TinySnake</a></td>
 <td class="d-none d-md-table-cell">Ken Pettit <span class="small run-account run-nowrap">· repository <a href="https://github.com/kdp1965" title="The GitHub account that owns the project's repository">@kdp1965</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#games">Games</a></td>
         <td class="text-end">1,401</td>
         <td class="text-end d-none d-sm-table-cell">25k</td></tr>
-      <tr class="run-extra"><td class="run-mono">581</td>
+      <tr><td class="run-mono">581</td>
         <td><a href="projects/581.html">Register bank accessible through SPI and I2C</a></td>
 <td class="d-none d-md-table-cell">Caio Alonso da Costa <span class="small run-account run-nowrap">· repository <a href="https://github.com/calonso88" title="The GitHub account that owns the project's repository">@calonso88</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">897</td>
         <td class="text-end d-none d-sm-table-cell">16k</td></tr>
-      <tr class="run-extra"><td class="run-mono">583</td>
+      <tr><td class="run-mono">583</td>
         <td><a href="projects/583.html">Cell mux</a></td>
 <td class="d-none d-md-table-cell">htfab <span class="small run-account run-nowrap">· repository <a href="https://github.com/htfab" title="The GitHub account that owns the project's repository">@htfab</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">677</td>
         <td class="text-end d-none d-sm-table-cell">12k</td></tr>
-      <tr class="run-extra"><td class="run-mono">609</td>
+      <tr><td class="run-mono">609</td>
         <td><a href="projects/609.html">Super-Simple-SPI-CPU</a></td>
 <td class="d-none d-md-table-cell">James Ashie Kotey</td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#cpus">RISC-V and CPUs</a></td>
         <td class="text-end">761</td>
         <td class="text-end d-none d-sm-table-cell">14k</td></tr>
-      <tr class="run-extra"><td class="run-mono">610</td>
+      <tr><td class="run-mono">610</td>
         <td><a href="projects/610.html">Example of Bad Synchronizer</a></td>
 <td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith <span class="small run-account run-nowrap">· repository <a href="https://github.com/dlmiles" title="The GitHub account that owns the project's repository">@dlmiles</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">62</td>
         <td class="text-end d-none d-sm-table-cell">1k</td></tr>
-      <tr class="run-extra"><td class="run-mono">611</td>
+      <tr><td class="run-mono">611</td>
         <td><a href="projects/611.html">Video mode tester</a></td>
 <td class="d-none d-md-table-cell">htfab <span class="small run-account run-nowrap">· repository <a href="https://github.com/htfab" title="The GitHub account that owns the project's repository">@htfab</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">1,234</td>
         <td class="text-end d-none d-sm-table-cell">22k</td></tr>
-      <tr class="run-extra"><td class="run-mono">612</td>
+      <tr><td class="run-mono">612</td>
         <td><a href="projects/612.html">One Bit PUF</a></td>
 <td class="d-none d-md-table-cell">Yimin Gao and Ceylan Morgul <span class="small run-account run-nowrap">· repository <a href="https://github.com/Capulus123" title="The GitHub account that owns the project's repository">@Capulus123</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#security">Security</a></td>
         <td class="text-end">977</td>
         <td class="text-end d-none d-sm-table-cell">17k</td></tr>
-      <tr class="run-extra"><td class="run-mono">613</td>
+      <tr><td class="run-mono">613</td>
         <td><a href="projects/613.html">DDR throughput and flop aperture test</a></td>
 <td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith <span class="small run-account run-nowrap">· repository <a href="https://github.com/dlmiles" title="The GitHub account that owns the project's repository">@dlmiles</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
         <td class="text-end">90</td>
         <td class="text-end d-none d-sm-table-cell">2k</td></tr>
-      <tr class="run-extra"><td class="run-mono">614</td>
+      <tr><td class="run-mono">614</td>
         <td><a href="projects/614.html">Ring osc on VGA</a></td>
 <td class="d-none d-md-table-cell">algofoogle (Anton Maurovic) <span class="small run-account run-nowrap">· repository <a href="https://github.com/algofoogle" title="The GitHub account that owns the project's repository">@algofoogle</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#retro">Retro computing</a></td>
         <td class="text-end">473</td>
         <td class="text-end d-none d-sm-table-cell">8k</td></tr>
-      <tr class="run-extra"><td class="run-mono">615</td>
+      <tr><td class="run-mono">615</td>
         <td><a href="projects/615.html">GF180MCU loopback tile with input skew measurement</a></td>
 <td class="d-none d-md-table-cell">Darryl Miles project from Eric Smith <span class="small run-account run-nowrap">· repository <a href="https://github.com/dlmiles" title="The GitHub account that owns the project's repository">@dlmiles</a></span></td>        <td class="run-nowrap">1 × 1</td>
         <td class="d-none d-lg-table-cell run-nowrap"><a href="#digital">Other digital</a></td>
@@ -2158,8 +2186,7 @@
       </tbody>
     </table>
     </div>
-<label for="run-index-all" class="run-index-more"><span class="run-show">Show all
-      52 projects</span><span class="run-hide">Show the first 16 only</span></label>    <p class="d-sm-none small text-muted mt-10 mb-0">Swipe the table sideways for more columns.</p>
+    <p class="d-sm-none small text-muted mt-10 mb-0">Swipe the table sideways for more columns.</p>
     <div class="mb-40"></div>
     <h3 id="grew" class="run-category-title">Designs that grew<a class="run-anchor" href="#grew" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
     <p class="mb-20 run-measure">Some designs on this chip have been made many times, on earlier and later
@@ -2662,10 +2689,7 @@
 </p>    </div>
   </a>
 </div>
-    </div>
-    <details class="run-more">
-      <summary>Show all 25 in Other digital</summary>
-      <div class="row"><div class="col-6 col-md-4 col-xl-3 mb-30">
+<div class="col-6 col-md-4 col-xl-3 mb-30">
   <a class="run-card box bg-white shadow h-100" href="projects/483.html">
     <figure class="run-card-image">
       <img src="renders/483_thumb.webp" alt="Layout render of 7-Segment Digital Desk Clock" loading="lazy">
@@ -2886,8 +2910,7 @@
 </p>    </div>
   </a>
 </div>
-</div>
-    </details>
+    </div>
     <h3 id="retro" class="run-category-title">
       <i style="background: #9b6bd6"></i>Retro computing
       <span class="text-muted">7</span><a class="run-anchor" href="#retro" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a>
@@ -3503,15 +3526,23 @@
                     width="1.936" height="5.122"/><rect class="" x="28.004" y="7.833"
                     width="1.936" height="5.122"/><rect class="" x="28.004" y="2.651"
                     width="1.936" height="5.122"/><rect class="" x="28.004" y="0.060"
-                    width="1.936" height="2.531"/>                </svg></a></td></tr>
+                    width="1.936" height="2.531"/><rect class="" x="8.044" y="7.833"
+                    width="3.932" height="5.122"/><rect class="" x="8.044" y="2.651"
+                    width="3.932" height="5.122"/>                </svg></a></td></tr>
             <tr><th>Bond pads</th><td>74</td></tr>
             <tr><th>Transistors</th><td>3,254,189</td></tr>
             <tr><th>Logic cells</th><td>203,780
 <span class="text-muted">+ 366,311 filler and tap cells</span></td></tr>
             <tr><th>Libraries</th><td>
-              <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a> <span class="text-muted">(200k)</span>, 
-              <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a> <span class="text-muted">(4k)</span>
-</td></tr>
+              <table class="run-mini">
+                <caption class="visually-hidden">Logic cells from each standard cell library</caption>
+                <tbody>
+                  <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></th>
+                    <td class="run-mini-num">200k</td></tr>
+                  <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></th>
+                    <td class="run-mini-num">4k</td></tr>
+                </tbody>
+              </table></td></tr>
             <tr><th>SRAM</th><td>No SRAM</td></tr>
           </tbody>
         </table>
@@ -3855,7 +3886,7 @@ The licence and template were read from the repository at commit
           <div class="col-6 col-lg-4">
             <div class="widget">
               <h5 class="widget-title">About this page</h5>
-              <p class="small mb-0">Generated on 2026-10-24 by
+              <p class="small mb-0">Generated on 2026-10-28 by
                 <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a>. Sizes, cells and
 transistors are measured
                 from the <a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf0p2/ws-run1-ttpg">public layout</a>; dates come from the published schedules. The
@@ -3874,6 +3905,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="run.js?v=116b00abe3"></script>
+  <script src="run.js?v=f2283c2488"></script>
 </body>
 </html>
