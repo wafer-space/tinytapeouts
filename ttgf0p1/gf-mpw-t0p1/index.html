@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="run.css?v=116b00abe3">
+  <link rel="stylesheet" type="text/css" href="run.css?v=f2283c2488">
 </head>
 <body>
   <div class="content-wrapper">
@@ -218,7 +218,7 @@
             <span class="small text-muted">Tiny Tapeout publishes the die&#39;s final layout (v23) for a GlobalFoundries private MPW run</span>
           </li>
 <li class="run-today"><span class="run-today-rocket" aria-hidden="true"></span>
-            <span class="run-timeline-date">Today, 24 October 2026</span></li>        </ul>
+            <span class="run-timeline-date">Today, 28 October 2026</span></li>        </ul>
         </div>
         </div>
 <p class="small mb-10"><strong>Missed this one?</strong> <a href="https://app.tinytapeout.com/shuttles/ttgf26c">Tiny Tapeout GF 26c</a> and <a href="https://app.tinytapeout.com/shuttles/ttgf26d">26d</a>
@@ -443,12 +443,27 @@
           <p class="mb-10 small text-muted">GF180MCU maximum,<br>with <span class="run-nowrap">
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">inv_2</span></a></span></p>
-          <p class="mb-0 small text-muted">With this chip's libraries:</p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>: 114k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/inv/gf180mcu_fd_sc_mcu7t5v0__inv_1.html"><span class="run-mono">inv_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>: 114k <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">inv_2</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap">7t-5V as 3.3V: 114k <span class="run-mono">inv_1</span></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a>: 89k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/inv/gf180mcu_fd_sc_mcu9t5v0__inv_1.html"><span class="run-mono">inv_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap">9t-5V as 3.3V: 89k <span class="run-mono">inv_1</span></p>
+          <p class="mb-5 small text-muted">With this chip's libraries:</p>
+          <table class="run-mini small mx-auto">
+            <caption class="visually-hidden">Inverters per mm² with each of this chip's libraries, and the cell measured</caption>
+            <tbody>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></th>
+                <td class="run-mini-num">114k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/inv/gf180mcu_fd_sc_mcu7t5v0__inv_1.html"><span class="run-mono">inv_1</span></a></td></tr>
+              <tr><th scope="row"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></th>
+                <td class="run-mini-num">114k</td>
+                <td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">inv_2</span></a></td></tr>
+              <tr><th scope="row">7t-5V as 3.3V</th>
+                <td class="run-mini-num">114k</td>
+                <td><span class="run-mono">inv_1</span></td></tr>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></th>
+                <td class="run-mini-num">89k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/inv/gf180mcu_fd_sc_mcu9t5v0__inv_1.html"><span class="run-mono">inv_1</span></a></td></tr>
+              <tr><th scope="row">9t-5V as 3.3V</th>
+                <td class="run-mini-num">89k</td>
+                <td><span class="run-mono">inv_1</span></td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 mb-30">
@@ -458,14 +473,33 @@
           <p class="mb-10 small text-muted">GF180MCU maximum,<br>with <span class="run-nowrap">
             <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>
             <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nand2/gf180mcu_fd_sc_mcu7t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></span></p>
-          <p class="mb-0 small text-muted">With this chip's libraries:</p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>: 91k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nand2/gf180mcu_fd_sc_mcu7t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>: 65k <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">nand2_2</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc/tree/main/gf180mcu_osu_sc_gp12t3v3">OSU 12t-3.3V</a>: 39k <a href="https://cdn.jsdelivr.net/gh/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc@8a2f58f283a2eaa725314c9e1b8b7d1d343f23a3/docs/gf180mcu_osu_sc_gp12t3v3_TT_25C.ccs.pdf#page=172"><span class="run-mono">nand2_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc/tree/main/gf180mcu_osu_sc_gp9t3v3">OSU 9t-3.3V</a>: 51k <a href="https://cdn.jsdelivr.net/gh/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc@8a2f58f283a2eaa725314c9e1b8b7d1d343f23a3/docs/gf180mcu_osu_sc_gp9t3v3_TT_25C.ccs.pdf#page=127"><span class="run-mono">nand2_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap">7t-5V as 3.3V: 91k <span class="run-mono">nand2_1</span></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a>: 71k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/nand2/gf180mcu_fd_sc_mcu9t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap">9t-5V as 3.3V: 71k <span class="run-mono">nand2_1</span></p>
+          <p class="mb-5 small text-muted">With this chip's libraries:</p>
+          <table class="run-mini small mx-auto">
+            <caption class="visually-hidden">NAND gates per mm² with each of this chip's libraries, and the cell measured</caption>
+            <tbody>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></th>
+                <td class="run-mini-num">91k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nand2/gf180mcu_fd_sc_mcu7t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></td></tr>
+              <tr><th scope="row"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></th>
+                <td class="run-mini-num">65k</td>
+                <td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">nand2_2</span></a></td></tr>
+              <tr><th scope="row"><a href="https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc/tree/main/gf180mcu_osu_sc_gp12t3v3">OSU 12t-3.3V</a></th>
+                <td class="run-mini-num">39k</td>
+                <td><a href="https://cdn.jsdelivr.net/gh/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc@8a2f58f283a2eaa725314c9e1b8b7d1d343f23a3/docs/gf180mcu_osu_sc_gp12t3v3_TT_25C.ccs.pdf#page=172"><span class="run-mono">nand2_1</span></a></td></tr>
+              <tr><th scope="row"><a href="https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc/tree/main/gf180mcu_osu_sc_gp9t3v3">OSU 9t-3.3V</a></th>
+                <td class="run-mini-num">51k</td>
+                <td><a href="https://cdn.jsdelivr.net/gh/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc@8a2f58f283a2eaa725314c9e1b8b7d1d343f23a3/docs/gf180mcu_osu_sc_gp9t3v3_TT_25C.ccs.pdf#page=127"><span class="run-mono">nand2_1</span></a></td></tr>
+              <tr><th scope="row">7t-5V as 3.3V</th>
+                <td class="run-mini-num">91k</td>
+                <td><span class="run-mono">nand2_1</span></td></tr>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></th>
+                <td class="run-mini-num">71k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/nand2/gf180mcu_fd_sc_mcu9t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></td></tr>
+              <tr><th scope="row">9t-5V as 3.3V</th>
+                <td class="run-mini-num">71k</td>
+                <td><span class="run-mono">nand2_1</span></td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 mb-30">
@@ -475,12 +509,27 @@
           <p class="mb-10 small text-muted">GF180MCU maximum,<br>with <span class="run-nowrap">
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">buff_2</span></a></span></p>
-          <p class="mb-0 small text-muted">With this chip's libraries:</p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>: 76k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/buf/gf180mcu_fd_sc_mcu7t5v0__buf_1.html"><span class="run-mono">buf_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>: 76k <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">buff_2</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V as 3.3V</a>: 76k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/buf/gf180mcu_fd_sc_mcu7t5v0__buf_1.html"><span class="run-mono">buf_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a>: 59k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/buf/gf180mcu_fd_sc_mcu9t5v0__buf_1.html"><span class="run-mono">buf_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V as 3.3V</a>: 59k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/buf/gf180mcu_fd_sc_mcu9t5v0__buf_1.html"><span class="run-mono">buf_1</span></a></p>
+          <p class="mb-5 small text-muted">With this chip's libraries:</p>
+          <table class="run-mini small mx-auto">
+            <caption class="visually-hidden">Buffers per mm² with each of this chip's libraries, and the cell measured</caption>
+            <tbody>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></th>
+                <td class="run-mini-num">76k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/buf/gf180mcu_fd_sc_mcu7t5v0__buf_1.html"><span class="run-mono">buf_1</span></a></td></tr>
+              <tr><th scope="row"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></th>
+                <td class="run-mini-num">76k</td>
+                <td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">buff_2</span></a></td></tr>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V as 3.3V</a></th>
+                <td class="run-mini-num">76k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/buf/gf180mcu_fd_sc_mcu7t5v0__buf_1.html"><span class="run-mono">buf_1</span></a></td></tr>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></th>
+                <td class="run-mini-num">59k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/buf/gf180mcu_fd_sc_mcu9t5v0__buf_1.html"><span class="run-mono">buf_1</span></a></td></tr>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V as 3.3V</a></th>
+                <td class="run-mini-num">59k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/buf/gf180mcu_fd_sc_mcu9t5v0__buf_1.html"><span class="run-mono">buf_1</span></a></td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 mb-30">
@@ -490,14 +539,33 @@
           <p class="mb-10 small text-muted">GF180MCU maximum,<br>with <span class="run-nowrap">
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>
             <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">dfxtp_2</span></a></span></p>
-          <p class="mb-0 small text-muted">With this chip's libraries:</p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>: 16k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/dffq/gf180mcu_fd_sc_mcu7t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a>: 17k <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">dfxtp_2</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc/tree/main/gf180mcu_osu_sc_gp12t3v3">OSU 12t-3.3V</a>: 9k <a href="https://cdn.jsdelivr.net/gh/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc@8a2f58f283a2eaa725314c9e1b8b7d1d343f23a3/docs/gf180mcu_osu_sc_gp12t3v3_TT_25C.ccs.pdf#page=130"><span class="run-mono">dff_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc/tree/main/gf180mcu_osu_sc_gp9t3v3">OSU 9t-3.3V</a>: 11k <a href="https://cdn.jsdelivr.net/gh/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc@8a2f58f283a2eaa725314c9e1b8b7d1d343f23a3/docs/gf180mcu_osu_sc_gp9t3v3_TT_25C.ccs.pdf#page=91"><span class="run-mono">dff_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap">7t-5V as 3.3V: 16k <span class="run-mono">dffq_1</span></p>
-          <p class="mb-0 small text-muted run-nowrap"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a>: 13k <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/dffq/gf180mcu_fd_sc_mcu9t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></p>
-          <p class="mb-0 small text-muted run-nowrap">9t-5V as 3.3V: 13k <span class="run-mono">dffq_1</span></p>
+          <p class="mb-5 small text-muted">With this chip's libraries:</p>
+          <table class="run-mini small mx-auto">
+            <caption class="visually-hidden">Flip-flops per mm² with each of this chip's libraries, and the cell measured</caption>
+            <tbody>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></th>
+                <td class="run-mini-num">16k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/dffq/gf180mcu_fd_sc_mcu7t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></td></tr>
+              <tr><th scope="row"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></th>
+                <td class="run-mini-num">17k</td>
+                <td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">dfxtp_2</span></a></td></tr>
+              <tr><th scope="row"><a href="https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc/tree/main/gf180mcu_osu_sc_gp12t3v3">OSU 12t-3.3V</a></th>
+                <td class="run-mini-num">9k</td>
+                <td><a href="https://cdn.jsdelivr.net/gh/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc@8a2f58f283a2eaa725314c9e1b8b7d1d343f23a3/docs/gf180mcu_osu_sc_gp12t3v3_TT_25C.ccs.pdf#page=130"><span class="run-mono">dff_1</span></a></td></tr>
+              <tr><th scope="row"><a href="https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc/tree/main/gf180mcu_osu_sc_gp9t3v3">OSU 9t-3.3V</a></th>
+                <td class="run-mini-num">11k</td>
+                <td><a href="https://cdn.jsdelivr.net/gh/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc@8a2f58f283a2eaa725314c9e1b8b7d1d343f23a3/docs/gf180mcu_osu_sc_gp9t3v3_TT_25C.ccs.pdf#page=91"><span class="run-mono">dff_1</span></a></td></tr>
+              <tr><th scope="row">7t-5V as 3.3V</th>
+                <td class="run-mini-num">16k</td>
+                <td><span class="run-mono">dffq_1</span></td></tr>
+              <tr><th scope="row"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></th>
+                <td class="run-mini-num">13k</td>
+                <td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/dffq/gf180mcu_fd_sc_mcu9t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></td></tr>
+              <tr><th scope="row">9t-5V as 3.3V</th>
+                <td class="run-mini-num">13k</td>
+                <td><span class="run-mono">dffq_1</span></td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -1492,7 +1560,7 @@
           <div class="col-6 col-lg-4">
             <div class="widget">
               <h5 class="widget-title">About this page</h5>
-              <p class="small mb-0">Generated on 2026-10-24 by
+              <p class="small mb-0">Generated on 2026-10-28 by
                 <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a>. Sizes, cells and
 transistors are measured
                 from the <a href="https://github.com/wafer-space/tinytapeouts/tree/main/ttgf0p1/gf-mpw-t0p1">public layout</a>; dates come from the published schedules. The
@@ -1511,6 +1579,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="run.js?v=116b00abe3"></script>
+  <script src="run.js?v=f2283c2488"></script>
 </body>
 </html>
